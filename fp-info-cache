@@ -1,4 +1,4 @@
-21966255900616184
+21926399195183879
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6306,6 +6306,27 @@ capacitor tantalum
 0
 2
 2
+CawDrive_Connector
+POWER_PAD
+
+
+0
+1
+1
+CawDrive_Connector
+SOIC-7
+
+
+0
+7
+7
+CawDrive_Connector
+SOIC-11
+
+
+0
+11
+11
 Connector
 Banana_Cliff_FCR7350x_S16N-PC_Horizontal
 Cliff single 4mm shrouded banana panel socket, through-hole, horizontal, https://www.cliffuk.co.uk/products/testleads/sockets/S16NPC.pdf
@@ -83383,76 +83404,20 @@ AN9520-245
 0
 2
 2
-Rick_BLE
-BALF-NRG-01D3
-
-
-0
-4
-4
-Rick_BLE
-BLUENRG-248
-
-
-0
-53
-49
-Rick_BLE
-CC2640R2FRGZR
-
-
-0
-49
-49
-Rick_BLE
-CC2640R2LRGZR
-
-
-0
-49
-49
-Rick_BLE
-CH9141
-
-
-0
-29
-29
-Rick_BLE
-LFB182G45BG5D920
-
-
-0
-6
-6
 Rick_CAN
-ISO1044BDR
-
+ISO1044BDR_SOP-8
+CAN FD芯片
 
 0
 8
 8
 Rick_CAN
-ISO1050DUBR
+NCV7342MW3R2G_DFN-8_L3.0-W3.0-P0.65-BL-EP
 
 
 0
-8
-8
-Rick_Connector
-Conn_2x20_2.54mm_male
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-40
-40
-Rick_Connector
-Conn_2x20_2mm_male
-
-
-0
-40
-40
+9
+9
 Rick_Connector
 MR60PW-M
 
@@ -83495,141 +83460,36 @@ XT60PW-M
 0
 4
 4
-Rick_Device
-Crystal_12MHz_GND24
-
-
-0
-4
-4
-Rick_Device
-Crystal_16MHz_GND24
-
+Rick_Crystal
+Crystal_SMD3213-3P
+内置负载电容的无源晶振，3PIN
 
 0
-4
-4
-Rick_Device
-Crystal_24MHz_GND24
-
-
-0
-4
-4
-Rick_Device
-Crystal_25MHz_GND24
-
-
-0
-4
-4
-Rick_Device
-Crystal_32.768KHz
-
-
-0
-2
-2
-Rick_Device
-Crystal_32MHz_GND24
-
-
-0
-4
-4
-Rick_Device
-IHLP2525CZER6R8M01
-
-
-0
-2
-2
+3
+3
 Rick_Diode
-CD4148WP
+SMAJ36CA_TR13_SMA(DO-214AC)
 
 
 0
 2
 2
-Rick_Diode
-SMAJ36CA_TR13
-
-
-0
-2
-2
-Rick_Display
-OLED_128x80_FPC_13Pin
-
-
-0
-13
-13
 Rick_Drive
-DRV8323HRTAR
-
-
-0
-41
-41
-Rick_Drive
-DRV8323RSRGZR
+DRV8323RS_QFN-48-EP(7x7)
 
 
 0
 49
 49
-Rick_Drive
-DRV8323SRTAR
-
-
-0
-41
-41
-Rick_ETH
-HR911105A
-
-
-0
-14
-14
-Rick_ETH
-LAN8742AI-CZ-TR
-
-
-0
-25
-25
-Rick_ETH
-RJ45
-
-
-0
-14
-13
-Rick_Ferrite_Bead
-BLM18HE152SN1D
-
-
-0
-2
-2
-Rick_Fuse
-Fuse_6V_1.5A
+Rick_Inductor
+LQH5BPB220MT0L_IND-SMD_L5.0-W5.0
 
 
 0
 2
 2
 Rick_Interface_USB
-CH340G
-
-
-0
-16
-16
-Rick_Interface_USB
-CH340K
+CH340K_ESOP-10-EP-150mil
 
 
 0
@@ -83706,40 +83566,33 @@ guaik_robot_logo_30x17
 0
 0
 Rick_MOSFET
-IRF7480MTRPBF
+IRF7480MTRPBF_DirectFET
 
 
 0
 10
 10
-Rick_Power
-TPS61040DBVR
+Rick_MOSFET
+TPHR8504PL,L1Q
 
 
 0
-5
-5
+9
+9
 Rick_Regulator_Linear
-AMS1117-3.3
+AMS1117-3.3_SOT-223
 
 
 0
 4
 3
 Rick_Regulator_Linear
-RS3005-5.0YE3
+XC6220B331ER-G_USP-6C_L2.0-W1.8-P0.50-BL-EP
 
 
 0
-3
-3
-Rick_Sensor
-AS5047P-ATSM
-TSSOP-14
-Integrated Circuit
-0
-14
-14
+7
+7
 Rick_Switch
 B3U-1000P
 
@@ -83754,20 +83607,6 @@ SW_Push
 0
 2
 2
-Rick_Transistor_JBT
-S8050_SOT-23
-
-
-0
-3
-3
-Rick_Transistor_JBT
-S8550_SOT-23
-
-
-0
-3
-3
 Rick_USB
 Micro_USB_B_SMD
 
@@ -83775,13 +83614,6 @@ Micro_USB_B_SMD
 0
 9
 6
-Rick_USB
-USB-C-SMD_TYPE-C-31-M-13
-
-
-0
-20
-17
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
