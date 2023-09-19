@@ -1,4 +1,4 @@
-21926399195183879
+21929789308273099
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -83418,6 +83418,13 @@ NCV7342MW3R2G_DFN-8_L3.0-W3.0-P0.65-BL-EP
 0
 9
 9
+Rick_CAN
+TCAN1044DRBRQ1_DFN-8_L3.0-W3.0-P0.65-TL-EP2.4
+
+
+0
+9
+9
 Rick_Connector
 MR60PW-M
 
@@ -83586,6 +83593,13 @@ AMS1117-3.3_SOT-223
 0
 4
 3
+Rick_Regulator_Linear
+TLV76733DRVR_SON65P200X200X80-7N
+
+
+0
+7
+7
 Rick_Regulator_Linear
 XC6220B331ER-G_USP-6C_L2.0-W1.8-P0.50-BL-EP
 
