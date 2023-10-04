@@ -1,7 +1,5 @@
 # CawDrive - 无刷电机驱动器
 
-
-
 # 🚀 简介
 
 * 支持24电压输入
@@ -11,48 +9,20 @@
 
 - 支持6xPWM和3xPWM的控制
 
-
-
 # ▶ 视频演示
-
-
 
 [CawDrive-v1.0.0第一次测试，开环速度控制，未来几天会测试闭环速度，角度和力矩控制[奋斗]_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1QF411m7iW/)
 
-
-
 [CawDrive-v1.0.0闭环速度控制测试[豹富]_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1fN4y1Z7p5/)
-
-
 
 [CawDrive-v1.0.0闭环位置控制测试[tv_微笑]_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV19u4y147tU/)
 
-
-
 # ☕ 支持 & 订阅
-
-
 
 ### ko-fi：[在Ko-fi上支持FakeRick！❤️.ko-fi.com/fakerick - Ko-fi ❤️ 创作者通过捐赠、会员资格、商店销售等方式获得粉丝的支持！原始的“给我买咖啡”页面。](https://ko-fi.com/fakerick)
 
-
-
 ### 微信：
-
-
-
-
-
-
 
 # 参考资料
 
-
-
 [bgkatz/3phase_integrated: 3-phase motor controller with integrated position sensor (github.com)](https://github.com/bgkatz/3phase_integrated)
-
-
-
-
-
-
