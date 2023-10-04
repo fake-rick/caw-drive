@@ -30,10 +30,6 @@
 
 # ☕ Support & Subscriptions
 
-### ko-fi：
-
-https://ko-fi.com/fakerick
-
 ### 💰 WXPay & Alipay：
 
 <img title="" src="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/wxpay.jpg?raw=true" alt="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/wxpay.jpg?raw=true" height="200"> <img src="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/alipay.jpg?raw=true" title="" alt="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/alipay.jpg?raw=true" height="200">
