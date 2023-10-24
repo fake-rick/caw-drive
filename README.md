@@ -20,7 +20,7 @@
 
 ![https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/g20231004124547.png?raw=true](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/g20231004124547.png?raw=true)
 
-# ▶ 视频演示
+# ▶ Video
 
 [CawDrive-v1.0.0 First test, open loop speed control, closed loop speed, angle and torque control will be tested in the next few days](https://www.bilibili.com/video/BV1QF411m7iW/)
 
