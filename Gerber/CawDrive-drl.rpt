@@ -1,5 +1,5 @@
 Drill report for CawDrive.kicad_pcb
-Created on 2023/10/3 21:22:41
+Created on 2024-08-03T15:04:37+0800
 
 Copper Layer Stackup:
     =============================================================
@@ -12,13 +12,13 @@ Copper Layer Stackup:
 Drill file 'CawDrive-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (283 holes)
+    T1  0.300mm  0.0118"  (291 holes)
     T2  0.400mm  0.0157"  (1 hole)
     T3  0.500mm  0.0197"  (32 holes)
-    T4  1.500mm  0.0591"  (5 holes)
+    T4  1.000mm  0.0394"  (5 holes)
     T5  2.500mm  0.0984"  (4 holes)
 
-    Total plated holes count 325
+    Total plated holes count 333
 
 
 Drill file 'CawDrive-NPTH.drl' contains
