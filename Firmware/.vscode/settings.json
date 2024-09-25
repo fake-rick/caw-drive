@@ -1,0 +1,4 @@
+{
+    "rust-analyzer.cargo.target": "thumbv7em-none-eabi",
+    "rust-analyzer.checkOnSave.allTargets": false
+}

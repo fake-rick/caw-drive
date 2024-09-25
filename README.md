@@ -19,12 +19,9 @@
 - 支持 6xPWM 和 3xPWM 的控制
 
 
-# ☕ 支持
-
-### 💰 微信 & 支付宝：
-
-<img title="" src="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/wxpay.jpg?raw=true" alt="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/wxpay.jpg?raw=true" height="200"> <img src="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/alipay.jpg?raw=true" title="" alt="https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/alipay.jpg?raw=true" height="200">
 
 # 📝 参考资料
 
-[bgkatz/3phase_integrated: 3-phase motor controller with integrated position sensor (github.com)](https://github.com/bgkatz/3phase_integrated)
+https://github.com/bgkatz/3phase_integrated
+
+https://github.com/simplefoc/Arduino-FOC
