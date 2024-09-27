@@ -8,6 +8,7 @@ mod hws;
 mod macros;
 mod motor;
 mod resources;
+mod sensors;
 mod tasks;
 
 use crate::{hws::drv8323rs::*, Drv8323Resources};
@@ -23,6 +24,7 @@ use embassy_time::Timer;
 use hws::drv8323rs::DRV8232RS;
 use motor::{ControlType, Motor};
 use resources::*;
+use sensors::as5047p::AS5047P;
 use tasks::{
     can::{can2_task, can3_task},
     state::check_state_task,
@@ -59,19 +61,21 @@ async fn main(spawner: Spawner) {
     let p = embassy_stm32::init(config);
     let r = split_resources!(p);
 
-    let mut sensor_nss = Output::new(p.PA12, Level::High, Speed::Low);
-    sensor_nss.set_high();
-
     info!("[ CawFOC ]");
 
     // can bus configure
     let mut can_stb = Output::new(p.PD2, Level::High, Speed::High);
     can_stb.set_low();
 
+    let spi3 = init_spi3(r.spi3).await;
     // drv8323 configure
-    let drv_spi = init_spi3(r.spi3).await;
     let drv_nss = Output::new(p.PA15, Level::High, Speed::Low);
-    let drv_spi_dev = SpiDevice::new(drv_spi, drv_nss);
+    let drv_spi_dev = SpiDevice::new(spi3, drv_nss);
+
+    // sensor configure
+    let sensor_nss = Output::new(p.PA12, Level::High, Speed::Low);
+    let sensor_spi_dev = SpiDevice::new(spi3, sensor_nss);
+    let mut sensor = AS5047P::new(sensor_spi_dev);
 
     let mut drv = DRV8232RS::new(drv_spi_dev).await;
     Timer::after_millis(10).await;
@@ -104,12 +108,7 @@ async fn main(spawner: Spawner) {
     drv.enable_gd().await;
     Timer::after_millis(500).await;
 
-    let mut motor = Motor::new(
-        7,
-        1,
-        PWMX3::new(r.pwm_tim, 12.0, 6.0),
-        ControlType::VelocityOpenLoop,
-    );
+    let mut motor = Motor::new(7, 1, PWMX3::new(r.pwm_tim, 12.0, 6.0), ControlType::None);
 
     spawner.spawn(can2_task(spawner, r.can2)).unwrap();
     spawner.spawn(can3_task(spawner, r.can3)).unwrap();
@@ -118,6 +117,7 @@ async fn main(spawner: Spawner) {
 
     loop {
         motor.step(5.0);
+        let _ = sensor.get_raw_data().await;
         Timer::after_ticks(1).await;
     }
 }
