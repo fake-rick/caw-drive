@@ -9,13 +9,17 @@ use crate::{
         defines::{_2PI, _3PI_2, _SQRT3_2},
         math::fast_sincos,
     },
+    sensors::base::BaseSensor,
 };
 pub enum ControlType {
     None,
     VelocityOpenLoop,
 }
 
-pub struct Motor {
+pub struct Motor<S>
+where
+    S: BaseSensor,
+{
     pole_pairs: u32,
     pub driver: PWMX3,
     open_loop_timestamp: u64,
@@ -24,14 +28,19 @@ pub struct Motor {
     sensor_direction: i32,
     shaft_velocity: f32,
     shaft_angle: f32,
+    sensor: S,
     control_type: ControlType,
 }
 
-impl Motor {
+impl<S> Motor<S>
+where
+    S: BaseSensor,
+{
     pub fn new(
         pole_pairs: u32,
         sensor_direction: i32,
         driver: PWMX3,
+        sensor: S,
         control_type: ControlType,
     ) -> Self {
         Self {
@@ -43,6 +52,7 @@ impl Motor {
             zero_electric_angle: 0.0,
             shaft_velocity: 0.0,
             shaft_angle: 0.0,
+            sensor,
             control_type,
         }
     }

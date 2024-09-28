@@ -24,7 +24,7 @@ use embassy_time::Timer;
 use hws::drv8323rs::DRV8232RS;
 use motor::{ControlType, Motor};
 use resources::*;
-use sensors::as5047p::AS5047P;
+use sensors::{as5047p::AS5047P, base::BaseSensor};
 use tasks::{
     can::{can2_task, can3_task},
     state::check_state_task,
@@ -76,6 +76,7 @@ async fn main(spawner: Spawner) {
     let sensor_nss = Output::new(p.PA12, Level::High, Speed::Low);
     let sensor_spi_dev = SpiDevice::new(spi3, sensor_nss);
     let mut sensor = AS5047P::new(sensor_spi_dev);
+    let _ = sensor.init().await;
 
     let mut drv = DRV8232RS::new(drv_spi_dev).await;
     Timer::after_millis(10).await;
@@ -108,7 +109,13 @@ async fn main(spawner: Spawner) {
     drv.enable_gd().await;
     Timer::after_millis(500).await;
 
-    let mut motor = Motor::new(7, 1, PWMX3::new(r.pwm_tim, 12.0, 6.0), ControlType::None);
+    let mut motor = Motor::new(
+        7,
+        1,
+        PWMX3::new(r.pwm_tim, 12.0, 6.0),
+        sensor,
+        ControlType::None,
+    );
 
     spawner.spawn(can2_task(spawner, r.can2)).unwrap();
     spawner.spawn(can3_task(spawner, r.can3)).unwrap();
@@ -116,8 +123,7 @@ async fn main(spawner: Spawner) {
     spawner.spawn(check_state_task(spawner, r.state)).unwrap();
 
     loop {
-        motor.step(5.0);
-        let _ = sensor.get_raw_data().await;
+        motor.step(10.0);
         Timer::after_ticks(1).await;
     }
 }

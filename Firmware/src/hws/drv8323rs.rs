@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+#![allow(unused)]
 
 use crate::tasks::messages::{Commands, USART_WRITE_SIGNAL};
 use defmt::*;

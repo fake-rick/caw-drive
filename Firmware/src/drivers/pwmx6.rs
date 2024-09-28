@@ -1,15 +1,12 @@
+#![allow(unused)]
+
 use super::base::BaseDriver;
-use defmt::debug;
 use embassy_stm32::timer::complementary_pwm::{ComplementaryPwm, ComplementaryPwmPin};
 use embassy_stm32::{
-    gpio::{Level, Output, OutputType, Speed},
+    gpio::OutputType,
     peripherals::TIM1,
     time::khz,
-    timer::{
-        low_level::CountingMode,
-        simple_pwm::{PwmPin, SimplePwm},
-        Channel,
-    },
+    timer::{low_level::CountingMode, simple_pwm::PwmPin, Channel},
 };
 
 use crate::{constrain, PwmTimResources};

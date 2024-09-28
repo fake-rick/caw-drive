@@ -34,3 +34,21 @@ macro_rules! even_check {
         (val & 1)
     }};
 }
+
+#[macro_export]
+macro_rules! powtwo {
+    ($x:expr) => {{
+        (1 << ($x))
+    }};
+}
+
+#[macro_export]
+macro_rules! abs {
+    ($x:expr) => {{
+        if $x >= 0.0 {
+            $x
+        } else {
+            -$x
+        }
+    }};
+}

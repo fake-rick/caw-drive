@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 use super::base::BaseDriver;
 
 use embassy_stm32::{
@@ -76,8 +78,6 @@ impl BaseDriver for PWMX3 {
         let dc_a = constrain!(ua / self.voltage_power_supply, 0.0, 1.0);
         let dc_b = constrain!(ub / self.voltage_power_supply, 0.0, 1.0);
         let dc_c = constrain!(uc / self.voltage_power_supply, 0.0, 1.0);
-
-        // debug!("dc_a:{:?} dc_b:{:?} dc_c:{:?}", dc_a, dc_b, dc_c);
 
         self.pwm
             .set_duty(Channel::Ch1, (dc_a * self.max_duty) as u32);
