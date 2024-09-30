@@ -52,3 +52,15 @@ macro_rules! abs {
         }
     }};
 }
+
+#[macro_export]
+macro_rules! normalize_angle {
+    ($x:expr) => {{
+        let a = $x % _2PI;
+        if a >= 0.0 {
+            a
+        } else {
+            a + _2PI
+        }
+    }};
+}

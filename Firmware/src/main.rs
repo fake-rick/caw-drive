@@ -2,6 +2,7 @@
 #![no_main]
 
 mod comm;
+mod control;
 mod drivers;
 mod fast_math;
 mod hws;
@@ -12,6 +13,7 @@ mod sensors;
 mod tasks;
 
 use crate::{hws::drv8323rs::*, Drv8323Resources};
+use control::{lowpass_filter::LowPassFilter, pid::PIDController};
 use defmt::*;
 use drivers::{pwmx3::PWMX3, pwmx6::PWMX6};
 use embassy_embedded_hal::shared_bus::asynch::spi::SpiDevice;
@@ -111,11 +113,14 @@ async fn main(spawner: Spawner) {
 
     let mut motor = Motor::new(
         7,
-        1,
-        PWMX3::new(r.pwm_tim, 12.0, 6.0),
+        -1,
+        PWMX3::new(r.pwm_tim, 12.0, 10.0),
         sensor,
-        ControlType::None,
+        ControlType::Velocity,
+        PIDController::new(0.5, 10.0, 0.0, 1000.0, 12.0),
+        LowPassFilter::new(0.01),
     );
+    motor.align_sensor().await;
 
     spawner.spawn(can2_task(spawner, r.can2)).unwrap();
     spawner.spawn(can3_task(spawner, r.can3)).unwrap();
@@ -123,7 +128,9 @@ async fn main(spawner: Spawner) {
     spawner.spawn(check_state_task(spawner, r.state)).unwrap();
 
     loop {
-        motor.step(10.0);
-        Timer::after_ticks(1).await;
+        if let Err(e) = motor.step(0.1).await {
+            error!("{:?}", e);
+        }
+        Timer::after_millis(1).await;
     }
 }

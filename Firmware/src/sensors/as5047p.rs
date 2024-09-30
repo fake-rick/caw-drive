@@ -38,8 +38,8 @@ pub struct AS5047P<SPI> {
     vel_angle_prev: f32,
     vel_angle_prev_ts: u64,
     velocity: f32,
-    full_rotations: u64,
-    vel_full_rotations: u64,
+    full_rotations: i64,
+    vel_full_rotations: i64,
 }
 
 impl<SPI> AS5047P<SPI>
@@ -86,7 +86,7 @@ where
 
     pub async fn get_raw_count(&mut self) -> Result<u16, &'static str> {
         let _ = self.write(cmd_frame!(ANGLECOM, OP_READ)).await;
-        let data = self.write(cmd_frame!(NOP, OP_READ)).await;
+        let mut data = self.write(cmd_frame!(NOP, OP_READ)).await;
         if (data & (1u16 << 14)) > 0 {
             let _ = self.write(cmd_frame!(ERRFL, OP_READ)).await & 0x0003u16;
             return Err("read reg failed");
@@ -94,12 +94,12 @@ where
         if data >> 15 != even_check!(data & 0x7fff) {
             return Err("even check failed");
         }
-        Ok(data & 0x7fff)
+        Ok(data & 0x3fff)
     }
 
     pub async fn get_sensor_angle(&mut self) -> Result<f32, &'static str> {
         let val = self.get_raw_count().await?;
-        Ok(val as f32 / CPR as f32 * _2PI)
+        Ok((val as f32 / CPR as f32) * _2PI)
     }
 }
 
@@ -109,6 +109,9 @@ where
 {
     async fn update(&mut self) -> Result<(), &'static str> {
         let val = self.get_sensor_angle().await?;
+        if val < 0.0 {
+            return Err("angle < 0.0");
+        }
         self.angle_prev_ts = Instant::now().as_micros();
         let d_angle = val - self.angle_prev;
         if abs!(d_angle) > (0.8 * _2PI) {
@@ -147,7 +150,11 @@ where
         self.full_rotations as f32 * _2PI + self.angle_prev
     }
 
-    async fn get_full_rotations(&self) -> u64 {
+    async fn get_full_rotations(&self) -> i64 {
         self.full_rotations
+    }
+
+    async fn get_mechanical_angle(&self) -> f32 {
+        self.angle_prev
     }
 }
