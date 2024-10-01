@@ -23,6 +23,7 @@ use embassy_stm32::{
     time::Hertz,
 };
 use embassy_time::Timer;
+use fast_math::defines::{_2PI, _PI};
 use hws::drv8323rs::DRV8232RS;
 use motor::{ControlType, Motor};
 use resources::*;
@@ -114,11 +115,13 @@ async fn main(spawner: Spawner) {
     let mut motor = Motor::new(
         7,
         -1,
-        PWMX3::new(r.pwm_tim, 12.0, 10.0),
+        PWMX3::new(r.pwm_tim, 12.0, 12.0),
         sensor,
-        ControlType::Velocity,
-        PIDController::new(0.5, 10.0, 0.0, 1000.0, 12.0),
-        LowPassFilter::new(0.01),
+        ControlType::Angle,
+        PIDController::new(0.2, 10.0, 0.0, 1000.0, 12.0),
+        LowPassFilter::new(0.005),
+        PIDController::new(10.0, 0.0, 0.0, 0.0, 24.0),
+        LowPassFilter::new(0.005),
     );
     motor.align_sensor().await;
 
@@ -126,11 +129,17 @@ async fn main(spawner: Spawner) {
     spawner.spawn(can3_task(spawner, r.can3)).unwrap();
     spawner.spawn(usart1_task(spawner, r.usart1)).unwrap();
     spawner.spawn(check_state_task(spawner, r.state)).unwrap();
-
+    let mut count = 0;
+    let mut angle = _2PI;
     loop {
-        if let Err(e) = motor.step(0.1).await {
+        count += 1;
+        if count % 4000 == 0 {
+            count = 0;
+            angle = -angle;
+        }
+        if let Err(e) = motor.step(angle).await {
             error!("{:?}", e);
         }
-        Timer::after_millis(1).await;
+        Timer::after_ticks(1).await;
     }
 }

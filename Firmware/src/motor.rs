@@ -4,7 +4,7 @@ use defmt::{debug, info};
 use embassy_time::{Instant, Timer};
 
 use crate::{
-    abs,
+    abs, constrain,
     control::{lowpass_filter::LowPassFilter, pid::PIDController},
     drivers::{base::BaseDriver, pwmx3::PWMX3, pwmx6::PWMX6},
     fast_math::{
@@ -40,6 +40,7 @@ impl DQCurrent {
 pub enum ControlType {
     None,
     Velocity,
+    Angle,
     VelocityOpenLoop,
 }
 
@@ -47,8 +48,9 @@ pub struct Motor<S>
 where
     S: BaseSensor,
 {
+    velocity_limit: f32,
     pole_pairs: u32,
-    pub driver: PWMX3,
+    driver: PWMX3,
     open_loop_timestamp: u64,
     voltage_sensor_align: f32,
     zero_electric_angle: f32,
@@ -63,6 +65,8 @@ where
     control_type: ControlType,
     pid_velocity: PIDController,
     lpf_velocity: LowPassFilter,
+    pid_angle: PIDController,
+    lpf_angle: LowPassFilter,
     voltage: DQVoltage,
     current: DQCurrent,
 }
@@ -79,8 +83,11 @@ where
         control_type: ControlType,
         pid_velocity: PIDController,
         lpf_velocity: LowPassFilter,
+        pid_angle: PIDController,
+        lpf_angle: LowPassFilter,
     ) -> Self {
         Self {
+            velocity_limit: 12.0,
             pole_pairs,
             sensor_direction,
             driver,
@@ -97,6 +104,8 @@ where
             control_type,
             pid_velocity,
             lpf_velocity,
+            pid_angle,
+            lpf_angle,
             voltage: DQVoltage::new(),
             current: DQCurrent::new(),
         }
@@ -151,27 +160,37 @@ where
         )
     }
 
-    pub async fn shart_velocity(&mut self) -> f32 {
+    pub async fn shaft_velocity(&mut self) -> f32 {
         self.sensor_direction as f32 * self.lpf_velocity.calc(self.sensor.get_velocity().await)
+    }
+
+    pub async fn shaft_angle(&mut self) -> f32 {
+        self.sensor_direction as f32 * self.lpf_angle.calc(self.sensor.get_angle().await)
     }
 
     pub async fn step(&mut self, new_target: f32) -> Result<(), &'static str> {
         self.sensor.update().await?;
-        self.shaft_velocity = self.shart_velocity().await;
+        self.shaft_velocity = self.shaft_velocity().await;
+        self.shaft_angle = self.shaft_angle().await;
         self.electrical_angle = self.sensor_electrical_angle().await;
-
-        // if abs!(self.shaft_velocity) > 100.0 {
-        //     debug!(
-        //         "velocity: {:?} angle: {:?} full_rotations: {:?}",
-        //         self.shaft_velocity,
-        //         self.sensor.get_angle().await,
-        //         self.sensor.get_full_rotations().await,
-        //     );
-        // }
 
         match self.control_type {
             ControlType::Velocity => {
                 self.shaft_velocity_sp = new_target;
+                self.current_sp = self
+                    .pid_velocity
+                    .calc(self.shaft_velocity_sp - self.shaft_velocity);
+                self.voltage.q = self.current_sp;
+                self.voltage.d = 0.0;
+                self.set_phase_voltage(self.voltage.q, self.voltage.d, self.electrical_angle);
+            }
+            ControlType::Angle => {
+                self.shaft_angle_sp = new_target;
+                self.shaft_velocity_sp = constrain!(
+                    self.pid_angle.calc(self.shaft_angle_sp - self.shaft_angle),
+                    -self.velocity_limit,
+                    self.velocity_limit
+                );
                 self.current_sp = self
                     .pid_velocity
                     .calc(self.shaft_velocity_sp - self.shaft_velocity);
