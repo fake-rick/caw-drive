@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [
+        "Core/Inc",
+        "Drivers/CMSIS/Device/ST/STM32G4xx/Include",
+        "Drivers/CMSIS/Include",
+        "Drivers/STM32G4xx_HAL_Driver/Inc",
+        "Drivers/STM32G4xx_HAL_Driver/Inc/Legacy",
+        "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS",
+        "Middlewares/Third_Party/FreeRTOS/Source/include",
+        "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+        "caw_embedded",
+        "caw_embedded/app/motor",
+        "caw_embedded/app/motor/control",
+        "caw_embedded/app/motor/drivers",
+        "caw_embedded/app/motor/fast_math",
+        "caw_embedded/app/motor/macros",
+        "caw_embedded/app/motor/sensors",
+        "caw_embedded/drivers/as5047p",
+        "caw_embedded/drivers/drv8323",
+        "caw_embedded/event_callbacks",
+        "caw_embedded/protocols",
+        "caw_embedded/utils"
+      ],
+      "defines": [
+        "STM32G474xx",
+        "USE_HAL_DRIVER"
+      ],
+      "compilerPath": "/home/fakerick/.config/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/arm-none-eabi-gcc"
+    }
+  ],
+  "version": 4
+}

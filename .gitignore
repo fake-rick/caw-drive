@@ -1,2 +1,4 @@
 ﻿PCB/CawDrive-backups/
 Firmware/target/
+Firmware/build/
+Firmware/caw_embedded/
