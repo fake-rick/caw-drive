@@ -28,7 +28,7 @@
 
 ## 配置caw-embedded库
 
-当前固件编译依赖caw-embedded项目（https://github.com/fake-rick/caw-embedded）
+当前固件编译依赖caw-embedded项目: https://github.com/fake-rick/caw-embedded
 
 依赖添加方式1：
 
