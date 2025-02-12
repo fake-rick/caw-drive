@@ -66,14 +66,14 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(FDCAN_STB_GPIO_Port, FDCAN_STB_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PAPin PAPin PAPin */
+  /*Configure GPIO pins : SPI1_NSS_Pin AS5047P_NSS_Pin DRV_SPI_NSS_Pin */
   GPIO_InitStruct.Pin = SPI1_NSS_Pin|AS5047P_NSS_Pin|DRV_SPI_NSS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin */
+  /*Configure GPIO pins : DRV_STA_Pin MCU_STA_Pin */
   GPIO_InitStruct.Pin = DRV_STA_Pin|MCU_STA_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -87,20 +87,20 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PCPin PCPin PCPin */
+  /*Configure GPIO pins : TIM1_BREAK_Pin DRV_CAL_Pin DRV_ENABLE_Pin */
   GPIO_InitStruct.Pin = TIM1_BREAK_Pin|DRV_CAL_Pin|DRV_ENABLE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
+  /*Configure GPIO pin : DRV_FAULT_Pin */
   GPIO_InitStruct.Pin = DRV_FAULT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(DRV_FAULT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
+  /*Configure GPIO pin : FDCAN_STB_Pin */
   GPIO_InitStruct.Pin = FDCAN_STB_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;

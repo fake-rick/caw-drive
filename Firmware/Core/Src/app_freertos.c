@@ -34,13 +34,16 @@
 #include "device.h"
 #include "drv8323.h"
 #include "event.h"
+#include "helper.h"
 #include "log.h"
 #include "lowpass_filter.h"
 #include "motor.h"
+#include "motor_init_params.h"
 #include "motor_load_params.h"
+#include "motor_params.h"
 #include "pid.h"
-#include "pingpong.h"
 #include "pwmx3.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -67,6 +70,8 @@ pwmx3_driver driver;
 as5047p_t sensor;
 current_t current_sensor;
 
+motor_params_t params;
+
 pid_t pid_current_q;
 lowpass_filter_t lpf_q;
 pid_t pid_current_d;
@@ -75,20 +80,13 @@ pid_t pid_velocity;
 lowpass_filter_t lpf_velocity;
 pid_t pid_angle;
 lowpass_filter_t lpf_angle;
-float target;
-motor_control_type_e control_type;
+pll_t encoder_pll;
 
 event_t event;
 /* USER CODE END Variables */
 osThreadId defaultTaskHandle;
-uint32_t defaultTaskBuffer[512];
-osStaticThreadDef_t defaultTaskControlBlock;
 osThreadId stateTaskHandle;
-uint32_t stateTaskBuffer[512];
-osStaticThreadDef_t stateTaskControlBlock;
-osThreadId transmitTaskHandle;
-uint32_t transmitTaskBuffer[512];
-osStaticThreadDef_t transmitTaskControlBlock;
+osSemaphoreId observationBinarySemHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -97,7 +95,6 @@ osStaticThreadDef_t transmitTaskControlBlock;
 
 void StartDefaultTask(void const* argument);
 void StartStateTask(void const* argument);
-void StartTransmitTask(void const* argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -133,13 +130,12 @@ void MX_FREERTOS_Init(void) {
   event_init(&usart_dev);
   event_register(main_code_motor, sub_code_motor_load_params,
                  motor_load_params_cb);
+  event_register(main_code_motor, sub_code_motor_init_params,
+                 motor_init_params_cb);
   event_run();
 
-  error("************************");
-  error("        CawDrive      ");
-  error("   Version: V1.0.0   ");
+  error("CawDrive v1.0.0");
   error("https://github.com/fake-rick/caw-drive");
-  error("************************");
 
   drv8323_init(&drv8323_dev, &hspi3);
   debug("DRV8323 init ok");
@@ -152,23 +148,42 @@ void MX_FREERTOS_Init(void) {
                40.0);
   current_calibrate_offsets(&current_sensor);
 
-  pid_init(&pid_current_q, 1.0, 0.0, 0.0, 1000.0, 12.0);
-  lowpass_filter_init(&lpf_q, 0.005);
-  pid_init(&pid_current_d, 1.0, 0.0, 0.0, 1000.0, 12.0);
-  lowpass_filter_init(&lpf_d, 0.005);
-  pid_init(&pid_velocity, 0.3, 1.0, 0.0, 1000.0, 12.0);
-  lowpass_filter_init(&lpf_velocity, 0.05);
-  pid_init(&pid_angle, 2.0, 0.0, 0.0, 0.0, 24.0);
-  lowpass_filter_init(&lpf_angle, 0.005);
+  motor_params_load(&params);
 
-  control_type = ANGLE;
-  target = 0.0;
+  pid_init(&pid_current_q, params.current_q.kp, params.current_q.ki,
+           params.current_q.kd, params.current_q.output_ramp,
+           params.current_q.output_limit);
+  lowpass_filter_init(&lpf_q, params.current_q.lpf_time_constant);
+  pid_init(&pid_current_d, params.current_d.kp, params.current_d.ki,
+           params.current_d.kd, params.current_d.output_ramp,
+           params.current_d.output_limit);
+  lowpass_filter_init(&lpf_d, params.current_d.lpf_time_constant);
+  pid_init(&pid_velocity, params.velocity.kp, params.velocity.ki,
+           params.velocity.kd, params.velocity.output_ramp,
+           params.velocity.output_limit);
+  lowpass_filter_init(&lpf_velocity, params.velocity.lpf_time_constant);
+  pid_init(&pid_angle, params.angle.kp, params.angle.ki, params.angle.kd,
+           params.angle.output_ramp, params.angle.output_limit);
+  lowpass_filter_init(&lpf_angle, params.angle.lpf_time_constant);
 
-  motor_init(&motor, &driver, &current_sensor, &sensor, -1, control_type, 7,
+  // pid_init(&pid_current_q, 2.0, 10.0, 0.0, 1000.0, 12.0);
+  // lowpass_filter_init(&lpf_q, 0.05);
+  // pid_init(&pid_current_d, 2.0, 10.0, 0.0, 1000.0, 12.0);
+  // lowpass_filter_init(&lpf_d, 0.05);
+  // pid_init(&pid_velocity, 0.35, 0.0, 0.0, 1000.0, 12.0);
+  // lowpass_filter_init(&lpf_velocity, 0.08);
+  // pid_init(&pid_angle, 6.0, 0.0, 0.0, 0.0, 12.0);
+  // lowpass_filter_init(&lpf_angle, 0.08);
+
+  pll_init(&encoder_pll, as5047p_get_cpr(), 1000.0);
+
+  motor_init(&motor, &driver, &current_sensor, &sensor, -1, params.mode, 7,
              &pid_current_q, &lpf_q, &pid_current_d, &lpf_d, &pid_velocity,
-             &lpf_velocity, &pid_angle, &lpf_angle);
+             &lpf_velocity, &pid_angle, &lpf_angle, 0);
 
   motor_align_sensor(&motor);
+
+  HAL_TIM_Base_Start_IT(&htim8);
 
   info("initialized successfully");
   /* USER CODE END Init */
@@ -176,6 +191,12 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
+
+  /* Create the semaphores(s) */
+  /* definition and creation of observationBinarySem */
+  osSemaphoreDef(observationBinarySem);
+  observationBinarySemHandle =
+      osSemaphoreCreate(osSemaphore(observationBinarySem), 1);
 
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
@@ -191,19 +212,12 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadStaticDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 512,
-                    defaultTaskBuffer, &defaultTaskControlBlock);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 512);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* definition and creation of stateTask */
-  osThreadStaticDef(stateTask, StartStateTask, osPriorityNormal, 0, 512,
-                    stateTaskBuffer, &stateTaskControlBlock);
+  osThreadDef(stateTask, StartStateTask, osPriorityNormal, 0, 512);
   stateTaskHandle = osThreadCreate(osThread(stateTask), NULL);
-
-  /* definition and creation of transmitTask */
-  osThreadStaticDef(transmitTask, StartTransmitTask, osPriorityNormal, 0, 512,
-                    transmitTaskBuffer, &transmitTaskControlBlock);
-  transmitTaskHandle = osThreadCreate(osThread(transmitTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -219,16 +233,10 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const* argument) {
   /* USER CODE BEGIN StartDefaultTask */
-
-  uint32_t count = 0;
   /* Infinite loop */
   for (;;) {
-    motor_step(&motor, target);
-    if (count++ == 10) {
-      count = 0;
-      motor_observation_write_pack(&motor, &usart_dev);
-    }
-    portYIELD();
+    motor_observation_write_pack(&motor, &usart_dev);
+    osDelay(2);
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -245,26 +253,12 @@ void StartStateTask(void const* argument) {
   /* Infinite loop */
   for (;;) {
     event_step();
-    osDelay(1000);
+    // debug("pos: %.3f vel: %.3f pos_cpr: %.3f q: %.3f",
+    //       pll_get_angle(&encoder_pll), pll_get_velocity(&encoder_pll),
+    //       pll_get_cpr_angle(&encoder_pll), motor.idq.iq);
+    osDelay(100);
   }
   /* USER CODE END StartStateTask */
-}
-
-/* USER CODE BEGIN Header_StartTransmitTask */
-/**
- * @brief Function implementing the transmitTask thread.
- * @param argument: Not used
- * @retval None
- */
-/* USER CODE END Header_StartTransmitTask */
-void StartTransmitTask(void const* argument) {
-  /* USER CODE BEGIN StartTransmitTask */
-  /* Infinite loop */
-  for (;;) {
-    device_event_step(&usart_dev);
-    portYIELD();
-  }
-  /* USER CODE END StartTransmitTask */
 }
 
 /* Private application code --------------------------------------------------*/

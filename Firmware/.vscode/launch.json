@@ -3,7 +3,7 @@
         {
             "showDevDebugOutput": "parsed",
             "cwd": "${workspaceRoot}",
-            "executable": "./build/CawFOC.elf",
+            "executable": "./build/debug/CawFOC.elf",
             "name": "Debug STM32",
             "request": "launch",
             "type": "cortex-debug",
@@ -17,7 +17,7 @@
         {
             "showDevDebugOutput": "parsed",
             "cwd": "${workspaceRoot}",
-            "executable": "./build/CawFOC.elf",
+            "executable": "./build/debug/CawFOC.elf",
             "name": "Attach STM32",
             "request": "attach",
             "type": "cortex-debug",
