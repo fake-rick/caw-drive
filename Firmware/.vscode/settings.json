@@ -3,6 +3,9 @@
         "discover.h": "c",
         "flash.h": "c",
         "stm32g4xx_hal_flash.h": "c",
-        "stm32g4xx_hal_flash_ex.h": "c"
+        "stm32g4xx_hal_flash_ex.h": "c",
+        "motor_set_params.h": "c",
+        "motor_params.h": "c",
+        "protocol_motor.h": "c"
     }
 }

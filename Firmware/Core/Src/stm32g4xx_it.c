@@ -26,6 +26,7 @@
 #include "device.h"
 #include "motor.h"
 #include "motor_params.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -70,8 +71,8 @@ extern TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN EV */
 extern motor_t motor;
-extern motor_params_t params;
-extern osSemaphoreId observationBinarySemHandle;
+extern motor_params_t global_motor_params;
+extern as5047p_t sensor;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -248,7 +249,12 @@ void USART1_IRQHandler(void)
 void TIM8_UP_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM8_UP_IRQn 0 */
-  motor_step(&motor, params.target);
+  if (global_motor_params.info.state) {
+    motor_step(&motor, global_motor_params.target);
+  } else {
+    as5047p_update(&sensor);
+  }
+
   /* USER CODE END TIM8_UP_IRQn 0 */
   HAL_TIM_IRQHandler(&htim8);
   /* USER CODE BEGIN TIM8_UP_IRQn 1 */

@@ -41,6 +41,7 @@
 #include "motor_init_params.h"
 #include "motor_load_params.h"
 #include "motor_params.h"
+#include "motor_set_params.h"
 #include "pid.h"
 #include "pwmx3.h"
 
@@ -70,22 +71,26 @@ pwmx3_driver driver;
 as5047p_t sensor;
 current_t current_sensor;
 
-motor_params_t params;
-
-pid_t pid_current_q;
-lowpass_filter_t lpf_q;
-pid_t pid_current_d;
-lowpass_filter_t lpf_d;
-pid_t pid_velocity;
-lowpass_filter_t lpf_velocity;
-pid_t pid_angle;
-lowpass_filter_t lpf_angle;
-pll_t encoder_pll;
+extern pid_t global_motor_pid_current_q;
+extern lowpass_filter_t global_motor_lpf_q;
+extern pid_t global_motor_pid_current_d;
+extern lowpass_filter_t global_motor_lpf_d;
+extern pid_t global_motor_pid_velocity;
+extern lowpass_filter_t global_motor_lpf_velocity;
+extern pid_t global_motor_pid_angle;
+extern lowpass_filter_t global_motor_lpf_angle;
+extern pll_t global_motor_encoder_pll;
 
 event_t event;
+
+extern motor_params_t global_motor_params;
 /* USER CODE END Variables */
 osThreadId defaultTaskHandle;
-osThreadId stateTaskHandle;
+uint32_t defaultTaskBuffer[256];
+osStaticThreadDef_t defaultTaskControlBlock;
+osThreadId eventTaskHandle;
+uint32_t stateTaskBuffer[512];
+osStaticThreadDef_t stateTaskControlBlock;
 osSemaphoreId observationBinarySemHandle;
 
 /* Private function prototypes -----------------------------------------------*/
@@ -94,7 +99,7 @@ osSemaphoreId observationBinarySemHandle;
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void const* argument);
-void StartStateTask(void const* argument);
+void StartEventTask(void const* argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -132,6 +137,8 @@ void MX_FREERTOS_Init(void) {
                  motor_load_params_cb);
   event_register(main_code_motor, sub_code_motor_init_params,
                  motor_init_params_cb);
+  event_register(main_code_motor, sub_code_motor_set_params,
+                 motor_set_params_cb);
   event_run();
 
   error("CawDrive v1.0.0");
@@ -148,38 +155,17 @@ void MX_FREERTOS_Init(void) {
                40.0);
   current_calibrate_offsets(&current_sensor);
 
-  motor_params_load(&params);
+  motor_params_load(&global_motor_params);
+  motor_params_reset();
 
-  pid_init(&pid_current_q, params.current_q.kp, params.current_q.ki,
-           params.current_q.kd, params.current_q.output_ramp,
-           params.current_q.output_limit);
-  lowpass_filter_init(&lpf_q, params.current_q.lpf_time_constant);
-  pid_init(&pid_current_d, params.current_d.kp, params.current_d.ki,
-           params.current_d.kd, params.current_d.output_ramp,
-           params.current_d.output_limit);
-  lowpass_filter_init(&lpf_d, params.current_d.lpf_time_constant);
-  pid_init(&pid_velocity, params.velocity.kp, params.velocity.ki,
-           params.velocity.kd, params.velocity.output_ramp,
-           params.velocity.output_limit);
-  lowpass_filter_init(&lpf_velocity, params.velocity.lpf_time_constant);
-  pid_init(&pid_angle, params.angle.kp, params.angle.ki, params.angle.kd,
-           params.angle.output_ramp, params.angle.output_limit);
-  lowpass_filter_init(&lpf_angle, params.angle.lpf_time_constant);
+  // pll_init(&encoder_pll, as5047p_get_cpr(), 1000.0);
 
-  // pid_init(&pid_current_q, 2.0, 10.0, 0.0, 1000.0, 12.0);
-  // lowpass_filter_init(&lpf_q, 0.05);
-  // pid_init(&pid_current_d, 2.0, 10.0, 0.0, 1000.0, 12.0);
-  // lowpass_filter_init(&lpf_d, 0.05);
-  // pid_init(&pid_velocity, 0.35, 0.0, 0.0, 1000.0, 12.0);
-  // lowpass_filter_init(&lpf_velocity, 0.08);
-  // pid_init(&pid_angle, 6.0, 0.0, 0.0, 0.0, 12.0);
-  // lowpass_filter_init(&lpf_angle, 0.08);
-
-  pll_init(&encoder_pll, as5047p_get_cpr(), 1000.0);
-
-  motor_init(&motor, &driver, &current_sensor, &sensor, -1, params.mode, 7,
-             &pid_current_q, &lpf_q, &pid_current_d, &lpf_d, &pid_velocity,
-             &lpf_velocity, &pid_angle, &lpf_angle, 0);
+  motor_init(&motor, &driver, &current_sensor, &sensor, -1,
+             global_motor_params.mode, 7, &global_motor_pid_current_q,
+             &global_motor_lpf_q, &global_motor_pid_current_d,
+             &global_motor_lpf_d, &global_motor_pid_velocity,
+             &global_motor_lpf_velocity, &global_motor_pid_angle,
+             &global_motor_lpf_angle, 0);
 
   motor_align_sensor(&motor);
 
@@ -212,12 +198,14 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 512);
+  osThreadStaticDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 256,
+                    defaultTaskBuffer, &defaultTaskControlBlock);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
-  /* definition and creation of stateTask */
-  osThreadDef(stateTask, StartStateTask, osPriorityNormal, 0, 512);
-  stateTaskHandle = osThreadCreate(osThread(stateTask), NULL);
+  /* definition and creation of eventTask */
+  osThreadStaticDef(eventTask, StartEventTask, osPriorityNormal, 0, 512,
+                    stateTaskBuffer, &stateTaskControlBlock);
+  eventTaskHandle = osThreadCreate(osThread(eventTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -241,24 +229,21 @@ void StartDefaultTask(void const* argument) {
   /* USER CODE END StartDefaultTask */
 }
 
-/* USER CODE BEGIN Header_StartStateTask */
+/* USER CODE BEGIN Header_StartEventTask */
 /**
- * @brief Function implementing the stateTask thread.
+ * @brief Function implementing the eventTask thread.
  * @param argument: Not used
  * @retval None
  */
-/* USER CODE END Header_StartStateTask */
-void StartStateTask(void const* argument) {
-  /* USER CODE BEGIN StartStateTask */
+/* USER CODE END Header_StartEventTask */
+void StartEventTask(void const* argument) {
+  /* USER CODE BEGIN StartEventTask */
   /* Infinite loop */
   for (;;) {
-    event_step();
-    // debug("pos: %.3f vel: %.3f pos_cpr: %.3f q: %.3f",
-    //       pll_get_angle(&encoder_pll), pll_get_velocity(&encoder_pll),
-    //       pll_get_cpr_angle(&encoder_pll), motor.idq.iq);
-    osDelay(100);
+    event_step(&event);
+    osDelay(1);
   }
-  /* USER CODE END StartStateTask */
+  /* USER CODE END StartEventTask */
 }
 
 /* Private application code --------------------------------------------------*/
