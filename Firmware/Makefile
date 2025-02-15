@@ -109,7 +109,8 @@ caw_embedded/event_callbacks/motor_load_params.c \
 caw_embedded/buffer.c \
 caw_embedded/app/motor/motor_params.c \
 caw_embedded/event_callbacks/motor_init_params.c \
-caw_embedded/event_callbacks/motor_set_params.c
+caw_embedded/event_callbacks/motor_set_params.c \
+caw_embedded/event_callbacks/motor_flash_params.c
 
 
 

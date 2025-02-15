@@ -139,6 +139,7 @@ caw_embedded/device.c \
 caw_embedded/drivers/as5047p/as5047p.c \
 caw_embedded/drivers/drv8323/drv8323.c \
 caw_embedded/event.c \
+caw_embedded/event_callbacks/motor_flash_params.c \
 caw_embedded/event_callbacks/motor_init_params.c \
 caw_embedded/event_callbacks/motor_load_params.c \
 caw_embedded/event_callbacks/motor_set_params.c \

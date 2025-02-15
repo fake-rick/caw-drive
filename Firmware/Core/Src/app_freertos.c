@@ -38,6 +38,7 @@
 #include "log.h"
 #include "lowpass_filter.h"
 #include "motor.h"
+#include "motor_flash_params.h"
 #include "motor_init_params.h"
 #include "motor_load_params.h"
 #include "motor_params.h"
@@ -139,6 +140,8 @@ void MX_FREERTOS_Init(void) {
                  motor_init_params_cb);
   event_register(main_code_motor, sub_code_motor_set_params,
                  motor_set_params_cb);
+  event_register(main_code_motor, sub_code_motor_flash_params,
+                 motor_flash_params_cb);
   event_run();
 
   error("CawDrive v1.0.0");
