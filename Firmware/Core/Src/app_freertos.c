@@ -144,16 +144,16 @@ void MX_FREERTOS_Init(void) {
                  motor_flash_params_cb);
   event_run();
 
-  error("CawDrive v1.0.0");
-  error("https://github.com/fake-rick/caw-drive");
+  info("CawDrive v1.0.0");
+  info("https://github.com/fake-rick/caw-drive");
 
   drv8323_init(&drv8323_dev, &hspi3);
-  debug("DRV8323 init ok");
+  info("DRV8323 init ok");
   motor_custom_init(&drv8323_dev);
   pwmx3_driver_init(&driver, &htim1, 12.0, 12.0, PWM_PERIOD);
 
   as5047p_init(&sensor, &hspi3);
-  debug("AS5047P init ok");
+  info("AS5047P init ok");
   current_init(&current_sensor, &htim1, TIM_CHANNEL_4, &hadc1, &hadc2, 0.001,
                40.0);
   current_calibrate_offsets(&current_sensor);
