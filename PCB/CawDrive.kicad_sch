@@ -5616,10 +5616,6 @@
 		(uuid "a438bc36-4255-44a7-aed7-43543ad72d80")
 	)
 	(no_connect
-		(at 38.1 118.11)
-		(uuid "b72edb06-b1b8-45c6-89fe-46a873e3e50e")
-	)
-	(no_connect
 		(at 265.43 19.05)
 		(uuid "b854e1a0-0a71-4945-88bd-257efe544db8")
 	)
@@ -7258,6 +7254,16 @@
 			(type default)
 		)
 		(uuid "a16d43d0-2121-49d4-9934-6a485aece2bb")
+	)
+	(wire
+		(pts
+			(xy 36.83 118.11) (xy 38.1 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a72c5cd1-4b45-4e4b-b7fe-885b99b109de")
 	)
 	(wire
 		(pts
@@ -10113,6 +10119,74 @@
 			(project "CawDrive"
 				(path "/80524a83-b783-469c-b956-da06086e2ffd"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 36.83 118.11 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f41fd73-4a56-47d2-adb4-b67f561eb3bf")
+		(property "Reference" "TP7"
+			(at 32.258 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 32.004 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15980ed7-1329-4834-8868-5d65cb6e7f69")
+		)
+		(instances
+			(project "CawDrive"
+				(path "/80524a83-b783-469c-b956-da06086e2ffd"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
