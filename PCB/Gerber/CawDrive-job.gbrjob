@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.4-8.0.4-0~ubuntu24.04.1"
+      "Version": "9.0.1"
     },
-    "CreationDate": "2024-08-03T15:04:24+08:00"
+    "CreationDate": "2025-04-08T03:40:33+08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,7 +14,7 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 42.1,
+      "X": 50.1,
       "Y": 42.1
     },
     "LayerNumber": 4,
@@ -48,12 +48,12 @@
     },
     {
       "Path": "CawDrive-In1_Cu.gbr",
-      "FileFunction": "Copper,L2,Inr",
+      "FileFunction": "Copper,L5,Inr",
       "FilePolarity": "Positive"
     },
     {
       "Path": "CawDrive-In2_Cu.gbr",
-      "FileFunction": "Copper,L3,Inr",
+      "FileFunction": "Copper,L7,Inr",
       "FilePolarity": "Positive"
     },
     {

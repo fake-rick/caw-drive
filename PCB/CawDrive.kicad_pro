@@ -510,12 +510,22 @@
         "microvia_drill": 0.1,
         "name": "Diff_CAN",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.3048,
+        "name": "SIGNAL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1524,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
