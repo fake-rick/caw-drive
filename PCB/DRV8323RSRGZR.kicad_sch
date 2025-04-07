@@ -10032,7 +10032,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1mΩ 1%"
+		(property "Value" "5mΩ 1%"
 			(at 86.36 134.62 0)
 			(effects
 				(font
@@ -10558,7 +10558,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1mΩ 1%"
+		(property "Value" "5mΩ 1%"
 			(at 64.77 134.62 0)
 			(effects
 				(font
@@ -11712,7 +11712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1mΩ 1%"
+		(property "Value" "5mΩ 1%"
 			(at 107.95 134.62 0)
 			(effects
 				(font

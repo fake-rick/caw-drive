@@ -10210,8 +10210,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 157.48 79.756 90)
+		(property "Value" "10k 1%"
+			(at 166.116 80.772 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10610,8 +10610,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 110.49 167.386 90)
+		(property "Value" "10k 1%"
+			(at 119.126 168.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13121,8 +13121,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "75k"
-			(at 157.48 169.926 90)
+		(property "Value" "75k 1%"
+			(at 166.116 171.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15363,7 +15363,7 @@
 		(dnp no)
 		(uuid "bc3f183a-fb6c-4e21-934d-eb6458dd5d40")
 		(property "Reference" "R12"
-			(at 155.575 177.8 90)
+			(at 159.258 177.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15371,8 +15371,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
-			(at 157.48 177.546 90)
+		(property "Value" "3k 1%"
+			(at 156.464 178.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15668,7 +15668,7 @@
 				)
 			)
 		)
-		(property "Value" "33nF"
+		(property "Value" "0.1uF/50V"
 			(at 165.735 178.435 90)
 			(effects
 				(font
@@ -17261,7 +17261,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "NTC"
 			(at 110.49 175.006 90)
 			(effects
 				(font
