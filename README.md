@@ -34,7 +34,7 @@
 
 * PCB：FOC驱动器原理图、PCB以及生成的Gerber文件
 
-# 📦 固件编译
+# 📦 固件编译（开发中）
 
 ## 配置caw-embedded库
 
@@ -65,13 +65,9 @@ ln -s ../../caw-embedded caw_embedded
 
 # 👻 图片展示
 
-![]()
-
- 
+![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-1.png)
 
 ![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-2.png)
-
-
 
 ![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-3.png)
 
