@@ -4,6 +4,8 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H3PQZVW)
 
+中文 | [English](https://github.com/fake-rick/caw-drive/blob/master/Docs/README_EN.md)
+
 # 🚀 简介
 
 - 支持 24 电压输入
