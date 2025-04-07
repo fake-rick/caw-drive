@@ -59,9 +59,27 @@ cd caw-drive/Firmware
 ln -s ../../caw-embedded caw_embedded
 ```
 
-## VSCode配置
+## 🛠 VSCode配置
 
 安装并配置stm32-for-vscode插件
+
+
+
+## 👻 图片展示
+
+
+
+[](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-1.png)
+
+
+
+[](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-2.png)
+
+
+
+[](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-3.png)
+
+
 
 # 🖥️ 上位机
 
@@ -70,5 +88,3 @@ ln -s ../../caw-embedded caw_embedded
 # 📝 参考资料
 
 https://github.com/bgkatz/3phase_integrated
-
-https://github.com/simplefoc/Arduino-FOC
