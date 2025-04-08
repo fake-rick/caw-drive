@@ -5,94 +5,76 @@
       "Application": "Pcbnew",
       "Version": "9.0.1"
     },
-    "CreationDate": "2025-04-08T03:51:10+08:00"
+    "CreationDate": "2025-04-08T23:45:03+08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "CawDrive",
-      "GUID": "43617744-7269-4766-952e-6b696361645f",
+      "Name": "HallConnector",
+      "GUID": "48616c6c-436f-46e6-9e65-63746f722e6b",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 50.1,
-      "Y": 42.1
+      "X": 21.55,
+      "Y": 19.05
     },
-    "LayerNumber": 4,
+    "LayerNumber": 2,
     "BoardThickness": 1.6,
     "Finish": "None"
   },
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.1016,
-      "PadToTrack": 0.1016,
-      "TrackToTrack": 0.1016,
-      "MinLineWidth": 0.1293,
-      "TrackToRegion": 0.1524,
-      "RegionToRegion": 0.1524
-    },
-    {
-      "Layers": "Inner",
-      "PadToPad": 0.1016,
-      "PadToTrack": 0.1016,
-      "TrackToTrack": 0.1016,
-      "TrackToRegion": 0.254,
-      "RegionToRegion": 0.254
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.3048,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "CawDrive-F_Cu.gbr",
+      "Path": "HallConnector-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "CawDrive-In1_Cu.gbr",
-      "FileFunction": "Copper,L5,Inr",
+      "Path": "HallConnector-B_Cu.gbr",
+      "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "CawDrive-In2_Cu.gbr",
-      "FileFunction": "Copper,L7,Inr",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "CawDrive-B_Cu.gbr",
-      "FileFunction": "Copper,L4,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "CawDrive-F_Paste.gbr",
+      "Path": "HallConnector-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "CawDrive-B_Paste.gbr",
+      "Path": "HallConnector-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "CawDrive-F_Silkscreen.gbr",
+      "Path": "HallConnector-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "CawDrive-B_Silkscreen.gbr",
+      "Path": "HallConnector-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "CawDrive-F_Mask.gbr",
+      "Path": "HallConnector-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "CawDrive-B_Mask.gbr",
+      "Path": "HallConnector-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "CawDrive-Edge_Cuts.gbr",
+      "Path": "HallConnector-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
@@ -118,34 +100,10 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.1,
+      "Thickness": 1.51,
       "Material": "FR4",
-      "Name": "F.Cu/In1.Cu",
-      "Notes": "Type: dielectric layer 1 (from F.Cu to In1.Cu)"
-    },
-    {
-      "Type": "Copper",
-      "Thickness": 0.035,
-      "Name": "In1.Cu"
-    },
-    {
-      "Type": "Dielectric",
-      "Thickness": 1.24,
-      "Material": "FR4",
-      "Name": "In1.Cu/In2.Cu",
-      "Notes": "Type: dielectric layer 2 (from In1.Cu to In2.Cu)"
-    },
-    {
-      "Type": "Copper",
-      "Thickness": 0.035,
-      "Name": "In2.Cu"
-    },
-    {
-      "Type": "Dielectric",
-      "Thickness": 0.1,
-      "Material": "FR4",
-      "Name": "In2.Cu/B.Cu",
-      "Notes": "Type: dielectric layer 3 (from In2.Cu to B.Cu)"
+      "Name": "F.Cu/B.Cu",
+      "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
