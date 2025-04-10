@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\Workspace\caw\CawDrive\PCB\HallConnector\HallConnector.kicad_sch</source>
+    <date>2025-04-10T22:04:38+0800</date>
+    <tool>Eeschema 9.0.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>HallConnector</title>
+        <company>Caw</company>
+        <rev>Rick</rev>
+        <date>2025-04-08</date>
+        <source>HallConnector.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor, small symbol</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor, small symbol</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7dfbb68e-cd78-41c1-be2c-90f2c43da6ae</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor, small symbol</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor, small symbol</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de3a42d0-77d6-44f6-be60-d38fdf1c6a1f</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor, small symbol</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor, small symbol</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a659ab37-13c7-4a2d-972a-df7188d58adb</tstamps>
+    </comp>
+    <comp ref="CN3">
+      <value>WAFER-SH1.0-4PWB</value>
+      <footprint>Rick_Connector:CONN-SMD_4P-P1.00_WAFER-SH1.0-4PWB</footprint>
+      <fields>
+        <field name="SuppliersPartNumber">C3029343</field>
+        <field name="uuid">std:3aeef2007f6340e5aa158e9b3ba53384</field>
+        <field name="Footprint">Rick_Connector:CONN-SMD_4P-P1.00_WAFER-SH1.0-4PWB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Rick_Connector" part="WAFER-SH1.0-4PWB" description=""/>
+      <property name="SuppliersPartNumber" value="C3029343"/>
+      <property name="uuid" value="std:3aeef2007f6340e5aa158e9b3ba53384"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>610adf50-3ad3-41dd-8227-59fbb59ca42c</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x05_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x05, script generated</description>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x05, script generated</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x05_Pin" description="Generic connector, single row, 01x05, script generated"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9dc08af-d85d-4917-bc38-e8cb457e2110</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor, small US symbol</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cbfe57b-32a0-4dfc-bf29-36920097cc1c</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor, small US symbol</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47011253-fb5b-45a6-b8ae-979879d18dc8</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor, small US symbol</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3032e629-5db7-4717-9bb7-ad509476d12d</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1.8k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor, small US symbol</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f6b547e-e6c8-46e7-b294-ca1a9eb4a56d</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1.8k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor, small US symbol</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f64f1d9-f5e5-4be1-ae05-904ae04077a3</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1.8k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor, small US symbol</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f567019-6ef1-41c1-85c3-87bdd89e7643</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>WAFER-SH1.0-2PWB</value>
+      <footprint>Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB</footprint>
+      <fields>
+        <field name="SuppliersPartNumber">C3029341</field>
+        <field name="uuid">std:b25617d4d4944bb5a333c9a533c58e4a</field>
+        <field name="Footprint">Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Rick_Connector" part="WAFER-SH1.0-2PWB" description=""/>
+      <property name="SuppliersPartNumber" value="C3029341"/>
+      <property name="uuid" value="std:b25617d4d4944bb5a333c9a533c58e4a"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6fd05ab2-b62f-4726-aa9e-7f67c0b71b53</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>WAFER-SH1.0-2PWB</value>
+      <footprint>Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB</footprint>
+      <fields>
+        <field name="SuppliersPartNumber">C3029341</field>
+        <field name="uuid">std:b25617d4d4944bb5a333c9a533c58e4a</field>
+        <field name="Footprint">Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Rick_Connector" part="WAFER-SH1.0-2PWB" description=""/>
+      <property name="SuppliersPartNumber" value="C3029341"/>
+      <property name="uuid" value="std:b25617d4d4944bb5a333c9a533c58e4a"/>
+      <property name="Sheetname" value="根目录"/>
+      <property name="Sheetfile" value="HallConnector.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ec42c2f-76f1-44cf-b826-f7bb73353182</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x05_Pin">
+      <description>Generic connector, single row, 01x05, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05_Pin</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x05, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor, small symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor, small US symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Rick_Connector" part="WAFER-SH1.0-2PWB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WAFER-SH1.0-2PWB</field>
+        <field name="Footprint">Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="SuppliersPartNumber">C3029341</field>
+        <field name="uuid">std:b25617d4d4944bb5a333c9a533c58e4a</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+        <pin num="3" name="3" type="input"/>
+        <pin num="4" name="4" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Rick_Connector" part="WAFER-SH1.0-4PWB">
+      <fields>
+        <field name="Reference">CN</field>
+        <field name="Value">WAFER-SH1.0-4PWB</field>
+        <field name="Footprint">Rick_Connector:CONN-SMD_4P-P1.00_WAFER-SH1.0-4PWB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="SuppliersPartNumber">C3029343</field>
+        <field name="uuid">std:3aeef2007f6340e5aa158e9b3ba53384</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+        <pin num="3" name="3" type="input"/>
+        <pin num="4" name="4" type="input"/>
+        <pin num="5" name="5" type="input"/>
+        <pin num="6" name="6" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\9.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\9.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Rick_Connector">
+      <uri>C:\Users\Rick\Documents\KiCad\9.0\symbols\/Rick_Connector.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="2" name="+5V" class="Default">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="3" name="/SPI1_MISO" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="CN3" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/SPI1_MOSI" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="CN3" pin="3" pinfunction="3" pintype="input"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/SPI1_NSS" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="CN3" pin="4" pinfunction="4" pintype="input"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="U2" pin="2" pinfunction="2" pintype="input"/>
+    </net>
+    <net code="7" name="Net-(J1-Pin_3)" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(J1-Pin_4)" class="Default">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(J1-Pin_5)" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="unconnected-(CN3-Pad1)" class="Default">
+      <node ref="CN3" pin="1" pinfunction="1" pintype="input+no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(CN3-Pad5)" class="Default">
+      <node ref="CN3" pin="5" pinfunction="5" pintype="input+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(CN3-Pad6)" class="Default">
+      <node ref="CN3" pin="6" pinfunction="6" pintype="input+no_connect"/>
+    </net>
+    <net code="13" name="unconnected-(U1-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="3" pintype="input+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U1-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="4" pintype="input+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U2-Pad3)" class="Default">
+      <node ref="U2" pin="3" pinfunction="3" pintype="input+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U2-Pad4)" class="Default">
+      <node ref="U2" pin="4" pinfunction="4" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

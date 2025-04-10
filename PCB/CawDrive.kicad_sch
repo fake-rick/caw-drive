@@ -13121,8 +13121,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "75k 1%"
-			(at 166.116 171.196 0)
+		(property "Value" "75k 0.1%"
+			(at 168.148 171.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15371,7 +15371,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k 1%"
+		(property "Value" "3k 0.1%"
 			(at 156.464 178.816 0)
 			(effects
 				(font
@@ -17261,8 +17261,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NTC"
-			(at 110.49 175.006 90)
+		(property "Value" "10k NTC"
+			(at 112.776 173.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)

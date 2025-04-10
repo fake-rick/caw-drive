@@ -1,0 +1,15 @@
+"Source:","E:\Workspace\caw\CawDrive\PCB\HallConnector\HallConnector.kicad_sch"
+"Date:","2025-04-10T22:04:38+0800"
+"Tool:","Eeschema 9.0.1"
+"Generator:","C:\Program Files\KiCad\9.0\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","13"
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP","Datasheet","Description","Footprint","SuppliersPartNumber","uuid"
+"1","3","C1, C2, C3","10pF","Device:C_Small","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~","","~","Unpolarized capacitor, small symbol","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","",""
+"2","1","CN3","WAFER-SH1.0-4PWB","Rick_Connector:WAFER-SH1.0-4PWB","Rick_Connector:CONN-SMD_4P-P1.00_WAFER-SH1.0-4PWB","","","","","Rick_Connector:CONN-SMD_4P-P1.00_WAFER-SH1.0-4PWB","C3029343","std:3aeef2007f6340e5aa158e9b3ba53384"
+"3","1","J1","Conn_01x05_Pin","Connector:Conn_01x05_Pin","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","~","","~","Generic connector, single row, 01x05, script generated","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","",""
+"4","3","R1, R2, R3","10k","Device:R_Small_US","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~","","~","Resistor, small US symbol","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","",""
+"5","3","R4, R5, R6","1.8k","Device:R_Small_US","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~","","~","Resistor, small US symbol","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","",""
+"6","2","U1, U2","WAFER-SH1.0-2PWB","Rick_Connector:WAFER-SH1.0-2PWB","Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB","","","","","Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB","C3029341","std:b25617d4d4944bb5a333c9a533c58e4a"
