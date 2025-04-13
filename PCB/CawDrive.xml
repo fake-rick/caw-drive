@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>E:\Workspace\caw\CawDrive\PCB\CawDrive.kicad_sch</source>
-    <date>2025-04-10T22:02:41+0800</date>
+    <date>2025-04-14T02:34:43+0800</date>
     <tool>Eeschema 9.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -536,7 +536,7 @@
       <tstamps>724f7a2a-8979-4249-9bf7-5f2ebc64703a</tstamps>
     </comp>
     <comp ref="R1">
-      <value>10k 1%</value>
+      <value>10k 0.1%</value>
       <footprint>Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder</footprint>
       <description>Resistor, small symbol</description>
       <fields>
@@ -757,7 +757,7 @@
       <tstamps>866f2123-e040-46f4-b2dd-909ea58514c6</tstamps>
     </comp>
     <comp ref="R20">
-      <value>10k 1%</value>
+      <value>10k 0.1%</value>
       <footprint>Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder</footprint>
       <description>Resistor, small symbol</description>
       <fields>
