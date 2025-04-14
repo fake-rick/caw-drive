@@ -1,0 +1,228 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"dev_usart.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Controller/Devices/dev_usart.c"
+  20              		.section	.text.dev_usart_init,"ax",%progbits
+  21              		.align	1
+  22              		.global	dev_usart_init
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	dev_usart_init:
+  28              	.LFB239:
+   1:Controller/Devices/dev_usart.c **** #include "./dev_usart.h"
+   2:Controller/Devices/dev_usart.c **** 
+   3:Controller/Devices/dev_usart.c **** #include <usart.h>
+   4:Controller/Devices/dev_usart.c **** 
+   5:Controller/Devices/dev_usart.c **** #define TX_BUFFER_SIZE 256
+   6:Controller/Devices/dev_usart.c **** #define RX_BUFFER_SIZE 256
+   7:Controller/Devices/dev_usart.c **** 
+   8:Controller/Devices/dev_usart.c **** extern DMA_HandleTypeDef hdma_usart3_tx;
+   9:Controller/Devices/dev_usart.c **** extern DMA_HandleTypeDef hdma_usart3_rx;
+  10:Controller/Devices/dev_usart.c **** 
+  11:Controller/Devices/dev_usart.c **** uint8_t tx_buffer[TX_BUFFER_SIZE];
+  12:Controller/Devices/dev_usart.c **** uint8_t rx_buffer[RX_BUFFER_SIZE];
+  13:Controller/Devices/dev_usart.c **** 
+  14:Controller/Devices/dev_usart.c **** int dev_usart_init(void) {}
+  29              		.loc 1 14 26 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34              		.loc 1 14 27 view .LVU1
+  35 0000 7047     		bx	lr
+  36              		.cfi_endproc
+  37              	.LFE239:
+  39              		.section	.text.dev_usart_write,"ax",%progbits
+  40              		.align	1
+  41              		.global	dev_usart_write
+  42              		.syntax unified
+  43              		.thumb
+  44              		.thumb_func
+  46              	dev_usart_write:
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s 			page 2
+
+
+  47              	.LVL0:
+  48              	.LFB240:
+  15:Controller/Devices/dev_usart.c **** 
+  16:Controller/Devices/dev_usart.c **** int dev_usart_write(const uint8_t* buf, uint16_t len) {}
+  49              		.loc 1 16 55 view -0
+  50              		.cfi_startproc
+  51              		@ args = 0, pretend = 0, frame = 0
+  52              		@ frame_needed = 0, uses_anonymous_args = 0
+  53              		@ link register save eliminated.
+  54              		.loc 1 16 56 view .LVU3
+  55              	.LVL1:
+  56              		.loc 1 16 56 is_stmt 0 view .LVU4
+  57 0000 7047     		bx	lr
+  58              		.cfi_endproc
+  59              	.LFE240:
+  61              		.section	.text.HAL_UART_ErrorCallback,"ax",%progbits
+  62              		.align	1
+  63              		.global	HAL_UART_ErrorCallback
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  68              	HAL_UART_ErrorCallback:
+  69              	.LVL2:
+  70              	.LFB241:
+  17:Controller/Devices/dev_usart.c **** 
+  18:Controller/Devices/dev_usart.c **** /// 下面错误处理函数中把奇偶校验错误以及数据溢出错误标志清除
+  19:Controller/Devices/dev_usart.c **** /// 可以直接在调试时打断点查看huart->ErrorCode的值
+  20:Controller/Devices/dev_usart.c **** void HAL_UART_ErrorCallback(UART_HandleTypeDef* huart) {
+  71              		.loc 1 20 56 is_stmt 1 view -0
+  72              		.cfi_startproc
+  73              		@ args = 0, pretend = 0, frame = 8
+  74              		@ frame_needed = 0, uses_anonymous_args = 0
+  21:Controller/Devices/dev_usart.c ****   if (huart->Instance == USART6) {
+  75              		.loc 1 21 3 view .LVU6
+  76              		.loc 1 21 12 is_stmt 0 view .LVU7
+  77 0000 0368     		ldr	r3, [r0]
+  78              		.loc 1 21 6 view .LVU8
+  79 0002 124A     		ldr	r2, .L10
+  80 0004 9342     		cmp	r3, r2
+  81 0006 00D0     		beq	.L9
+  82 0008 7047     		bx	lr
+  83              	.L9:
+  20:Controller/Devices/dev_usart.c ****   if (huart->Instance == USART6) {
+  84              		.loc 1 20 56 view .LVU9
+  85 000a 00B5     		push	{lr}
+  86              		.cfi_def_cfa_offset 4
+  87              		.cfi_offset 14, -4
+  88 000c 83B0     		sub	sp, sp, #12
+  89              		.cfi_def_cfa_offset 16
+  22:Controller/Devices/dev_usart.c ****     __HAL_UART_CLEAR_OREFLAG(huart);
+  90              		.loc 1 22 5 is_stmt 1 view .LVU10
+  91              	.LBB2:
+  92              		.loc 1 22 5 view .LVU11
+  93 000e 0022     		movs	r2, #0
+  94 0010 0092     		str	r2, [sp]
+  95              		.loc 1 22 5 view .LVU12
+  96 0012 1968     		ldr	r1, [r3]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s 			page 3
+
+
+  97 0014 0091     		str	r1, [sp]
+  98              		.loc 1 22 5 view .LVU13
+  99 0016 5968     		ldr	r1, [r3, #4]
+ 100 0018 0091     		str	r1, [sp]
+ 101              		.loc 1 22 5 view .LVU14
+ 102 001a 0099     		ldr	r1, [sp]
+ 103              	.LBE2:
+ 104              		.loc 1 22 5 view .LVU15
+  23:Controller/Devices/dev_usart.c ****     __HAL_UART_CLEAR_PEFLAG(huart);
+ 105              		.loc 1 23 5 view .LVU16
+ 106              	.LBB3:
+ 107              		.loc 1 23 5 view .LVU17
+ 108 001c 0192     		str	r2, [sp, #4]
+ 109              		.loc 1 23 5 view .LVU18
+ 110 001e 1A68     		ldr	r2, [r3]
+ 111 0020 0192     		str	r2, [sp, #4]
+ 112              		.loc 1 23 5 view .LVU19
+ 113 0022 5B68     		ldr	r3, [r3, #4]
+ 114 0024 0193     		str	r3, [sp, #4]
+ 115              		.loc 1 23 5 view .LVU20
+ 116 0026 019B     		ldr	r3, [sp, #4]
+ 117              	.LBE3:
+ 118              		.loc 1 23 5 view .LVU21
+  24:Controller/Devices/dev_usart.c ****     huart->RxState = HAL_UART_STATE_READY;
+ 119              		.loc 1 24 5 view .LVU22
+ 120              		.loc 1 24 20 is_stmt 0 view .LVU23
+ 121 0028 2023     		movs	r3, #32
+ 122 002a 80F84230 		strb	r3, [r0, #66]
+  25:Controller/Devices/dev_usart.c ****     HAL_UARTEx_ReceiveToIdle_DMA(huart, rx_buffer, RX_BUFFER_SIZE);
+ 123              		.loc 1 25 5 is_stmt 1 view .LVU24
+ 124 002e 4FF48072 		mov	r2, #256
+ 125 0032 0749     		ldr	r1, .L10+4
+ 126 0034 FFF7FEFF 		bl	HAL_UARTEx_ReceiveToIdle_DMA
+ 127              	.LVL3:
+  26:Controller/Devices/dev_usart.c ****     __HAL_DMA_DISABLE_IT(&hdma_usart3_rx, DMA_IT_HT);
+ 128              		.loc 1 26 5 view .LVU25
+ 129 0038 064B     		ldr	r3, .L10+8
+ 130 003a 1A68     		ldr	r2, [r3]
+ 131 003c 1368     		ldr	r3, [r2]
+ 132 003e 23F00803 		bic	r3, r3, #8
+ 133 0042 1360     		str	r3, [r2]
+  27:Controller/Devices/dev_usart.c ****   }
+  28:Controller/Devices/dev_usart.c **** }...
+ 134              		.loc 1 28 1 is_stmt 0 view .LVU26
+ 135 0044 03B0     		add	sp, sp, #12
+ 136              		.cfi_def_cfa_offset 4
+ 137              		@ sp needed
+ 138 0046 5DF804FB 		ldr	pc, [sp], #4
+ 139              	.L11:
+ 140 004a 00BF     		.align	2
+ 141              	.L10:
+ 142 004c 00140140 		.word	1073812480
+ 143 0050 00000000 		.word	rx_buffer
+ 144 0054 00000000 		.word	hdma_usart3_rx
+ 145              		.cfi_endproc
+ 146              	.LFE241:
+ 148              		.global	rx_buffer
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s 			page 4
+
+
+ 149              		.section	.bss.rx_buffer,"aw",%nobits
+ 150              		.align	2
+ 153              	rx_buffer:
+ 154 0000 00000000 		.space	256
+ 154      00000000 
+ 154      00000000 
+ 154      00000000 
+ 154      00000000 
+ 155              		.global	tx_buffer
+ 156              		.section	.bss.tx_buffer,"aw",%nobits
+ 157              		.align	2
+ 160              	tx_buffer:
+ 161 0000 00000000 		.space	256
+ 161      00000000 
+ 161      00000000 
+ 161      00000000 
+ 161      00000000 
+ 162              		.text
+ 163              	.Letext0:
+ 164              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+ 165              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+ 166              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
+ 167              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 168              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 169              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 dev_usart.c
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:21     .text.dev_usart_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:27     .text.dev_usart_init:00000000 dev_usart_init
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:40     .text.dev_usart_write:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:46     .text.dev_usart_write:00000000 dev_usart_write
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:62     .text.HAL_UART_ErrorCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:68     .text.HAL_UART_ErrorCallback:00000000 HAL_UART_ErrorCallback
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:142    .text.HAL_UART_ErrorCallback:0000004c $d
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:153    .bss.rx_buffer:00000000 rx_buffer
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:150    .bss.rx_buffer:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:160    .bss.tx_buffer:00000000 tx_buffer
+C:\Users\Rick\AppData\Local\Temp\ccrNY0XZ.s:157    .bss.tx_buffer:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_UARTEx_ReceiveToIdle_DMA
+hdma_usart3_rx

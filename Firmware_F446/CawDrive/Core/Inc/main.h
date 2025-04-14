@@ -57,6 +57,28 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LED_3_Pin GPIO_PIN_1
+#define LED_3_GPIO_Port GPIOC
+#define LED_2_Pin GPIO_PIN_2
+#define LED_2_GPIO_Port GPIOC
+#define LED_1_Pin GPIO_PIN_3
+#define LED_1_GPIO_Port GPIOC
+#define TIM1_BREAK_Pin GPIO_PIN_6
+#define TIM1_BREAK_GPIO_Port GPIOC
+#define DRV_CAL_Pin GPIO_PIN_7
+#define DRV_CAL_GPIO_Port GPIOC
+#define DRV_ENABLE_Pin GPIO_PIN_8
+#define DRV_ENABLE_GPIO_Port GPIOC
+#define DRV_FAULT_Pin GPIO_PIN_9
+#define DRV_FAULT_GPIO_Port GPIOC
+#define ENCODER_CAL_Pin GPIO_PIN_15
+#define ENCODER_CAL_GPIO_Port GPIOA
+#define DRV_SPI_NSS_Pin GPIO_PIN_2
+#define DRV_SPI_NSS_GPIO_Port GPIOD
+#define ENCODER_SPI_NSS_Pin GPIO_PIN_3
+#define ENCODER_SPI_NSS_GPIO_Port GPIOB
+#define CAN_STB_Pin GPIO_PIN_5
+#define CAN_STB_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
