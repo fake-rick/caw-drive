@@ -9,6 +9,8 @@ typedef enum _state_e {
   STATE_ERROR,
 } state_e;
 
+void state_set(state_e state);
+
 void state_step(void);
 
 #endif

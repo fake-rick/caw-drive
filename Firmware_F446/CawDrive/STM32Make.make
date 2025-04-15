@@ -78,6 +78,7 @@ C_SOURCES =  \
 Controller/Current/current.c \
 Controller/Devices/dev_usart.c \
 Controller/Drivers/drv8323/drv8323.c \
+Controller/PWM/pwm.c \
 Controller/State/state.c \
 Controller/controller.c \
 Core/Src/adc.c \
@@ -225,6 +226,7 @@ C_INCLUDES =  \
 -IController/Current \
 -IController/Devices \
 -IController/Drivers/drv8323 \
+-IController/PWM \
 -IController/State \
 -ICore/Inc \
 -IDrivers/CMSIS/Device/ST/STM32F4xx/Include \

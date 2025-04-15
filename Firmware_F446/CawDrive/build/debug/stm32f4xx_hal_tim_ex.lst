@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   [..]
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     The Timer Extended features include:
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     (#) Complementary outputs with programmable dead-time for :
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 2
 
 
   31:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****         (++) Output Compare
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** /** @defgroup TIMEx TIMEx
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 3
 
 
   88:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @brief TIM Extended HAL module driver
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Check the TIM handle allocation */
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   if (htim == NULL)
  144:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 4
 
 
  145:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     return HAL_ERROR;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  199:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  200:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Use the TIM_TS_TI1F_ED signal to reset the TIM counter each edge detection */
  201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->Instance->SMCR &= ~TIM_SMCR_SMS;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 5
 
 
  202:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->Instance->SMCR |= TIM_SLAVEMODE_RESET;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  256:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->HallSensor_MspDeInitCallback(htim);
  257:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** #else
  258:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* DeInit the low level hardware: GPIO, CLOCK, NVIC */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 6
 
 
  259:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIMEx_HallSensor_MspDeInit(htim);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  313:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @retval HAL status
  314:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
  315:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** HAL_StatusTypeDef HAL_TIMEx_HallSensor_Start(TIM_HandleTypeDef *htim)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 7
 
 
  316:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  370:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** {
  371:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Check the parameters */
  372:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_HALL_SENSOR_INTERFACE_INSTANCE(htim->Instance));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 8
 
 
  373:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  427:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   (in the Hall Sensor Interface the three possible channels that can be used are TIM_CHANNEL_1,
  428:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_2 and TIM_CHANNEL_3) */
  429:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CCxChannelCmd(htim->Instance, TIM_CHANNEL_1, TIM_CCx_ENABLE);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 9
 
 
  430:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  484:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @param  Length The length of data to be transferred from TIM peripheral to memory.
  485:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @retval HAL status
  486:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 10
 
 
  487:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** HAL_StatusTypeDef HAL_TIMEx_HallSensor_Start_DMA(TIM_HandleTypeDef *htim, uint32_t *pData, uint16_t
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  541:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   if (IS_TIM_SLAVE_INSTANCE(htim->Instance))
  542:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  543:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     tmpsmcr = htim->Instance->SMCR & TIM_SMCR_SMS;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 11
 
 
  544:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     if (!IS_TIM_SLAVEMODE_TRIGGER_ENABLED(tmpsmcr))
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  598:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   ==============================================================================
  599:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****               ##### Timer Complementary Output Compare functions #####
  600:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   ==============================================================================
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 12
 
 
  601:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   [..]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  655:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
  656:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   else
  657:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 13
 
 
  658:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     __HAL_TIM_ENABLE(htim);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  712:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  713:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Check the parameters */
  714:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_CCXN_INSTANCE(htim->Instance, Channel));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 14
 
 
  715:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  769:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       if (!IS_TIM_SLAVEMODE_TRIGGER_ENABLED(tmpsmcr))
  770:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       {
  771:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****         __HAL_TIM_ENABLE(htim);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 15
 
 
  772:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  826:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     default:
  827:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       status = HAL_ERROR;
  828:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       break;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 16
 
 
  829:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  883:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
  884:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   else if (TIM_CHANNEL_N_STATE_GET(htim, Channel) == HAL_TIM_CHANNEL_STATE_READY)
  885:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 17
 
 
  886:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     if ((pData == NULL) || (Length == 0U))
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  940:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       __HAL_TIM_ENABLE_DMA(htim, TIM_DMA_CC2);
  941:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       break;
  942:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 18
 
 
  943:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  997:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** /**
  998:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @brief  Stops the TIM Output Compare signal generation in DMA mode
  999:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *         on the complementary output.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 19
 
 
 1000:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @param  htim TIM Output Compare handle
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1054:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     /* Disable the Peripheral */
 1055:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     __HAL_TIM_DISABLE(htim);
 1056:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 20
 
 
 1057:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     /* Set the TIM complementary channel state */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1111:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Set the TIM complementary channel state */
 1112:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, Channel, HAL_TIM_CHANNEL_STATE_BUSY);
 1113:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 21
 
 
 1114:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Enable the complementary PWM output  */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1168:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 1169:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** /**
 1170:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @brief  Starts the PWM signal generation in interrupt mode on the
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 22
 
 
 1171:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *         complementary output.
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1225:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   if (status == HAL_OK)
 1226:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
 1227:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     /* Enable the TIM Break interrupt */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 23
 
 
 1228:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     __HAL_TIM_ENABLE_IT(htim, TIM_IT_BREAK);
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1282:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 1283:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     case TIM_CHANNEL_2:
 1284:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 24
 
 
 1285:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       /* Disable the TIM Capture/Compare 2 interrupt */
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1339:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @retval HAL status
 1340:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
 1341:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** HAL_StatusTypeDef HAL_TIMEx_PWMN_Start_DMA(TIM_HandleTypeDef *htim, uint32_t Channel, const uint32_
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 25
 
 
 1342:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****                                            uint16_t Length)
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1396:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       /* Set the DMA compare callbacks */
 1397:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC2]->XferCpltCallback = TIM_DMADelayPulseNCplt;
 1398:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC2]->XferHalfCpltCallback = TIM_DMADelayPulseHalfCplt;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 26
 
 
 1399:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1453:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       if (!IS_TIM_SLAVEMODE_TRIGGER_ENABLED(tmpsmcr))
 1454:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       {
 1455:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****         __HAL_TIM_ENABLE(htim);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 27
 
 
 1456:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       }
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1510:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
 1511:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 1512:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     default:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 28
 
 
 1513:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       status = HAL_ERROR;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1567:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *            @arg TIM_CHANNEL_2: TIM Channel 2 selected
 1568:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @retval HAL status
 1569:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 29
 
 
 1570:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** HAL_StatusTypeDef HAL_TIMEx_OnePulseN_Start(TIM_HandleTypeDef *htim, uint32_t OutputChannel)
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1624:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_CCXN_INSTANCE(htim->Instance, OutputChannel));
 1625:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 1626:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Disable the complementary One Pulse output channel and the Input Capture channel */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 30
 
 
 1627:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CCxNChannelCmd(htim->Instance, OutputChannel, TIM_CCxN_DISABLE);
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1681:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_1, HAL_TIM_CHANNEL_STATE_BUSY);
 1682:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_BUSY);
 1683:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 31
 
 
 1684:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Enable the TIM Capture/Compare 1 interrupt */
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1738:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
 1739:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_1, HAL_TIM_CHANNEL_STATE_READY);
 1740:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 32
 
 
 1741:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1795:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Check the parameters */
 1796:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_COMMUTATION_EVENT_INSTANCE(htim->Instance));
 1797:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_INTERNAL_TRIGGEREVENT_SELECTION(InputTrigger));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 33
 
 
 1798:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1852:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_COMMUTATION_EVENT_INSTANCE(htim->Instance));
 1853:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_INTERNAL_TRIGGEREVENT_SELECTION(InputTrigger));
 1854:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 34
 
 
 1855:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   __HAL_LOCK(htim);
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1909:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_COMMUTATION_EVENT_INSTANCE(htim->Instance));
 1910:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_INTERNAL_TRIGGEREVENT_SELECTION(InputTrigger));
 1911:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 35
 
 
 1912:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   __HAL_LOCK(htim);
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1966:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   __HAL_LOCK(htim);
 1967:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 1968:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Change the handler state */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 36
 
 
 1969:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->State = HAL_TIM_STATE_BUSY;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2023:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_OSSR_STATE(sBreakDeadTimeConfig->OffStateRunMode));
 2024:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_OSSI_STATE(sBreakDeadTimeConfig->OffStateIDLEMode));
 2025:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_LOCK_LEVEL(sBreakDeadTimeConfig->LockLevel));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 37
 
 
 2026:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   assert_param(IS_TIM_DEADTIME(sBreakDeadTimeConfig->DeadTime));
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2080:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *
 2081:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *         For TIM11, the parameter can have the following values:
 2082:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *           @arg TIM_TIM11_GPIO:     TIM11 TI1 is connected to GPIO
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 38
 
 
 2083:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   *           @arg TIM_TIM11_HSE:      TIM11 TI1 is connected to HSE_RTC clock
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2137:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 2138:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** @endverbatim
 2139:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 39
 
 
 2140:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2194:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****                 ##### Extended Peripheral State functions #####
 2195:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   ==============================================================================
 2196:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   [..]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 40
 
 
 2197:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     This subsection permits to get in run-time the status of the peripheral
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2251:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   * @retval None
 2252:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   */
 2253:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 41
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 41
 
 
 2254:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** {
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2308:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 2309:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     if (hdma->Init.Mode == DMA_NORMAL)
 2310:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 42
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 42
 
 
 2311:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2365:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
 2366:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** #if (USE_HAL_TIM_REGISTER_CALLBACKS == 1)
 2367:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->ErrorCallback(htim);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 43
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 43
 
 
 2368:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** #else
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
   53 0016 8A40     		lsls	r2, r2, r1
   54              	.LVL3:
   55              		.loc 1 2397 14 view .LVU11
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 44
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 44
 
 
   56 0018 1343     		orrs	r3, r3, r2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
   99 0010 E36A     		ldr	r3, [r4, #44]
 2356:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  100              		.loc 1 2356 11 view .LVU25
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 45
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 45
 
 
  101 0012 8342     		cmp	r3, r0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  140              		.loc 1 2359 5 is_stmt 1 view .LVU40
  141 003c 0123     		movs	r3, #1
  142 003e 84F84430 		strb	r3, [r4, #68]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 46
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 46
 
 
  143 0042 E8E7     		b	.L4
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  186 0014 17D0     		beq	.L17
  187              	.L12:
 2326:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 47
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 47
 
 
  188              		.loc 1 2326 3 is_stmt 1 view .LVU54
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  226 003a 002B     		cmp	r3, #0
  227 003c EBD1     		bne	.L12
 2311:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 48
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 48
 
 
  228              		.loc 1 2311 7 is_stmt 1 view .LVU71
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  276              		.thumb_func
  278              	HAL_TIMEx_HallSensor_Init:
  279              	.LVL15:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 49
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 49
 
 
  280              	.LFB239:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  317              		.loc 1 180 3 is_stmt 1 view .LVU97
  180:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  318              		.loc 1 180 15 is_stmt 0 view .LVU98
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 50
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 50
 
 
  319 0014 0223     		movs	r3, #2
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  357 0046 5368     		ldr	r3, [r2, #4]
  194:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  358              		.loc 1 194 23 view .LVU115
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 51
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 51
 
 
  359 0048 43F08003 		orr	r3, r3, #128
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  395 0076 0025     		movs	r5, #0
  396 0078 0595     		str	r5, [sp, #20]
  206:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   OC_Config.OCMode = TIM_OCMODE_PWM2;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 52
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 52
 
 
  397              		.loc 1 206 3 is_stmt 1 view .LVU134
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  432              		.loc 1 218 7 is_stmt 0 view .LVU153
  433 009c 2268     		ldr	r2, [r4]
  218:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 53
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 53
 
 
  434              		.loc 1 218 17 view .LVU154
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  472              		.loc 1 175 5 is_stmt 0 view .LVU170
  473 00ce A1E7     		b	.L21
  474              	.LVL22:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 54
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 54
 
 
  475              	.L22:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  526              		.cfi_def_cfa_offset 8
  527              		.cfi_offset 4, -8
  528              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 55
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 55
 
 
  529 0002 0446     		mov	r4, r0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  568 003c 84F84200 		strb	r0, [r4, #66]
  269:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  569              		.loc 1 269 3 view .LVU193
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 56
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 56
 
 
  570 0040 84F84300 		strb	r0, [r4, #67]
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  611              		.loc 1 319 31 is_stmt 0 view .LVU208
  612 0008 90F83F30 		ldrb	r3, [r0, #63]	@ zero_extendqisi2
  613              	.LVL30:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 57
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 57
 
 
  320:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef complementary_channel_2_state = TIM_CHANNEL_N_STATE_GET(htim, TIM_CHA
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  652 0036 84F83E30 		strb	r3, [r4, #62]
  337:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_1, HAL_TIM_CHANNEL_STATE_BUSY);
  653              		.loc 1 337 3 is_stmt 1 view .LVU225
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 58
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 58
 
 
  654 003a 84F83F30 		strb	r3, [r4, #63]
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  695 0082 09D0     		beq	.L34
  347:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  696              		.loc 1 347 7 discriminator 7 view .LVU239
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 59
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 59
 
 
  697 0084 A2F59432 		sub	r2, r2, #75776
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  738 00b2 1846     		mov	r0, r3
  739 00b4 FCE7     		b	.L33
  740              	.LVL42:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 60
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 60
 
 
  741              	.L39:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  788              		.loc 1 380 3 discriminator 1 view .LVU261
  789 001a 196A     		ldr	r1, [r3, #32]
  790 001c 40F24442 		movw	r2, #1092
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 61
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 61
 
 
  791 0020 1142     		tst	r1, r2
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  399:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_1_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_1);
  836              		.loc 1 399 3 is_stmt 1 view .LVU273
  400:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_2_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_2);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 62
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 62
 
 
  837              		.loc 1 400 3 view .LVU274
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  414:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
  875              		.loc 1 414 12 view .LVU291
  876 0030 1046     		mov	r0, r2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 63
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 63
 
 
  877 0032 43E0     		b	.L48
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  917 006c 9342     		cmp	r3, r2
  918 006e 19D0     		beq	.L49
  432:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 64
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 64
 
 
  919              		.loc 1 432 7 discriminator 3 view .LVU306
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  960              		.loc 1 437 7 is_stmt 0 view .LVU319
  961 00b0 42F00102 		orr	r2, r2, #1
  962 00b4 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 65
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 65
 
 
  446:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** }
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1011              		.loc 1 457 3 is_stmt 1 view .LVU327
  462:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  1012              		.loc 1 462 3 view .LVU328
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 66
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 66
 
 
  1013 0004 0022     		movs	r2, #0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1054 0048 0020     		movs	r0, #0
  1055 004a 10BD     		pop	{r4, pc}
  478:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 67
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 67
 
 
  1056              		.loc 1 478 1 view .LVU342
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  498:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  1102              		.loc 1 498 7 view .LVU353
  1103 001c 022D     		cmp	r5, #2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 68
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 68
 
 
  1104 001e 57D0     		beq	.L66
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  526:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->hdma[TIM_DMA_ID_CC1]->XferHalfCpltCallback = TIM_DMACaptureHalfCplt;
  1143              		.loc 1 526 13 is_stmt 0 view .LVU369
  1144 0046 636A     		ldr	r3, [r4, #36]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 69
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 69
 
 
  526:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->hdma[TIM_DMA_ID_CC1]->XferHalfCpltCallback = TIM_DMACaptureHalfCplt;
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1184 007a 1FD0     		beq	.L64
  541:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  1185              		.loc 1 541 7 discriminator 1 view .LVU385
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 70
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 70
 
 
  1186 007c B3F1804F 		cmp	r3, #1073741824
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  546:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
  1228              		.loc 1 546 7 is_stmt 1 view .LVU398
  1229 00c6 1A68     		ldr	r2, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 71
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 71
 
 
  1230              	.LVL76:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1277              		.thumb_func
  1279              	HAL_TIMEx_HallSensor_Stop_DMA:
  1280              	.LVL84:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 72
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 72
 
 
  1281              	.LFB248:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1323              		.loc 1 580 3 discriminator 3 view .LVU418
  1324 0034 1A68     		ldr	r2, [r3]
  1325 0036 22F00102 		bic	r2, r2, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 73
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 73
 
 
  1326 003a 1A60     		str	r2, [r3]
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1369 0006 0029     		cmp	r1, #0
  1370 0008 3AD1     		bne	.L79
  633:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 74
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 74
 
 
  1371              		.loc 1 633 7 discriminator 1 view .LVU432
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  648:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  1413              		.loc 1 648 7 discriminator 2 view .LVU445
  1414 0044 A2F57C42 		sub	r2, r2, #64512
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 75
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 75
 
 
  1415 0048 9342     		cmp	r3, r2
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1458 0092 BFE7     		b	.L80
  1459              	.L93:
  633:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 76
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 76
 
 
  1460              		.loc 1 633 7 discriminator 4 view .LVU457
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1503              	.LVL95:
  651:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
  1504              		.loc 1 651 5 is_stmt 1 view .LVU469
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 77
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 77
 
 
  651:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1552              		@ frame_needed = 0, uses_anonymous_args = 0
  677:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Check the parameters */
  1553              		.loc 1 677 1 is_stmt 0 view .LVU479
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 78
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 78
 
 
  1554 0000 38B5     		push	{r3, r4, r5, lr}
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1597 003a 40F24442 		movw	r2, #1092
  1598 003e 1142     		tst	r1, r2
  1599 0040 03D1     		bne	.L101
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 79
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 79
 
 
  688:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1644              		.syntax unified
  1645              		.thumb
  1646              		.thumb_func
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 80
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 80
 
 
  1648              	HAL_TIMEx_OCN_Start_IT:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1688              		.loc 1 725 3 is_stmt 1 view .LVU515
  1689              	.L116:
  730:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       break;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 81
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 81
 
 
  1690              		.loc 1 730 7 view .LVU516
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  766:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
  1732              		.loc 1 766 9 discriminator 3 view .LVU529
  1733 0060 02F58062 		add	r2, r2, #1024
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 82
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 82
 
 
  1734 0064 9342     		cmp	r3, r2
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1777 00ac 013B     		subs	r3, r3, #1
  1778 00ae 18BF     		it	ne
  1779 00b0 0123     		movne	r3, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 83
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 83
 
 
  1780 00b2 AFE7     		b	.L111
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  754:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  1823              		.loc 1 754 3 view .LVU552
  1824 00ee 9DE7     		b	.L121
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 84
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 84
 
 
  1825              	.L131:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1865 0118 0120     		movs	r0, #1
  1866              	.LVL119:
  719:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 85
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 85
 
 
  1867              		.loc 1 719 12 view .LVU567
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  1915              		.loc 1 808 7 view .LVU575
  1916 0012 0268     		ldr	r2, [r0]
  1917 0014 D368     		ldr	r3, [r2, #12]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 86
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 86
 
 
  1918 0016 23F00203 		bic	r3, r3, #2
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  844:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  1958              		.loc 1 844 5 is_stmt 1 discriminator 1 view .LVU590
  1959 0046 196A     		ldr	r1, [r3, #32]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 87
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 87
 
 
  1960 0048 40F24442 		movw	r2, #1092
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2002 0084 D368     		ldr	r3, [r2, #12]
  2003 0086 23F00403 		bic	r3, r3, #4
  2004 008a D360     		str	r3, [r2, #12]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 88
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 88
 
 
  816:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2047              		.loc 1 803 3 view .LVU614
  2048 00c2 DDE7     		b	.L137
  2049              		.cfi_endproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 89
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 89
 
 
  2050              	.LFE252:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  884:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  2096              		.loc 1 884 8 is_stmt 1 view .LVU625
  884:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 90
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 90
 
 
  2097              		.loc 1 884 51 is_stmt 0 view .LVU626
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2136              		.loc 1 906 17 is_stmt 0 view .LVU641
  2137 0052 626A     		ldr	r2, [r4, #36]
  906:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 91
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 91
 
 
  2138              		.loc 1 906 56 view .LVU642
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  979:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
  2179              		.loc 1 979 9 is_stmt 0 view .LVU656
  2180 008e 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 92
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 92
 
 
  979:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2224 00e8 0829     		cmp	r1, #8
  2225 00ea 0DD0     		beq	.L179
  880:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 93
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 93
 
 
  2226              		.loc 1 880 7 discriminator 8 view .LVU668
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2271 0128 0122     		moveq	r2, #1
  2272 012a 80E7     		b	.L156
  2273              	.LVL147:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 94
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 94
 
 
  2274              	.L180:
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2318              		.loc 1 900 3 is_stmt 1 view .LVU687
  2319              	.L162:
  926:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC2]->XferHalfCpltCallback = TIM_DMADelayPulseHalfCplt;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 95
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 95
 
 
  2320              		.loc 1 926 7 view .LVU688
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2358              		.loc 1 970 3 view .LVU704
  2359 019a 6EE7     		b	.L165
  2360              	.LVL153:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 96
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 96
 
 
  2361              	.L183:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2398              		.loc 1 961 7 is_stmt 1 view .LVU721
  2399 01c2 2268     		ldr	r2, [r4]
  2400 01c4 D368     		ldr	r3, [r2, #12]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 97
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 97
 
 
  2401 01c6 43F40063 		orr	r3, r3, #2048
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2442 01ee FCE7     		b	.L154
  2443              	.L171:
  2444 01f0 0120     		movs	r0, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 98
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 98
 
 
  2445 01f2 FAE7     		b	.L154
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2495 0002 0446     		mov	r4, r0
  2496 0004 0D46     		mov	r5, r1
 1010:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 99
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 99
 
 
  2497              		.loc 1 1010 3 is_stmt 1 view .LVU741
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2539 0040 03D1     		bne	.L191
 1052:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  2540              		.loc 1 1052 5 discriminator 3 view .LVU754
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 100
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 100
 
 
  2541 0042 5A6C     		ldr	r2, [r3, #68]
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1029:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       break;
  2583              		.loc 1 1029 13 is_stmt 0 view .LVU767
  2584 007e 806A     		ldr	r0, [r0, #40]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 101
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 101
 
 
  2585              	.LVL171:
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2626 00b2 DEE7     		b	.L189
  2627              	.L199:
 1058:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 102
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 102
 
 
  2628              		.loc 1 1058 5 discriminator 6 view .LVU781
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1106:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  2674              		.loc 1 1106 46 discriminator 1 view .LVU792
  2675 000e 013B     		subs	r3, r3, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 103
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 103
 
 
  2676 0010 18BF     		it	ne
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1121:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  2718              		.loc 1 1121 7 discriminator 3 view .LVU805
  2719 004c 02F58062 		add	r2, r2, #1024
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 104
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 104
 
 
  2720 0050 9342     		cmp	r3, r2
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1106:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  2763              		.loc 1 1106 46 discriminator 4 view .LVU817
  2764 0098 013B     		subs	r3, r3, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 105
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 105
 
 
  2765 009a 18BF     		it	ne
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2807 00d2 062A     		cmp	r2, #6
  2808 00d4 07D0     		beq	.L213
 1126:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 106
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 106
 
 
  2809              		.loc 1 1126 7 is_stmt 1 view .LVU830
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2857              		.cfi_offset 3, -16
  2858              		.cfi_offset 4, -12
  2859              		.cfi_offset 5, -8
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 107
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 107
 
 
  2860              		.cfi_offset 14, -4
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2902 0042 1A68     		ldr	r2, [r3]
  2903 0044 22F00102 		bic	r2, r2, #1
  2904 0048 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 108
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 108
 
 
  2905              	.L223:
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2951              	.LFB257:
 1181:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
  2952              		.loc 1 1181 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 109
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 109
 
 
  2953              		.cfi_startproc
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  2993 0024 D368     		ldr	r3, [r2, #12]
  2994 0026 43F00203 		orr	r3, r3, #2
  2995 002a D360     		str	r3, [r2, #12]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 110
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 110
 
 
 1203:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1237:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
  3037              		.loc 1 1237 9 discriminator 4 view .LVU889
  3038 0068 02F58062 		add	r2, r2, #1024
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 111
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 111
 
 
  3039 006c 9342     		cmp	r3, r2
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1189:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  3083              		.loc 1 1189 7 discriminator 7 view .LVU900
  3084 00b4 94F84430 		ldrb	r3, [r4, #68]	@ zero_extendqisi2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 112
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 112
 
 
 1189:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3127              		.loc 1 1195 3 is_stmt 0 discriminator 6 view .LVU912
  3128 00f0 0223     		movs	r3, #2
  3129 00f2 84F84430 		strb	r3, [r4, #68]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 113
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 113
 
 
 1197:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3170              	.LVL210:
  3171              	.L248:
 1191:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 114
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 114
 
 
  3172              		.loc 1 1191 12 view .LVU927
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1280:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
  3221              		.loc 1 1280 7 view .LVU935
 1302:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 115
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 115
 
 
  3222              		.loc 1 1302 3 view .LVU936
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3263 004e 03D1     		bne	.L262
 1315:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  3264              		.loc 1 1315 5 discriminator 3 view .LVU950
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 116
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 116
 
 
  3265 0050 5A6C     		ldr	r2, [r3, #68]
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1302:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  3307              		.loc 1 1302 3 view .LVU963
  3308 008c C6E7     		b	.L260
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 117
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 117
 
 
  3309              	.L258:
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3354              		.align	1
  3355              		.global	HAL_TIMEx_PWMN_Start_DMA
  3356              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 118
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 118
 
 
  3357              		.thumb
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3400 0020 79D1     		bne	.L277
 1355:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  3401              		.loc 1 1355 12 discriminator 1 view .LVU986
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 119
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 119
 
 
  3402 0022 94F84220 		ldrb	r2, [r4, #66]	@ zero_extendqisi2
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3441 0056 1164     		str	r1, [r2, #64]
 1380:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  3442              		.loc 1 1380 7 is_stmt 1 view .LVU1002
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 120
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 120
 
 
 1380:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3483 0090 5F4A     		ldr	r2, .L306+12
  3484 0092 9342     		cmp	r3, r2
  3485 0094 00F09B80 		beq	.L288
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 121
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 121
 
 
 1450:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     {
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3529              	.LVL231:
 1351:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  3530              		.loc 1 1351 46 discriminator 8 view .LVU1028
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 122
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 122
 
 
  3531 00f0 0228     		cmp	r0, #2
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3576              		.loc 1 1355 12 discriminator 4 view .LVU1037
  3577 012c 94F84320 		ldrb	r2, [r4, #67]	@ zero_extendqisi2
  3578              	.LVL238:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 123
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 123
 
 
 1355:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3622              		.loc 1 1397 17 is_stmt 0 view .LVU1048
  3623 016e A26A     		ldr	r2, [r4, #40]
 1397:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       htim->hdma[TIM_DMA_ID_CC2]->XferHalfCpltCallback = TIM_DMADelayPulseHalfCplt;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 124
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 124
 
 
  3624              		.loc 1 1397 52 view .LVU1049
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3663              		.loc 1 1363 7 is_stmt 0 discriminator 6 view .LVU1064
  3664 019c 0222     		movs	r2, #2
  3665 019e 84F84420 		strb	r2, [r4, #68]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 125
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 125
 
 
 1371:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1433:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
  3704              		.loc 1 1433 7 view .LVU1081
 1441:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 126
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 126
 
 
  3705              		.loc 1 1441 3 view .LVU1082
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3748              	.L295:
 1387:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****       }
  3749              		.loc 1 1387 16 view .LVU1094
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 127
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 127
 
 
  3750 01f4 0120     		movs	r0, #1
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1484:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  3800              		.loc 1 1484 3 view .LVU1101
 1486:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 128
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 128
 
 
  3801              		.loc 1 1486 3 view .LVU1102
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3844 0048 5A64     		str	r2, [r3, #68]
  3845              	.L313:
 1523:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 129
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 129
 
 
  3846              		.loc 1 1523 5 discriminator 5 view .LVU1114
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3887              		.loc 1 1500 13 view .LVU1127
  3888 0080 FFF7FEFF 		bl	HAL_DMA_Abort_IT
  3889              	.LVL262:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 130
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 130
 
 
 1501:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     }
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  3931 00b6 84F84430 		strb	r3, [r4, #68]
  3932 00ba 0020     		movs	r0, #0
  3933 00bc D9E7     		b	.L311
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 131
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 131
 
 
  3934              	.LVL266:
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1574:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef complementary_channel_1_state = TIM_CHANNEL_N_STATE_GET(htim, TIM_CHA
  3980              		.loc 1 1574 31 is_stmt 0 view .LVU1151
  3981 0012 94F83F30 		ldrb	r3, [r4, #63]	@ zero_extendqisi2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 132
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 132
 
 
  3982 0016 DBB2     		uxtb	r3, r3
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4022              	.LVL277:
 1591:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_BUSY);
  4023              		.loc 1 1591 3 is_stmt 0 view .LVU1166
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 133
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 133
 
 
  4024 0044 84F83E30 		strb	r3, [r4, #62]
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4065 0078 70BD     		pop	{r4, r5, r6, pc}
  4066              	.LVL285:
  4067              	.L327:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 134
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 134
 
 
 1587:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1628:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  4114              		.loc 1 1628 3 is_stmt 1 view .LVU1190
  4115 0012 0022     		movs	r2, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 135
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 135
 
 
  4116 0014 2946     		mov	r1, r5
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1638:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_1, HAL_TIM_CHANNEL_STATE_READY);
  4159              		.loc 1 1638 3 view .LVU1202
  4160 005e 84F83F30 		strb	r3, [r4, #63]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 136
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 136
 
 
 1639:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   TIM_CHANNEL_N_STATE_SET(htim, TIM_CHANNEL_2, HAL_TIM_CHANNEL_STATE_READY);
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1661:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_2_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_2);
  4207              		.loc 1 1661 3 is_stmt 1 view .LVU1213
 1661:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_2_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_2);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 137
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 137
 
 
  4208              		.loc 1 1661 31 is_stmt 0 view .LVU1214
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1660:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   HAL_TIM_ChannelStateTypeDef channel_1_state = TIM_CHANNEL_STATE_GET(htim, TIM_CHANNEL_1);
  4248              		.loc 1 1660 77 discriminator 2 view .LVU1229
  4249 003e 0025     		movs	r5, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 138
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 138
 
 
  4250 0040 E3E7     		b	.L338
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1695:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  4292              		.loc 1 1695 3 view .LVU1242
  4293 007c 2268     		ldr	r2, [r4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 139
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 139
 
 
  4294 007e 536C     		ldr	r3, [r2, #68]
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4341              		.loc 1 1715 3 is_stmt 1 view .LVU1251
 1715:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  4342              		.loc 1 1715 77 is_stmt 0 view .LVU1252
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 140
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 140
 
 
  4343 0004 0029     		cmp	r1, #0
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4386 0046 5A6C     		ldr	r2, [r3, #68]
  4387 0048 22F40042 		bic	r2, r2, #32768
  4388 004c 5A64     		str	r2, [r3, #68]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 141
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 141
 
 
  4389              	.L348:
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4431              		.align	1
  4432              		.global	HAL_TIMEx_ConfigCommutEvent
  4433              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 142
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 142
 
 
  4434              		.thumb
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4475              		.loc 1 1805 19 view .LVU1290
  4476 0020 A068     		ldr	r0, [r4, #8]
 1805:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****     htim->Instance->SMCR |= InputTrigger;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 143
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 143
 
 
  4477              		.loc 1 1805 26 view .LVU1291
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4514              	.LVL321:
 1813:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  4515              		.loc 1 1813 23 view .LVU1309
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 144
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 144
 
 
  4516 004a 4260     		str	r2, [r0, #4]
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4561              		.thumb_func
  4563              	HAL_TIMEx_ConfigCommutEvent_IT:
  4564              	.LVL323:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 145
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 145
 
 
  4565              	.LFB266:
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4604 0022 20F07000 		bic	r0, r0, #112
  4605 0026 A060     		str	r0, [r4, #8]
 1862:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 146
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 146
 
 
  4606              		.loc 1 1862 5 is_stmt 1 view .LVU1335
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1872:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  4643              		.loc 1 1872 3 is_stmt 1 view .LVU1353
  4644 004c 1968     		ldr	r1, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 147
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 147
 
 
  4645 004e CA68     		ldr	r2, [r1, #12]
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1907:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Check the parameters */
  4692              		.loc 1 1907 1 is_stmt 1 view -0
  4693              		.cfi_startproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 148
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 148
 
 
  4694              		@ args = 0, pretend = 0, frame = 0
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1919:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
  4733              		.loc 1 1919 9 is_stmt 0 view .LVU1379
  4734 0028 1C68     		ldr	r4, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 149
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 149
 
 
 1919:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4771 004c 5A6B     		ldr	r2, [r3, #52]
 1930:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   htim->hdma[TIM_DMA_ID_COMMUTATION]->XferHalfCpltCallback = TIMEx_DMACommutationHalfCplt;
  4772              		.loc 1 1930 56 view .LVU1398
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 150
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 150
 
 
  4773 004e 0E49     		ldr	r1, .L382
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4813 007e 3029     		cmp	r1, #48
  4814 0080 D6D1     		bne	.L376
  4815 0082 CCE7     		b	.L374
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 151
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 151
 
 
  4816              	.L377:
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  4861 000a 0346     		mov	r3, r0
 1966:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  4862              		.loc 1 1966 3 is_stmt 1 discriminator 2 view .LVU1424
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 152
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 152
 
 
  4863 000c 0122     		movs	r2, #1
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1985:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   {
  4899              		.loc 1 1985 6 view .LVU1443
  4900 002e 8242     		cmp	r2, r0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 153
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 153
 
 
  4901 0030 1AD0     		beq	.L386
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 1993:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   }
  4942              		.loc 1 1993 26 is_stmt 0 view .LVU1457
  4943 0070 9160     		str	r1, [r2, #8]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 154
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 154
 
 
  4944              	.LVL342:
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2017:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   /* Keep this variable initialized to 0 as it is used to configure BDTR register */
  4990              		.loc 1 2017 1 is_stmt 0 view .LVU1468
  4991 0000 0246     		mov	r2, r0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 155
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 155
 
 
 2019:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5027 001e 4868     		ldr	r0, [r1, #4]
  5028              	.LVL352:
 2040:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c ****   MODIFY_REG(tmpbdtr, TIM_BDTR_OSSR, sBreakDeadTimeConfig->OffStateRunMode);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 156
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 156
 
 
  5029              		.loc 1 2040 3 view .LVU1488
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5069              		.loc 1 2048 7 is_stmt 0 view .LVU1502
  5070 0042 1168     		ldr	r1, [r2]
 2048:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 157
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 157
 
 
  5071              		.loc 1 2048 24 view .LVU1503
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2096:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  5115              		.loc 1 2096 3 view .LVU1516
 2114:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** #endif /* LPTIM_OR_TIM1_ITR2_RMP &&  LPTIM_OR_TIM5_ITR1_RMP && LPTIM_OR_TIM9_ITR1_RMP */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 158
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 158
 
 
  5116              		.loc 1 2114 3 view .LVU1517
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5162              		.align	1
  5163              		.global	TIMEx_DMACommutationCplt
  5164              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 159
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 159
 
 
  5165              		.thumb
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
 2169:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  5212              		.loc 1 2169 1 is_stmt 0 view .LVU1539
  5213 0000 7047     		bx	lr
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 160
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 160
 
 
  5214              		.cfi_endproc
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5263              		.cfi_startproc
  5264              		@ args = 0, pretend = 0, frame = 0
  5265              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 161
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 161
 
 
  5266              		@ link register save eliminated.
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5314              		.loc 1 2231 3 view .LVU1558
 2231:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c **** 
  5315              		.loc 1 2231 19 is_stmt 0 view .LVU1559
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 162
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 162
 
 
  5316 0000 19B9     		cbnz	r1, .L410
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5359              		.text
  5360              	.Letext0:
  5361              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 163
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 163
 
 
  5362              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
@@ -9728,109 +9728,109 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 1
  5366              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  5367              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
  5368              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 164
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 164
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_tim_ex.c
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:21     .text.TIM_CCxNChannelCmd:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:26     .text.TIM_CCxNChannelCmd:00000000 TIM_CCxNChannelCmd
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:64     .text.TIM_DMAErrorCCxN:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:69     .text.TIM_DMAErrorCCxN:00000000 TIM_DMAErrorCCxN
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:148    .text.TIM_DMADelayPulseNCplt:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:153    .text.TIM_DMADelayPulseNCplt:00000000 TIM_DMADelayPulseNCplt
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:251    .text.HAL_TIMEx_HallSensor_MspInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:257    .text.HAL_TIMEx_HallSensor_MspInit:00000000 HAL_TIMEx_HallSensor_MspInit
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:272    .text.HAL_TIMEx_HallSensor_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:278    .text.HAL_TIMEx_HallSensor_Init:00000000 HAL_TIMEx_HallSensor_Init
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:490    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:496    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 HAL_TIMEx_HallSensor_MspDeInit
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:511    .text.HAL_TIMEx_HallSensor_DeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:517    .text.HAL_TIMEx_HallSensor_DeInit:00000000 HAL_TIMEx_HallSensor_DeInit
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:586    .text.HAL_TIMEx_HallSensor_Start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:592    .text.HAL_TIMEx_HallSensor_Start:00000000 HAL_TIMEx_HallSensor_Start
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:748    .text.HAL_TIMEx_HallSensor_Start:000000bc $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:753    .text.HAL_TIMEx_HallSensor_Stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:759    .text.HAL_TIMEx_HallSensor_Stop:00000000 HAL_TIMEx_HallSensor_Stop
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:817    .text.HAL_TIMEx_HallSensor_Start_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:823    .text.HAL_TIMEx_HallSensor_Start_IT:00000000 HAL_TIMEx_HallSensor_Start_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:987    .text.HAL_TIMEx_HallSensor_Start_IT:000000c8 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:992    .text.HAL_TIMEx_HallSensor_Stop_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:998    .text.HAL_TIMEx_HallSensor_Stop_IT:00000000 HAL_TIMEx_HallSensor_Stop_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1061   .text.HAL_TIMEx_HallSensor_Start_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1067   .text.HAL_TIMEx_HallSensor_Start_DMA:00000000 HAL_TIMEx_HallSensor_Start_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1265   .text.HAL_TIMEx_HallSensor_Start_DMA:000000e0 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1273   .text.HAL_TIMEx_HallSensor_Stop_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1279   .text.HAL_TIMEx_HallSensor_Stop_DMA:00000000 HAL_TIMEx_HallSensor_Stop_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1343   .text.HAL_TIMEx_OCN_Start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1349   .text.HAL_TIMEx_OCN_Start:00000000 HAL_TIMEx_OCN_Start
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1535   .text.HAL_TIMEx_OCN_Start:000000ec $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1540   .text.HAL_TIMEx_OCN_Stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1546   .text.HAL_TIMEx_OCN_Stop:00000000 HAL_TIMEx_OCN_Stop
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1642   .text.HAL_TIMEx_OCN_Start_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1648   .text.HAL_TIMEx_OCN_Start_IT:00000000 HAL_TIMEx_OCN_Start_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1877   .text.HAL_TIMEx_OCN_Start_IT:00000120 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1882   .text.HAL_TIMEx_OCN_Stop_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:1888   .text.HAL_TIMEx_OCN_Stop_IT:00000000 HAL_TIMEx_OCN_Stop_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2053   .text.HAL_TIMEx_OCN_Start_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2059   .text.HAL_TIMEx_OCN_Start_DMA:00000000 HAL_TIMEx_OCN_Start_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2467   .text.HAL_TIMEx_OCN_Start_DMA:00000204 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2475   .text.HAL_TIMEx_OCN_Stop_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2481   .text.HAL_TIMEx_OCN_Stop_DMA:00000000 HAL_TIMEx_OCN_Stop_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2644   .text.HAL_TIMEx_PWMN_Start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2650   .text.HAL_TIMEx_PWMN_Start:00000000 HAL_TIMEx_PWMN_Start
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2836   .text.HAL_TIMEx_PWMN_Start:000000ec $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2841   .text.HAL_TIMEx_PWMN_Stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2847   .text.HAL_TIMEx_PWMN_Stop:00000000 HAL_TIMEx_PWMN_Stop
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2943   .text.HAL_TIMEx_PWMN_Start_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:2949   .text.HAL_TIMEx_PWMN_Start_IT:00000000 HAL_TIMEx_PWMN_Start_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3178   .text.HAL_TIMEx_PWMN_Start_IT:00000120 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3183   .text.HAL_TIMEx_PWMN_Stop_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3189   .text.HAL_TIMEx_PWMN_Stop_IT:00000000 HAL_TIMEx_PWMN_Stop_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3354   .text.HAL_TIMEx_PWMN_Start_DMA:00000000 $t
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s 			page 165
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:21     .text.TIM_CCxNChannelCmd:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:26     .text.TIM_CCxNChannelCmd:00000000 TIM_CCxNChannelCmd
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:64     .text.TIM_DMAErrorCCxN:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:69     .text.TIM_DMAErrorCCxN:00000000 TIM_DMAErrorCCxN
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:148    .text.TIM_DMADelayPulseNCplt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:153    .text.TIM_DMADelayPulseNCplt:00000000 TIM_DMADelayPulseNCplt
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:251    .text.HAL_TIMEx_HallSensor_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:257    .text.HAL_TIMEx_HallSensor_MspInit:00000000 HAL_TIMEx_HallSensor_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:272    .text.HAL_TIMEx_HallSensor_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:278    .text.HAL_TIMEx_HallSensor_Init:00000000 HAL_TIMEx_HallSensor_Init
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:490    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:496    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 HAL_TIMEx_HallSensor_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:511    .text.HAL_TIMEx_HallSensor_DeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:517    .text.HAL_TIMEx_HallSensor_DeInit:00000000 HAL_TIMEx_HallSensor_DeInit
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:586    .text.HAL_TIMEx_HallSensor_Start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:592    .text.HAL_TIMEx_HallSensor_Start:00000000 HAL_TIMEx_HallSensor_Start
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:748    .text.HAL_TIMEx_HallSensor_Start:000000bc $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:753    .text.HAL_TIMEx_HallSensor_Stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:759    .text.HAL_TIMEx_HallSensor_Stop:00000000 HAL_TIMEx_HallSensor_Stop
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:817    .text.HAL_TIMEx_HallSensor_Start_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:823    .text.HAL_TIMEx_HallSensor_Start_IT:00000000 HAL_TIMEx_HallSensor_Start_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:987    .text.HAL_TIMEx_HallSensor_Start_IT:000000c8 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:992    .text.HAL_TIMEx_HallSensor_Stop_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:998    .text.HAL_TIMEx_HallSensor_Stop_IT:00000000 HAL_TIMEx_HallSensor_Stop_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1061   .text.HAL_TIMEx_HallSensor_Start_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1067   .text.HAL_TIMEx_HallSensor_Start_DMA:00000000 HAL_TIMEx_HallSensor_Start_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1265   .text.HAL_TIMEx_HallSensor_Start_DMA:000000e0 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1273   .text.HAL_TIMEx_HallSensor_Stop_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1279   .text.HAL_TIMEx_HallSensor_Stop_DMA:00000000 HAL_TIMEx_HallSensor_Stop_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1343   .text.HAL_TIMEx_OCN_Start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1349   .text.HAL_TIMEx_OCN_Start:00000000 HAL_TIMEx_OCN_Start
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1535   .text.HAL_TIMEx_OCN_Start:000000ec $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1540   .text.HAL_TIMEx_OCN_Stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1546   .text.HAL_TIMEx_OCN_Stop:00000000 HAL_TIMEx_OCN_Stop
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1642   .text.HAL_TIMEx_OCN_Start_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1648   .text.HAL_TIMEx_OCN_Start_IT:00000000 HAL_TIMEx_OCN_Start_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1877   .text.HAL_TIMEx_OCN_Start_IT:00000120 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1882   .text.HAL_TIMEx_OCN_Stop_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:1888   .text.HAL_TIMEx_OCN_Stop_IT:00000000 HAL_TIMEx_OCN_Stop_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2053   .text.HAL_TIMEx_OCN_Start_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2059   .text.HAL_TIMEx_OCN_Start_DMA:00000000 HAL_TIMEx_OCN_Start_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2467   .text.HAL_TIMEx_OCN_Start_DMA:00000204 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2475   .text.HAL_TIMEx_OCN_Stop_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2481   .text.HAL_TIMEx_OCN_Stop_DMA:00000000 HAL_TIMEx_OCN_Stop_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2644   .text.HAL_TIMEx_PWMN_Start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2650   .text.HAL_TIMEx_PWMN_Start:00000000 HAL_TIMEx_PWMN_Start
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2836   .text.HAL_TIMEx_PWMN_Start:000000ec $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2841   .text.HAL_TIMEx_PWMN_Stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2847   .text.HAL_TIMEx_PWMN_Stop:00000000 HAL_TIMEx_PWMN_Stop
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2943   .text.HAL_TIMEx_PWMN_Start_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:2949   .text.HAL_TIMEx_PWMN_Start_IT:00000000 HAL_TIMEx_PWMN_Start_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3178   .text.HAL_TIMEx_PWMN_Start_IT:00000120 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3183   .text.HAL_TIMEx_PWMN_Stop_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3189   .text.HAL_TIMEx_PWMN_Stop_IT:00000000 HAL_TIMEx_PWMN_Stop_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3354   .text.HAL_TIMEx_PWMN_Start_DMA:00000000 $t
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s 			page 165
 
 
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3360   .text.HAL_TIMEx_PWMN_Start_DMA:00000000 HAL_TIMEx_PWMN_Start_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3768   .text.HAL_TIMEx_PWMN_Start_DMA:00000204 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3776   .text.HAL_TIMEx_PWMN_Stop_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3782   .text.HAL_TIMEx_PWMN_Stop_DMA:00000000 HAL_TIMEx_PWMN_Stop_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3945   .text.HAL_TIMEx_OnePulseN_Start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:3951   .text.HAL_TIMEx_OnePulseN_Start:00000000 HAL_TIMEx_OnePulseN_Start
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4077   .text.HAL_TIMEx_OnePulseN_Stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4083   .text.HAL_TIMEx_OnePulseN_Stop:00000000 HAL_TIMEx_OnePulseN_Stop
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4178   .text.HAL_TIMEx_OnePulseN_Start_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4184   .text.HAL_TIMEx_OnePulseN_Start_IT:00000000 HAL_TIMEx_OnePulseN_Start_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4320   .text.HAL_TIMEx_OnePulseN_Stop_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4326   .text.HAL_TIMEx_OnePulseN_Stop_IT:00000000 HAL_TIMEx_OnePulseN_Stop_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4431   .text.HAL_TIMEx_ConfigCommutEvent:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4437   .text.HAL_TIMEx_ConfigCommutEvent:00000000 HAL_TIMEx_ConfigCommutEvent
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4557   .text.HAL_TIMEx_ConfigCommutEvent_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4563   .text.HAL_TIMEx_ConfigCommutEvent_IT:00000000 HAL_TIMEx_ConfigCommutEvent_IT
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4683   .text.HAL_TIMEx_ConfigCommutEvent_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4689   .text.HAL_TIMEx_ConfigCommutEvent_DMA:00000000 HAL_TIMEx_ConfigCommutEvent_DMA
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4826   .text.HAL_TIMEx_ConfigCommutEvent_DMA:00000088 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5168   .text.TIMEx_DMACommutationCplt:00000000 TIMEx_DMACommutationCplt
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5224   .text.TIMEx_DMACommutationHalfCplt:00000000 TIMEx_DMACommutationHalfCplt
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4833   .text.HAL_TIMEx_MasterConfigSynchronization:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4839   .text.HAL_TIMEx_MasterConfigSynchronization:00000000 HAL_TIMEx_MasterConfigSynchronization
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4971   .text.HAL_TIMEx_MasterConfigSynchronization:00000088 $d
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4976   .text.HAL_TIMEx_ConfigBreakDeadTime:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:4982   .text.HAL_TIMEx_ConfigBreakDeadTime:00000000 HAL_TIMEx_ConfigBreakDeadTime
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5092   .text.HAL_TIMEx_RemapConfig:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5098   .text.HAL_TIMEx_RemapConfig:00000000 HAL_TIMEx_RemapConfig
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5141   .text.HAL_TIMEx_CommutCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5147   .text.HAL_TIMEx_CommutCallback:00000000 HAL_TIMEx_CommutCallback
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5162   .text.TIMEx_DMACommutationCplt:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5197   .text.HAL_TIMEx_CommutHalfCpltCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5203   .text.HAL_TIMEx_CommutHalfCpltCallback:00000000 HAL_TIMEx_CommutHalfCpltCallback
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5218   .text.TIMEx_DMACommutationHalfCplt:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5253   .text.HAL_TIMEx_BreakCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5259   .text.HAL_TIMEx_BreakCallback:00000000 HAL_TIMEx_BreakCallback
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5274   .text.HAL_TIMEx_HallSensor_GetState:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5280   .text.HAL_TIMEx_HallSensor_GetState:00000000 HAL_TIMEx_HallSensor_GetState
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5298   .text.HAL_TIMEx_GetChannelNState:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc23K0Na.s:5304   .text.HAL_TIMEx_GetChannelNState:00000000 HAL_TIMEx_GetChannelNState
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3360   .text.HAL_TIMEx_PWMN_Start_DMA:00000000 HAL_TIMEx_PWMN_Start_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3768   .text.HAL_TIMEx_PWMN_Start_DMA:00000204 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3776   .text.HAL_TIMEx_PWMN_Stop_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3782   .text.HAL_TIMEx_PWMN_Stop_DMA:00000000 HAL_TIMEx_PWMN_Stop_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3945   .text.HAL_TIMEx_OnePulseN_Start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:3951   .text.HAL_TIMEx_OnePulseN_Start:00000000 HAL_TIMEx_OnePulseN_Start
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4077   .text.HAL_TIMEx_OnePulseN_Stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4083   .text.HAL_TIMEx_OnePulseN_Stop:00000000 HAL_TIMEx_OnePulseN_Stop
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4178   .text.HAL_TIMEx_OnePulseN_Start_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4184   .text.HAL_TIMEx_OnePulseN_Start_IT:00000000 HAL_TIMEx_OnePulseN_Start_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4320   .text.HAL_TIMEx_OnePulseN_Stop_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4326   .text.HAL_TIMEx_OnePulseN_Stop_IT:00000000 HAL_TIMEx_OnePulseN_Stop_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4431   .text.HAL_TIMEx_ConfigCommutEvent:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4437   .text.HAL_TIMEx_ConfigCommutEvent:00000000 HAL_TIMEx_ConfigCommutEvent
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4557   .text.HAL_TIMEx_ConfigCommutEvent_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4563   .text.HAL_TIMEx_ConfigCommutEvent_IT:00000000 HAL_TIMEx_ConfigCommutEvent_IT
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4683   .text.HAL_TIMEx_ConfigCommutEvent_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4689   .text.HAL_TIMEx_ConfigCommutEvent_DMA:00000000 HAL_TIMEx_ConfigCommutEvent_DMA
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4826   .text.HAL_TIMEx_ConfigCommutEvent_DMA:00000088 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5168   .text.TIMEx_DMACommutationCplt:00000000 TIMEx_DMACommutationCplt
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5224   .text.TIMEx_DMACommutationHalfCplt:00000000 TIMEx_DMACommutationHalfCplt
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4833   .text.HAL_TIMEx_MasterConfigSynchronization:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4839   .text.HAL_TIMEx_MasterConfigSynchronization:00000000 HAL_TIMEx_MasterConfigSynchronization
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4971   .text.HAL_TIMEx_MasterConfigSynchronization:00000088 $d
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4976   .text.HAL_TIMEx_ConfigBreakDeadTime:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:4982   .text.HAL_TIMEx_ConfigBreakDeadTime:00000000 HAL_TIMEx_ConfigBreakDeadTime
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5092   .text.HAL_TIMEx_RemapConfig:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5098   .text.HAL_TIMEx_RemapConfig:00000000 HAL_TIMEx_RemapConfig
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5141   .text.HAL_TIMEx_CommutCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5147   .text.HAL_TIMEx_CommutCallback:00000000 HAL_TIMEx_CommutCallback
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5162   .text.TIMEx_DMACommutationCplt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5197   .text.HAL_TIMEx_CommutHalfCpltCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5203   .text.HAL_TIMEx_CommutHalfCpltCallback:00000000 HAL_TIMEx_CommutHalfCpltCallback
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5218   .text.TIMEx_DMACommutationHalfCplt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5253   .text.HAL_TIMEx_BreakCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5259   .text.HAL_TIMEx_BreakCallback:00000000 HAL_TIMEx_BreakCallback
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5274   .text.HAL_TIMEx_HallSensor_GetState:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5280   .text.HAL_TIMEx_HallSensor_GetState:00000000 HAL_TIMEx_HallSensor_GetState
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5298   .text.HAL_TIMEx_GetChannelNState:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDAnCkh.s:5304   .text.HAL_TIMEx_GetChannelNState:00000000 HAL_TIMEx_GetChannelNState
 
 UNDEFINED SYMBOLS
 HAL_TIM_ErrorCallback

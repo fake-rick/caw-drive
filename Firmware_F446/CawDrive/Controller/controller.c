@@ -1,10 +1,24 @@
 #include "./controller.h"
 
+#include "./Current/current.h"
+#include "./Devices/dev_usart.h"
 #include "./Drivers/drv8323/drv8323.h"
+#include "./PWM/pwm.h"
+#include "./State/state.h"
 
 drv8323_t g_driver;
 
 void controller_init(void) {
+  /// 初始化串口
+  dev_usart_init();
+
+  /// 配置DRV8323
+
+  // 使用PWM_MODE_3X控制时将互补引脚拉低
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
+
   drv8323_init(&g_driver, &hspi3);
   drv8323_calibrate(&g_driver);
   HAL_Delay(10);
@@ -20,4 +34,11 @@ void controller_init(void) {
   drv8323_write_ocpcr(&g_driver, TRETRY_50US, DEADTIME_50NS, OCP_NONE,
                       OCP_DEG_8US, VDS_LVL_1_88);
   drv8323_enable_gd(&g_driver);
+
+  /// 电流采样初始化
+  current_init();
+  /// 启动PWM
+  pwm_start();
+
+  state_set(STATE_IDLE);
 }

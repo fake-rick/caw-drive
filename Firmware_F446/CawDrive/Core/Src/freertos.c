@@ -126,7 +126,7 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for (;;) {
     state_step();
-    dev_usart_write((uint8_t *)"Hello World!\r\n", 14);
+    // dev_usart_write((uint8_t *)"Hello World!\r\n", 14);
     osDelay(50);
   }
   /* USER CODE END StartDefaultTask */

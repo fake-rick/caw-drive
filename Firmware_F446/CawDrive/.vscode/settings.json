@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "controller.h": "c",
-        "drv8323.h": "c"
+        "drv8323.h": "c",
+        "adc.h": "c",
+        "stm32f4xx_hal_adc_ex.h": "c"
     }
 }

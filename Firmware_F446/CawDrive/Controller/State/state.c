@@ -4,8 +4,10 @@
 
 #include "gpio.h"
 
-static state_e g_state = STATE_DEBUG;
+static state_e g_state = STATE_INIT;
 static uint8_t g_led_state = 0x01;
+
+void state_set(state_e state) { g_state = state; }
 
 void led_ctl(uint8_t led_state) {
   if (led_state & 0x01) {

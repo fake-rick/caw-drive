@@ -7,6 +7,7 @@
         "Controller/Current",
         "Controller/Devices",
         "Controller/Drivers/drv8323",
+        "Controller/PWM",
         "Controller/State",
         "Core/Inc",
         "Drivers/CMSIS/Device/ST/STM32F4xx/Include",
