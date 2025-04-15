@@ -1,0 +1,165 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"system_stm32f4xx.c"
+  16              		.text
+  17              		.section	.text.SystemInit,"ax",%progbits
+  18              		.align	1
+  19              		.global	SystemInit
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	SystemInit:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27              		@ link register save eliminated.
+  28 0000 034A     		ldr	r2, .L2
+  29 0002 D2F88830 		ldr	r3, [r2, #136]
+  30 0006 43F47003 		orr	r3, r3, #15728640
+  31 000a C2F88830 		str	r3, [r2, #136]
+  32 000e 7047     		bx	lr
+  33              	.L3:
+  34              		.align	2
+  35              	.L2:
+  36 0010 00ED00E0 		.word	-536810240
+  38              		.section	.text.SystemCoreClockUpdate,"ax",%progbits
+  39              		.align	1
+  40              		.global	SystemCoreClockUpdate
+  41              		.syntax unified
+  42              		.thumb
+  43              		.thumb_func
+  45              	SystemCoreClockUpdate:
+  46              		@ args = 0, pretend = 0, frame = 0
+  47              		@ frame_needed = 0, uses_anonymous_args = 0
+  48              		@ link register save eliminated.
+  49 0000 224B     		ldr	r3, .L11
+  50 0002 9B68     		ldr	r3, [r3, #8]
+  51 0004 03F00C03 		and	r3, r3, #12
+  52 0008 042B     		cmp	r3, #4
+  53 000a 11D0     		beq	.L5
+  54 000c 082B     		cmp	r3, #8
+  55 000e 13D0     		beq	.L6
+  56 0010 002B     		cmp	r3, #0
+  57 0012 37D1     		bne	.L7
+  58 0014 1E4B     		ldr	r3, .L11+4
+  59 0016 1F4A     		ldr	r2, .L11+8
+  60 0018 1A60     		str	r2, [r3]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s 			page 2
+
+
+  61              	.L8:
+  62 001a 1C4B     		ldr	r3, .L11
+  63 001c 9B68     		ldr	r3, [r3, #8]
+  64 001e C3F30313 		ubfx	r3, r3, #4, #4
+  65 0022 1D4A     		ldr	r2, .L11+12
+  66 0024 D15C     		ldrb	r1, [r2, r3]	@ zero_extendqisi2
+  67 0026 1A4A     		ldr	r2, .L11+4
+  68 0028 1368     		ldr	r3, [r2]
+  69 002a CB40     		lsrs	r3, r3, r1
+  70 002c 1360     		str	r3, [r2]
+  71 002e 7047     		bx	lr
+  72              	.L5:
+  73 0030 174B     		ldr	r3, .L11+4
+  74 0032 184A     		ldr	r2, .L11+8
+  75 0034 1A60     		str	r2, [r3]
+  76 0036 F0E7     		b	.L8
+  77              	.L6:
+  78 0038 144B     		ldr	r3, .L11
+  79 003a 5968     		ldr	r1, [r3, #4]
+  80 003c 5A68     		ldr	r2, [r3, #4]
+  81 003e 02F03F02 		and	r2, r2, #63
+  82 0042 11F4800F 		tst	r1, #4194304
+  83 0046 13D0     		beq	.L9
+  84 0048 124B     		ldr	r3, .L11+8
+  85 004a B3FBF2F3 		udiv	r3, r3, r2
+  86 004e 0F4A     		ldr	r2, .L11
+  87 0050 5268     		ldr	r2, [r2, #4]
+  88 0052 C2F38812 		ubfx	r2, r2, #6, #9
+  89 0056 02FB03F3 		mul	r3, r2, r3
+  90              	.L10:
+  91 005a 0C4A     		ldr	r2, .L11
+  92 005c 5268     		ldr	r2, [r2, #4]
+  93 005e C2F30142 		ubfx	r2, r2, #16, #2
+  94 0062 0132     		adds	r2, r2, #1
+  95 0064 5200     		lsls	r2, r2, #1
+  96 0066 B3FBF2F3 		udiv	r3, r3, r2
+  97 006a 094A     		ldr	r2, .L11+4
+  98 006c 1360     		str	r3, [r2]
+  99 006e D4E7     		b	.L8
+ 100              	.L9:
+ 101 0070 084B     		ldr	r3, .L11+8
+ 102 0072 B3FBF2F3 		udiv	r3, r3, r2
+ 103 0076 054A     		ldr	r2, .L11
+ 104 0078 5268     		ldr	r2, [r2, #4]
+ 105 007a C2F38812 		ubfx	r2, r2, #6, #9
+ 106 007e 02FB03F3 		mul	r3, r2, r3
+ 107 0082 EAE7     		b	.L10
+ 108              	.L7:
+ 109 0084 024B     		ldr	r3, .L11+4
+ 110 0086 034A     		ldr	r2, .L11+8
+ 111 0088 1A60     		str	r2, [r3]
+ 112 008a C6E7     		b	.L8
+ 113              	.L12:
+ 114              		.align	2
+ 115              	.L11:
+ 116 008c 00380240 		.word	1073887232
+ 117 0090 00000000 		.word	SystemCoreClock
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s 			page 3
+
+
+ 118 0094 0024F400 		.word	16000000
+ 119 0098 00000000 		.word	AHBPrescTable
+ 121              		.global	APBPrescTable
+ 122              		.section	.rodata.APBPrescTable,"a"
+ 123              		.align	2
+ 126              	APBPrescTable:
+ 127 0000 00000000 		.ascii	"\000\000\000\000\001\002\003\004"
+ 127      01020304 
+ 128              		.global	AHBPrescTable
+ 129              		.section	.rodata.AHBPrescTable,"a"
+ 130              		.align	2
+ 133              	AHBPrescTable:
+ 134 0000 00000000 		.ascii	"\000\000\000\000\000\000\000\000\001\002\003\004\006"
+ 134      00000000 
+ 134      01020304 
+ 134      06
+ 135 000d 070809   		.ascii	"\007\010\011"
+ 136              		.global	SystemCoreClock
+ 137              		.section	.data.SystemCoreClock,"aw"
+ 138              		.align	2
+ 141              	SystemCoreClock:
+ 142 0000 0024F400 		.word	16000000
+ 143              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 system_stm32f4xx.c
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:18     .text.SystemInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:24     .text.SystemInit:00000000 SystemInit
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:36     .text.SystemInit:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:39     .text.SystemCoreClockUpdate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:45     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:116    .text.SystemCoreClockUpdate:0000008c $d
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:141    .data.SystemCoreClock:00000000 SystemCoreClock
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:133    .rodata.AHBPrescTable:00000000 AHBPrescTable
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:126    .rodata.APBPrescTable:00000000 APBPrescTable
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:123    .rodata.APBPrescTable:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:130    .rodata.AHBPrescTable:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccpjRPLG.s:138    .data.SystemCoreClock:00000000 $d
+
+NO UNDEFINED SYMBOLS

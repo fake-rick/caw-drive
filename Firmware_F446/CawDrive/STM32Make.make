@@ -75,9 +75,11 @@ endif
 ######################################
 # C sources
 C_SOURCES =  \
+Controller/Current/current.c \
 Controller/Devices/dev_usart.c \
 Controller/Drivers/drv8323/drv8323.c \
 Controller/State/state.c \
+Controller/controller.c \
 Core/Src/adc.c \
 Core/Src/can.c \
 Core/Src/dma.c \
@@ -219,6 +221,8 @@ AS_INCLUDES = \
 
 # C includes
 C_INCLUDES =  \
+-IController \
+-IController/Current \
 -IController/Devices \
 -IController/Drivers/drv8323 \
 -IController/State \

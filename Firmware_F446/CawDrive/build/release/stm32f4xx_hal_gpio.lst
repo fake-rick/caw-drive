@@ -1,0 +1,541 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f4xx_hal_gpio.c"
+  16              		.text
+  17              		.section	.text.HAL_GPIO_Init,"ax",%progbits
+  18              		.align	1
+  19              		.global	HAL_GPIO_Init
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	HAL_GPIO_Init:
+  25              		@ args = 0, pretend = 0, frame = 8
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 0023     		movs	r3, #0
+  28 0002 0F2B     		cmp	r3, #15
+  29 0004 00F2E380 		bhi	.L23
+  30 0008 70B5     		push	{r4, r5, r6, lr}
+  31 000a 82B0     		sub	sp, sp, #8
+  32 000c 65E0     		b	.L12
+  33              	.L25:
+  34 000e 8568     		ldr	r5, [r0, #8]
+  35 0010 4FEA430E 		lsl	lr, r3, #1
+  36 0014 0324     		movs	r4, #3
+  37 0016 04FA0EF4 		lsl	r4, r4, lr
+  38 001a 25EA0405 		bic	r5, r5, r4
+  39 001e CC68     		ldr	r4, [r1, #12]
+  40 0020 04FA0EF4 		lsl	r4, r4, lr
+  41 0024 2C43     		orrs	r4, r4, r5
+  42 0026 8460     		str	r4, [r0, #8]
+  43 0028 4468     		ldr	r4, [r0, #4]
+  44 002a 24EA0204 		bic	r4, r4, r2
+  45 002e 4A68     		ldr	r2, [r1, #4]
+  46 0030 C2F30012 		ubfx	r2, r2, #4, #1
+  47 0034 9A40     		lsls	r2, r2, r3
+  48 0036 2243     		orrs	r2, r2, r4
+  49 0038 4260     		str	r2, [r0, #4]
+  50 003a 5CE0     		b	.L4
+  51              	.L26:
+  52 003c DC08     		lsrs	r4, r3, #3
+  53 003e 0834     		adds	r4, r4, #8
+  54 0040 50F82420 		ldr	r2, [r0, r4, lsl #2]
+  55 0044 03F00705 		and	r5, r3, #7
+  56 0048 AD00     		lsls	r5, r5, #2
+  57 004a 4FF00F0E 		mov	lr, #15
+  58 004e 0EFA05FE 		lsl	lr, lr, r5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 2
+
+
+  59 0052 22EA0E0E 		bic	lr, r2, lr
+  60 0056 0A69     		ldr	r2, [r1, #16]
+  61 0058 AA40     		lsls	r2, r2, r5
+  62 005a 42EA0E02 		orr	r2, r2, lr
+  63 005e 40F82420 		str	r2, [r0, r4, lsl #2]
+  64 0062 5CE0     		b	.L6
+  65              	.L27:
+  66 0064 0622     		movs	r2, #6
+  67 0066 00E0     		b	.L7
+  68              	.L13:
+  69 0068 0022     		movs	r2, #0
+  70              	.L7:
+  71 006a 02FA0EF2 		lsl	r2, r2, lr
+  72 006e 2A43     		orrs	r2, r2, r5
+  73 0070 0234     		adds	r4, r4, #2
+  74 0072 574D     		ldr	r5, .L28
+  75 0074 45F82420 		str	r2, [r5, r4, lsl #2]
+  76 0078 564A     		ldr	r2, .L28+4
+  77 007a 9468     		ldr	r4, [r2, #8]
+  78 007c 6FEA0C02 		mvn	r2, ip
+  79 0080 24EA0C05 		bic	r5, r4, ip
+  80 0084 4E68     		ldr	r6, [r1, #4]
+  81 0086 16F4801F 		tst	r6, #1048576
+  82 008a 01D0     		beq	.L8
+  83 008c 4CEA0405 		orr	r5, ip, r4
+  84              	.L8:
+  85 0090 504C     		ldr	r4, .L28+4
+  86 0092 A560     		str	r5, [r4, #8]
+  87 0094 E468     		ldr	r4, [r4, #12]
+  88 0096 02EA0405 		and	r5, r2, r4
+  89 009a 4E68     		ldr	r6, [r1, #4]
+  90 009c 16F4001F 		tst	r6, #2097152
+  91 00a0 01D0     		beq	.L9
+  92 00a2 4CEA0405 		orr	r5, ip, r4
+  93              	.L9:
+  94 00a6 4B4C     		ldr	r4, .L28+4
+  95 00a8 E560     		str	r5, [r4, #12]
+  96 00aa 6468     		ldr	r4, [r4, #4]
+  97 00ac 02EA0405 		and	r5, r2, r4
+  98 00b0 4E68     		ldr	r6, [r1, #4]
+  99 00b2 16F4003F 		tst	r6, #131072
+ 100 00b6 01D0     		beq	.L10
+ 101 00b8 4CEA0405 		orr	r5, ip, r4
+ 102              	.L10:
+ 103 00bc 454C     		ldr	r4, .L28+4
+ 104 00be 6560     		str	r5, [r4, #4]
+ 105 00c0 2468     		ldr	r4, [r4]
+ 106 00c2 2240     		ands	r2, r2, r4
+ 107 00c4 4D68     		ldr	r5, [r1, #4]
+ 108 00c6 15F4803F 		tst	r5, #65536
+ 109 00ca 01D0     		beq	.L11
+ 110 00cc 4CEA0402 		orr	r2, ip, r4
+ 111              	.L11:
+ 112 00d0 404C     		ldr	r4, .L28+4
+ 113 00d2 2260     		str	r2, [r4]
+ 114              	.L3:
+ 115 00d4 0133     		adds	r3, r3, #1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 3
+
+
+ 116 00d6 0F2B     		cmp	r3, #15
+ 117 00d8 77D8     		bhi	.L24
+ 118              	.L12:
+ 119 00da 0122     		movs	r2, #1
+ 120 00dc 9A40     		lsls	r2, r2, r3
+ 121 00de 0C68     		ldr	r4, [r1]
+ 122 00e0 04EA020C 		and	ip, r4, r2
+ 123 00e4 32EA0404 		bics	r4, r2, r4
+ 124 00e8 F4D1     		bne	.L3
+ 125 00ea 4C68     		ldr	r4, [r1, #4]
+ 126 00ec 04F00304 		and	r4, r4, #3
+ 127 00f0 013C     		subs	r4, r4, #1
+ 128 00f2 012C     		cmp	r4, #1
+ 129 00f4 8BD9     		bls	.L25
+ 130              	.L4:
+ 131 00f6 4A68     		ldr	r2, [r1, #4]
+ 132 00f8 02F00302 		and	r2, r2, #3
+ 133 00fc 032A     		cmp	r2, #3
+ 134 00fe 09D0     		beq	.L5
+ 135 0100 C468     		ldr	r4, [r0, #12]
+ 136 0102 5D00     		lsls	r5, r3, #1
+ 137 0104 0322     		movs	r2, #3
+ 138 0106 AA40     		lsls	r2, r2, r5
+ 139 0108 24EA0204 		bic	r4, r4, r2
+ 140 010c 8A68     		ldr	r2, [r1, #8]
+ 141 010e AA40     		lsls	r2, r2, r5
+ 142 0110 2243     		orrs	r2, r2, r4
+ 143 0112 C260     		str	r2, [r0, #12]
+ 144              	.L5:
+ 145 0114 4A68     		ldr	r2, [r1, #4]
+ 146 0116 02F00302 		and	r2, r2, #3
+ 147 011a 022A     		cmp	r2, #2
+ 148 011c 8ED0     		beq	.L26
+ 149              	.L6:
+ 150 011e 0468     		ldr	r4, [r0]
+ 151 0120 4FEA430E 		lsl	lr, r3, #1
+ 152 0124 0322     		movs	r2, #3
+ 153 0126 02FA0EF2 		lsl	r2, r2, lr
+ 154 012a 24EA0204 		bic	r4, r4, r2
+ 155 012e 4A68     		ldr	r2, [r1, #4]
+ 156 0130 02F00302 		and	r2, r2, #3
+ 157 0134 02FA0EF2 		lsl	r2, r2, lr
+ 158 0138 2243     		orrs	r2, r2, r4
+ 159 013a 0260     		str	r2, [r0]
+ 160 013c 4A68     		ldr	r2, [r1, #4]
+ 161 013e 12F4403F 		tst	r2, #196608
+ 162 0142 C7D0     		beq	.L3
+ 163 0144 0022     		movs	r2, #0
+ 164 0146 0192     		str	r2, [sp, #4]
+ 165 0148 234A     		ldr	r2, .L28+8
+ 166 014a 546C     		ldr	r4, [r2, #68]
+ 167 014c 44F48044 		orr	r4, r4, #16384
+ 168 0150 5464     		str	r4, [r2, #68]
+ 169 0152 526C     		ldr	r2, [r2, #68]
+ 170 0154 02F48042 		and	r2, r2, #16384
+ 171 0158 0192     		str	r2, [sp, #4]
+ 172 015a 019A     		ldr	r2, [sp, #4]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 4
+
+
+ 173 015c 9C08     		lsrs	r4, r3, #2
+ 174 015e A51C     		adds	r5, r4, #2
+ 175 0160 1B4A     		ldr	r2, .L28
+ 176 0162 52F82550 		ldr	r5, [r2, r5, lsl #2]
+ 177 0166 03F0030E 		and	lr, r3, #3
+ 178 016a 4FEA8E0E 		lsl	lr, lr, #2
+ 179 016e 0F22     		movs	r2, #15
+ 180 0170 02FA0EF2 		lsl	r2, r2, lr
+ 181 0174 25EA0205 		bic	r5, r5, r2
+ 182 0178 184A     		ldr	r2, .L28+12
+ 183 017a 9042     		cmp	r0, r2
+ 184 017c 3FF474AF 		beq	.L13
+ 185 0180 02F58062 		add	r2, r2, #1024
+ 186 0184 9042     		cmp	r0, r2
+ 187 0186 16D0     		beq	.L14
+ 188 0188 02F58062 		add	r2, r2, #1024
+ 189 018c 9042     		cmp	r0, r2
+ 190 018e 14D0     		beq	.L15
+ 191 0190 02F58062 		add	r2, r2, #1024
+ 192 0194 9042     		cmp	r0, r2
+ 193 0196 12D0     		beq	.L16
+ 194 0198 02F58062 		add	r2, r2, #1024
+ 195 019c 9042     		cmp	r0, r2
+ 196 019e 10D0     		beq	.L17
+ 197 01a0 02F58062 		add	r2, r2, #1024
+ 198 01a4 9042     		cmp	r0, r2
+ 199 01a6 0ED0     		beq	.L18
+ 200 01a8 02F58062 		add	r2, r2, #1024
+ 201 01ac 9042     		cmp	r0, r2
+ 202 01ae 3FF459AF 		beq	.L27
+ 203 01b2 0722     		movs	r2, #7
+ 204 01b4 59E7     		b	.L7
+ 205              	.L14:
+ 206 01b6 0122     		movs	r2, #1
+ 207 01b8 57E7     		b	.L7
+ 208              	.L15:
+ 209 01ba 0222     		movs	r2, #2
+ 210 01bc 55E7     		b	.L7
+ 211              	.L16:
+ 212 01be 0322     		movs	r2, #3
+ 213 01c0 53E7     		b	.L7
+ 214              	.L17:
+ 215 01c2 0422     		movs	r2, #4
+ 216 01c4 51E7     		b	.L7
+ 217              	.L18:
+ 218 01c6 0522     		movs	r2, #5
+ 219 01c8 4FE7     		b	.L7
+ 220              	.L24:
+ 221 01ca 02B0     		add	sp, sp, #8
+ 222              		@ sp needed
+ 223 01cc 70BD     		pop	{r4, r5, r6, pc}
+ 224              	.L23:
+ 225 01ce 7047     		bx	lr
+ 226              	.L29:
+ 227              		.align	2
+ 228              	.L28:
+ 229 01d0 00380140 		.word	1073821696
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 5
+
+
+ 230 01d4 003C0140 		.word	1073822720
+ 231 01d8 00380240 		.word	1073887232
+ 232 01dc 00000240 		.word	1073872896
+ 234              		.section	.text.HAL_GPIO_DeInit,"ax",%progbits
+ 235              		.align	1
+ 236              		.global	HAL_GPIO_DeInit
+ 237              		.syntax unified
+ 238              		.thumb
+ 239              		.thumb_func
+ 241              	HAL_GPIO_DeInit:
+ 242              		@ args = 0, pretend = 0, frame = 0
+ 243              		@ frame_needed = 0, uses_anonymous_args = 0
+ 244 0000 0023     		movs	r3, #0
+ 245 0002 0F2B     		cmp	r3, #15
+ 246 0004 00F28980 		bhi	.L46
+ 247 0008 F0B5     		push	{r4, r5, r6, r7, lr}
+ 248 000a 2DE0     		b	.L35
+ 249              	.L49:
+ 250 000c 0625     		movs	r5, #6
+ 251 000e 00E0     		b	.L33
+ 252              	.L36:
+ 253 0010 0025     		movs	r5, #0
+ 254              	.L33:
+ 255 0012 05FA0CF5 		lsl	r5, r5, ip
+ 256 0016 A542     		cmp	r5, r4
+ 257 0018 63D0     		beq	.L47
+ 258              	.L34:
+ 259 001a 0468     		ldr	r4, [r0]
+ 260 001c 5D00     		lsls	r5, r3, #1
+ 261 001e 4FF0030C 		mov	ip, #3
+ 262 0022 0CFA05FC 		lsl	ip, ip, r5
+ 263 0026 24EA0C04 		bic	r4, r4, ip
+ 264 002a 0460     		str	r4, [r0]
+ 265 002c 4FEAD30E 		lsr	lr, r3, #3
+ 266 0030 0EF1080E 		add	lr, lr, #8
+ 267 0034 50F82E40 		ldr	r4, [r0, lr, lsl #2]
+ 268 0038 03F00706 		and	r6, r3, #7
+ 269 003c B600     		lsls	r6, r6, #2
+ 270 003e 0F25     		movs	r5, #15
+ 271 0040 B540     		lsls	r5, r5, r6
+ 272 0042 24EA0504 		bic	r4, r4, r5
+ 273 0046 40F82E40 		str	r4, [r0, lr, lsl #2]
+ 274 004a C468     		ldr	r4, [r0, #12]
+ 275 004c 24EA0C04 		bic	r4, r4, ip
+ 276 0050 C460     		str	r4, [r0, #12]
+ 277 0052 4468     		ldr	r4, [r0, #4]
+ 278 0054 24EA0202 		bic	r2, r4, r2
+ 279 0058 4260     		str	r2, [r0, #4]
+ 280 005a 8268     		ldr	r2, [r0, #8]
+ 281 005c 22EA0C02 		bic	r2, r2, ip
+ 282 0060 8260     		str	r2, [r0, #8]
+ 283              	.L32:
+ 284 0062 0133     		adds	r3, r3, #1
+ 285 0064 0F2B     		cmp	r3, #15
+ 286 0066 57D8     		bhi	.L48
+ 287              	.L35:
+ 288 0068 0122     		movs	r2, #1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 6
+
+
+ 289 006a 9A40     		lsls	r2, r2, r3
+ 290 006c 02EA0106 		and	r6, r2, r1
+ 291 0070 32EA0104 		bics	r4, r2, r1
+ 292 0074 F5D1     		bne	.L32
+ 293 0076 4FEA930E 		lsr	lr, r3, #2
+ 294 007a 0EF10205 		add	r5, lr, #2
+ 295 007e 274C     		ldr	r4, .L50
+ 296 0080 54F82540 		ldr	r4, [r4, r5, lsl #2]
+ 297 0084 03F0030C 		and	ip, r3, #3
+ 298 0088 4FEA8C0C 		lsl	ip, ip, #2
+ 299 008c 0F25     		movs	r5, #15
+ 300 008e 05FA0CF7 		lsl	r7, r5, ip
+ 301 0092 3C40     		ands	r4, r4, r7
+ 302 0094 224D     		ldr	r5, .L50+4
+ 303 0096 A842     		cmp	r0, r5
+ 304 0098 BAD0     		beq	.L36
+ 305 009a 05F58065 		add	r5, r5, #1024
+ 306 009e A842     		cmp	r0, r5
+ 307 00a0 15D0     		beq	.L37
+ 308 00a2 05F58065 		add	r5, r5, #1024
+ 309 00a6 A842     		cmp	r0, r5
+ 310 00a8 13D0     		beq	.L38
+ 311 00aa 05F58065 		add	r5, r5, #1024
+ 312 00ae A842     		cmp	r0, r5
+ 313 00b0 11D0     		beq	.L39
+ 314 00b2 05F58065 		add	r5, r5, #1024
+ 315 00b6 A842     		cmp	r0, r5
+ 316 00b8 0FD0     		beq	.L40
+ 317 00ba 05F58065 		add	r5, r5, #1024
+ 318 00be A842     		cmp	r0, r5
+ 319 00c0 0DD0     		beq	.L41
+ 320 00c2 05F58065 		add	r5, r5, #1024
+ 321 00c6 A842     		cmp	r0, r5
+ 322 00c8 A0D0     		beq	.L49
+ 323 00ca 0725     		movs	r5, #7
+ 324 00cc A1E7     		b	.L33
+ 325              	.L37:
+ 326 00ce 0125     		movs	r5, #1
+ 327 00d0 9FE7     		b	.L33
+ 328              	.L38:
+ 329 00d2 0225     		movs	r5, #2
+ 330 00d4 9DE7     		b	.L33
+ 331              	.L39:
+ 332 00d6 0325     		movs	r5, #3
+ 333 00d8 9BE7     		b	.L33
+ 334              	.L40:
+ 335 00da 0425     		movs	r5, #4
+ 336 00dc 99E7     		b	.L33
+ 337              	.L41:
+ 338 00de 0525     		movs	r5, #5
+ 339 00e0 97E7     		b	.L33
+ 340              	.L47:
+ 341 00e2 104C     		ldr	r4, .L50+8
+ 342 00e4 2568     		ldr	r5, [r4]
+ 343 00e6 25EA0605 		bic	r5, r5, r6
+ 344 00ea 2560     		str	r5, [r4]
+ 345 00ec 6568     		ldr	r5, [r4, #4]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 7
+
+
+ 346 00ee 25EA0605 		bic	r5, r5, r6
+ 347 00f2 6560     		str	r5, [r4, #4]
+ 348 00f4 E568     		ldr	r5, [r4, #12]
+ 349 00f6 25EA0605 		bic	r5, r5, r6
+ 350 00fa E560     		str	r5, [r4, #12]
+ 351 00fc A568     		ldr	r5, [r4, #8]
+ 352 00fe 25EA0605 		bic	r5, r5, r6
+ 353 0102 A560     		str	r5, [r4, #8]
+ 354 0104 054E     		ldr	r6, .L50
+ 355 0106 0EF10204 		add	r4, lr, #2
+ 356 010a 56F82450 		ldr	r5, [r6, r4, lsl #2]
+ 357 010e 25EA0705 		bic	r5, r5, r7
+ 358 0112 46F82450 		str	r5, [r6, r4, lsl #2]
+ 359 0116 80E7     		b	.L34
+ 360              	.L48:
+ 361 0118 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 362              	.L46:
+ 363 011a 7047     		bx	lr
+ 364              	.L51:
+ 365              		.align	2
+ 366              	.L50:
+ 367 011c 00380140 		.word	1073821696
+ 368 0120 00000240 		.word	1073872896
+ 369 0124 003C0140 		.word	1073822720
+ 371              		.section	.text.HAL_GPIO_ReadPin,"ax",%progbits
+ 372              		.align	1
+ 373              		.global	HAL_GPIO_ReadPin
+ 374              		.syntax unified
+ 375              		.thumb
+ 376              		.thumb_func
+ 378              	HAL_GPIO_ReadPin:
+ 379              		@ args = 0, pretend = 0, frame = 0
+ 380              		@ frame_needed = 0, uses_anonymous_args = 0
+ 381              		@ link register save eliminated.
+ 382 0000 0369     		ldr	r3, [r0, #16]
+ 383 0002 1942     		tst	r1, r3
+ 384 0004 01D0     		beq	.L54
+ 385 0006 0120     		movs	r0, #1
+ 386 0008 7047     		bx	lr
+ 387              	.L54:
+ 388 000a 0020     		movs	r0, #0
+ 389 000c 7047     		bx	lr
+ 391              		.section	.text.HAL_GPIO_WritePin,"ax",%progbits
+ 392              		.align	1
+ 393              		.global	HAL_GPIO_WritePin
+ 394              		.syntax unified
+ 395              		.thumb
+ 396              		.thumb_func
+ 398              	HAL_GPIO_WritePin:
+ 399              		@ args = 0, pretend = 0, frame = 0
+ 400              		@ frame_needed = 0, uses_anonymous_args = 0
+ 401              		@ link register save eliminated.
+ 402 0000 0AB1     		cbz	r2, .L56
+ 403 0002 8161     		str	r1, [r0, #24]
+ 404 0004 7047     		bx	lr
+ 405              	.L56:
+ 406 0006 0904     		lsls	r1, r1, #16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 8
+
+
+ 407 0008 8161     		str	r1, [r0, #24]
+ 408 000a 7047     		bx	lr
+ 410              		.section	.text.HAL_GPIO_TogglePin,"ax",%progbits
+ 411              		.align	1
+ 412              		.global	HAL_GPIO_TogglePin
+ 413              		.syntax unified
+ 414              		.thumb
+ 415              		.thumb_func
+ 417              	HAL_GPIO_TogglePin:
+ 418              		@ args = 0, pretend = 0, frame = 0
+ 419              		@ frame_needed = 0, uses_anonymous_args = 0
+ 420              		@ link register save eliminated.
+ 421 0000 4369     		ldr	r3, [r0, #20]
+ 422 0002 01EA0302 		and	r2, r1, r3
+ 423 0006 21EA0301 		bic	r1, r1, r3
+ 424 000a 41EA0241 		orr	r1, r1, r2, lsl #16
+ 425 000e 8161     		str	r1, [r0, #24]
+ 426 0010 7047     		bx	lr
+ 428              		.section	.text.HAL_GPIO_LockPin,"ax",%progbits
+ 429              		.align	1
+ 430              		.global	HAL_GPIO_LockPin
+ 431              		.syntax unified
+ 432              		.thumb
+ 433              		.thumb_func
+ 435              	HAL_GPIO_LockPin:
+ 436              		@ args = 0, pretend = 0, frame = 8
+ 437              		@ frame_needed = 0, uses_anonymous_args = 0
+ 438              		@ link register save eliminated.
+ 439 0000 82B0     		sub	sp, sp, #8
+ 440 0002 4FF48033 		mov	r3, #65536
+ 441 0006 0193     		str	r3, [sp, #4]
+ 442 0008 019B     		ldr	r3, [sp, #4]
+ 443 000a 0B43     		orrs	r3, r3, r1
+ 444 000c 0193     		str	r3, [sp, #4]
+ 445 000e 019B     		ldr	r3, [sp, #4]
+ 446 0010 C361     		str	r3, [r0, #28]
+ 447 0012 C161     		str	r1, [r0, #28]
+ 448 0014 019B     		ldr	r3, [sp, #4]
+ 449 0016 C361     		str	r3, [r0, #28]
+ 450 0018 C369     		ldr	r3, [r0, #28]
+ 451 001a 0193     		str	r3, [sp, #4]
+ 452 001c C369     		ldr	r3, [r0, #28]
+ 453 001e 13F4803F 		tst	r3, #65536
+ 454 0022 02D0     		beq	.L61
+ 455 0024 0020     		movs	r0, #0
+ 456              	.L60:
+ 457 0026 02B0     		add	sp, sp, #8
+ 458              		@ sp needed
+ 459 0028 7047     		bx	lr
+ 460              	.L61:
+ 461 002a 0120     		movs	r0, #1
+ 462 002c FBE7     		b	.L60
+ 464              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+ 465              		.align	1
+ 466              		.weak	HAL_GPIO_EXTI_Callback
+ 467              		.syntax unified
+ 468              		.thumb
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 9
+
+
+ 469              		.thumb_func
+ 471              	HAL_GPIO_EXTI_Callback:
+ 472              		@ args = 0, pretend = 0, frame = 0
+ 473              		@ frame_needed = 0, uses_anonymous_args = 0
+ 474              		@ link register save eliminated.
+ 475 0000 7047     		bx	lr
+ 477              		.section	.text.HAL_GPIO_EXTI_IRQHandler,"ax",%progbits
+ 478              		.align	1
+ 479              		.global	HAL_GPIO_EXTI_IRQHandler
+ 480              		.syntax unified
+ 481              		.thumb
+ 482              		.thumb_func
+ 484              	HAL_GPIO_EXTI_IRQHandler:
+ 485              		@ args = 0, pretend = 0, frame = 0
+ 486              		@ frame_needed = 0, uses_anonymous_args = 0
+ 487 0000 08B5     		push	{r3, lr}
+ 488 0002 054B     		ldr	r3, .L68
+ 489 0004 5B69     		ldr	r3, [r3, #20]
+ 490 0006 0342     		tst	r3, r0
+ 491 0008 00D1     		bne	.L67
+ 492              	.L64:
+ 493 000a 08BD     		pop	{r3, pc}
+ 494              	.L67:
+ 495 000c 024B     		ldr	r3, .L68
+ 496 000e 5861     		str	r0, [r3, #20]
+ 497 0010 FFF7FEFF 		bl	HAL_GPIO_EXTI_Callback
+ 498 0014 F9E7     		b	.L64
+ 499              	.L69:
+ 500 0016 00BF     		.align	2
+ 501              	.L68:
+ 502 0018 003C0140 		.word	1073822720
+ 504              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f4xx_hal_gpio.c
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:18     .text.HAL_GPIO_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:24     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:229    .text.HAL_GPIO_Init:000001d0 $d
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:235    .text.HAL_GPIO_DeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:241    .text.HAL_GPIO_DeInit:00000000 HAL_GPIO_DeInit
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:367    .text.HAL_GPIO_DeInit:0000011c $d
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:372    .text.HAL_GPIO_ReadPin:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:378    .text.HAL_GPIO_ReadPin:00000000 HAL_GPIO_ReadPin
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:392    .text.HAL_GPIO_WritePin:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:398    .text.HAL_GPIO_WritePin:00000000 HAL_GPIO_WritePin
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:411    .text.HAL_GPIO_TogglePin:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:417    .text.HAL_GPIO_TogglePin:00000000 HAL_GPIO_TogglePin
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:429    .text.HAL_GPIO_LockPin:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:435    .text.HAL_GPIO_LockPin:00000000 HAL_GPIO_LockPin
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:465    .text.HAL_GPIO_EXTI_Callback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:471    .text.HAL_GPIO_EXTI_Callback:00000000 HAL_GPIO_EXTI_Callback
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:478    .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:484    .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccglOFMQ.s:502    .text.HAL_GPIO_EXTI_IRQHandler:00000018 $d
+
+NO UNDEFINED SYMBOLS

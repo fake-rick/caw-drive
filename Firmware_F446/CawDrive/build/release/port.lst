@@ -1,0 +1,711 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"port.c"
+  16              		.text
+  17              		.section	.text.prvTaskExitError,"ax",%progbits
+  18              		.align	1
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  23              	prvTaskExitError:
+  24              		@ args = 0, pretend = 0, frame = 8
+  25              		@ frame_needed = 0, uses_anonymous_args = 0
+  26              		@ link register save eliminated.
+  27 0000 82B0     		sub	sp, sp, #8
+  28 0002 0023     		movs	r3, #0
+  29 0004 0193     		str	r3, [sp, #4]
+  30 0006 0D4B     		ldr	r3, .L6
+  31 0008 1B68     		ldr	r3, [r3]
+  32 000a B3F1FF3F 		cmp	r3, #-1
+  33 000e 08D0     		beq	.L2
+  34              		.syntax unified
+  35              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+  36 0010 4FF05003 			mov r3, #80												
+  37 0014 83F31188 		msr basepri, r3											
+  38 0018 BFF36F8F 		isb														
+  39 001c BFF34F8F 		dsb														
+  40              	
+  41              	@ 0 "" 2
+  42              		.thumb
+  43              		.syntax unified
+  44              	.L3:
+  45 0020 FEE7     		b	.L3
+  46              	.L2:
+  47              		.syntax unified
+  48              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+  49 0022 4FF05003 			mov r3, #80												
+  50 0026 83F31188 		msr basepri, r3											
+  51 002a BFF36F8F 		isb														
+  52 002e BFF34F8F 		dsb														
+  53              	
+  54              	@ 0 "" 2
+  55              		.thumb
+  56              		.syntax unified
+  57              	.L4:
+  58 0032 019B     		ldr	r3, [sp, #4]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 2
+
+
+  59 0034 002B     		cmp	r3, #0
+  60 0036 FCD0     		beq	.L4
+  61 0038 02B0     		add	sp, sp, #8
+  62              		@ sp needed
+  63 003a 7047     		bx	lr
+  64              	.L7:
+  65              		.align	2
+  66              	.L6:
+  67 003c 00000000 		.word	uxCriticalNesting
+  69              		.section	.text.prvPortStartFirstTask,"ax",%progbits
+  70              		.align	1
+  71              		.syntax unified
+  72              		.thumb
+  73              		.thumb_func
+  75              	prvPortStartFirstTask:
+  76              		@ Naked Function: prologue and epilogue provided by programmer.
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		.syntax unified
+  80              	@ 267 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" 1
+  81 0000 0848     		 ldr r0, =0xE000ED08 	
+  82 0002 0068     	 ldr r0, [r0] 			
+  83 0004 0068     	 ldr r0, [r0] 			
+  84 0006 80F30888 	 msr msp, r0			
+  85 000a 4FF00000 	 mov r0, #0			
+  86 000e 80F31488 	 msr control, r0		
+  87 0012 62B6     	 cpsie i				
+  88 0014 61B6     	 cpsie f				
+  89 0016 BFF34F8F 	 dsb					
+  90 001a BFF36F8F 	 isb					
+  91 001e 00DF     	 svc 0					
+  92 0020 00BF     	 nop					
+  93              	
+  94              	@ 0 "" 2
+  95              		.thumb
+  96              		.syntax unified
+  98 0022 0000     		.section	.text.vPortEnableVFP,"ax",%progbits
+  99              		.align	1
+ 100              		.syntax unified
+ 101              		.thumb
+ 102              		.thumb_func
+ 104              	vPortEnableVFP:
+ 105              		@ Naked Function: prologue and epilogue provided by programmer.
+ 106              		@ args = 0, pretend = 0, frame = 0
+ 107              		@ frame_needed = 0, uses_anonymous_args = 0
+ 108              		.syntax unified
+ 109              	@ 703 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" 1
+ 110 0000 DFF80C00 			ldr.w r0, =0xE000ED88		
+ 111 0004 0168     		ldr r1, [r0]				
+ 112              									
+ 113 0006 41F47001 		orr r1, r1, #( 0xf << 20 )	
+ 114 000a 0160     		str r1, [r0]				
+ 115 000c 7047     		bx r14						
+ 116              	@ 0 "" 2
+ 117              		.thumb
+ 118              		.syntax unified
+ 120 000e 0000     		.section	.text.pxPortInitialiseStack,"ax",%progbits
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 3
+
+
+ 121              		.align	1
+ 122              		.global	pxPortInitialiseStack
+ 123              		.syntax unified
+ 124              		.thumb
+ 125              		.thumb_func
+ 127              	pxPortInitialiseStack:
+ 128              		@ args = 0, pretend = 0, frame = 0
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130              		@ link register save eliminated.
+ 131 0000 4FF08073 		mov	r3, #16777216
+ 132 0004 40F8043C 		str	r3, [r0, #-4]
+ 133 0008 21F00101 		bic	r1, r1, #1
+ 134 000c 40F8081C 		str	r1, [r0, #-8]
+ 135 0010 054B     		ldr	r3, .L11
+ 136 0012 40F80C3C 		str	r3, [r0, #-12]
+ 137 0016 40F8202C 		str	r2, [r0, #-32]
+ 138 001a 6FF00203 		mvn	r3, #2
+ 139 001e 40F8243C 		str	r3, [r0, #-36]
+ 140 0022 4438     		subs	r0, r0, #68
+ 141 0024 7047     		bx	lr
+ 142              	.L12:
+ 143 0026 00BF     		.align	2
+ 144              	.L11:
+ 145 0028 00000000 		.word	prvTaskExitError
+ 147              		.section	.text.SVC_Handler,"ax",%progbits
+ 148              		.align	1
+ 149              		.global	SVC_Handler
+ 150              		.syntax unified
+ 151              		.thumb
+ 152              		.thumb_func
+ 154              	SVC_Handler:
+ 155              		@ Naked Function: prologue and epilogue provided by programmer.
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		.syntax unified
+ 159              	@ 244 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" 1
+ 160 0000 074B     			ldr	r3, pxCurrentTCBConst2		
+ 161 0002 1968     		ldr r1, [r3]					
+ 162 0004 0868     		ldr r0, [r1]					
+ 163 0006 B0E8F04F 		ldmia r0!, {r4-r11, r14}		
+ 164 000a 80F30988 		msr psp, r0						
+ 165 000e BFF36F8F 		isb								
+ 166 0012 4FF00000 		mov r0, #0 						
+ 167 0016 80F31188 		msr	basepri, r0					
+ 168 001a 7047     		bx r14							
+ 169              										
+ 170 001c AFF30080 		.align 4						
+ 171 0020 00000000 	pxCurrentTCBConst2: .word pxCurrentTCB				
+ 172              	
+ 173              	@ 0 "" 2
+ 174              		.thumb
+ 175              		.syntax unified
+ 177              		.section	.text.vPortEndScheduler,"ax",%progbits
+ 178              		.align	1
+ 179              		.global	vPortEndScheduler
+ 180              		.syntax unified
+ 181              		.thumb
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 4
+
+
+ 182              		.thumb_func
+ 184              	vPortEndScheduler:
+ 185              		@ args = 0, pretend = 0, frame = 0
+ 186              		@ frame_needed = 0, uses_anonymous_args = 0
+ 187              		@ link register save eliminated.
+ 188 0000 074B     		ldr	r3, .L17
+ 189 0002 1B68     		ldr	r3, [r3]
+ 190 0004 B3F57A7F 		cmp	r3, #1000
+ 191 0008 08D0     		beq	.L14
+ 192              		.syntax unified
+ 193              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 194 000a 4FF05003 			mov r3, #80												
+ 195 000e 83F31188 		msr basepri, r3											
+ 196 0012 BFF36F8F 		isb														
+ 197 0016 BFF34F8F 		dsb														
+ 198              	
+ 199              	@ 0 "" 2
+ 200              		.thumb
+ 201              		.syntax unified
+ 202              	.L16:
+ 203 001a FEE7     		b	.L16
+ 204              	.L14:
+ 205 001c 7047     		bx	lr
+ 206              	.L18:
+ 207 001e 00BF     		.align	2
+ 208              	.L17:
+ 209 0020 00000000 		.word	uxCriticalNesting
+ 211              		.section	.text.vPortEnterCritical,"ax",%progbits
+ 212              		.align	1
+ 213              		.global	vPortEnterCritical
+ 214              		.syntax unified
+ 215              		.thumb
+ 216              		.thumb_func
+ 218              	vPortEnterCritical:
+ 219              		@ args = 0, pretend = 0, frame = 0
+ 220              		@ frame_needed = 0, uses_anonymous_args = 0
+ 221              		@ link register save eliminated.
+ 222              		.syntax unified
+ 223              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 224 0000 4FF05003 			mov r3, #80												
+ 225 0004 83F31188 		msr basepri, r3											
+ 226 0008 BFF36F8F 		isb														
+ 227 000c BFF34F8F 		dsb														
+ 228              	
+ 229              	@ 0 "" 2
+ 230              		.thumb
+ 231              		.syntax unified
+ 232 0010 0B4A     		ldr	r2, .L23
+ 233 0012 1368     		ldr	r3, [r2]
+ 234 0014 0133     		adds	r3, r3, #1
+ 235 0016 1360     		str	r3, [r2]
+ 236 0018 012B     		cmp	r3, #1
+ 237 001a 00D0     		beq	.L22
+ 238              	.L19:
+ 239 001c 7047     		bx	lr
+ 240              	.L22:
+ 241 001e 4FF0E023 		mov	r3, #-536813568
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 5
+
+
+ 242 0022 D3F8043D 		ldr	r3, [r3, #3332]
+ 243 0026 13F0FF0F 		tst	r3, #255
+ 244 002a F7D0     		beq	.L19
+ 245              		.syntax unified
+ 246              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 247 002c 4FF05003 			mov r3, #80												
+ 248 0030 83F31188 		msr basepri, r3											
+ 249 0034 BFF36F8F 		isb														
+ 250 0038 BFF34F8F 		dsb														
+ 251              	
+ 252              	@ 0 "" 2
+ 253              		.thumb
+ 254              		.syntax unified
+ 255              	.L21:
+ 256 003c FEE7     		b	.L21
+ 257              	.L24:
+ 258 003e 00BF     		.align	2
+ 259              	.L23:
+ 260 0040 00000000 		.word	uxCriticalNesting
+ 262              		.section	.text.vPortExitCritical,"ax",%progbits
+ 263              		.align	1
+ 264              		.global	vPortExitCritical
+ 265              		.syntax unified
+ 266              		.thumb
+ 267              		.thumb_func
+ 269              	vPortExitCritical:
+ 270              		@ args = 0, pretend = 0, frame = 0
+ 271              		@ frame_needed = 0, uses_anonymous_args = 0
+ 272              		@ link register save eliminated.
+ 273 0000 094B     		ldr	r3, .L29
+ 274 0002 1B68     		ldr	r3, [r3]
+ 275 0004 43B9     		cbnz	r3, .L26
+ 276              		.syntax unified
+ 277              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 278 0006 4FF05003 			mov r3, #80												
+ 279 000a 83F31188 		msr basepri, r3											
+ 280 000e BFF36F8F 		isb														
+ 281 0012 BFF34F8F 		dsb														
+ 282              	
+ 283              	@ 0 "" 2
+ 284              		.thumb
+ 285              		.syntax unified
+ 286              	.L27:
+ 287 0016 FEE7     		b	.L27
+ 288              	.L26:
+ 289 0018 013B     		subs	r3, r3, #1
+ 290 001a 034A     		ldr	r2, .L29
+ 291 001c 1360     		str	r3, [r2]
+ 292 001e 0BB9     		cbnz	r3, .L25
+ 293              		.syntax unified
+ 294              	@ 229 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 295 0020 83F31188 			msr basepri, r3	
+ 296              	@ 0 "" 2
+ 297              		.thumb
+ 298              		.syntax unified
+ 299              	.L25:
+ 300 0024 7047     		bx	lr
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 6
+
+
+ 301              	.L30:
+ 302 0026 00BF     		.align	2
+ 303              	.L29:
+ 304 0028 00000000 		.word	uxCriticalNesting
+ 306              		.section	.text.PendSV_Handler,"ax",%progbits
+ 307              		.align	1
+ 308              		.global	PendSV_Handler
+ 309              		.syntax unified
+ 310              		.thumb
+ 311              		.thumb_func
+ 313              	PendSV_Handler:
+ 314              		@ Naked Function: prologue and epilogue provided by programmer.
+ 315              		@ args = 0, pretend = 0, frame = 0
+ 316              		@ frame_needed = 0, uses_anonymous_args = 0
+ 317              		.syntax unified
+ 318              	@ 435 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" 1
+ 319 0000 EFF30980 			mrs r0, psp							
+ 320 0004 BFF36F8F 		isb									
+ 321              											
+ 322 0008 154B     		ldr	r3, pxCurrentTCBConst			
+ 323 000a 1A68     		ldr	r2, [r3]						
+ 324              											
+ 325 000c 1EF0100F 		tst r14, #0x10						
+ 326 0010 08BF     		it eq								
+ 327 0012 20ED108A 		vstmdbeq r0!, {s16-s31}				
+ 328              											
+ 329 0016 20E9F04F 		stmdb r0!, {r4-r11, r14}			
+ 330 001a 1060     		str r0, [r2]						
+ 331              											
+ 332 001c 2DE90900 		stmdb sp!, {r0, r3}					
+ 333 0020 4FF05000 		mov r0, #80 							
+ 334 0024 80F31188 		msr basepri, r0						
+ 335 0028 BFF34F8F 		dsb									
+ 336 002c BFF36F8F 		isb									
+ 337 0030 FFF7FEFF 		bl vTaskSwitchContext				
+ 338 0034 4FF00000 		mov r0, #0							
+ 339 0038 80F31188 		msr basepri, r0						
+ 340 003c 09BC     		ldmia sp!, {r0, r3}					
+ 341              											
+ 342 003e 1968     		ldr r1, [r3]						
+ 343 0040 0868     		ldr r0, [r1]						
+ 344              											
+ 345 0042 B0E8F04F 		ldmia r0!, {r4-r11, r14}			
+ 346              											
+ 347 0046 1EF0100F 		tst r14, #0x10						
+ 348 004a 08BF     		it eq								
+ 349 004c B0EC108A 		vldmiaeq r0!, {s16-s31}				
+ 350              											
+ 351 0050 80F30988 		msr psp, r0							
+ 352 0054 BFF36F8F 		isb									
+ 353              											
+ 354              											
+ 355 0058 7047     		bx r14								
+ 356              											
+ 357 005a 00BFAFF3 		.align 4							
+ 357      0080
+ 358 0060 00000000 	pxCurrentTCBConst: .word pxCurrentTCB	
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 7
+
+
+ 359              	
+ 360              	@ 0 "" 2
+ 361              		.thumb
+ 362              		.syntax unified
+ 364              		.section	.text.SysTick_Handler,"ax",%progbits
+ 365              		.align	1
+ 366              		.global	SysTick_Handler
+ 367              		.syntax unified
+ 368              		.thumb
+ 369              		.thumb_func
+ 371              	SysTick_Handler:
+ 372              		@ args = 0, pretend = 0, frame = 0
+ 373              		@ frame_needed = 0, uses_anonymous_args = 0
+ 374 0000 08B5     		push	{r3, lr}
+ 375              		.syntax unified
+ 376              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 377 0002 4FF05003 			mov r3, #80												
+ 378 0006 83F31188 		msr basepri, r3											
+ 379 000a BFF36F8F 		isb														
+ 380 000e BFF34F8F 		dsb														
+ 381              	
+ 382              	@ 0 "" 2
+ 383              		.thumb
+ 384              		.syntax unified
+ 385 0012 FFF7FEFF 		bl	xTaskIncrementTick
+ 386 0016 28B1     		cbz	r0, .L33
+ 387 0018 4FF0E023 		mov	r3, #-536813568
+ 388 001c 4FF08052 		mov	r2, #268435456
+ 389 0020 C3F8042D 		str	r2, [r3, #3332]
+ 390              	.L33:
+ 391 0024 0023     		movs	r3, #0
+ 392              		.syntax unified
+ 393              	@ 229 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 394 0026 83F31188 			msr basepri, r3	
+ 395              	@ 0 "" 2
+ 396              		.thumb
+ 397              		.syntax unified
+ 398 002a 08BD     		pop	{r3, pc}
+ 400              		.section	.text.vPortSetupTimerInterrupt,"ax",%progbits
+ 401              		.align	1
+ 402              		.weak	vPortSetupTimerInterrupt
+ 403              		.syntax unified
+ 404              		.thumb
+ 405              		.thumb_func
+ 407              	vPortSetupTimerInterrupt:
+ 408              		@ args = 0, pretend = 0, frame = 0
+ 409              		@ frame_needed = 0, uses_anonymous_args = 0
+ 410              		@ link register save eliminated.
+ 411 0000 4FF0E022 		mov	r2, #-536813568
+ 412 0004 0023     		movs	r3, #0
+ 413 0006 1361     		str	r3, [r2, #16]
+ 414 0008 9361     		str	r3, [r2, #24]
+ 415 000a 054B     		ldr	r3, .L36
+ 416 000c 1B68     		ldr	r3, [r3]
+ 417 000e 0549     		ldr	r1, .L36+4
+ 418 0010 A1FB0313 		umull	r1, r3, r1, r3
+ 419 0014 9B09     		lsrs	r3, r3, #6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 8
+
+
+ 420 0016 013B     		subs	r3, r3, #1
+ 421 0018 5361     		str	r3, [r2, #20]
+ 422 001a 0723     		movs	r3, #7
+ 423 001c 1361     		str	r3, [r2, #16]
+ 424 001e 7047     		bx	lr
+ 425              	.L37:
+ 426              		.align	2
+ 427              	.L36:
+ 428 0020 00000000 		.word	SystemCoreClock
+ 429 0024 D34D6210 		.word	274877907
+ 431              		.section	.text.xPortStartScheduler,"ax",%progbits
+ 432              		.align	1
+ 433              		.global	xPortStartScheduler
+ 434              		.syntax unified
+ 435              		.thumb
+ 436              		.thumb_func
+ 438              	xPortStartScheduler:
+ 439              		@ args = 0, pretend = 0, frame = 8
+ 440              		@ frame_needed = 0, uses_anonymous_args = 0
+ 441 0000 4FF0E023 		mov	r3, #-536813568
+ 442 0004 D3F8002D 		ldr	r2, [r3, #3328]
+ 443 0008 3D4B     		ldr	r3, .L51
+ 444 000a 9A42     		cmp	r2, r3
+ 445 000c 1CD0     		beq	.L49
+ 446 000e 4FF0E023 		mov	r3, #-536813568
+ 447 0012 D3F8002D 		ldr	r2, [r3, #3328]
+ 448 0016 3B4B     		ldr	r3, .L51+4
+ 449 0018 9A42     		cmp	r2, r3
+ 450 001a 1ED0     		beq	.L50
+ 451 001c 30B5     		push	{r4, r5, lr}
+ 452 001e 83B0     		sub	sp, sp, #12
+ 453 0020 394B     		ldr	r3, .L51+8
+ 454 0022 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 455 0024 D2B2     		uxtb	r2, r2
+ 456 0026 0192     		str	r2, [sp, #4]
+ 457 0028 FF22     		movs	r2, #255
+ 458 002a 1A70     		strb	r2, [r3]
+ 459 002c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 460 002e DBB2     		uxtb	r3, r3
+ 461 0030 8DF80330 		strb	r3, [sp, #3]
+ 462 0034 9DF80330 		ldrb	r3, [sp, #3]	@ zero_extendqisi2
+ 463 0038 03F05003 		and	r3, r3, #80
+ 464 003c 334A     		ldr	r2, .L51+12
+ 465 003e 1370     		strb	r3, [r2]
+ 466 0040 334B     		ldr	r3, .L51+16
+ 467 0042 0722     		movs	r2, #7
+ 468 0044 1A60     		str	r2, [r3]
+ 469 0046 1BE0     		b	.L43
+ 470              	.L49:
+ 471              		.syntax unified
+ 472              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 473 0048 4FF05003 			mov r3, #80												
+ 474 004c 83F31188 		msr basepri, r3											
+ 475 0050 BFF36F8F 		isb														
+ 476 0054 BFF34F8F 		dsb														
+ 477              	
+ 478              	@ 0 "" 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 9
+
+
+ 479              		.thumb
+ 480              		.syntax unified
+ 481              	.L40:
+ 482 0058 FEE7     		b	.L40
+ 483              	.L50:
+ 484              		.syntax unified
+ 485              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 486 005a 4FF05003 			mov r3, #80												
+ 487 005e 83F31188 		msr basepri, r3											
+ 488 0062 BFF36F8F 		isb														
+ 489 0066 BFF34F8F 		dsb														
+ 490              	
+ 491              	@ 0 "" 2
+ 492              		.thumb
+ 493              		.syntax unified
+ 494              	.L42:
+ 495 006a FEE7     		b	.L42
+ 496              	.L44:
+ 497 006c 284A     		ldr	r2, .L51+16
+ 498 006e 1368     		ldr	r3, [r2]
+ 499 0070 013B     		subs	r3, r3, #1
+ 500 0072 1360     		str	r3, [r2]
+ 501 0074 9DF80330 		ldrb	r3, [sp, #3]	@ zero_extendqisi2
+ 502 0078 5B00     		lsls	r3, r3, #1
+ 503 007a DBB2     		uxtb	r3, r3
+ 504 007c 8DF80330 		strb	r3, [sp, #3]
+ 505              	.L43:
+ 506 0080 9DF80330 		ldrb	r3, [sp, #3]	@ zero_extendqisi2
+ 507 0084 13F0800F 		tst	r3, #128
+ 508 0088 F0D1     		bne	.L44
+ 509 008a 214B     		ldr	r3, .L51+16
+ 510 008c 1B68     		ldr	r3, [r3]
+ 511 008e 032B     		cmp	r3, #3
+ 512 0090 08D0     		beq	.L45
+ 513              		.syntax unified
+ 514              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 515 0092 4FF05003 			mov r3, #80												
+ 516 0096 83F31188 		msr basepri, r3											
+ 517 009a BFF36F8F 		isb														
+ 518 009e BFF34F8F 		dsb														
+ 519              	
+ 520              	@ 0 "" 2
+ 521              		.thumb
+ 522              		.syntax unified
+ 523              	.L46:
+ 524 00a2 FEE7     		b	.L46
+ 525              	.L45:
+ 526 00a4 1B02     		lsls	r3, r3, #8
+ 527 00a6 1A4A     		ldr	r2, .L51+16
+ 528 00a8 1360     		str	r3, [r2]
+ 529 00aa 03F4E063 		and	r3, r3, #1792
+ 530 00ae 1360     		str	r3, [r2]
+ 531 00b0 019B     		ldr	r3, [sp, #4]
+ 532 00b2 DBB2     		uxtb	r3, r3
+ 533 00b4 144A     		ldr	r2, .L51+8
+ 534 00b6 1370     		strb	r3, [r2]
+ 535 00b8 4FF0E024 		mov	r4, #-536813568
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 10
+
+
+ 536 00bc D4F8203D 		ldr	r3, [r4, #3360]
+ 537 00c0 43F47003 		orr	r3, r3, #15728640
+ 538 00c4 C4F8203D 		str	r3, [r4, #3360]
+ 539 00c8 D4F8203D 		ldr	r3, [r4, #3360]
+ 540 00cc 43F07043 		orr	r3, r3, #-268435456
+ 541 00d0 C4F8203D 		str	r3, [r4, #3360]
+ 542 00d4 FFF7FEFF 		bl	vPortSetupTimerInterrupt
+ 543 00d8 0025     		movs	r5, #0
+ 544 00da 0E4B     		ldr	r3, .L51+20
+ 545 00dc 1D60     		str	r5, [r3]
+ 546 00de FFF7FEFF 		bl	vPortEnableVFP
+ 547 00e2 D4F8343F 		ldr	r3, [r4, #3892]
+ 548 00e6 43F04043 		orr	r3, r3, #-1073741824
+ 549 00ea C4F8343F 		str	r3, [r4, #3892]
+ 550 00ee FFF7FEFF 		bl	prvPortStartFirstTask
+ 551 00f2 FFF7FEFF 		bl	vTaskSwitchContext
+ 552 00f6 FFF7FEFF 		bl	prvTaskExitError
+ 553 00fa 2846     		mov	r0, r5
+ 554 00fc 03B0     		add	sp, sp, #12
+ 555              		@ sp needed
+ 556 00fe 30BD     		pop	{r4, r5, pc}
+ 557              	.L52:
+ 558              		.align	2
+ 559              	.L51:
+ 560 0100 71C20F41 		.word	1091551857
+ 561 0104 70C20F41 		.word	1091551856
+ 562 0108 00E400E0 		.word	-536812544
+ 563 010c 00000000 		.word	ucMaxSysCallPriority
+ 564 0110 00000000 		.word	ulMaxPRIGROUPValue
+ 565 0114 00000000 		.word	uxCriticalNesting
+ 567              		.section	.text.vPortValidateInterruptPriority,"ax",%progbits
+ 568              		.align	1
+ 569              		.global	vPortValidateInterruptPriority
+ 570              		.syntax unified
+ 571              		.thumb
+ 572              		.thumb_func
+ 574              	vPortValidateInterruptPriority:
+ 575              		@ args = 0, pretend = 0, frame = 0
+ 576              		@ frame_needed = 0, uses_anonymous_args = 0
+ 577              		@ link register save eliminated.
+ 578              		.syntax unified
+ 579              	@ 723 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" 1
+ 580 0000 EFF30583 		mrs r3, ipsr
+ 581              	@ 0 "" 2
+ 582              		.thumb
+ 583              		.syntax unified
+ 584 0004 0F2B     		cmp	r3, #15
+ 585 0006 0ED9     		bls	.L54
+ 586 0008 114A     		ldr	r2, .L58
+ 587 000a 9A5C     		ldrb	r2, [r3, r2]	@ zero_extendqisi2
+ 588 000c 114B     		ldr	r3, .L58+4
+ 589 000e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 590 0010 9A42     		cmp	r2, r3
+ 591 0012 08D2     		bcs	.L54
+ 592              		.syntax unified
+ 593              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 594 0014 4FF05003 			mov r3, #80												
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 11
+
+
+ 595 0018 83F31188 		msr basepri, r3											
+ 596 001c BFF36F8F 		isb														
+ 597 0020 BFF34F8F 		dsb														
+ 598              	
+ 599              	@ 0 "" 2
+ 600              		.thumb
+ 601              		.syntax unified
+ 602              	.L55:
+ 603 0024 FEE7     		b	.L55
+ 604              	.L54:
+ 605 0026 4FF0E023 		mov	r3, #-536813568
+ 606 002a D3F80C3D 		ldr	r3, [r3, #3340]
+ 607 002e 03F4E063 		and	r3, r3, #1792
+ 608 0032 094A     		ldr	r2, .L58+8
+ 609 0034 1268     		ldr	r2, [r2]
+ 610 0036 9342     		cmp	r3, r2
+ 611 0038 08D9     		bls	.L53
+ 612              		.syntax unified
+ 613              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 614 003a 4FF05003 			mov r3, #80												
+ 615 003e 83F31188 		msr basepri, r3											
+ 616 0042 BFF36F8F 		isb														
+ 617 0046 BFF34F8F 		dsb														
+ 618              	
+ 619              	@ 0 "" 2
+ 620              		.thumb
+ 621              		.syntax unified
+ 622              	.L57:
+ 623 004a FEE7     		b	.L57
+ 624              	.L53:
+ 625 004c 7047     		bx	lr
+ 626              	.L59:
+ 627 004e 00BF     		.align	2
+ 628              	.L58:
+ 629 0050 F0E300E0 		.word	-536812560
+ 630 0054 00000000 		.word	ucMaxSysCallPriority
+ 631 0058 00000000 		.word	ulMaxPRIGROUPValue
+ 633              		.section	.bss.ulMaxPRIGROUPValue,"aw",%nobits
+ 634              		.align	2
+ 637              	ulMaxPRIGROUPValue:
+ 638 0000 00000000 		.space	4
+ 639              		.section	.bss.ucMaxSysCallPriority,"aw",%nobits
+ 642              	ucMaxSysCallPriority:
+ 643 0000 00       		.space	1
+ 644              		.section	.data.uxCriticalNesting,"aw"
+ 645              		.align	2
+ 648              	uxCriticalNesting:
+ 649 0000 AAAAAAAA 		.word	-1431655766
+ 650              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 port.c
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:18     .text.prvTaskExitError:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:23     .text.prvTaskExitError:00000000 prvTaskExitError
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:67     .text.prvTaskExitError:0000003c $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:648    .data.uxCriticalNesting:00000000 uxCriticalNesting
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:70     .text.prvPortStartFirstTask:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:75     .text.prvPortStartFirstTask:00000000 prvPortStartFirstTask
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:99     .text.vPortEnableVFP:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:104    .text.vPortEnableVFP:00000000 vPortEnableVFP
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:121    .text.pxPortInitialiseStack:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:127    .text.pxPortInitialiseStack:00000000 pxPortInitialiseStack
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:145    .text.pxPortInitialiseStack:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:148    .text.SVC_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:154    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:171    .text.SVC_Handler:00000020 pxCurrentTCBConst2
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:171    .text.SVC_Handler:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:178    .text.vPortEndScheduler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:184    .text.vPortEndScheduler:00000000 vPortEndScheduler
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:209    .text.vPortEndScheduler:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:212    .text.vPortEnterCritical:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:218    .text.vPortEnterCritical:00000000 vPortEnterCritical
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:260    .text.vPortEnterCritical:00000040 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:263    .text.vPortExitCritical:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:269    .text.vPortExitCritical:00000000 vPortExitCritical
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:304    .text.vPortExitCritical:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:307    .text.PendSV_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:313    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:358    .text.PendSV_Handler:00000060 pxCurrentTCBConst
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:358    .text.PendSV_Handler:00000060 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:365    .text.SysTick_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:371    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:401    .text.vPortSetupTimerInterrupt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:407    .text.vPortSetupTimerInterrupt:00000000 vPortSetupTimerInterrupt
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:428    .text.vPortSetupTimerInterrupt:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:432    .text.xPortStartScheduler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:438    .text.xPortStartScheduler:00000000 xPortStartScheduler
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:560    .text.xPortStartScheduler:00000100 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:642    .bss.ucMaxSysCallPriority:00000000 ucMaxSysCallPriority
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:637    .bss.ulMaxPRIGROUPValue:00000000 ulMaxPRIGROUPValue
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:568    .text.vPortValidateInterruptPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:574    .text.vPortValidateInterruptPriority:00000000 vPortValidateInterruptPriority
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:629    .text.vPortValidateInterruptPriority:00000050 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:634    .bss.ulMaxPRIGROUPValue:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:643    .bss.ucMaxSysCallPriority:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:645    .data.uxCriticalNesting:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:120    .text.vPortEnableVFP:0000000e $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:650    .text.vPortEnableVFP:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:98     .text.prvPortStartFirstTask:00000022 $d
+C:\Users\Rick\AppData\Local\Temp\ccLJCkKg.s:650    .text.prvPortStartFirstTask:00000024 $d
+
+UNDEFINED SYMBOLS
+pxCurrentTCB
+vTaskSwitchContext
+xTaskIncrementTick
+SystemCoreClock

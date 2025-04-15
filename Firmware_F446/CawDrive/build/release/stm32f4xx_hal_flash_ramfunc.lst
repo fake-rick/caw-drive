@@ -1,0 +1,174 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f4xx_hal_flash_ramfunc.c"
+  16              		.text
+  17              		.section	.RamFunc,"ax",%progbits
+  18              		.align	1
+  19              		.global	HAL_FLASHEx_StopFlashInterfaceClk
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	HAL_FLASHEx_StopFlashInterfaceClk:
+  25              		@ args = 0, pretend = 0, frame = 8
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27              		@ link register save eliminated.
+  28 0000 82B0     		sub	sp, sp, #8
+  29 0002 0020     		movs	r0, #0
+  30 0004 0190     		str	r0, [sp, #4]
+  31 0006 084B     		ldr	r3, .L3
+  32 0008 1A6C     		ldr	r2, [r3, #64]
+  33 000a 42F08052 		orr	r2, r2, #268435456
+  34 000e 1A64     		str	r2, [r3, #64]
+  35 0010 1B6C     		ldr	r3, [r3, #64]
+  36 0012 03F08053 		and	r3, r3, #268435456
+  37 0016 0193     		str	r3, [sp, #4]
+  38 0018 019B     		ldr	r3, [sp, #4]
+  39 001a 044A     		ldr	r2, .L3+4
+  40 001c 1368     		ldr	r3, [r2]
+  41 001e 43F40013 		orr	r3, r3, #2097152
+  42 0022 1360     		str	r3, [r2]
+  43 0024 02B0     		add	sp, sp, #8
+  44              		@ sp needed
+  45 0026 7047     		bx	lr
+  46              	.L4:
+  47              		.align	2
+  48              	.L3:
+  49 0028 00380240 		.word	1073887232
+  50 002c 00700040 		.word	1073770496
+  52              		.align	1
+  53              		.global	HAL_FLASHEx_StartFlashInterfaceClk
+  54              		.syntax unified
+  55              		.thumb
+  56              		.thumb_func
+  58              	HAL_FLASHEx_StartFlashInterfaceClk:
+  59              		@ args = 0, pretend = 0, frame = 8
+  60              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s 			page 2
+
+
+  61              		@ link register save eliminated.
+  62 0030 82B0     		sub	sp, sp, #8
+  63 0032 0020     		movs	r0, #0
+  64 0034 0190     		str	r0, [sp, #4]
+  65 0036 084B     		ldr	r3, .L7
+  66 0038 1A6C     		ldr	r2, [r3, #64]
+  67 003a 42F08052 		orr	r2, r2, #268435456
+  68 003e 1A64     		str	r2, [r3, #64]
+  69 0040 1B6C     		ldr	r3, [r3, #64]
+  70 0042 03F08053 		and	r3, r3, #268435456
+  71 0046 0193     		str	r3, [sp, #4]
+  72 0048 019B     		ldr	r3, [sp, #4]
+  73 004a 044A     		ldr	r2, .L7+4
+  74 004c 1368     		ldr	r3, [r2]
+  75 004e 23F40013 		bic	r3, r3, #2097152
+  76 0052 1360     		str	r3, [r2]
+  77 0054 02B0     		add	sp, sp, #8
+  78              		@ sp needed
+  79 0056 7047     		bx	lr
+  80              	.L8:
+  81              		.align	2
+  82              	.L7:
+  83 0058 00380240 		.word	1073887232
+  84 005c 00700040 		.word	1073770496
+  86              		.align	1
+  87              		.global	HAL_FLASHEx_EnableFlashSleepMode
+  88              		.syntax unified
+  89              		.thumb
+  90              		.thumb_func
+  92              	HAL_FLASHEx_EnableFlashSleepMode:
+  93              		@ args = 0, pretend = 0, frame = 8
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95              		@ link register save eliminated.
+  96 0060 82B0     		sub	sp, sp, #8
+  97 0062 0020     		movs	r0, #0
+  98 0064 0190     		str	r0, [sp, #4]
+  99 0066 084B     		ldr	r3, .L11
+ 100 0068 1A6C     		ldr	r2, [r3, #64]
+ 101 006a 42F08052 		orr	r2, r2, #268435456
+ 102 006e 1A64     		str	r2, [r3, #64]
+ 103 0070 1B6C     		ldr	r3, [r3, #64]
+ 104 0072 03F08053 		and	r3, r3, #268435456
+ 105 0076 0193     		str	r3, [sp, #4]
+ 106 0078 019B     		ldr	r3, [sp, #4]
+ 107 007a 044A     		ldr	r2, .L11+4
+ 108 007c 1368     		ldr	r3, [r2]
+ 109 007e 43F48013 		orr	r3, r3, #1048576
+ 110 0082 1360     		str	r3, [r2]
+ 111 0084 02B0     		add	sp, sp, #8
+ 112              		@ sp needed
+ 113 0086 7047     		bx	lr
+ 114              	.L12:
+ 115              		.align	2
+ 116              	.L11:
+ 117 0088 00380240 		.word	1073887232
+ 118 008c 00700040 		.word	1073770496
+ 120              		.align	1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s 			page 3
+
+
+ 121              		.global	HAL_FLASHEx_DisableFlashSleepMode
+ 122              		.syntax unified
+ 123              		.thumb
+ 124              		.thumb_func
+ 126              	HAL_FLASHEx_DisableFlashSleepMode:
+ 127              		@ args = 0, pretend = 0, frame = 8
+ 128              		@ frame_needed = 0, uses_anonymous_args = 0
+ 129              		@ link register save eliminated.
+ 130 0090 82B0     		sub	sp, sp, #8
+ 131 0092 0020     		movs	r0, #0
+ 132 0094 0190     		str	r0, [sp, #4]
+ 133 0096 084B     		ldr	r3, .L15
+ 134 0098 1A6C     		ldr	r2, [r3, #64]
+ 135 009a 42F08052 		orr	r2, r2, #268435456
+ 136 009e 1A64     		str	r2, [r3, #64]
+ 137 00a0 1B6C     		ldr	r3, [r3, #64]
+ 138 00a2 03F08053 		and	r3, r3, #268435456
+ 139 00a6 0193     		str	r3, [sp, #4]
+ 140 00a8 019B     		ldr	r3, [sp, #4]
+ 141 00aa 044A     		ldr	r2, .L15+4
+ 142 00ac 1368     		ldr	r3, [r2]
+ 143 00ae 23F48013 		bic	r3, r3, #1048576
+ 144 00b2 1360     		str	r3, [r2]
+ 145 00b4 02B0     		add	sp, sp, #8
+ 146              		@ sp needed
+ 147 00b6 7047     		bx	lr
+ 148              	.L16:
+ 149              		.align	2
+ 150              	.L15:
+ 151 00b8 00380240 		.word	1073887232
+ 152 00bc 00700040 		.word	1073770496
+ 154              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f4xx_hal_flash_ramfunc.c
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:18     .RamFunc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:24     .RamFunc:00000000 HAL_FLASHEx_StopFlashInterfaceClk
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:49     .RamFunc:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:52     .RamFunc:00000030 $t
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:58     .RamFunc:00000030 HAL_FLASHEx_StartFlashInterfaceClk
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:83     .RamFunc:00000058 $d
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:86     .RamFunc:00000060 $t
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:92     .RamFunc:00000060 HAL_FLASHEx_EnableFlashSleepMode
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:117    .RamFunc:00000088 $d
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:120    .RamFunc:00000090 $t
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:126    .RamFunc:00000090 HAL_FLASHEx_DisableFlashSleepMode
+C:\Users\Rick\AppData\Local\Temp\ccQr2LJP.s:151    .RamFunc:000000b8 $d
+
+NO UNDEFINED SYMBOLS

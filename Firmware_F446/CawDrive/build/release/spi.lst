@@ -1,0 +1,189 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"spi.c"
+  16              		.text
+  17              		.section	.text.MX_SPI3_Init,"ax",%progbits
+  18              		.align	1
+  19              		.global	MX_SPI3_Init
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	MX_SPI3_Init:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 08B5     		push	{r3, lr}
+  28 0002 0D48     		ldr	r0, .L5
+  29 0004 0D4B     		ldr	r3, .L5+4
+  30 0006 0360     		str	r3, [r0]
+  31 0008 4FF48273 		mov	r3, #260
+  32 000c 4360     		str	r3, [r0, #4]
+  33 000e 0023     		movs	r3, #0
+  34 0010 8360     		str	r3, [r0, #8]
+  35 0012 C360     		str	r3, [r0, #12]
+  36 0014 0361     		str	r3, [r0, #16]
+  37 0016 4361     		str	r3, [r0, #20]
+  38 0018 4FF40072 		mov	r2, #512
+  39 001c 8261     		str	r2, [r0, #24]
+  40 001e C361     		str	r3, [r0, #28]
+  41 0020 0362     		str	r3, [r0, #32]
+  42 0022 4362     		str	r3, [r0, #36]
+  43 0024 8362     		str	r3, [r0, #40]
+  44 0026 0A23     		movs	r3, #10
+  45 0028 C362     		str	r3, [r0, #44]
+  46 002a FFF7FEFF 		bl	HAL_SPI_Init
+  47 002e 00B9     		cbnz	r0, .L4
+  48              	.L1:
+  49 0030 08BD     		pop	{r3, pc}
+  50              	.L4:
+  51 0032 FFF7FEFF 		bl	Error_Handler
+  52 0036 FBE7     		b	.L1
+  53              	.L6:
+  54              		.align	2
+  55              	.L5:
+  56 0038 00000000 		.word	hspi3
+  57 003c 003C0040 		.word	1073757184
+  59              		.section	.text.HAL_SPI_MspInit,"ax",%progbits
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s 			page 2
+
+
+  60              		.align	1
+  61              		.global	HAL_SPI_MspInit
+  62              		.syntax unified
+  63              		.thumb
+  64              		.thumb_func
+  66              	HAL_SPI_MspInit:
+  67              		@ args = 0, pretend = 0, frame = 32
+  68              		@ frame_needed = 0, uses_anonymous_args = 0
+  69 0000 00B5     		push	{lr}
+  70 0002 89B0     		sub	sp, sp, #36
+  71 0004 0023     		movs	r3, #0
+  72 0006 0393     		str	r3, [sp, #12]
+  73 0008 0493     		str	r3, [sp, #16]
+  74 000a 0593     		str	r3, [sp, #20]
+  75 000c 0693     		str	r3, [sp, #24]
+  76 000e 0793     		str	r3, [sp, #28]
+  77 0010 0268     		ldr	r2, [r0]
+  78 0012 154B     		ldr	r3, .L11
+  79 0014 9A42     		cmp	r2, r3
+  80 0016 02D0     		beq	.L10
+  81              	.L7:
+  82 0018 09B0     		add	sp, sp, #36
+  83              		@ sp needed
+  84 001a 5DF804FB 		ldr	pc, [sp], #4
+  85              	.L10:
+  86 001e 0021     		movs	r1, #0
+  87 0020 0191     		str	r1, [sp, #4]
+  88 0022 03F5FE33 		add	r3, r3, #130048
+  89 0026 1A6C     		ldr	r2, [r3, #64]
+  90 0028 42F40042 		orr	r2, r2, #32768
+  91 002c 1A64     		str	r2, [r3, #64]
+  92 002e 1A6C     		ldr	r2, [r3, #64]
+  93 0030 02F40042 		and	r2, r2, #32768
+  94 0034 0192     		str	r2, [sp, #4]
+  95 0036 019A     		ldr	r2, [sp, #4]
+  96 0038 0291     		str	r1, [sp, #8]
+  97 003a 1A6B     		ldr	r2, [r3, #48]
+  98 003c 42F00402 		orr	r2, r2, #4
+  99 0040 1A63     		str	r2, [r3, #48]
+ 100 0042 1B6B     		ldr	r3, [r3, #48]
+ 101 0044 03F00403 		and	r3, r3, #4
+ 102 0048 0293     		str	r3, [sp, #8]
+ 103 004a 029B     		ldr	r3, [sp, #8]
+ 104 004c 4FF4E053 		mov	r3, #7168
+ 105 0050 0393     		str	r3, [sp, #12]
+ 106 0052 0223     		movs	r3, #2
+ 107 0054 0493     		str	r3, [sp, #16]
+ 108 0056 0323     		movs	r3, #3
+ 109 0058 0693     		str	r3, [sp, #24]
+ 110 005a 0623     		movs	r3, #6
+ 111 005c 0793     		str	r3, [sp, #28]
+ 112 005e 03A9     		add	r1, sp, #12
+ 113 0060 0248     		ldr	r0, .L11+4
+ 114 0062 FFF7FEFF 		bl	HAL_GPIO_Init
+ 115 0066 D7E7     		b	.L7
+ 116              	.L12:
+ 117              		.align	2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s 			page 3
+
+
+ 118              	.L11:
+ 119 0068 003C0040 		.word	1073757184
+ 120 006c 00080240 		.word	1073874944
+ 122              		.section	.text.HAL_SPI_MspDeInit,"ax",%progbits
+ 123              		.align	1
+ 124              		.global	HAL_SPI_MspDeInit
+ 125              		.syntax unified
+ 126              		.thumb
+ 127              		.thumb_func
+ 129              	HAL_SPI_MspDeInit:
+ 130              		@ args = 0, pretend = 0, frame = 0
+ 131              		@ frame_needed = 0, uses_anonymous_args = 0
+ 132 0000 08B5     		push	{r3, lr}
+ 133 0002 0268     		ldr	r2, [r0]
+ 134 0004 074B     		ldr	r3, .L17
+ 135 0006 9A42     		cmp	r2, r3
+ 136 0008 00D0     		beq	.L16
+ 137              	.L13:
+ 138 000a 08BD     		pop	{r3, pc}
+ 139              	.L16:
+ 140 000c 064A     		ldr	r2, .L17+4
+ 141 000e 136C     		ldr	r3, [r2, #64]
+ 142 0010 23F40043 		bic	r3, r3, #32768
+ 143 0014 1364     		str	r3, [r2, #64]
+ 144 0016 4FF4E051 		mov	r1, #7168
+ 145 001a 0448     		ldr	r0, .L17+8
+ 146 001c FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 147 0020 F3E7     		b	.L13
+ 148              	.L18:
+ 149 0022 00BF     		.align	2
+ 150              	.L17:
+ 151 0024 003C0040 		.word	1073757184
+ 152 0028 00380240 		.word	1073887232
+ 153 002c 00080240 		.word	1073874944
+ 155              		.global	hspi3
+ 156              		.section	.bss.hspi3,"aw",%nobits
+ 157              		.align	2
+ 160              	hspi3:
+ 161 0000 00000000 		.space	88
+ 161      00000000 
+ 161      00000000 
+ 161      00000000 
+ 161      00000000 
+ 162              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 spi.c
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:18     .text.MX_SPI3_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:24     .text.MX_SPI3_Init:00000000 MX_SPI3_Init
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:56     .text.MX_SPI3_Init:00000038 $d
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:160    .bss.hspi3:00000000 hspi3
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:60     .text.HAL_SPI_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:66     .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:119    .text.HAL_SPI_MspInit:00000068 $d
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:123    .text.HAL_SPI_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:129    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:151    .text.HAL_SPI_MspDeInit:00000024 $d
+C:\Users\Rick\AppData\Local\Temp\cc0qK2fe.s:157    .bss.hspi3:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_SPI_Init
+Error_Handler
+HAL_GPIO_Init
+HAL_GPIO_DeInit

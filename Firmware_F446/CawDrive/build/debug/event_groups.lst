@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
   28:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** /* Standard includes. */
   29:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** #include <stdlib.h>
   30:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 2
 
 
   31:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
   85:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c ****  * in uxCurrentEventBits.
   86:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c ****  */
   87:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** static BaseType_t prvTestWaitCondition( const EventBits_t uxCurrentEventBits, const EventBits_t uxB
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 3
 
 
   88:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  142:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
  143:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** #if( configSUPPORT_DYNAMIC_ALLOCATION == 1 )
  144:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 4
 
 
  145:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	EventGroupHandle_t xEventGroupCreate( void )
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  199:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	configASSERT( uxBitsToWaitFor != 0 );
  200:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	#if ( ( INCLUDE_xTaskGetSchedulerState == 1 ) || ( configUSE_TIMERS == 1 ) )
  201:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 5
 
 
  202:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 )
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  256:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		}
  257:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		else
  258:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 6
 
 
  259:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			mtCOVERAGE_TEST_MARKER();
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  313:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** EventGroup_t *pxEventBits = xEventGroup;
  314:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** EventBits_t uxReturn, uxControlBits = 0;
  315:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** BaseType_t xWaitConditionMet, xAlreadyYielded;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 7
 
 
  316:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** BaseType_t xTimeoutOccurred = pdFALSE;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  370:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			else
  371:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			{
  372:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 				mtCOVERAGE_TEST_MARKER();
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 8
 
 
  373:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			}
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  427:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 					if( xClearOnExit != pdFALSE )
  428:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 					{
  429:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 						pxEventBits->uxEventBits &= ~uxBitsToWaitFor;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 9
 
 
  430:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 					}
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  484:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	return uxReturn;
  485:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** }
  486:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 10
 
 
  487:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  541:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		/* Set the bits. */
  542:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		pxEventBits->uxEventBits |= uxBitsToSet;
  543:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 11
 
 
  544:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		/* See if the new bit value should unblock any tasks. */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  598:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			used here as the list item may have been removed from the event list
  599:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			and inserted into the ready/pending reading list. */
  600:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			pxListItem = pxNext;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 12
 
 
  601:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		}
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  655:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** /* For internal use only - execute a 'set bits' command that was pended from
  656:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** an interrupt. */
  657:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** void vEventGroupSetBitsCallback( void *pvEventGroup, const uint32_t ulBitsToSet )
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 13
 
 
  658:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  690:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		/* Task has to wait for all the bits in uxBitsToWaitFor to be set.
  691:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		Are they set already? */
  692:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		if( ( uxCurrentEventBits & uxBitsToWaitFor ) == uxBitsToWaitFor )
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 14
 
 
   49              		.loc 1 692 3 is_stmt 1 view .LVU8
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
   89              		.loc 1 94 2 is_stmt 1 view -0
   90              		.cfi_startproc
   91              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 15
 
 
   92              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
   21:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *
   22:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * http://www.FreeRTOS.org
   23:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * http://aws.amazon.com/freertos
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 16
 
 
   24:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
   78:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /* Scheduler utilities. */
   79:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portYIELD() 															\
   80:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** {																				\
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 17
 
 
   81:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	/* Set a PendSV to request a context switch. */								\
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  135:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		return ucReturn;
  136:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	}
  137:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 18
 
 
  138:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	/* Check the configuration. */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  118              		.loc 2 191 30 view .LVU28
  119              	.LBB38:
  192:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 19
 
 
  193:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** uint32_t ulNewBASEPRI;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  164              		.loc 1 98 3 discriminator 3 view .LVU38
   98:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
  165              		.loc 1 98 3 discriminator 3 view .LVU39
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 20
 
 
  166 0034 FEE7     		b	.L8
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  209              	xEventGroupCreate:
  210              	.LFB6:
  146:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	EventGroup_t *pxEventBits;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 21
 
 
  211              		.loc 1 146 2 is_stmt 1 view -0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  250              		.cfi_endproc
  251              	.LFE6:
  253              		.section	.text.xEventGroupWaitBits,"ax",%progbits
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 22
 
 
  254              		.align	1
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  297              		.syntax unified
  298              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
  299 0014 4FF05003 			mov r3, #80												
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 23
 
 
  300 0018 83F31188 		msr basepri, r3											
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  347              		.loc 1 320 2 discriminator 3 view .LVU91
  348 0036 FEE7     		b	.L19
  349              	.LVL20:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 24
 
 
  350              	.L20:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  325:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	}
  394              		.loc 1 325 3 discriminator 2 view .LVU104
  395 0052 069B     		ldr	r3, [sp, #24]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 25
 
 
  396 0054 43B1     		cbz	r3, .L24
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  336:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		{
  438              		.loc 1 336 5 is_stmt 0 view .LVU118
  439 007a F8B1     		cbz	r0, .L26
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 26
 
 
  340:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			xTicksToWait = ( TickType_t ) 0;
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  403:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		}
  478              		.loc 1 403 4 view .LVU135
  479              	@ 403 "Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" 1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 27
 
 
  480 00a2 BFF36F8F 		isb
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  518 00be 002B     		cmp	r3, #0
  519 00c0 E2D0     		beq	.L27
  366:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 28
 
 
  520              		.loc 1 366 4 is_stmt 1 view .LVU152
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  559 00e0 F1E7     		b	.L28
  560              	.LVL43:
  561              	.L34:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 29
 
 
  341:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  600 0104 FFF7FEFF 		bl	vPortExitCritical
  601              	.LVL50:
  602 0108 D3E7     		b	.L32
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 30
 
 
  603              		.cfi_endproc
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  649 001a BFF34F8F 		dsb														
  650              	
  651              	@ 0 "" 2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 31
 
 
  652              		.thumb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  697 0032 FFF7FEFF 		bl	vPortEnterCritical
  698              	.LVL52:
  473:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 32
 
 
  699              		.loc 1 473 60 view .LVU205
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  741              	.LBI57:
  196:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	(
  197:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		"	mov %0, %1												\n"	\
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 33
 
 
  198:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		"	msr basepri, %0											\n" \
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  767              	.LBB59:
  768              	.LBI59:
  224:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 34
 
 
  225:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  813              		.loc 1 523 1 view .LVU237
  524:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** EventGroup_t *pxEventBits = xEventGroup;
  814              		.loc 1 524 1 view .LVU238
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 35
 
 
  815              	.LVL61:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  855              		.loc 2 193 1 view .LVU252
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	(
  856              		.loc 2 195 2 view .LVU253
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 36
 
 
  857              		.syntax unified
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  896              		.loc 1 524 13 is_stmt 0 view .LVU268
  897 0042 0027     		movs	r7, #0
  545:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 37
 
 
  898              		.loc 1 545 8 view .LVU269
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  552:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			uxBitsWaitedFor &= ~eventEVENT_BITS_CONTROL_BYTES;
  937              		.loc 1 552 4 view .LVU285
  553:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 38
 
 
  938              		.loc 1 553 4 view .LVU286
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  609:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** }
  976              		.loc 1 609 2 is_stmt 1 view .LVU303
  610:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 39
 
 
  977              		.loc 1 610 1 is_stmt 0 view .LVU304
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1022              		.syntax unified
  1023              	.L65:
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	(
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 40
 
 
  1024              		.loc 2 195 2 is_stmt 0 view .LVU316
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1068              	.LBE68:
  1069              	.LBE67:
  199:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 	#if ( ( INCLUDE_xTaskGetSchedulerState == 1 ) || ( configUSE_TIMERS == 1 ) )
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 41
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 41
 
 
  1070              		.loc 1 199 2 is_stmt 1 discriminator 3 view .LVU327
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  208:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
  1111              		.loc 1 208 3 view .LVU341
  208:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 42
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 42
 
 
  1112              		.loc 1 208 22 is_stmt 0 view .LVU342
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1149 007c 4FF08052 		mov	r2, #268435456
  1150 0080 C3F8042D 		str	r2, [r3, #3332]
  255:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 43
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 43
 
 
  1151              		.loc 1 255 4 view .LVU360
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1190              	.LVL93:
  1191              	.L79:
  215:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 44
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 44
 
 
  1192              		.loc 1 215 4 is_stmt 1 view .LVU376
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  285:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 				}
  1232              		.loc 1 285 30 is_stmt 1 view .LVU391
  288:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 45
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 45
 
 
  1233              		.loc 1 288 4 view .LVU392
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  622:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		{
  1278              		.loc 1 622 3 view .LVU404
  1279              	.L84:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 46
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 46
 
 
  622:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 		{
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1321              		.loc 1 640 4 view .LVU417
  640:Middlewares/Third_Party/FreeRTOS/Source/event_groups.c **** 			{
  1322              		.loc 1 640 19 is_stmt 0 view .LVU418
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 47
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 47
 
 
  1323 0032 237E     		ldrb	r3, [r4, #24]	@ zero_extendqisi2
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1368 0006 08BD     		pop	{r3, pc}
  1369              		.cfi_endproc
  1370              	.LFE13:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 48
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 48
 
 
  1372              		.section	.text.vEventGroupClearBitsCallback,"ax",%progbits
@@ -2862,33 +2862,33 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 1
  1407              		.file 8 "Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h"
  1408              		.file 9 "Middlewares/Third_Party/FreeRTOS/Source/include/portable.h"
  1409              		.file 10 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s 			page 49
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s 			page 49
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 event_groups.c
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:21     .text.prvTestWaitCondition:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:26     .text.prvTestWaitCondition:00000000 prvTestWaitCondition
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:80     .text.xEventGroupCreateStatic:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:86     .text.xEventGroupCreateStatic:00000000 xEventGroupCreateStatic
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:203    .text.xEventGroupCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:209    .text.xEventGroupCreate:00000000 xEventGroupCreate
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:254    .text.xEventGroupWaitBits:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:260    .text.xEventGroupWaitBits:00000000 xEventGroupWaitBits
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:607    .text.xEventGroupClearBits:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:613    .text.xEventGroupClearBits:00000000 xEventGroupClearBits
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:722    .text.xEventGroupGetBitsFromISR:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:728    .text.xEventGroupGetBitsFromISR:00000000 xEventGroupGetBitsFromISR
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:789    .text.xEventGroupSetBits:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:795    .text.xEventGroupSetBits:00000000 xEventGroupSetBits
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:985    .text.xEventGroupSync:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:991    .text.xEventGroupSync:00000000 xEventGroupSync
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:1252   .text.vEventGroupDelete:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:1258   .text.vEventGroupDelete:00000000 vEventGroupDelete
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:1345   .text.vEventGroupSetBitsCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:1351   .text.vEventGroupSetBitsCallback:00000000 vEventGroupSetBitsCallback
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:1373   .text.vEventGroupClearBitsCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccdUTi39.s:1379   .text.vEventGroupClearBitsCallback:00000000 vEventGroupClearBitsCallback
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:21     .text.prvTestWaitCondition:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:26     .text.prvTestWaitCondition:00000000 prvTestWaitCondition
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:80     .text.xEventGroupCreateStatic:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:86     .text.xEventGroupCreateStatic:00000000 xEventGroupCreateStatic
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:203    .text.xEventGroupCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:209    .text.xEventGroupCreate:00000000 xEventGroupCreate
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:254    .text.xEventGroupWaitBits:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:260    .text.xEventGroupWaitBits:00000000 xEventGroupWaitBits
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:607    .text.xEventGroupClearBits:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:613    .text.xEventGroupClearBits:00000000 xEventGroupClearBits
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:722    .text.xEventGroupGetBitsFromISR:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:728    .text.xEventGroupGetBitsFromISR:00000000 xEventGroupGetBitsFromISR
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:789    .text.xEventGroupSetBits:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:795    .text.xEventGroupSetBits:00000000 xEventGroupSetBits
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:985    .text.xEventGroupSync:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:991    .text.xEventGroupSync:00000000 xEventGroupSync
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:1252   .text.vEventGroupDelete:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:1258   .text.vEventGroupDelete:00000000 vEventGroupDelete
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:1345   .text.vEventGroupSetBitsCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:1351   .text.vEventGroupSetBitsCallback:00000000 vEventGroupSetBitsCallback
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:1373   .text.vEventGroupClearBitsCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc7CClOi.s:1379   .text.vEventGroupClearBitsCallback:00000000 vEventGroupClearBitsCallback
 
 UNDEFINED SYMBOLS
 vListInitialise

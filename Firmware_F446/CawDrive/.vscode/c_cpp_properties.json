@@ -3,6 +3,8 @@
     {
       "name": "STM32",
       "includePath": [
+        "Controller",
+        "Controller/Current",
         "Controller/Devices",
         "Controller/Drivers/drv8323",
         "Controller/State",

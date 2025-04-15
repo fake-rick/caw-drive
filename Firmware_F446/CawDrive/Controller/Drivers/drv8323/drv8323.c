@@ -2,6 +2,11 @@
 
 #include "gpio.h"
 
+// 低电平进入睡眠模式，高电平使能，8~40uS低脉冲重置故障
+#define _ENABLE(x) HAL_GPIO_WritePin(DRV_ENABLE_GPIO_Port, DRV_ENABLE_Pin, x)
+// 放大器较准输入，逻辑高时执行自动偏移较准，校准后需要拉低
+#define _CAL(x) HAL_GPIO_WritePin(DRV_CAL_GPIO_Port, DRV_CAL_Pin, x)
+
 // SPI通讯NSS
 #define _NSS(x) HAL_GPIO_WritePin(DRV_SPI_NSS_GPIO_Port, DRV_SPI_NSS_Pin, x)
 
@@ -18,7 +23,15 @@ uint16_t _SPI_WRITE(drv8323_t* self, uint16_t data) {
   return ret;
 }
 
-int drv8323_init(drv8323_t* self, SPI_HandleTypeDef* spi) { self->hspi = spi; }
+int drv8323_init(drv8323_t* self, SPI_HandleTypeDef* spi) {
+  self->hspi = spi;
+  _ENABLE(0);
+  _CAL(1);
+  HAL_Delay(10);
+  _ENABLE(1);
+  _CAL(0);
+  HAL_Delay(10);
+}
 
 uint16_t drv8323_read_fsr1(drv8323_t* self) {
   uint16_t val = (1 << 15) | (FSR1 << 11);

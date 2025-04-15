@@ -1,0 +1,190 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"i2c.c"
+  16              		.text
+  17              		.section	.text.MX_I2C1_Init,"ax",%progbits
+  18              		.align	1
+  19              		.global	MX_I2C1_Init
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	MX_I2C1_Init:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 08B5     		push	{r3, lr}
+  28 0002 0B48     		ldr	r0, .L5
+  29 0004 0B4B     		ldr	r3, .L5+4
+  30 0006 0360     		str	r3, [r0]
+  31 0008 0B4B     		ldr	r3, .L5+8
+  32 000a 4360     		str	r3, [r0, #4]
+  33 000c 0023     		movs	r3, #0
+  34 000e 8360     		str	r3, [r0, #8]
+  35 0010 C360     		str	r3, [r0, #12]
+  36 0012 4FF48042 		mov	r2, #16384
+  37 0016 0261     		str	r2, [r0, #16]
+  38 0018 4361     		str	r3, [r0, #20]
+  39 001a 8361     		str	r3, [r0, #24]
+  40 001c C361     		str	r3, [r0, #28]
+  41 001e 0362     		str	r3, [r0, #32]
+  42 0020 FFF7FEFF 		bl	HAL_I2C_Init
+  43 0024 00B9     		cbnz	r0, .L4
+  44              	.L1:
+  45 0026 08BD     		pop	{r3, pc}
+  46              	.L4:
+  47 0028 FFF7FEFF 		bl	Error_Handler
+  48 002c FBE7     		b	.L1
+  49              	.L6:
+  50 002e 00BF     		.align	2
+  51              	.L5:
+  52 0030 00000000 		.word	hi2c1
+  53 0034 00540040 		.word	1073763328
+  54 0038 A0860100 		.word	100000
+  56              		.section	.text.HAL_I2C_MspInit,"ax",%progbits
+  57              		.align	1
+  58              		.global	HAL_I2C_MspInit
+  59              		.syntax unified
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s 			page 2
+
+
+  60              		.thumb
+  61              		.thumb_func
+  63              	HAL_I2C_MspInit:
+  64              		@ args = 0, pretend = 0, frame = 32
+  65              		@ frame_needed = 0, uses_anonymous_args = 0
+  66 0000 30B5     		push	{r4, r5, lr}
+  67 0002 89B0     		sub	sp, sp, #36
+  68 0004 0023     		movs	r3, #0
+  69 0006 0393     		str	r3, [sp, #12]
+  70 0008 0493     		str	r3, [sp, #16]
+  71 000a 0593     		str	r3, [sp, #20]
+  72 000c 0693     		str	r3, [sp, #24]
+  73 000e 0793     		str	r3, [sp, #28]
+  74 0010 0268     		ldr	r2, [r0]
+  75 0012 144B     		ldr	r3, .L11
+  76 0014 9A42     		cmp	r2, r3
+  77 0016 01D0     		beq	.L10
+  78              	.L7:
+  79 0018 09B0     		add	sp, sp, #36
+  80              		@ sp needed
+  81 001a 30BD     		pop	{r4, r5, pc}
+  82              	.L10:
+  83 001c 0025     		movs	r5, #0
+  84 001e 0195     		str	r5, [sp, #4]
+  85 0020 114C     		ldr	r4, .L11+4
+  86 0022 236B     		ldr	r3, [r4, #48]
+  87 0024 43F00203 		orr	r3, r3, #2
+  88 0028 2363     		str	r3, [r4, #48]
+  89 002a 236B     		ldr	r3, [r4, #48]
+  90 002c 03F00203 		and	r3, r3, #2
+  91 0030 0193     		str	r3, [sp, #4]
+  92 0032 019B     		ldr	r3, [sp, #4]
+  93 0034 C023     		movs	r3, #192
+  94 0036 0393     		str	r3, [sp, #12]
+  95 0038 1223     		movs	r3, #18
+  96 003a 0493     		str	r3, [sp, #16]
+  97 003c 0323     		movs	r3, #3
+  98 003e 0693     		str	r3, [sp, #24]
+  99 0040 0423     		movs	r3, #4
+ 100 0042 0793     		str	r3, [sp, #28]
+ 101 0044 03A9     		add	r1, sp, #12
+ 102 0046 0948     		ldr	r0, .L11+8
+ 103 0048 FFF7FEFF 		bl	HAL_GPIO_Init
+ 104 004c 0295     		str	r5, [sp, #8]
+ 105 004e 236C     		ldr	r3, [r4, #64]
+ 106 0050 43F40013 		orr	r3, r3, #2097152
+ 107 0054 2364     		str	r3, [r4, #64]
+ 108 0056 236C     		ldr	r3, [r4, #64]
+ 109 0058 03F40013 		and	r3, r3, #2097152
+ 110 005c 0293     		str	r3, [sp, #8]
+ 111 005e 029B     		ldr	r3, [sp, #8]
+ 112 0060 DAE7     		b	.L7
+ 113              	.L12:
+ 114 0062 00BF     		.align	2
+ 115              	.L11:
+ 116 0064 00540040 		.word	1073763328
+ 117 0068 00380240 		.word	1073887232
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s 			page 3
+
+
+ 118 006c 00040240 		.word	1073873920
+ 120              		.section	.text.HAL_I2C_MspDeInit,"ax",%progbits
+ 121              		.align	1
+ 122              		.global	HAL_I2C_MspDeInit
+ 123              		.syntax unified
+ 124              		.thumb
+ 125              		.thumb_func
+ 127              	HAL_I2C_MspDeInit:
+ 128              		@ args = 0, pretend = 0, frame = 0
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130 0000 0268     		ldr	r2, [r0]
+ 131 0002 0A4B     		ldr	r3, .L20
+ 132 0004 9A42     		cmp	r2, r3
+ 133 0006 00D0     		beq	.L19
+ 134 0008 7047     		bx	lr
+ 135              	.L19:
+ 136 000a 10B5     		push	{r4, lr}
+ 137 000c 084A     		ldr	r2, .L20+4
+ 138 000e 136C     		ldr	r3, [r2, #64]
+ 139 0010 23F40013 		bic	r3, r3, #2097152
+ 140 0014 1364     		str	r3, [r2, #64]
+ 141 0016 074C     		ldr	r4, .L20+8
+ 142 0018 4021     		movs	r1, #64
+ 143 001a 2046     		mov	r0, r4
+ 144 001c FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 145 0020 8021     		movs	r1, #128
+ 146 0022 2046     		mov	r0, r4
+ 147 0024 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 148 0028 10BD     		pop	{r4, pc}
+ 149              	.L21:
+ 150 002a 00BF     		.align	2
+ 151              	.L20:
+ 152 002c 00540040 		.word	1073763328
+ 153 0030 00380240 		.word	1073887232
+ 154 0034 00040240 		.word	1073873920
+ 156              		.global	hi2c1
+ 157              		.section	.bss.hi2c1,"aw",%nobits
+ 158              		.align	2
+ 161              	hi2c1:
+ 162 0000 00000000 		.space	84
+ 162      00000000 
+ 162      00000000 
+ 162      00000000 
+ 162      00000000 
+ 163              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 i2c.c
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:18     .text.MX_I2C1_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:24     .text.MX_I2C1_Init:00000000 MX_I2C1_Init
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:52     .text.MX_I2C1_Init:00000030 $d
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:161    .bss.hi2c1:00000000 hi2c1
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:57     .text.HAL_I2C_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:63     .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:116    .text.HAL_I2C_MspInit:00000064 $d
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:121    .text.HAL_I2C_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:127    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:152    .text.HAL_I2C_MspDeInit:0000002c $d
+C:\Users\Rick\AppData\Local\Temp\ccDpbrhb.s:158    .bss.hi2c1:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_I2C_Init
+Error_Handler
+HAL_GPIO_Init
+HAL_GPIO_DeInit

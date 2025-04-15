@@ -1,0 +1,187 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"can.c"
+  16              		.text
+  17              		.section	.text.MX_CAN1_Init,"ax",%progbits
+  18              		.align	1
+  19              		.global	MX_CAN1_Init
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	MX_CAN1_Init:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 08B5     		push	{r3, lr}
+  28 0002 0B48     		ldr	r0, .L5
+  29 0004 0B4B     		ldr	r3, .L5+4
+  30 0006 0360     		str	r3, [r0]
+  31 0008 1023     		movs	r3, #16
+  32 000a 4360     		str	r3, [r0, #4]
+  33 000c 0023     		movs	r3, #0
+  34 000e 8360     		str	r3, [r0, #8]
+  35 0010 C360     		str	r3, [r0, #12]
+  36 0012 0361     		str	r3, [r0, #16]
+  37 0014 4361     		str	r3, [r0, #20]
+  38 0016 0376     		strb	r3, [r0, #24]
+  39 0018 4376     		strb	r3, [r0, #25]
+  40 001a 8376     		strb	r3, [r0, #26]
+  41 001c C376     		strb	r3, [r0, #27]
+  42 001e 0377     		strb	r3, [r0, #28]
+  43 0020 4377     		strb	r3, [r0, #29]
+  44 0022 FFF7FEFF 		bl	HAL_CAN_Init
+  45 0026 00B9     		cbnz	r0, .L4
+  46              	.L1:
+  47 0028 08BD     		pop	{r3, pc}
+  48              	.L4:
+  49 002a FFF7FEFF 		bl	Error_Handler
+  50 002e FBE7     		b	.L1
+  51              	.L6:
+  52              		.align	2
+  53              	.L5:
+  54 0030 00000000 		.word	hcan1
+  55 0034 00640040 		.word	1073767424
+  57              		.section	.text.HAL_CAN_MspInit,"ax",%progbits
+  58              		.align	1
+  59              		.global	HAL_CAN_MspInit
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s 			page 2
+
+
+  60              		.syntax unified
+  61              		.thumb
+  62              		.thumb_func
+  64              	HAL_CAN_MspInit:
+  65              		@ args = 0, pretend = 0, frame = 32
+  66              		@ frame_needed = 0, uses_anonymous_args = 0
+  67 0000 00B5     		push	{lr}
+  68 0002 89B0     		sub	sp, sp, #36
+  69 0004 0023     		movs	r3, #0
+  70 0006 0393     		str	r3, [sp, #12]
+  71 0008 0493     		str	r3, [sp, #16]
+  72 000a 0593     		str	r3, [sp, #20]
+  73 000c 0693     		str	r3, [sp, #24]
+  74 000e 0793     		str	r3, [sp, #28]
+  75 0010 0268     		ldr	r2, [r0]
+  76 0012 154B     		ldr	r3, .L11
+  77 0014 9A42     		cmp	r2, r3
+  78 0016 02D0     		beq	.L10
+  79              	.L7:
+  80 0018 09B0     		add	sp, sp, #36
+  81              		@ sp needed
+  82 001a 5DF804FB 		ldr	pc, [sp], #4
+  83              	.L10:
+  84 001e 0021     		movs	r1, #0
+  85 0020 0191     		str	r1, [sp, #4]
+  86 0022 03F5EA33 		add	r3, r3, #119808
+  87 0026 1A6C     		ldr	r2, [r3, #64]
+  88 0028 42F00072 		orr	r2, r2, #33554432
+  89 002c 1A64     		str	r2, [r3, #64]
+  90 002e 1A6C     		ldr	r2, [r3, #64]
+  91 0030 02F00072 		and	r2, r2, #33554432
+  92 0034 0192     		str	r2, [sp, #4]
+  93 0036 019A     		ldr	r2, [sp, #4]
+  94 0038 0291     		str	r1, [sp, #8]
+  95 003a 1A6B     		ldr	r2, [r3, #48]
+  96 003c 42F00202 		orr	r2, r2, #2
+  97 0040 1A63     		str	r2, [r3, #48]
+  98 0042 1B6B     		ldr	r3, [r3, #48]
+  99 0044 03F00203 		and	r3, r3, #2
+ 100 0048 0293     		str	r3, [sp, #8]
+ 101 004a 029B     		ldr	r3, [sp, #8]
+ 102 004c 4FF44073 		mov	r3, #768
+ 103 0050 0393     		str	r3, [sp, #12]
+ 104 0052 0223     		movs	r3, #2
+ 105 0054 0493     		str	r3, [sp, #16]
+ 106 0056 0323     		movs	r3, #3
+ 107 0058 0693     		str	r3, [sp, #24]
+ 108 005a 0923     		movs	r3, #9
+ 109 005c 0793     		str	r3, [sp, #28]
+ 110 005e 03A9     		add	r1, sp, #12
+ 111 0060 0248     		ldr	r0, .L11+4
+ 112 0062 FFF7FEFF 		bl	HAL_GPIO_Init
+ 113 0066 D7E7     		b	.L7
+ 114              	.L12:
+ 115              		.align	2
+ 116              	.L11:
+ 117 0068 00640040 		.word	1073767424
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s 			page 3
+
+
+ 118 006c 00040240 		.word	1073873920
+ 120              		.section	.text.HAL_CAN_MspDeInit,"ax",%progbits
+ 121              		.align	1
+ 122              		.global	HAL_CAN_MspDeInit
+ 123              		.syntax unified
+ 124              		.thumb
+ 125              		.thumb_func
+ 127              	HAL_CAN_MspDeInit:
+ 128              		@ args = 0, pretend = 0, frame = 0
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130 0000 08B5     		push	{r3, lr}
+ 131 0002 0268     		ldr	r2, [r0]
+ 132 0004 074B     		ldr	r3, .L17
+ 133 0006 9A42     		cmp	r2, r3
+ 134 0008 00D0     		beq	.L16
+ 135              	.L13:
+ 136 000a 08BD     		pop	{r3, pc}
+ 137              	.L16:
+ 138 000c 064A     		ldr	r2, .L17+4
+ 139 000e 136C     		ldr	r3, [r2, #64]
+ 140 0010 23F00073 		bic	r3, r3, #33554432
+ 141 0014 1364     		str	r3, [r2, #64]
+ 142 0016 4FF44071 		mov	r1, #768
+ 143 001a 0448     		ldr	r0, .L17+8
+ 144 001c FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 145 0020 F3E7     		b	.L13
+ 146              	.L18:
+ 147 0022 00BF     		.align	2
+ 148              	.L17:
+ 149 0024 00640040 		.word	1073767424
+ 150 0028 00380240 		.word	1073887232
+ 151 002c 00040240 		.word	1073873920
+ 153              		.global	hcan1
+ 154              		.section	.bss.hcan1,"aw",%nobits
+ 155              		.align	2
+ 158              	hcan1:
+ 159 0000 00000000 		.space	40
+ 159      00000000 
+ 159      00000000 
+ 159      00000000 
+ 159      00000000 
+ 160              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 can.c
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:18     .text.MX_CAN1_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:24     .text.MX_CAN1_Init:00000000 MX_CAN1_Init
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:54     .text.MX_CAN1_Init:00000030 $d
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:158    .bss.hcan1:00000000 hcan1
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:58     .text.HAL_CAN_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:64     .text.HAL_CAN_MspInit:00000000 HAL_CAN_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:117    .text.HAL_CAN_MspInit:00000068 $d
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:121    .text.HAL_CAN_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:127    .text.HAL_CAN_MspDeInit:00000000 HAL_CAN_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:149    .text.HAL_CAN_MspDeInit:00000024 $d
+C:\Users\Rick\AppData\Local\Temp\ccxAGBSE.s:155    .bss.hcan1:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_CAN_Init
+Error_Handler
+HAL_GPIO_Init
+HAL_GPIO_DeInit

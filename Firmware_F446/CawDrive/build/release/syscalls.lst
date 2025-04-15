@@ -1,0 +1,363 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"syscalls.c"
+  16              		.text
+  17              		.section	.text.initialise_monitor_handles,"ax",%progbits
+  18              		.align	1
+  19              		.global	initialise_monitor_handles
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	initialise_monitor_handles:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27              		@ link register save eliminated.
+  28 0000 7047     		bx	lr
+  30              		.section	.text._getpid,"ax",%progbits
+  31              		.align	1
+  32              		.global	_getpid
+  33              		.syntax unified
+  34              		.thumb
+  35              		.thumb_func
+  37              	_getpid:
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 0, uses_anonymous_args = 0
+  40              		@ link register save eliminated.
+  41 0000 0120     		movs	r0, #1
+  42 0002 7047     		bx	lr
+  44              		.section	.text._kill,"ax",%progbits
+  45              		.align	1
+  46              		.global	_kill
+  47              		.syntax unified
+  48              		.thumb
+  49              		.thumb_func
+  51              	_kill:
+  52              		@ args = 0, pretend = 0, frame = 0
+  53              		@ frame_needed = 0, uses_anonymous_args = 0
+  54 0000 08B5     		push	{r3, lr}
+  55 0002 FFF7FEFF 		bl	__errno
+  56 0006 1623     		movs	r3, #22
+  57 0008 0360     		str	r3, [r0]
+  58 000a 4FF0FF30 		mov	r0, #-1
+  59 000e 08BD     		pop	{r3, pc}
+  61              		.section	.text._exit,"ax",%progbits
+  62              		.align	1
+  63              		.global	_exit
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 2
+
+
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  68              	_exit:
+  69              		@ Volatile: function does not return.
+  70              		@ args = 0, pretend = 0, frame = 0
+  71              		@ frame_needed = 0, uses_anonymous_args = 0
+  72 0000 08B5     		push	{r3, lr}
+  73 0002 4FF0FF31 		mov	r1, #-1
+  74 0006 FFF7FEFF 		bl	_kill
+  75              	.L6:
+  76 000a FEE7     		b	.L6
+  78              		.section	.text._read,"ax",%progbits
+  79              		.align	1
+  80              		.weak	_read
+  81              		.syntax unified
+  82              		.thumb
+  83              		.thumb_func
+  85              	_read:
+  86              		@ args = 0, pretend = 0, frame = 0
+  87              		@ frame_needed = 0, uses_anonymous_args = 0
+  88 0000 70B5     		push	{r4, r5, r6, lr}
+  89 0002 0C46     		mov	r4, r1
+  90 0004 1646     		mov	r6, r2
+  91 0006 0025     		movs	r5, #0
+  92 0008 06E0     		b	.L9
+  93              	.L10:
+  94 000a FFF7FEFF 		bl	__io_getchar
+  95 000e 2146     		mov	r1, r4
+  96 0010 01F8010B 		strb	r0, [r1], #1
+  97 0014 0135     		adds	r5, r5, #1
+  98 0016 0C46     		mov	r4, r1
+  99              	.L9:
+ 100 0018 B542     		cmp	r5, r6
+ 101 001a F6DB     		blt	.L10
+ 102 001c 3046     		mov	r0, r6
+ 103 001e 70BD     		pop	{r4, r5, r6, pc}
+ 105              		.section	.text._write,"ax",%progbits
+ 106              		.align	1
+ 107              		.weak	_write
+ 108              		.syntax unified
+ 109              		.thumb
+ 110              		.thumb_func
+ 112              	_write:
+ 113              		@ args = 0, pretend = 0, frame = 0
+ 114              		@ frame_needed = 0, uses_anonymous_args = 0
+ 115 0000 70B5     		push	{r4, r5, r6, lr}
+ 116 0002 0C46     		mov	r4, r1
+ 117 0004 1646     		mov	r6, r2
+ 118 0006 0025     		movs	r5, #0
+ 119 0008 04E0     		b	.L13
+ 120              	.L14:
+ 121 000a 14F8010B 		ldrb	r0, [r4], #1	@ zero_extendqisi2
+ 122 000e FFF7FEFF 		bl	__io_putchar
+ 123 0012 0135     		adds	r5, r5, #1
+ 124              	.L13:
+ 125 0014 B542     		cmp	r5, r6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 3
+
+
+ 126 0016 F8DB     		blt	.L14
+ 127 0018 3046     		mov	r0, r6
+ 128 001a 70BD     		pop	{r4, r5, r6, pc}
+ 130              		.section	.text._close,"ax",%progbits
+ 131              		.align	1
+ 132              		.global	_close
+ 133              		.syntax unified
+ 134              		.thumb
+ 135              		.thumb_func
+ 137              	_close:
+ 138              		@ args = 0, pretend = 0, frame = 0
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140              		@ link register save eliminated.
+ 141 0000 4FF0FF30 		mov	r0, #-1
+ 142 0004 7047     		bx	lr
+ 144              		.section	.text._fstat,"ax",%progbits
+ 145              		.align	1
+ 146              		.global	_fstat
+ 147              		.syntax unified
+ 148              		.thumb
+ 149              		.thumb_func
+ 151              	_fstat:
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154              		@ link register save eliminated.
+ 155 0000 4FF40053 		mov	r3, #8192
+ 156 0004 4B60     		str	r3, [r1, #4]
+ 157 0006 0020     		movs	r0, #0
+ 158 0008 7047     		bx	lr
+ 160              		.section	.text._isatty,"ax",%progbits
+ 161              		.align	1
+ 162              		.global	_isatty
+ 163              		.syntax unified
+ 164              		.thumb
+ 165              		.thumb_func
+ 167              	_isatty:
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 170              		@ link register save eliminated.
+ 171 0000 0120     		movs	r0, #1
+ 172 0002 7047     		bx	lr
+ 174              		.section	.text._lseek,"ax",%progbits
+ 175              		.align	1
+ 176              		.global	_lseek
+ 177              		.syntax unified
+ 178              		.thumb
+ 179              		.thumb_func
+ 181              	_lseek:
+ 182              		@ args = 0, pretend = 0, frame = 0
+ 183              		@ frame_needed = 0, uses_anonymous_args = 0
+ 184              		@ link register save eliminated.
+ 185 0000 0020     		movs	r0, #0
+ 186 0002 7047     		bx	lr
+ 188              		.section	.text._open,"ax",%progbits
+ 189              		.align	1
+ 190              		.global	_open
+ 191              		.syntax unified
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 4
+
+
+ 192              		.thumb
+ 193              		.thumb_func
+ 195              	_open:
+ 196              		@ args = 4, pretend = 12, frame = 0
+ 197              		@ frame_needed = 0, uses_anonymous_args = 1
+ 198              		@ link register save eliminated.
+ 199 0000 0EB4     		push	{r1, r2, r3}
+ 200 0002 4FF0FF30 		mov	r0, #-1
+ 201 0006 03B0     		add	sp, sp, #12
+ 202 0008 7047     		bx	lr
+ 204              		.section	.text._wait,"ax",%progbits
+ 205              		.align	1
+ 206              		.global	_wait
+ 207              		.syntax unified
+ 208              		.thumb
+ 209              		.thumb_func
+ 211              	_wait:
+ 212              		@ args = 0, pretend = 0, frame = 0
+ 213              		@ frame_needed = 0, uses_anonymous_args = 0
+ 214 0000 08B5     		push	{r3, lr}
+ 215 0002 FFF7FEFF 		bl	__errno
+ 216 0006 0A23     		movs	r3, #10
+ 217 0008 0360     		str	r3, [r0]
+ 218 000a 4FF0FF30 		mov	r0, #-1
+ 219 000e 08BD     		pop	{r3, pc}
+ 221              		.section	.text._unlink,"ax",%progbits
+ 222              		.align	1
+ 223              		.global	_unlink
+ 224              		.syntax unified
+ 225              		.thumb
+ 226              		.thumb_func
+ 228              	_unlink:
+ 229              		@ args = 0, pretend = 0, frame = 0
+ 230              		@ frame_needed = 0, uses_anonymous_args = 0
+ 231 0000 08B5     		push	{r3, lr}
+ 232 0002 FFF7FEFF 		bl	__errno
+ 233 0006 0223     		movs	r3, #2
+ 234 0008 0360     		str	r3, [r0]
+ 235 000a 4FF0FF30 		mov	r0, #-1
+ 236 000e 08BD     		pop	{r3, pc}
+ 238              		.section	.text._times,"ax",%progbits
+ 239              		.align	1
+ 240              		.global	_times
+ 241              		.syntax unified
+ 242              		.thumb
+ 243              		.thumb_func
+ 245              	_times:
+ 246              		@ args = 0, pretend = 0, frame = 0
+ 247              		@ frame_needed = 0, uses_anonymous_args = 0
+ 248              		@ link register save eliminated.
+ 249 0000 4FF0FF30 		mov	r0, #-1
+ 250 0004 7047     		bx	lr
+ 252              		.section	.text._stat,"ax",%progbits
+ 253              		.align	1
+ 254              		.global	_stat
+ 255              		.syntax unified
+ 256              		.thumb
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 5
+
+
+ 257              		.thumb_func
+ 259              	_stat:
+ 260              		@ args = 0, pretend = 0, frame = 0
+ 261              		@ frame_needed = 0, uses_anonymous_args = 0
+ 262              		@ link register save eliminated.
+ 263 0000 4FF40053 		mov	r3, #8192
+ 264 0004 4B60     		str	r3, [r1, #4]
+ 265 0006 0020     		movs	r0, #0
+ 266 0008 7047     		bx	lr
+ 268              		.section	.text._link,"ax",%progbits
+ 269              		.align	1
+ 270              		.global	_link
+ 271              		.syntax unified
+ 272              		.thumb
+ 273              		.thumb_func
+ 275              	_link:
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 0, uses_anonymous_args = 0
+ 278 0000 08B5     		push	{r3, lr}
+ 279 0002 FFF7FEFF 		bl	__errno
+ 280 0006 1F23     		movs	r3, #31
+ 281 0008 0360     		str	r3, [r0]
+ 282 000a 4FF0FF30 		mov	r0, #-1
+ 283 000e 08BD     		pop	{r3, pc}
+ 285              		.section	.text._fork,"ax",%progbits
+ 286              		.align	1
+ 287              		.global	_fork
+ 288              		.syntax unified
+ 289              		.thumb
+ 290              		.thumb_func
+ 292              	_fork:
+ 293              		@ args = 0, pretend = 0, frame = 0
+ 294              		@ frame_needed = 0, uses_anonymous_args = 0
+ 295 0000 08B5     		push	{r3, lr}
+ 296 0002 FFF7FEFF 		bl	__errno
+ 297 0006 0B23     		movs	r3, #11
+ 298 0008 0360     		str	r3, [r0]
+ 299 000a 4FF0FF30 		mov	r0, #-1
+ 300 000e 08BD     		pop	{r3, pc}
+ 302              		.section	.text._execve,"ax",%progbits
+ 303              		.align	1
+ 304              		.global	_execve
+ 305              		.syntax unified
+ 306              		.thumb
+ 307              		.thumb_func
+ 309              	_execve:
+ 310              		@ args = 0, pretend = 0, frame = 0
+ 311              		@ frame_needed = 0, uses_anonymous_args = 0
+ 312 0000 08B5     		push	{r3, lr}
+ 313 0002 FFF7FEFF 		bl	__errno
+ 314 0006 0C23     		movs	r3, #12
+ 315 0008 0360     		str	r3, [r0]
+ 316 000a 4FF0FF30 		mov	r0, #-1
+ 317 000e 08BD     		pop	{r3, pc}
+ 319              		.global	environ
+ 320              		.section	.data.environ,"aw"
+ 321              		.align	2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 6
+
+
+ 324              	environ:
+ 325 0000 00000000 		.word	__env
+ 326              		.global	__env
+ 327              		.section	.bss.__env,"aw",%nobits
+ 328              		.align	2
+ 331              	__env:
+ 332 0000 00000000 		.space	4
+ 333              		.weak	__io_putchar
+ 334              		.weak	__io_getchar
+ 335              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1snESx.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 syscalls.c
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:18     .text.initialise_monitor_handles:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:24     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:31     .text._getpid:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:37     .text._getpid:00000000 _getpid
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:45     .text._kill:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:51     .text._kill:00000000 _kill
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:62     .text._exit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:68     .text._exit:00000000 _exit
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:79     .text._read:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:85     .text._read:00000000 _read
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:106    .text._write:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:112    .text._write:00000000 _write
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:131    .text._close:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:137    .text._close:00000000 _close
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:145    .text._fstat:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:151    .text._fstat:00000000 _fstat
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:161    .text._isatty:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:167    .text._isatty:00000000 _isatty
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:175    .text._lseek:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:181    .text._lseek:00000000 _lseek
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:189    .text._open:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:195    .text._open:00000000 _open
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:205    .text._wait:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:211    .text._wait:00000000 _wait
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:222    .text._unlink:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:228    .text._unlink:00000000 _unlink
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:239    .text._times:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:245    .text._times:00000000 _times
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:253    .text._stat:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:259    .text._stat:00000000 _stat
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:269    .text._link:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:275    .text._link:00000000 _link
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:286    .text._fork:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:292    .text._fork:00000000 _fork
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:303    .text._execve:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:309    .text._execve:00000000 _execve
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:324    .data.environ:00000000 environ
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:321    .data.environ:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:331    .bss.__env:00000000 __env
+C:\Users\Rick\AppData\Local\Temp\cc1snESx.s:328    .bss.__env:00000000 $d
+
+UNDEFINED SYMBOLS
+__errno
+__io_getchar
+__io_putchar

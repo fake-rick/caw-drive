@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "controller.h": "c",
+        "drv8323.h": "c"
+    }
+}

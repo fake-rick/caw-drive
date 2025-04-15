@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****    -@-   Prior to HAL_DMA_Init() the clock must be enabled for DMA through the following macros:
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****          __HAL_RCC_DMA1_CLK_ENABLE() or __HAL_RCC_DMA2_CLK_ENABLE().
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 2
 
 
   31:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****      *** Polling mode IO operation ***
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   *
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   * Copyright (c) 2017 STMicroelectronics.
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   * All rights reserved.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 3
 
 
   88:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   * @{
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   */
  144:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 4
 
 
  145:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** /** @addtogroup DMA_Exported_Functions_Group1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  199:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     assert_param(IS_DMA_PERIPHERAL_BURST(hdma->Init.PeriphBurst));
  200:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
  201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 5
 
 
  202:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   /* Change DMA peripheral state */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  256:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   tmp &= (uint32_t)~(DMA_SxFCR_DMDIS | DMA_SxFCR_FTH);
  257:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  258:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   /* Prepare the DMA Stream FIFO configuration */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 6
 
 
  259:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   tmp |= hdma->Init.FIFOMode;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  313:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   /* Check the DMA peripheral state */
  314:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   if(hdma == NULL)
  315:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 7
 
 
  316:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     return HAL_ERROR;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  370:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   /* Release Lock */
  371:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   __HAL_UNLOCK(hdma);
  372:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 8
 
 
  373:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   return HAL_OK;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  427:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  428:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     /* Enable the Peripheral */
  429:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     __HAL_DMA_ENABLE(hdma);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 9
 
 
  430:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  484:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     }
  485:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
  486:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     /* Enable the Peripheral */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 10
 
 
  487:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     __HAL_DMA_ENABLE(hdma);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  541:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     __HAL_DMA_DISABLE(hdma);
  542:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
  543:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     /* Check if the DMA Stream is effectively disabled */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 11
 
 
  544:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     while((hdma->Instance->CR & DMA_SxCR_EN) != RESET)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  598:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  599:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** /**
  600:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   * @brief  Polling for transfer complete.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 12
 
 
  601:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   * @param  hdma          pointer to a DMA_HandleTypeDef structure that contains
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  655:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       if((Timeout == 0U)||((HAL_GetTick() - tickstart ) > Timeout))
  656:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
  657:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         /* Update error code */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 13
 
 
  658:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         hdma->ErrorCode = HAL_DMA_ERROR_TIMEOUT;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  712:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  713:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       /* Process Unlocked */
  714:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       __HAL_UNLOCK(hdma);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 14
 
 
  715:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  769:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       hdma->ErrorCode |= HAL_DMA_ERROR_TE;
  770:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     }
  771:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 15
 
 
  772:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   /* FIFO Error Interrupt management ******************************************/
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  826:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       else
  827:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
  828:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         /* Disable the half transfer interrupt if the DMA mode is not CIRCULAR */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 16
 
 
  829:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         if((hdma->Instance->CR & DMA_SxCR_CIRC) == RESET)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  883:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****           if(hdma->XferM1CpltCallback != NULL)
  884:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****           {
  885:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****             /* Transfer complete Callback for memory1 */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 17
 
 
  886:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****             hdma->XferM1CpltCallback(hdma);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  940:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       while((hdma->Instance->CR & DMA_SxCR_EN) != RESET);
  941:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  942:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       /* Change the DMA state */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 18
 
 
  943:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       hdma->State = HAL_DMA_STATE_READY;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  997:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       break;
  998:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  999:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     case  HAL_DMA_XFER_ABORT_CB_ID:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 19
 
 
 1000:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       hdma->XferAbortCallback = pCallback;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1054:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       break;
 1055:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       
 1056:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     case  HAL_DMA_XFER_ERROR_CB_ID:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 20
 
 
 1057:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       hdma->XferErrorCallback = NULL;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1111:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   *               the configuration information for the specified DMA Stream.
 1112:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   * @retval HAL state
 1113:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 21
 
 
 1114:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** HAL_DMA_StateTypeDef HAL_DMA_GetState(DMA_HandleTypeDef *hdma)
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
   42              		.loc 1 1154 17 view .LVU4
   43 0004 2C68     		ldr	r4, [r5]
   44              		.loc 1 1154 22 view .LVU5
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 22
 
 
   45 0006 24F48024 		bic	r4, r4, #262144
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
   76              		.cfi_def_cfa_offset 0
   77 0020 7047     		bx	lr
   78              	.LVL3:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 23
 
 
   79              	.L5:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  119              		.loc 1 1187 64 view .LVU30
  120 0006 1039     		subs	r1, r1, #16
  121              		.loc 1 1187 12 view .LVU31
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 24
 
 
  122 0008 0A4A     		ldr	r2, .L10
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  158              		.cfi_restore_state
 1201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
  159              		.loc 1 1201 5 is_stmt 1 view .LVU45
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 25
 
 
 1201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  198 0006 012B     		cmp	r3, #1
  199 0008 0AD0     		beq	.L14
  200 000a 022B     		cmp	r3, #2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 26
 
 
  201 000c 02D0     		beq	.L15
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1236:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     case DMA_FIFO_THRESHOLD_FULL:
 1237:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       break;
 1238:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     default:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 27
 
 
 1239:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       break;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  249              	.LVL20:
  250              		.loc 1 1280 10 view .LVU72
  251 003c 13F0807F 		tst	r3, #16777216
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 28
 
 
  252 0040 23D1     		bne	.L30
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1259:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
  295              		.loc 1 1259 10 view .LVU84
  296 0064 B3F1C07F 		cmp	r3, #25165824
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 29
 
 
  297 0068 09D0     		beq	.L27
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  339              	.L28:
 1277:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       break;
  340              		.loc 1 1277 14 view .LVU97
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 30
 
 
  341 0082 0120     		movs	r0, #1
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  381              		.cfi_offset 5, -12
  382              		.cfi_offset 6, -8
  383              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 31
 
 
  384 0002 0446     		mov	r4, r0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  415              		.loc 1 206 3 is_stmt 1 view .LVU128
  206:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   
  416              		.loc 1 206 3 view .LVU129
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 32
 
 
  417 0014 0023     		movs	r3, #0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  455              	.L33:
  301:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  456              		.loc 1 301 1 is_stmt 0 view .LVU146
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 33
 
 
  457 0042 70BD     		pop	{r4, r5, r6, pc}
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  239:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****           hdma->Init.Mode                | hdma->Init.Priority;
  494              		.loc 1 239 72 view .LVU164
  495 0062 0243     		orrs	r2, r2, r0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 34
 
 
  240:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  532 007e 042B     		cmp	r3, #4
  533 0080 07D1     		bne	.L37
  265:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 35
 
 
  534              		.loc 1 265 5 is_stmt 1 view .LVU183
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  570              		.loc 1 295 19 is_stmt 0 view .LVU201
  571 00a2 0020     		movs	r0, #0
  572              	.LVL63:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 36
 
 
  295:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****                                                                                      
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  610              	.L38:
  179:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
  611              		.loc 1 179 12 view .LVU219
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 37
 
 
  612 00c4 0120     		movs	r0, #1
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  658              		.loc 1 327 3 is_stmt 1 view .LVU229
  330:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  659              		.loc 1 330 3 view .LVU230
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 38
 
 
  660 0012 2268     		ldr	r2, [r4]
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  351:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   
  696              		.loc 1 351 3 is_stmt 1 view .LVU249
  351:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 39
 
 
  697              		.loc 1 351 32 is_stmt 0 view .LVU250
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  731              		.loc 1 368 15 is_stmt 0 view .LVU270
  732 0054 84F83550 		strb	r5, [r4, #53]
  371:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 40
 
 
  733              		.loc 1 371 3 is_stmt 1 view .LVU271
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  780 0002 0446     		mov	r4, r0
  409:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   
  781              		.loc 1 409 3 is_stmt 1 view .LVU281
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 41
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 41
 
 
  782              	.LVL76:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  420:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
  819              		.loc 1 420 17 is_stmt 0 view .LVU299
  820 0024 0220     		movs	r0, #2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 42
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 42
 
 
  821 0026 84F83500 		strb	r0, [r4, #53]
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  868              		.loc 1 453 3 is_stmt 1 view .LVU308
  869              	.LVL85:
  456:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 43
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 43
 
 
  870              		.loc 1 456 3 view .LVU309
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  907              	.LVL91:
  908              	.L64:
  467:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 44
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 44
 
 
  909              		.loc 1 467 5 is_stmt 1 view .LVU327
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  945              		.loc 1 483 21 view .LVU345
  946 004e 1368     		ldr	r3, [r2]
  483:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 45
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 45
 
 
  947              		.loc 1 483 27 view .LVU346
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  994              		.loc 1 518 24 is_stmt 0 view .LVU355
  995 0006 FFF7FEFF 		bl	HAL_GetTick
  996              	.LVL96:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 46
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 46
 
 
  520:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1033 002c 2268     		ldr	r2, [r4]
  533:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
  1034              		.loc 1 533 19 view .LVU374
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 47
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 47
 
 
  1035 002e 5369     		ldr	r3, [r2, #20]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1073              	.LVL100:
  547:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
  1074              		.loc 1 547 25 discriminator 1 view .LVU391
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 48
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 48
 
 
  1075 005c 431B     		subs	r3, r0, r5
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  566:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
  1113              		.loc 1 566 5 is_stmt 1 view .LVU408
  566:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 49
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 49
 
 
  1114              		.loc 1 566 17 is_stmt 0 view .LVU409
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  585:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
  1157              		.loc 1 585 12 view .LVU423
  1158 000e 7047     		bx	lr
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 50
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 50
 
 
  1159              	.LVL105:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  612:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   uint32_t mask_cpltlevel;
  1207              		.loc 1 612 3 is_stmt 1 view .LVU432
  1208              	.LVL108:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 51
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 51
 
 
  613:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   uint32_t tickstart = HAL_GetTick(); 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1244 0028 2368     		ldr	r3, [r4]
  629:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   {
  1245              		.loc 1 629 22 view .LVU452
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 52
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 52
 
 
  1246 002a 1B68     		ldr	r3, [r3]
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1284 0058 07D0     		beq	.L85
  655:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
  1285              		.loc 1 655 7 is_stmt 1 view .LVU469
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 53
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 53
 
 
  655:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1323 0080 E16D     		ldr	r1, [r4, #92]
  682:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     {
  1324              		.loc 1 682 36 view .LVU487
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 54
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 54
 
 
  1325 0082 0122     		movs	r2, #1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1362              		.loc 1 631 21 is_stmt 0 view .LVU504
  1363 00aa 4FF48073 		mov	r3, #256
  1364 00ae 6365     		str	r3, [r4, #84]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 55
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 55
 
 
  632:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1402 00d4 636D     		ldr	r3, [r4, #84]
  701:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   {
  1403              		.loc 1 701 5 view .LVU522
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 56
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 56
 
 
  1404 00d6 1BB1     		cbz	r3, .L92
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1441              		.loc 1 708 7 view .LVU539
  708:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     
  1442              		.loc 1 708 65 is_stmt 0 view .LVU540
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 57
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 57
 
 
  1443 0104 E26D     		ldr	r2, [r4, #92]
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1485              	.LFB246:
  747:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   uint32_t tmpisr;
  1486              		.loc 1 747 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 58
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 58
 
 
  1487              		.cfi_startproc
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1527 001c 0823     		movs	r3, #8
  1528 001e 9340     		lsls	r3, r3, r2
  758:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 59
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 59
 
 
  1529              		.loc 1 758 6 view .LVU570
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1566              		.loc 1 773 6 view .LVU587
  1567 004c 3342     		tst	r3, r6
  1568 004e 09D0     		beq	.L99
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 60
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 60
 
 
  775:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     {
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1605              		.loc 1 793 7 is_stmt 1 view .LVU605
  793:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****     }
  1606              		.loc 1 793 11 is_stmt 0 view .LVU606
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 61
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 61
 
 
  1607 007a 636D     		ldr	r3, [r4, #84]
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1644 00a8 04D1     		bne	.L103
  810:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****           {
  1645              		.loc 1 810 11 is_stmt 1 view .LVU624
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 62
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 62
 
 
  810:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****           {
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1685              	.L104:
  835:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         {
  1686              		.loc 1 835 9 is_stmt 1 view .LVU640
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 63
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 63
 
 
  835:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         {
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  878:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
  1724              		.loc 1 878 16 is_stmt 0 view .LVU658
  1725 00f4 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 64
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 64
 
 
  878:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       {
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1763 0120 23F08003 		bic	r3, r3, #128
  1764 0124 5361     		str	r3, [r2, #20]
  857:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 65
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 65
 
 
  1765              		.loc 1 857 9 is_stmt 1 view .LVU676
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1801 014a 002B     		cmp	r3, #0
  1802 014c 3FD0     		beq	.L97
  873:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 66
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 66
 
 
  1803              		.loc 1 873 11 is_stmt 1 view .LVU695
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1842 0176 0123     		movs	r3, #1
  1843 0178 84F83530 		strb	r3, [r4, #53]
  911:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 67
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 67
 
 
  1844              		.loc 1 911 11 is_stmt 1 view .LVU711
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  935:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         {
  1882              		.loc 1 935 9 view .LVU728
  935:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****         {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 68
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 68
 
 
  1883              		.loc 1 935 13 is_stmt 0 view .LVU729
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1922              		@ sp needed
  1923 01d0 F0BD     		pop	{r4, r5, r6, r7, pc}
  1924              	.LVL140:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 69
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 69
 
 
  1925              	.L121:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  1969 0018 BCF1010F 		cmp	ip, #1
  1970 001c 04D0     		beq	.L135
 1012:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 70
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 70
 
 
  1971              		.loc 1 1012 12 view .LVU757
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  2011 003c 1A64     		str	r2, [r3, #64]
  985:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  2012              		.loc 1 985 7 is_stmt 1 view .LVU772
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 71
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 71
 
 
  970:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1001:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  2048              		.loc 1 1001 7 is_stmt 1 view .LVU792
  970:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 72
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 72
 
 
  2049              		.loc 1 970 21 is_stmt 0 view .LVU793
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  2093              	.LVL149:
 1036:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****   {
  2094              		.loc 1 1036 5 view .LVU806
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 73
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 73
 
 
  2095 0016 012A     		cmp	r2, #1
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1045:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       break;
  2136              		.loc 1 1045 34 is_stmt 0 view .LVU820
  2137 003c 0020     		movs	r0, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 74
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 74
 
 
  2138 003e 1864     		str	r0, [r3, #64]
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  2175              		.loc 1 1066 34 is_stmt 0 view .LVU837
  2176 005e 1864     		str	r0, [r3, #64]
 1067:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c ****       hdma->XferM1HalfCpltCallback = NULL;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 75
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 75
 
 
  2177              		.loc 1 1067 7 is_stmt 1 view .LVU838
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
 1117:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c **** 
  2220              		.loc 1 1117 1 view .LVU852
  2221 0004 7047     		bx	lr
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 76
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 76
 
 
  2222              		.cfi_endproc
@@ -4544,53 +4544,53 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 1
  2262              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  2263              		.file 8 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
  2264              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s 			page 77
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s 			page 77
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_dma.c
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:21     .text.DMA_SetConfig:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:26     .text.DMA_SetConfig:00000000 DMA_SetConfig
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:97     .text.DMA_CalcBaseAndBitshift:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:102    .text.DMA_CalcBaseAndBitshift:00000000 DMA_CalcBaseAndBitshift
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:168    .text.DMA_CalcBaseAndBitshift:00000034 $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2253   .rodata.flagBitshiftOffset.0:00000000 flagBitshiftOffset.0
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:174    .text.DMA_CheckFifoParam:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:179    .text.DMA_CheckFifoParam:00000000 DMA_CheckFifoParam
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:265    .text.DMA_CheckFifoParam:0000004e $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:269    .text.DMA_CheckFifoParam:00000052 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:364    .text.HAL_DMA_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:370    .text.HAL_DMA_Init:00000000 HAL_DMA_Init
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:619    .text.HAL_DMA_Init:000000c8 $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:624    .text.HAL_DMA_DeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:630    .text.HAL_DMA_DeInit:00000000 HAL_DMA_DeInit
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:760    .text.HAL_DMA_Start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:766    .text.HAL_DMA_Start:00000000 HAL_DMA_Start
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:847    .text.HAL_DMA_Start_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:853    .text.HAL_DMA_Start_IT:00000000 HAL_DMA_Start_IT
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:968    .text.HAL_DMA_Abort:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:974    .text.HAL_DMA_Abort:00000000 HAL_DMA_Abort
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1129   .text.HAL_DMA_Abort_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1135   .text.HAL_DMA_Abort_IT:00000000 HAL_DMA_Abort_IT
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1180   .text.HAL_DMA_PollForTransfer:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1186   .text.HAL_DMA_PollForTransfer:00000000 HAL_DMA_PollForTransfer
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1477   .text.HAL_DMA_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1483   .text.HAL_DMA_IRQHandler:00000000 HAL_DMA_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1929   .text.HAL_DMA_IRQHandler:000001d4 $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1935   .text.HAL_DMA_RegisterCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1941   .text.HAL_DMA_RegisterCallback:00000000 HAL_DMA_RegisterCallback
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1992   .text.HAL_DMA_RegisterCallback:00000030 $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:1998   .text.HAL_DMA_RegisterCallback:00000036 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2062   .text.HAL_DMA_UnRegisterCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2068   .text.HAL_DMA_UnRegisterCallback:00000000 HAL_DMA_UnRegisterCallback
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2116   .text.HAL_DMA_UnRegisterCallback:0000002c $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2202   .text.HAL_DMA_GetState:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2208   .text.HAL_DMA_GetState:00000000 HAL_DMA_GetState
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2226   .text.HAL_DMA_GetError:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2232   .text.HAL_DMA_GetError:00000000 HAL_DMA_GetError
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2250   .rodata.flagBitshiftOffset.0:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2123   .text.HAL_DMA_UnRegisterCallback:00000033 $d
-C:\Users\Rick\AppData\Local\Temp\cc0WaFPO.s:2123   .text.HAL_DMA_UnRegisterCallback:00000034 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:21     .text.DMA_SetConfig:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:26     .text.DMA_SetConfig:00000000 DMA_SetConfig
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:97     .text.DMA_CalcBaseAndBitshift:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:102    .text.DMA_CalcBaseAndBitshift:00000000 DMA_CalcBaseAndBitshift
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:168    .text.DMA_CalcBaseAndBitshift:00000034 $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2253   .rodata.flagBitshiftOffset.0:00000000 flagBitshiftOffset.0
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:174    .text.DMA_CheckFifoParam:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:179    .text.DMA_CheckFifoParam:00000000 DMA_CheckFifoParam
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:265    .text.DMA_CheckFifoParam:0000004e $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:269    .text.DMA_CheckFifoParam:00000052 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:364    .text.HAL_DMA_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:370    .text.HAL_DMA_Init:00000000 HAL_DMA_Init
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:619    .text.HAL_DMA_Init:000000c8 $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:624    .text.HAL_DMA_DeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:630    .text.HAL_DMA_DeInit:00000000 HAL_DMA_DeInit
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:760    .text.HAL_DMA_Start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:766    .text.HAL_DMA_Start:00000000 HAL_DMA_Start
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:847    .text.HAL_DMA_Start_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:853    .text.HAL_DMA_Start_IT:00000000 HAL_DMA_Start_IT
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:968    .text.HAL_DMA_Abort:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:974    .text.HAL_DMA_Abort:00000000 HAL_DMA_Abort
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1129   .text.HAL_DMA_Abort_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1135   .text.HAL_DMA_Abort_IT:00000000 HAL_DMA_Abort_IT
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1180   .text.HAL_DMA_PollForTransfer:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1186   .text.HAL_DMA_PollForTransfer:00000000 HAL_DMA_PollForTransfer
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1477   .text.HAL_DMA_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1483   .text.HAL_DMA_IRQHandler:00000000 HAL_DMA_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1929   .text.HAL_DMA_IRQHandler:000001d4 $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1935   .text.HAL_DMA_RegisterCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1941   .text.HAL_DMA_RegisterCallback:00000000 HAL_DMA_RegisterCallback
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1992   .text.HAL_DMA_RegisterCallback:00000030 $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:1998   .text.HAL_DMA_RegisterCallback:00000036 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2062   .text.HAL_DMA_UnRegisterCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2068   .text.HAL_DMA_UnRegisterCallback:00000000 HAL_DMA_UnRegisterCallback
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2116   .text.HAL_DMA_UnRegisterCallback:0000002c $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2202   .text.HAL_DMA_GetState:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2208   .text.HAL_DMA_GetState:00000000 HAL_DMA_GetState
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2226   .text.HAL_DMA_GetError:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2232   .text.HAL_DMA_GetError:00000000 HAL_DMA_GetError
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2250   .rodata.flagBitshiftOffset.0:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2123   .text.HAL_DMA_UnRegisterCallback:00000033 $d
+C:\Users\Rick\AppData\Local\Temp\cct8AVG8.s:2123   .text.HAL_DMA_UnRegisterCallback:00000034 $t
 
 UNDEFINED SYMBOLS
 HAL_GetTick

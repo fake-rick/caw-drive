@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
   28:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****  *
   29:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****  * Portions Copyright © 2016 STMicroelectronics International N.V. All rights reserved.
   30:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****  * Portions Copyright (c) 2013 ARM LIMITED
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 2
 
 
   31:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****  * All rights reserved.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
   85:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #elif defined ( __ICCARM__ )
   86:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
   87:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   #ifndef   __ASM
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 3
 
 
   88:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     #define __ASM                     __asm
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
   58              		.syntax unified
   59              		.thumb
   60              		.thumb_func
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 4
 
 
   62              	makeCmsisPriority:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  127:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
  128:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
  129:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** /* Determine whether we are in thread mode or handler mode. */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 5
 
 
  130:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** static int inHandlerMode (void)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
   43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
   44:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __INLINE                               inline
   45:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 6
 
 
   46:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
  101:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  102:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_READ
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 7
 
 
  103:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  157:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (__zero_table_t const* pTable = &__zero_table_start__; pTable < &__zero_table_end__; ++pTable
  158:Drivers/CMSIS/Include/cmsis_gcc.h ****     for(uint32_t i=0u; i<pTable->wlen; ++i) {
  159:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = 0u;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 8
 
 
  160:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  214:Drivers/CMSIS/Include/cmsis_gcc.h **** #if defined (__thumb__) && !defined (__thumb2__)
  215:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
  216:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+l" (r)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 9
 
 
  217:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  271:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("dsb 0xF":::"memory");
  272:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  273:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 10
 
 
  274:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  328:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)
  329:Drivers/CMSIS/Include/cmsis_gcc.h ****   return (int16_t)__builtin_bswap16(value);
  330:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 11
 
 
  331:Drivers/CMSIS/Include/cmsis_gcc.h ****   int16_t result;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  385:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (value >>= 1U; value != 0U; value >>= 1U)
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   {
  387:Drivers/CMSIS/Include/cmsis_gcc.h ****     result <<= 1U;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 12
 
 
  388:Drivers/CMSIS/Include/cmsis_gcc.h ****     result |= value & 1U;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  442:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrexb %0, [%1]" : "=r" (result) : "r" (addr) : "memory" );
  443:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  444:Drivers/CMSIS/Include/cmsis_gcc.h ****    return ((uint8_t) result);    /* Add explicit type cast here */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 13
 
 
  445:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  499:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  500:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  501:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 14
 
 
  502:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  556:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Saturates a signed value.
  557:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  ARG1  Value to be saturated
  558:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  ARG2  Bit position to saturate to (1..32)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 15
 
 
  559:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return             Saturated value
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  613:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrbt %0, %1" : "=r" (result) : "Q" (*ptr) );
  614:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  615:Drivers/CMSIS/Include/cmsis_gcc.h ****     /* Prior to GCC 4.8, "Q" will be expanded to [rx, #0] which is not
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 16
 
 
  616:Drivers/CMSIS/Include/cmsis_gcc.h ****        accepted by assembler. So has to use following less efficient pattern.
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  670:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  671:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  672:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 17
 
 
  673:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  727:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Saturates an unsigned value.
  728:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  value  Value to be saturated
  729:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    sat  Bit position to saturate to (0..31)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 18
 
 
  730:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return             Saturated value
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  784:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  785:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  786:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 19
 
 
  787:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Load-Acquire (32 bit)
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  841:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return             value of type uint8_t at (*ptr)
  842:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  843:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint8_t __LDAEXB(volatile uint8_t *ptr)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 20
 
 
  844:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  898:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  899:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  900:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Store-Release Exclusive (16 bit)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 21
 
 
  901:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a STLH exclusive instruction for 16 bit values.
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  955:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  956:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
  957:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting special-purpose register PRIMASK.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 22
 
 
  958:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1012:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
 1013:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
 1014:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_CONTROL_NS(uint32_t control)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 23
 
 
 1015:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  139:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @note   MUST REMAIN UNCHANGED: \b osKernelInitialize shall be consistent in every CMSIS-RTOS.
  140:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** */
  141:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** osStatus osKernelInitialize (void);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 24
 
 
  142:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  175 0000 08B5     		push	{r3, lr}
  176              		.cfi_def_cfa_offset 8
  177              		.cfi_offset 3, -8
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 25
 
 
  178              		.cfi_offset 14, -4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  214              		.cfi_offset 14, -4
  186:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (inHandlerMode()) {
  215              		.loc 1 186 3 view .LVU41
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 26
 
 
  216              		.loc 1 186 7 is_stmt 0 view .LVU42
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  253              		.cfi_def_cfa_offset 28
  254              		.cfi_offset 4, -28
  255              		.cfi_offset 5, -24
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 27
 
 
  256              		.cfi_offset 6, -20
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  210:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****               thread_def->buffer, thread_def->controlblock);
  211:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
  212:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 28
 
 
  213:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     if (xTaskCreate((TaskFunction_t)thread_def->pthread,(const portCHAR *)thread_def->name,
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  326              		.loc 1 213 9 discriminator 1 view .LVU74
  327 004c 05AB     		add	r3, sp, #20
  328 004e 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 29
 
 
  329 0050 0090     		str	r0, [sp]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  369              	.LFE118:
  371              		.section	.text.osThreadTerminate,"ax",%progbits
  372              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 30
 
 
  373              		.global	osThreadTerminate
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  269:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** */
  270:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** osStatus osThreadYield (void)
  271:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 31
 
 
  409              		.loc 1 271 1 is_stmt 1 view -0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  451              		.loc 1 285 1 is_stmt 0 view .LVU94
  452 0000 10B5     		push	{r4, lr}
  453              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 32
 
 
  454              		.cfi_offset 4, -8
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  494              		.cfi_offset 4, -8
  495              		.cfi_offset 14, -4
  496 0002 0446     		mov	r4, r0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 33
 
 
  302:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #if (INCLUDE_uxTaskPriorityGet == 1)
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  536              	osDelay:
  537              	.LVL37:
  538              	.LFB123:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 34
 
 
  315:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  574              	.LVL41:
  575              	.LFB124:
  336:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 35
 
 
  337:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #if (defined (osFeature_Wait)  &&  (osFeature_Wait != 0)) /* Generic Wait available */
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  386:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****                       1, // period should be filled when starting the Timer using osTimerStart
  387:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****                       (type == osTimerPeriodic) ? pdTRUE : pdFALSE,
  388:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****                       (void *) argument,
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 36
 
 
  389:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****                       (TimerCallbackFunction_t)timer_def->ptimer);
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  420:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     else
  421:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     {
  422:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****       portEND_SWITCHING_ISR(taskWoken);     
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 37
 
 
  423:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     }
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  453:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     portEND_SWITCHING_ISR(taskWoken);
  454:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
  455:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 38
 
 
  456:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     if (xTimerStop(timer_id, 0) != pdPASS) {
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  486:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     
  487:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #else 
  488:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   result = osErrorOS;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 39
 
 
  658              		.loc 1 488 3 view .LVU141
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  696              		.loc 1 506 3 is_stmt 1 view .LVU149
  697              		.loc 1 506 12 is_stmt 0 view .LVU150
  698 000c 0293     		str	r3, [sp, #8]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 40
 
 
  507:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  744 0046 2946     		mov	r1, r5
  745 0048 2046     		mov	r0, r4
  746 004a FFF7FEFF 		bl	xTaskGenericNotify
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 41
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 41
 
 
  747              	.LVL52:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  532:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @note   MUST REMAIN UNCHANGED: \b osSignalClear shall be consistent in every CMSIS-RTOS.
  533:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** */
  534:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** int32_t osSignalClear (osThreadId thread_id, int32_t signal);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 42
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 42
 
 
  535:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  563:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (inHandlerMode())
  811              		.loc 1 563 3 view .LVU180
  812              		.loc 1 563 7 is_stmt 0 view .LVU181
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 43
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 43
 
 
  813 000e FFF7FEFF 		bl	inHandlerMode
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  840 002a 02AA     		add	r2, sp, #8
  841 002c 3146     		mov	r1, r6
  842 002e 0020     		movs	r0, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 44
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 44
 
 
  843 0030 FFF7FEFF 		bl	xTaskNotifyWait
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  884              		.align	1
  885              		.global	osMutexCreate
  886              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 45
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 45
 
 
  887              		.thumb
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  616:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #endif
  617:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** }
  915              		.loc 1 617 1 view .LVU212
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 46
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 46
 
 
  916 000c 08BD     		pop	{r3, pc}
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  630:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
  631:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
  632:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (mutex_id == NULL) {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 47
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 47
 
 
  957              		.loc 1 632 3 is_stmt 1 view .LVU221
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  992              	@ 651 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" 1
  993 0032 BFF34F8F 		dsb
  994              	@ 0 "" 2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 48
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 48
 
 
  995              		.loc 1 651 2 is_stmt 1 view .LVU236
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1036 0054 FF20     		movs	r0, #255
  1037 0056 F9E7     		b	.L63
  1038              	.L68:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 49
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 49
 
 
  657:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** }
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1080              	.LVL76:
  1081              		.loc 1 671 6 discriminator 1 view .LVU256
  1082 000e 98B1     		cbz	r0, .L72
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 50
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 50
 
 
  672:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     if (xSemaphoreGiveFromISR(mutex_id, &taskWoken) != pdTRUE) {
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1128 0048 FF20     		movs	r0, #255
  1129              	.LVL79:
  1130              	.L71:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 51
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 51
 
 
  680:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1172              		.cfi_offset 14, -4
  1173 0002 0446     		mov	r4, r0
  692:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (inHandlerMode()) {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 52
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 52
 
 
  1174              		.loc 1 692 3 is_stmt 1 view .LVU277
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1208              		.loc 1 713 1 is_stmt 1 view -0
  1209              		.cfi_startproc
  1210              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 53
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 53
 
 
  1211              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  746:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
  747:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else
  748:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 54
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 54
 
 
  749:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #if (configUSE_COUNTING_SEMAPHORES == 1 )
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  731:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****       vSemaphoreCreateBinary(sema);
  1261              		.loc 1 731 5 is_stmt 1 view .LVU299
  731:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****       vSemaphoreCreateBinary(sema);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 55
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 55
 
 
  1262              		.loc 1 731 8 is_stmt 0 view .LVU300
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  779:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** int32_t osSemaphoreWait (osSemaphoreId semaphore_id, uint32_t millisec)
  780:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** {
  1302              		.loc 1 780 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 56
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 56
 
 
  1303              		.cfi_startproc
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1336              		.loc 1 801 5 is_stmt 1 view .LVU322
  1337              		.loc 1 801 9 is_stmt 0 view .LVU323
  1338 0016 01AA     		add	r2, sp, #4
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 57
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 57
 
 
  1339 0018 0021     		movs	r1, #0
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  811:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** }
  1381              		.loc 1 811 1 view .LVU335
  1382 004c 2846     		mov	r0, r5
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 58
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 58
 
 
  1383 004e 02B0     		add	sp, sp, #8
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1427 0004 0446     		mov	r4, r0
  821:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   osStatus result = osOK;
  1428              		.loc 1 821 3 is_stmt 1 view .LVU341
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 59
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 59
 
 
  1429              	.LVL105:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  831:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
  832:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     if (xSemaphoreGive(semaphore_id) != pdTRUE) {
  1473              		.loc 1 832 5 is_stmt 1 view .LVU357
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 60
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 60
 
 
  1474              		.loc 1 832 9 is_stmt 0 view .LVU358
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  839:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
  840:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** /**
  841:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @brief Delete a Semaphore
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 61
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 61
 
 
  842:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @param  semaphore_id  semaphore object referenced with \ref osSemaphore.
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1562              	osPoolCreate:
  1563              	.LVL115:
  1564              	.LFB138:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 62
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 62
 
 
  856:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  888:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   uint32_t i;
  1587              		.loc 1 888 3 is_stmt 1 view .LVU381
  889:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 63
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 63
 
 
  890:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   /* First have to allocate memory for the pool control block. */
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1627              		.loc 1 904 22 view .LVU402
  1628 002e 06FB00F0 		mul	r0, r6, r0
  1629 0032 FFF7FEFF 		bl	pvPortMalloc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 64
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 64
 
 
  1630              	.LVL121:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  924:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****  
  925:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #else
  926:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   return NULL;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 65
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 65
 
 
  927:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #endif
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  931:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @brief Allocate a memory block from a memory pool
  932:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @param pool_id       memory pool ID obtain referenced with \ref osPoolCreate.
  933:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @retval  address of the allocated memory block or NULL in case of no memory available.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 66
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 66
 
 
  934:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @note   MUST REMAIN UNCHANGED: \b osPoolAlloc shall be consistent in every CMSIS-RTOS.
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
   17:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
   18:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
   19:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 67
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 67
 
 
   20:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
   74:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portTICK_PERIOD_MS			( ( TickType_t ) 1000 / configTICK_RATE_HZ )
   75:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portBYTE_ALIGNMENT			8
   76:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 68
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 68
 
 
   77:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  131:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	{
  132:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	uint8_t ucReturn;
  133:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 69
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 69
 
 
  134:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		__asm volatile ( "clz %0, %1" : "=r" ( ucReturn ) : "r" ( ulBitmap ) : "memory" );
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  188:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
  189:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
  190:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 70
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 70
 
 
  191:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** portFORCE_INLINE static void vPortRaiseBASEPRI( void )
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  945:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
  946:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
  947:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     vPortEnterCritical();
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 71
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 71
 
 
  948:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1798              		.loc 1 954 31 view .LVU458
  1799 0048 D154     		strb	r1, [r2, r3]
  955:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****       p = (void *)((uint32_t)(pool_id->pool) + (index * pool_id->item_sz));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 72
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 72
 
 
  1800              		.loc 1 955 7 is_stmt 1 view .LVU459
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1840              		.loc 3 229 2 is_stmt 0 view .LVU473
  1841              	.LBE13:
  1842              	.LBE12:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 73
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 73
 
 
  963:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1879              	.LVL151:
  980:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
  981:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (p != NULL)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 74
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 74
 
 
  1880              		.loc 1 981 3 is_stmt 1 view .LVU482
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  1913              		.loc 1 1004 3 is_stmt 1 view .LVU491
  1914              		.loc 1 1004 6 is_stmt 0 view .LVU492
  1915 0004 A1B1     		cbz	r1, .L137
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 75
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 75
 
 
 1005:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     return osErrorParameter;
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1022:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
 1023:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   return osOK;
  1953              		.loc 1 1023 3 is_stmt 1 view .LVU511
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 76
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 76
 
 
  1954              		.loc 1 1023 10 is_stmt 0 view .LVU512
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1026:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
 1027:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #endif   /* Use Memory Pool Management */
 1028:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 77
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 77
 
 
 1029:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** /*******************   Message Queue Management Functions  *********************/
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1048:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
 1049:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
 1050:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     return xQueueCreate(queue_def->queue_sz, queue_def->item_sz);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 78
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 78
 
 
  2035              		.loc 1 1050 5 is_stmt 1 view .LVU534
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2073              		.cfi_offset 5, -8
  2074              		.cfi_offset 14, -4
  2075 0002 85B0     		sub	sp, sp, #20
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 79
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 79
 
 
  2076              		.cfi_def_cfa_offset 32
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2117 0034 C3F8042D 		str	r2, [r3, #3332]
  2118              		.loc 1 1081 5 view .LVU556
  2119              		.loc 1 1081 5 is_stmt 0 discriminator 1 view .LVU557
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 80
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 80
 
 
  2120              		.syntax unified
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2161              	.L151:
 1089:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** }
  2162              		.loc 1 1089 10 view .LVU567
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 81
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 81
 
 
  2163 005e 0020     		movs	r0, #0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2202              		.loc 1 1106 3 is_stmt 1 view .LVU576
  2203              		.loc 1 1106 17 is_stmt 0 view .LVU577
  2204 0008 0023     		movs	r3, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 82
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 82
 
 
  2205 000a 0193     		str	r3, [sp, #4]
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1131:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     else {
 1132:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****       event.status = osOK;
  2235              		.loc 1 1132 7 is_stmt 1 view .LVU591
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 83
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 83
 
 
  2236              		.loc 1 1132 20 is_stmt 0 view .LVU592
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2281              	.L157:
 1135:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
 1136:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 84
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 84
 
 
 1137:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     if (xQueueReceive(queue_id, &event.value.v, ticks) == pdTRUE) {
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2323              		.cfi_endproc
  2324              	.LFE144:
  2326              		.section	.text.osMailCreate,"ax",%progbits
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 85
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 85
 
 
  2327              		.align	1
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2356              		.loc 1 1173 57 view .LVU624
  2357 000a 4368     		ldr	r3, [r0, #4]
  2358              		.loc 1 1173 15 view .LVU625
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 86
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 86
 
 
  2359 000c 0293     		str	r3, [sp, #8]
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2398 0034 A368     		ldr	r3, [r4, #8]
  2399              		.loc 1 1188 8 view .LVU644
  2400 0036 1E68     		ldr	r6, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 87
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 87
 
 
  2401              		.loc 1 1188 25 view .LVU645
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1190:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
  2437              		.loc 1 1190 5 view .LVU657
 1190:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 88
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 88
 
 
  2438              		.loc 1 1190 12 is_stmt 0 view .LVU658
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2476 0002 10B1     		cbz	r0, .L174
 1221:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     return NULL;
 1222:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 89
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 89
 
 
 1223:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1240:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   
 1241:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (p) {
  2516              		.loc 1 1241 3 is_stmt 1 view .LVU678
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 90
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 90
 
 
  2517              		.loc 1 1241 6 is_stmt 0 view .LVU679
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2561              	.LFB148:
 1249:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
 1250:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** /**
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 91
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 91
 
 
 1251:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @brief Put a mail to a queue
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2597              		.loc 1 1269 8 discriminator 1 view .LVU703
  2598 0020 0128     		cmp	r0, #1
  2599 0022 1AD1     		bne	.L188
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 92
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 92
 
 
 1270:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****       return osErrorOS;
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2639              		.loc 1 1281 1 view .LVU715
  2640 0052 04B0     		add	sp, sp, #16
  2641              		.cfi_remember_state
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 93
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 93
 
 
  2642              		.cfi_def_cfa_offset 8
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2683              		.loc 1 1291 1 is_stmt 0 view .LVU722
  2684 0000 70B5     		push	{r4, r5, r6, lr}
  2685              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 94
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 94
 
 
  2686              		.cfi_offset 4, -16
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2715              	.LVL219:
  2716              		.loc 1 1316 6 discriminator 1 view .LVU737
  2717 0016 F8B1     		cbz	r0, .L195
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 95
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 95
 
 
 1317:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     if (xQueueReceiveFromISR(queue_id->handle, &event.value.p, &taskWoken) == pdTRUE) {
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1300:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
  2761              		.loc 1 1300 12 is_stmt 0 view .LVU752
  2762 0048 9DE80700 		ldm	sp, {r0, r1, r2}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 96
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 96
 
 
  2763              	.LVL222:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2801              		.loc 1 1337 1 view .LVU765
  2802 0074 2046     		mov	r0, r4
  2803 0076 04B0     		add	sp, sp, #16
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 97
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 97
 
 
  2804              		.cfi_remember_state
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2842              		.loc 1 1352 10 is_stmt 0 view .LVU773
  2843 0004 8068     		ldr	r0, [r0, #8]
  2844              	.LVL229:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 98
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 98
 
 
  2845              		.loc 1 1352 10 view .LVU774
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2886 0008 00D1     		bne	.L216
  2887              	.L213:
 1367:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 99
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 99
 
 
 1368:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #endif  /* INCLUDE_xTaskGetSchedulerState */  
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1402:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   case eDeleted :
 1403:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     result = osThreadDeleted;
 1404:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     break;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 100
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 100
 
 
 1405:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   default:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2926              	.LFE152:
  2928              		.section	.text.osThreadResume,"ax",%progbits
  2929              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 101
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 101
 
 
  2930              		.global	osThreadResume
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  2971 0020 BFF34F8F 		dsb
  2972              	@ 0 "" 2
  2973              		.loc 1 1455 7 is_stmt 1 view .LVU802
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 102
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 102
 
 
  2974              		.loc 1 1455 7 is_stmt 0 discriminator 1 view .LVU803
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1474:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   vTaskSuspendAll();
  3012              		.loc 1 1474 3 view .LVU809
  3013 0002 FFF7FEFF 		bl	vTaskSuspendAll
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 103
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 103
 
 
  3014              	.LVL241:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  3053 000e 0020     		movs	r0, #0
  3054 0010 FCE7     		b	.L225
  3055              		.cfi_endproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 104
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 104
 
 
  3056              	.LFE155:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  3091              	osAbortDelay:
  3092              	.LVL245:
  3093              	.LFB157:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 105
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 105
 
 
 1514:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  3121              		@ args = 0, pretend = 0, frame = 0
  3122              		@ frame_needed = 0, uses_anonymous_args = 0
  3123              		@ link register save eliminated.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 106
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 106
 
 
 1543:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #if ( ( configUSE_TRACE_FACILITY == 1 ) && ( configUSE_STATS_FORMATTING_FUNCTIONS == 1 ) )
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1562:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (queue_id == NULL) {
  3161              		.loc 1 1562 3 is_stmt 1 view .LVU840
  3162              		.loc 1 1562 6 is_stmt 0 view .LVU841
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 107
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 107
 
 
  3163 0008 89B1     		cbz	r1, .L241
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1588:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   return event;
  3192              		.loc 1 1588 3 is_stmt 1 view .LVU854
  3193              		.loc 1 1588 10 is_stmt 0 view .LVU855
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 108
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 108
 
 
  3194 001e 04AB     		add	r3, sp, #16
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1591:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** /**
 1592:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @brief  Get the number of messaged stored in a queue.
 1593:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @param  queue_id  message queue ID obtained with \ref osMessageCreate.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 109
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 109
 
 
 1594:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** * @retval number of messages stored in a queue.
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  3283              	osMessageAvailableSpace:
  3284              	.LVL264:
  3285              	.LFB161:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 110
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 110
 
 
 1606:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1624:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (inHandlerMode()) {
  3324              		.loc 1 1624 3 is_stmt 1 view .LVU881
  3325              		.loc 1 1624 7 is_stmt 0 view .LVU882
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 111
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 111
 
 
  3326 0004 FFF7FEFF 		bl	inHandlerMode
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1643:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   if (mutex_def->controlblock != NULL){
 1644:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****     return xSemaphoreCreateRecursiveMutexStatic( mutex_def->controlblock );
 1645:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 112
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 112
 
 
 1646:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   else {
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1677:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** }
  3388              		.loc 1 1677 1 is_stmt 0 view .LVU895
  3389 0000 8120     		movs	r0, #129
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 113
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 113
 
 
  3390              	.LVL273:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
 1713:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c ****   return osOK;
 1714:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** #else
 1715:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c **** 	return osErrorResource;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 114
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 114
 
 
  3411              		.loc 1 1715 2 view .LVU898
@@ -6838,133 +6838,133 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 1
  3456              		.file 10 "Middlewares/Third_Party/FreeRTOS/Source/include/timers.h"
  3457              		.file 11 "Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
  3458              		.file 12 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 115
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 115
 
 
  3459              		.file 13 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
  3460              		.file 14 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
  3461              		.file 15 "Middlewares/Third_Party/FreeRTOS/Source/include/portable.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 116
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 116
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 cmsis_os.c
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:21     .text.makeFreeRtosPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:26     .text.makeFreeRtosPriority:00000000 makeFreeRtosPriority
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:57     .text.makeCmsisPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:62     .text.makeCmsisPriority:00000000 makeCmsisPriority
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:96     .text.inHandlerMode:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:101    .text.inHandlerMode:00000000 inHandlerMode
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:136    .text.osKernelStart:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:142    .text.osKernelStart:00000000 osKernelStart
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:163    .text.osKernelRunning:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:169    .text.osKernelRunning:00000000 osKernelRunning
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:199    .text.osKernelSysTick:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:205    .text.osKernelSysTick:00000000 osKernelSysTick
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:238    .text.osThreadCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:244    .text.osThreadCreate:00000000 osThreadCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:346    .text.osThreadGetId:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:352    .text.osThreadGetId:00000000 osThreadGetId
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:372    .text.osThreadTerminate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:378    .text.osThreadTerminate:00000000 osThreadTerminate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:401    .text.osThreadYield:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:407    .text.osThreadYield:00000000 osThreadYield
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:438    .text.osThreadSetPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:444    .text.osThreadSetPriority:00000000 osThreadSetPriority
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:478    .text.osThreadGetPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:484    .text.osThreadGetPriority:00000000 osThreadGetPriority
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:530    .text.osDelay:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:536    .text.osDelay:00000000 osDelay
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:567    .text.osTimerCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:573    .text.osTimerCreate:00000000 osTimerCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:591    .text.osTimerStart:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:597    .text.osTimerStart:00000000 osTimerStart
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:617    .text.osTimerStop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:623    .text.osTimerStop:00000000 osTimerStop
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:643    .text.osTimerDelete:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:649    .text.osTimerDelete:00000000 osTimerDelete
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:669    .text.osSignalSet:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:675    .text.osSignalSet:00000000 osSignalSet
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:776    .text.osSignalWait:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:782    .text.osSignalWait:00000000 osSignalWait
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:884    .text.osMutexCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:890    .text.osMutexCreate:00000000 osMutexCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:931    .text.osMutexWait:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:937    .text.osMutexWait:00000000 osMutexWait
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1050   .text.osMutexRelease:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1056   .text.osMutexRelease:00000000 osMutexRelease
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1155   .text.osMutexDelete:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1161   .text.osMutexDelete:00000000 osMutexDelete
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1199   .text.osSemaphoreCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1205   .text.osSemaphoreCreate:00000000 osSemaphoreCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1293   .text.osSemaphoreWait:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1299   .text.osSemaphoreWait:00000000 osSemaphoreWait
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1407   .text.osSemaphoreRelease:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1413   .text.osSemaphoreRelease:00000000 osSemaphoreRelease
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1512   .text.osSemaphoreDelete:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1518   .text.osSemaphoreDelete:00000000 osSemaphoreDelete
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1556   .text.osPoolCreate:00000000 $t
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 117
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:21     .text.makeFreeRtosPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:26     .text.makeFreeRtosPriority:00000000 makeFreeRtosPriority
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:57     .text.makeCmsisPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:62     .text.makeCmsisPriority:00000000 makeCmsisPriority
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:96     .text.inHandlerMode:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:101    .text.inHandlerMode:00000000 inHandlerMode
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:136    .text.osKernelStart:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:142    .text.osKernelStart:00000000 osKernelStart
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:163    .text.osKernelRunning:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:169    .text.osKernelRunning:00000000 osKernelRunning
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:199    .text.osKernelSysTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:205    .text.osKernelSysTick:00000000 osKernelSysTick
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:238    .text.osThreadCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:244    .text.osThreadCreate:00000000 osThreadCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:346    .text.osThreadGetId:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:352    .text.osThreadGetId:00000000 osThreadGetId
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:372    .text.osThreadTerminate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:378    .text.osThreadTerminate:00000000 osThreadTerminate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:401    .text.osThreadYield:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:407    .text.osThreadYield:00000000 osThreadYield
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:438    .text.osThreadSetPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:444    .text.osThreadSetPriority:00000000 osThreadSetPriority
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:478    .text.osThreadGetPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:484    .text.osThreadGetPriority:00000000 osThreadGetPriority
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:530    .text.osDelay:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:536    .text.osDelay:00000000 osDelay
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:567    .text.osTimerCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:573    .text.osTimerCreate:00000000 osTimerCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:591    .text.osTimerStart:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:597    .text.osTimerStart:00000000 osTimerStart
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:617    .text.osTimerStop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:623    .text.osTimerStop:00000000 osTimerStop
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:643    .text.osTimerDelete:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:649    .text.osTimerDelete:00000000 osTimerDelete
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:669    .text.osSignalSet:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:675    .text.osSignalSet:00000000 osSignalSet
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:776    .text.osSignalWait:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:782    .text.osSignalWait:00000000 osSignalWait
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:884    .text.osMutexCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:890    .text.osMutexCreate:00000000 osMutexCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:931    .text.osMutexWait:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:937    .text.osMutexWait:00000000 osMutexWait
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1050   .text.osMutexRelease:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1056   .text.osMutexRelease:00000000 osMutexRelease
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1155   .text.osMutexDelete:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1161   .text.osMutexDelete:00000000 osMutexDelete
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1199   .text.osSemaphoreCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1205   .text.osSemaphoreCreate:00000000 osSemaphoreCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1293   .text.osSemaphoreWait:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1299   .text.osSemaphoreWait:00000000 osSemaphoreWait
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1407   .text.osSemaphoreRelease:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1413   .text.osSemaphoreRelease:00000000 osSemaphoreRelease
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1512   .text.osSemaphoreDelete:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1518   .text.osSemaphoreDelete:00000000 osSemaphoreDelete
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1556   .text.osPoolCreate:00000000 $t
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 117
 
 
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1562   .text.osPoolCreate:00000000 osPoolCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1695   .text.osPoolAlloc:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1701   .text.osPoolAlloc:00000000 osPoolAlloc
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1858   .text.osPoolCAlloc:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1864   .text.osPoolCAlloc:00000000 osPoolCAlloc
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1894   .text.osPoolFree:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1900   .text.osPoolFree:00000000 osPoolFree
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1991   .text.osMessageCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:1997   .text.osMessageCreate:00000000 osMessageCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2056   .text.osMessagePut:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2062   .text.osMessagePut:00000000 osMessagePut
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2173   .text.osMessageGet:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2179   .text.osMessageGet:00000000 osMessageGet
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2327   .text.osMailCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2333   .text.osMailCreate:00000000 osMailCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2454   .text.osMailAlloc:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2460   .text.osMailAlloc:00000000 osMailAlloc
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2492   .text.osMailCAlloc:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2498   .text.osMailCAlloc:00000000 osMailCAlloc
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2553   .text.osMailPut:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2559   .text.osMailPut:00000000 osMailPut
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2670   .text.osMailGet:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2676   .text.osMailGet:00000000 osMailGet
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2820   .text.osMailFree:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2826   .text.osMailFree:00000000 osMailFree
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2864   .text.osSystickHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2870   .text.osSystickHandler:00000000 osSystickHandler
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2900   .text.osThreadSuspend:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2906   .text.osThreadSuspend:00000000 osThreadSuspend
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2929   .text.osThreadResume:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2935   .text.osThreadResume:00000000 osThreadResume
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:2996   .text.osThreadSuspendAll:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3002   .text.osThreadSuspendAll:00000000 osThreadSuspendAll
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3023   .text.osThreadResumeAll:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3029   .text.osThreadResumeAll:00000000 osThreadResumeAll
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3059   .text.osDelayUntil:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3065   .text.osDelayUntil:00000000 osDelayUntil
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3085   .text.osAbortDelay:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3091   .text.osAbortDelay:00000000 osAbortDelay
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3110   .text.osThreadList:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3116   .text.osThreadList:00000000 osThreadList
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3134   .text.osMessagePeek:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3140   .text.osMessagePeek:00000000 osMessagePeek
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3232   .text.osMessageWaiting:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3238   .text.osMessageWaiting:00000000 osMessageWaiting
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3277   .text.osMessageAvailableSpace:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3283   .text.osMessageAvailableSpace:00000000 osMessageAvailableSpace
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3305   .text.osMessageDelete:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3311   .text.osMessageDelete:00000000 osMessageDelete
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3349   .text.osRecursiveMutexCreate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3355   .text.osRecursiveMutexCreate:00000000 osRecursiveMutexCreate
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3373   .text.osRecursiveMutexRelease:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3379   .text.osRecursiveMutexRelease:00000000 osRecursiveMutexRelease
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3397   .text.osRecursiveMutexWait:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3403   .text.osRecursiveMutexWait:00000000 osRecursiveMutexWait
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3421   .text.osSemaphoreGetCount:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s:3427   .text.osSemaphoreGetCount:00000000 osSemaphoreGetCount
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccfpH0iV.s 			page 118
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1562   .text.osPoolCreate:00000000 osPoolCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1695   .text.osPoolAlloc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1701   .text.osPoolAlloc:00000000 osPoolAlloc
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1858   .text.osPoolCAlloc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1864   .text.osPoolCAlloc:00000000 osPoolCAlloc
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1894   .text.osPoolFree:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1900   .text.osPoolFree:00000000 osPoolFree
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1991   .text.osMessageCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:1997   .text.osMessageCreate:00000000 osMessageCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2056   .text.osMessagePut:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2062   .text.osMessagePut:00000000 osMessagePut
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2173   .text.osMessageGet:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2179   .text.osMessageGet:00000000 osMessageGet
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2327   .text.osMailCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2333   .text.osMailCreate:00000000 osMailCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2454   .text.osMailAlloc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2460   .text.osMailAlloc:00000000 osMailAlloc
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2492   .text.osMailCAlloc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2498   .text.osMailCAlloc:00000000 osMailCAlloc
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2553   .text.osMailPut:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2559   .text.osMailPut:00000000 osMailPut
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2670   .text.osMailGet:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2676   .text.osMailGet:00000000 osMailGet
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2820   .text.osMailFree:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2826   .text.osMailFree:00000000 osMailFree
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2864   .text.osSystickHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2870   .text.osSystickHandler:00000000 osSystickHandler
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2900   .text.osThreadSuspend:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2906   .text.osThreadSuspend:00000000 osThreadSuspend
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2929   .text.osThreadResume:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2935   .text.osThreadResume:00000000 osThreadResume
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:2996   .text.osThreadSuspendAll:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3002   .text.osThreadSuspendAll:00000000 osThreadSuspendAll
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3023   .text.osThreadResumeAll:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3029   .text.osThreadResumeAll:00000000 osThreadResumeAll
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3059   .text.osDelayUntil:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3065   .text.osDelayUntil:00000000 osDelayUntil
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3085   .text.osAbortDelay:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3091   .text.osAbortDelay:00000000 osAbortDelay
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3110   .text.osThreadList:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3116   .text.osThreadList:00000000 osThreadList
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3134   .text.osMessagePeek:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3140   .text.osMessagePeek:00000000 osMessagePeek
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3232   .text.osMessageWaiting:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3238   .text.osMessageWaiting:00000000 osMessageWaiting
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3277   .text.osMessageAvailableSpace:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3283   .text.osMessageAvailableSpace:00000000 osMessageAvailableSpace
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3305   .text.osMessageDelete:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3311   .text.osMessageDelete:00000000 osMessageDelete
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3349   .text.osRecursiveMutexCreate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3355   .text.osRecursiveMutexCreate:00000000 osRecursiveMutexCreate
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3373   .text.osRecursiveMutexRelease:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3379   .text.osRecursiveMutexRelease:00000000 osRecursiveMutexRelease
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3397   .text.osRecursiveMutexWait:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3403   .text.osRecursiveMutexWait:00000000 osRecursiveMutexWait
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3421   .text.osSemaphoreGetCount:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s:3427   .text.osSemaphoreGetCount:00000000 osSemaphoreGetCount
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccEWCjW4.s 			page 118
 
 
 

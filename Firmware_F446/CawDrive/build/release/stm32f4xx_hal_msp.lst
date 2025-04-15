@@ -1,0 +1,70 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccOaw6a1.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f4xx_hal_msp.c"
+  16              		.text
+  17              		.section	.text.HAL_MspInit,"ax",%progbits
+  18              		.align	1
+  19              		.global	HAL_MspInit
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	HAL_MspInit:
+  25              		@ args = 0, pretend = 0, frame = 8
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 00B5     		push	{lr}
+  28 0002 83B0     		sub	sp, sp, #12
+  29 0004 0022     		movs	r2, #0
+  30 0006 0092     		str	r2, [sp]
+  31 0008 0D4B     		ldr	r3, .L3
+  32 000a 596C     		ldr	r1, [r3, #68]
+  33 000c 41F48041 		orr	r1, r1, #16384
+  34 0010 5964     		str	r1, [r3, #68]
+  35 0012 596C     		ldr	r1, [r3, #68]
+  36 0014 01F48041 		and	r1, r1, #16384
+  37 0018 0091     		str	r1, [sp]
+  38 001a 0099     		ldr	r1, [sp]
+  39 001c 0192     		str	r2, [sp, #4]
+  40 001e 196C     		ldr	r1, [r3, #64]
+  41 0020 41F08051 		orr	r1, r1, #268435456
+  42 0024 1964     		str	r1, [r3, #64]
+  43 0026 1B6C     		ldr	r3, [r3, #64]
+  44 0028 03F08053 		and	r3, r3, #268435456
+  45 002c 0193     		str	r3, [sp, #4]
+  46 002e 019B     		ldr	r3, [sp, #4]
+  47 0030 0F21     		movs	r1, #15
+  48 0032 6FF00100 		mvn	r0, #1
+  49 0036 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  50 003a 03B0     		add	sp, sp, #12
+  51              		@ sp needed
+  52 003c 5DF804FB 		ldr	pc, [sp], #4
+  53              	.L4:
+  54              		.align	2
+  55              	.L3:
+  56 0040 00380240 		.word	1073887232
+  58              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccOaw6a1.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f4xx_hal_msp.c
+C:\Users\Rick\AppData\Local\Temp\ccOaw6a1.s:18     .text.HAL_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccOaw6a1.s:24     .text.HAL_MspInit:00000000 HAL_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccOaw6a1.s:56     .text.HAL_MspInit:00000040 $d
+
+UNDEFINED SYMBOLS
+HAL_NVIC_SetPriority

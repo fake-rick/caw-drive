@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
   28:Core/Src/adc.c **** ADC_HandleTypeDef hadc2;
   29:Core/Src/adc.c **** ADC_HandleTypeDef hadc3;
   30:Core/Src/adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 2
 
 
   31:Core/Src/adc.c **** /* ADC1 init function */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
   62 001e 0376     		strb	r3, [r0, #24]
   52:Core/Src/adc.c ****   hadc1.Init.DiscontinuousConvMode = DISABLE;
   63              		.loc 1 52 3 is_stmt 1 view .LVU13
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 3
 
 
   64              		.loc 1 52 36 is_stmt 0 view .LVU14
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  102              		.loc 1 68 24 is_stmt 0 view .LVU35
  103 0044 0293     		str	r3, [sp, #8]
   69:Core/Src/adc.c ****   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 4
 
 
  104              		.loc 1 69 3 is_stmt 1 view .LVU36
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
   79:Core/Src/adc.c **** void MX_ADC2_Init(void)
   80:Core/Src/adc.c **** {
  149              		.loc 1 80 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 5
 
 
  150              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  185 0020 80F82030 		strb	r3, [r0, #32]
  100:Core/Src/adc.c ****   hadc2.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
  186              		.loc 1 100 3 is_stmt 1 view .LVU58
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 6
 
 
  187              		.loc 1 100 35 is_stmt 0 view .LVU59
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  225              		.loc 1 116 7 is_stmt 0 view .LVU80
  226 0046 6946     		mov	r1, sp
  227 0048 0648     		ldr	r0, .L15
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 7
 
 
  228 004a FFF7FEFF 		bl	HAL_ADC_ConfigChannel
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  271              		@ args = 0, pretend = 0, frame = 16
  272              		@ frame_needed = 0, uses_anonymous_args = 0
  273 0000 00B5     		push	{lr}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 8
 
 
  274              		.cfi_def_cfa_offset 4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  308 0024 C362     		str	r3, [r0, #44]
  148:Core/Src/adc.c ****   hadc3.Init.ExternalTrigConv = ADC_SOFTWARE_START;
  309              		.loc 1 148 3 is_stmt 1 view .LVU103
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 9
 
 
  310              		.loc 1 148 31 is_stmt 0 view .LVU104
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  349 004c FFF7FEFF 		bl	HAL_ADC_ConfigChannel
  350              	.LVL9:
  351              		.loc 1 163 6 discriminator 1 view .LVU124
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 10
 
 
  352 0050 28B9     		cbnz	r0, .L22
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  395              		.loc 1 174 1 is_stmt 0 view .LVU130
  396 0000 F0B5     		push	{r4, r5, r6, r7, lr}
  397              		.cfi_def_cfa_offset 20
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 11
 
 
  398              		.cfi_offset 4, -20
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  421              		.loc 1 205 10 is_stmt 0 view .LVU137
  422 0018 454A     		ldr	r2, .L33+4
  423 001a 9342     		cmp	r3, r2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 12
 
 
  424 001c 35D0     		beq	.L31
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  252:Core/Src/adc.c **** 
  253:Core/Src/adc.c ****   /* USER CODE END ADC3_MspInit 1 */
  254:Core/Src/adc.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 13
 
 
  255:Core/Src/adc.c **** }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  185:Core/Src/adc.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
  474              		.loc 1 185 5 view .LVU152
  186:Core/Src/adc.c ****     /**ADC1 GPIO Configuration
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 14
 
 
  475              		.loc 1 186 5 view .LVU153
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  513 007c 0A96     		str	r6, [sp, #40]
  198:Core/Src/adc.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
  514              		.loc 1 198 5 is_stmt 1 view .LVU170
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 15
 
 
  198:Core/Src/adc.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  556 00b4 059A     		ldr	r2, [sp, #20]
  557              	.LBE6:
  213:Core/Src/adc.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 16
 
 
  558              		.loc 1 213 5 view .LVU184
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  225:Core/Src/adc.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  596              		.loc 1 225 26 is_stmt 0 view .LVU201
  597 00de 0A96     		str	r6, [sp, #40]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 17
 
 
  226:Core/Src/adc.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  241:Core/Src/adc.c ****     /**ADC3 GPIO Configuration
  639              		.loc 1 241 5 view .LVU215
  640 0116 089B     		ldr	r3, [sp, #32]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 18
 
 
  641              	.LBE9:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  686              		@ args = 0, pretend = 0, frame = 0
  687              		@ frame_needed = 0, uses_anonymous_args = 0
  688              		.loc 1 258 1 is_stmt 0 view .LVU226
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 19
 
 
  689 0000 08B5     		push	{r3, lr}
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  297:Core/Src/adc.c **** 
  298:Core/Src/adc.c ****   /* USER CODE END ADC2_MspDeInit 1 */
  299:Core/Src/adc.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 20
 
 
  300:Core/Src/adc.c ****   else if(adcHandle->Instance==ADC3)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  286:Core/Src/adc.c **** 
  736              		.loc 1 286 5 view .LVU239
  737 0036 114A     		ldr	r2, .L43+20
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 21
 
 
  738 0038 536C     		ldr	r3, [r2, #68]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  789 0000 00000000 		.space	72
  789      00000000 
  789      00000000 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 22
 
 
  789      00000000 
@@ -1293,32 +1293,32 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 1
  813              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
  814              		.file 10 "Core/Inc/adc.h"
  815              		.file 11 "Core/Inc/main.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 adc.c
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:21     .text.MX_ADC1_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:27     .text.MX_ADC1_Init:00000000 MX_ADC1_Init
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:134    .text.MX_ADC1_Init:00000064 $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:802    .bss.hadc1:00000000 hadc1
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:141    .text.MX_ADC2_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:147    .text.MX_ADC2_Init:00000000 MX_ADC2_Init
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:254    .text.MX_ADC2_Init:00000064 $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:795    .bss.hadc2:00000000 hadc2
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:261    .text.MX_ADC3_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:267    .text.MX_ADC3_Init:00000000 MX_ADC3_Init
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:375    .text.MX_ADC3_Init:00000064 $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:788    .bss.hadc3:00000000 hadc3
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:382    .text.HAL_ADC_MspInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:388    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:664    .text.HAL_ADC_MspInit:0000012c $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:675    .text.HAL_ADC_MspDeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:681    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:773    .text.HAL_ADC_MspDeInit:00000068 $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:785    .bss.hadc3:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:792    .bss.hadc2:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccjnx3YU.s:799    .bss.hadc1:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:21     .text.MX_ADC1_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:27     .text.MX_ADC1_Init:00000000 MX_ADC1_Init
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:134    .text.MX_ADC1_Init:00000064 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:802    .bss.hadc1:00000000 hadc1
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:141    .text.MX_ADC2_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:147    .text.MX_ADC2_Init:00000000 MX_ADC2_Init
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:254    .text.MX_ADC2_Init:00000064 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:795    .bss.hadc2:00000000 hadc2
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:261    .text.MX_ADC3_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:267    .text.MX_ADC3_Init:00000000 MX_ADC3_Init
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:375    .text.MX_ADC3_Init:00000064 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:788    .bss.hadc3:00000000 hadc3
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:382    .text.HAL_ADC_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:388    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:664    .text.HAL_ADC_MspInit:0000012c $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:675    .text.HAL_ADC_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:681    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:773    .text.HAL_ADC_MspDeInit:00000068 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:785    .bss.hadc3:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:792    .bss.hadc2:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cck6t4h4.s:799    .bss.hadc1:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init

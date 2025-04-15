@@ -1,0 +1,185 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"gpio.c"
+  16              		.text
+  17              		.section	.text.MX_GPIO_Init,"ax",%progbits
+  18              		.align	1
+  19              		.global	MX_GPIO_Init
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	MX_GPIO_Init:
+  25              		@ args = 0, pretend = 0, frame = 40
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
+  28 0004 8AB0     		sub	sp, sp, #40
+  29 0006 05AD     		add	r5, sp, #20
+  30 0008 0024     		movs	r4, #0
+  31 000a 0594     		str	r4, [sp, #20]
+  32 000c 0694     		str	r4, [sp, #24]
+  33 000e 0794     		str	r4, [sp, #28]
+  34 0010 0894     		str	r4, [sp, #32]
+  35 0012 0994     		str	r4, [sp, #36]
+  36 0014 0094     		str	r4, [sp]
+  37 0016 4B4B     		ldr	r3, .L3
+  38 0018 1A6B     		ldr	r2, [r3, #48]
+  39 001a 42F00402 		orr	r2, r2, #4
+  40 001e 1A63     		str	r2, [r3, #48]
+  41 0020 1A6B     		ldr	r2, [r3, #48]
+  42 0022 02F00402 		and	r2, r2, #4
+  43 0026 0092     		str	r2, [sp]
+  44 0028 009A     		ldr	r2, [sp]
+  45 002a 0194     		str	r4, [sp, #4]
+  46 002c 1A6B     		ldr	r2, [r3, #48]
+  47 002e 42F08002 		orr	r2, r2, #128
+  48 0032 1A63     		str	r2, [r3, #48]
+  49 0034 1A6B     		ldr	r2, [r3, #48]
+  50 0036 02F08002 		and	r2, r2, #128
+  51 003a 0192     		str	r2, [sp, #4]
+  52 003c 019A     		ldr	r2, [sp, #4]
+  53 003e 0294     		str	r4, [sp, #8]
+  54 0040 1A6B     		ldr	r2, [r3, #48]
+  55 0042 42F00102 		orr	r2, r2, #1
+  56 0046 1A63     		str	r2, [r3, #48]
+  57 0048 1A6B     		ldr	r2, [r3, #48]
+  58 004a 02F00102 		and	r2, r2, #1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s 			page 2
+
+
+  59 004e 0292     		str	r2, [sp, #8]
+  60 0050 029A     		ldr	r2, [sp, #8]
+  61 0052 0394     		str	r4, [sp, #12]
+  62 0054 1A6B     		ldr	r2, [r3, #48]
+  63 0056 42F00202 		orr	r2, r2, #2
+  64 005a 1A63     		str	r2, [r3, #48]
+  65 005c 1A6B     		ldr	r2, [r3, #48]
+  66 005e 02F00202 		and	r2, r2, #2
+  67 0062 0392     		str	r2, [sp, #12]
+  68 0064 039A     		ldr	r2, [sp, #12]
+  69 0066 0494     		str	r4, [sp, #16]
+  70 0068 1A6B     		ldr	r2, [r3, #48]
+  71 006a 42F00802 		orr	r2, r2, #8
+  72 006e 1A63     		str	r2, [r3, #48]
+  73 0070 1B6B     		ldr	r3, [r3, #48]
+  74 0072 03F00803 		and	r3, r3, #8
+  75 0076 0493     		str	r3, [sp, #16]
+  76 0078 049B     		ldr	r3, [sp, #16]
+  77 007a DFF8D090 		ldr	r9, .L3+8
+  78 007e 2246     		mov	r2, r4
+  79 0080 42F2CE11 		movw	r1, #8654
+  80 0084 4846     		mov	r0, r9
+  81 0086 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  82 008a DFF8C480 		ldr	r8, .L3+12
+  83 008e 2246     		mov	r2, r4
+  84 0090 4FF40041 		mov	r1, #32768
+  85 0094 4046     		mov	r0, r8
+  86 0096 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  87 009a DFF8B8A0 		ldr	r10, .L3+16
+  88 009e 0122     		movs	r2, #1
+  89 00a0 0421     		movs	r1, #4
+  90 00a2 5046     		mov	r0, r10
+  91 00a4 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  92 00a8 274F     		ldr	r7, .L3+4
+  93 00aa 0122     		movs	r2, #1
+  94 00ac 0821     		movs	r1, #8
+  95 00ae 3846     		mov	r0, r7
+  96 00b0 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  97 00b4 2246     		mov	r2, r4
+  98 00b6 2021     		movs	r1, #32
+  99 00b8 3846     		mov	r0, r7
+ 100 00ba FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 101 00be 42F2CE13 		movw	r3, #8654
+ 102 00c2 0593     		str	r3, [sp, #20]
+ 103 00c4 0126     		movs	r6, #1
+ 104 00c6 0696     		str	r6, [sp, #24]
+ 105 00c8 0794     		str	r4, [sp, #28]
+ 106 00ca 0894     		str	r4, [sp, #32]
+ 107 00cc 2946     		mov	r1, r5
+ 108 00ce 4846     		mov	r0, r9
+ 109 00d0 FFF7FEFF 		bl	HAL_GPIO_Init
+ 110 00d4 2023     		movs	r3, #32
+ 111 00d6 0593     		str	r3, [sp, #20]
+ 112 00d8 0223     		movs	r3, #2
+ 113 00da 0693     		str	r3, [sp, #24]
+ 114 00dc 0794     		str	r4, [sp, #28]
+ 115 00de 0323     		movs	r3, #3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s 			page 3
+
+
+ 116 00e0 0893     		str	r3, [sp, #32]
+ 117 00e2 0523     		movs	r3, #5
+ 118 00e4 0993     		str	r3, [sp, #36]
+ 119 00e6 2946     		mov	r1, r5
+ 120 00e8 4046     		mov	r0, r8
+ 121 00ea FFF7FEFF 		bl	HAL_GPIO_Init
+ 122 00ee 4FF40073 		mov	r3, #512
+ 123 00f2 0593     		str	r3, [sp, #20]
+ 124 00f4 4FF48813 		mov	r3, #1114112
+ 125 00f8 0693     		str	r3, [sp, #24]
+ 126 00fa 0794     		str	r4, [sp, #28]
+ 127 00fc 2946     		mov	r1, r5
+ 128 00fe 4846     		mov	r0, r9
+ 129 0100 FFF7FEFF 		bl	HAL_GPIO_Init
+ 130 0104 4FF40043 		mov	r3, #32768
+ 131 0108 0593     		str	r3, [sp, #20]
+ 132 010a 0696     		str	r6, [sp, #24]
+ 133 010c 0794     		str	r4, [sp, #28]
+ 134 010e 0894     		str	r4, [sp, #32]
+ 135 0110 2946     		mov	r1, r5
+ 136 0112 4046     		mov	r0, r8
+ 137 0114 FFF7FEFF 		bl	HAL_GPIO_Init
+ 138 0118 0423     		movs	r3, #4
+ 139 011a 0593     		str	r3, [sp, #20]
+ 140 011c 0696     		str	r6, [sp, #24]
+ 141 011e 0794     		str	r4, [sp, #28]
+ 142 0120 0894     		str	r4, [sp, #32]
+ 143 0122 2946     		mov	r1, r5
+ 144 0124 5046     		mov	r0, r10
+ 145 0126 FFF7FEFF 		bl	HAL_GPIO_Init
+ 146 012a 2823     		movs	r3, #40
+ 147 012c 0593     		str	r3, [sp, #20]
+ 148 012e 0696     		str	r6, [sp, #24]
+ 149 0130 0794     		str	r4, [sp, #28]
+ 150 0132 0894     		str	r4, [sp, #32]
+ 151 0134 2946     		mov	r1, r5
+ 152 0136 3846     		mov	r0, r7
+ 153 0138 FFF7FEFF 		bl	HAL_GPIO_Init
+ 154 013c 0AB0     		add	sp, sp, #40
+ 155              		@ sp needed
+ 156 013e BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
+ 157              	.L4:
+ 158 0142 00BF     		.align	2
+ 159              	.L3:
+ 160 0144 00380240 		.word	1073887232
+ 161 0148 00040240 		.word	1073873920
+ 162 014c 00080240 		.word	1073874944
+ 163 0150 00000240 		.word	1073872896
+ 164 0154 000C0240 		.word	1073875968
+ 166              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 gpio.c
+C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s:18     .text.MX_GPIO_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\Rick\AppData\Local\Temp\ccNO7fb2.s:160    .text.MX_GPIO_Init:00000144 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_GPIO_Init

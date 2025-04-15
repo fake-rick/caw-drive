@@ -437,6 +437,316 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pin" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -1498,10 +1808,6 @@
 		(at 128.27 105.41)
 		(uuid "9535bbe8-cf06-4d56-aac6-e749b643975b")
 	)
-	(no_connect
-		(at 134.62 110.49)
-		(uuid "ef080990-a115-435f-911e-caf5bcd056b2")
-	)
 	(wire
 		(pts
 			(xy 151.13 95.25) (xy 152.4 95.25)
@@ -1664,6 +1970,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 111.76) (xy 226.06 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58eb91d1-84ab-475a-b237-21238b7c9859")
+	)
+	(wire
+		(pts
 			(xy 181.61 115.57) (xy 185.42 115.57)
 		)
 		(stroke
@@ -1761,6 +2077,16 @@
 			(type default)
 		)
 		(uuid "a6ba3090-7b9f-488f-a734-01f9471e70a9")
+	)
+	(wire
+		(pts
+			(xy 226.06 88.9) (xy 226.06 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7061014-f070-44a9-aca6-2492811ce0e7")
 	)
 	(wire
 		(pts
@@ -1884,6 +2210,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 110.49) (xy 134.62 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d89640aa-1965-4943-b1a2-b58a60493660")
+	)
+	(wire
+		(pts
 			(xy 148.59 78.74) (xy 148.59 80.01)
 		)
 		(stroke
@@ -1891,6 +2227,16 @@
 			(type default)
 		)
 		(uuid "da2284e1-1bdf-4ed6-974f-d85b2465ac7e")
+	)
+	(wire
+		(pts
+			(xy 226.06 96.52) (xy 226.06 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "def28142-30cd-4b10-aeb4-13e5c436c49a")
 	)
 	(wire
 		(pts
@@ -1962,6 +2308,26 @@
 		)
 		(uuid "f7df3f0c-0196-4ff0-a786-54d3af6a6660")
 	)
+	(label "SPI1_SCK"
+		(at 144.78 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0dd84293-920b-46b7-b91b-95b52010774d")
+	)
+	(label "SPI1_SCK"
+		(at 226.06 111.76 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4981d155-fcaa-4ee8-a800-06572443a0b2")
+	)
 	(label "SPI1_NSS"
 		(at 144.78 118.11 180)
 		(effects
@@ -1993,18 +2359,94 @@
 		(uuid "c0179c17-1e47-4792-b31c-8b8afba94fa8")
 	)
 	(symbol
-		(lib_id "Rick_Connector:WAFER-SH1.0-2PWB")
-		(at 132.08 81.28 0)
-		(mirror y)
+		(lib_id "Device:LED_Small")
+		(at 226.06 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "0a52c7ce-9144-47ef-8e5c-d098709f7f00")
+		(property "Reference" "D4"
+			(at 227.33 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "STA_LED"
+			(at 220.98 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 226.06 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 226.06 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 226.06 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "609fa9da-5e34-41da-88f7-597ec0d49eb8")
+		)
+		(pin "2"
+			(uuid "9de46fb5-fa30-43cc-a6b3-c0bfec3ce312")
+		)
+		(instances
+			(project "HallConnector"
+				(path "/1facd47f-784b-4056-853b-ee503bd1d107"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Rick_Connector:WAFER-SH1.0-2PWB")
+		(at 132.08 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "0ec42c2f-76f1-44cf-b826-f7bb73353182")
 		(property "Reference" "U2"
-			(at 125.73 80.0099 0)
+			(at 125.73 82.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,7 +2456,7 @@
 			)
 		)
 		(property "Value" "WAFER-SH1.0-2PWB"
-			(at 125.73 82.5499 0)
+			(at 125.73 80.0101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2466,7 @@
 			)
 		)
 		(property "Footprint" "Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB"
-			(at 132.08 77.216 0)
+			(at 132.08 85.344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,7 +2475,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 82.296 0)
+			(at 132.08 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,7 +2493,7 @@
 			)
 		)
 		(property "SuppliersPartNumber" "C3029341"
-			(at 132.08 87.376 0)
+			(at 132.08 75.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2060,7 +2502,7 @@
 			)
 		)
 		(property "uuid" "std:b25617d4d4944bb5a333c9a533c58e4a"
-			(at 132.08 87.376 0)
+			(at 132.08 75.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,6 +2874,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 226.06 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f7f01f6-ccec-4bef-b2b9-7b3e9ddb7b3d")
+		(property "Reference" "#PWR035"
+			(at 226.06 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 226.06 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1c70f8b-7c2b-431f-873b-244c8c779df0")
+		)
+		(instances
+			(project "HallConnector"
+				(path "/1facd47f-784b-4056-853b-ee503bd1d107"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 151.13 107.95 0)
 		(unit 1)
@@ -2501,9 +3008,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 226.06 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "608b7dac-76c3-4b7a-a836-a869aa30ca15")
+		(property "Reference" "R7"
+			(at 228.6 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "510Ω"
+			(at 228.6 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 226.06 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 226.06 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e02804c-8ddd-4268-a31f-5230c5297dd1")
+		)
+		(pin "2"
+			(uuid "5ffbf8c6-c3c8-4d3f-a1e5-4447f228f282")
+		)
+		(instances
+			(project "HallConnector"
+				(path "/1facd47f-784b-4056-853b-ee503bd1d107"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Rick_Connector:WAFER-SH1.0-4PWB")
-		(at 130.81 114.3 0)
-		(mirror y)
+		(at 130.81 114.3 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2511,7 +3087,7 @@
 		(dnp no)
 		(uuid "610adf50-3ad3-41dd-8227-59fbb59ca42c")
 		(property "Reference" "CN3"
-			(at 132.842 106.934 0)
+			(at 132.842 121.666 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2520,7 +3096,7 @@
 			)
 		)
 		(property "Value" "WAFER-SH1.0-4PWB"
-			(at 125.73 115.5699 0)
+			(at 125.73 113.0301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2530,7 +3106,7 @@
 			)
 		)
 		(property "Footprint" "Rick_Connector:CONN-SMD_4P-P1.00_WAFER-SH1.0-4PWB"
-			(at 130.81 107.6706 0)
+			(at 130.81 120.9294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,7 +3115,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 112.7506 0)
+			(at 130.81 115.8494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2557,7 +3133,7 @@
 			)
 		)
 		(property "SuppliersPartNumber" "C3029343"
-			(at 130.81 117.8306 0)
+			(at 130.81 110.7694 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +3142,7 @@
 			)
 		)
 		(property "uuid" "std:3aeef2007f6340e5aa158e9b3ba53384"
-			(at 130.81 117.8306 0)
+			(at 130.81 110.7694 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2672,17 +3248,15 @@
 	)
 	(symbol
 		(lib_id "Rick_Connector:WAFER-SH1.0-2PWB")
-		(at 132.08 96.52 0)
-		(mirror y)
+		(at 132.08 96.52 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6fd05ab2-b62f-4726-aa9e-7f67c0b71b53")
 		(property "Reference" "U1"
-			(at 125.73 95.2499 0)
+			(at 125.73 97.7901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +3266,7 @@
 			)
 		)
 		(property "Value" "WAFER-SH1.0-2PWB"
-			(at 125.73 97.7899 0)
+			(at 125.73 95.2501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2702,7 +3276,7 @@
 			)
 		)
 		(property "Footprint" "Rick_Connector:CONN-SMD_2P-P1.00_XUNPU_WAFER-SH1.0-2PWB"
-			(at 132.08 92.456 0)
+			(at 132.08 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2711,7 +3285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 97.536 0)
+			(at 132.08 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2729,7 +3303,7 @@
 			)
 		)
 		(property "SuppliersPartNumber" "C3029341"
-			(at 132.08 102.616 0)
+			(at 132.08 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,7 +3312,7 @@
 			)
 		)
 		(property "uuid" "std:b25617d4d4944bb5a333c9a533c58e4a"
-			(at 132.08 102.616 0)
+			(at 132.08 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2976,7 +3550,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9f8365a6-5400-4fac-a3b0-7a9f1189bff3")
 		(property "Reference" "#PWR05"
 			(at 143.51 90.17 0)
@@ -3112,7 +3685,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a9dc08af-d85d-4917-bc38-e8cb457e2110")
 		(property "Reference" "J1"
 			(at 191.77 111.7599 0)
@@ -3257,7 +3829,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c89aef16-c065-471d-9594-2ccb7426e7fe")
 		(property "Reference" "#PWR04"
 			(at 143.51 82.55 0)

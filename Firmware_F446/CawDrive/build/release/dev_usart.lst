@@ -1,0 +1,183 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"dev_usart.c"
+  16              		.text
+  17              		.section	.text.dev_usart_init,"ax",%progbits
+  18              		.align	1
+  19              		.global	dev_usart_init
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	dev_usart_init:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 08B5     		push	{r3, lr}
+  28 0002 4FF48072 		mov	r2, #256
+  29 0006 0249     		ldr	r1, .L3
+  30 0008 0248     		ldr	r0, .L3+4
+  31 000a FFF7FEFF 		bl	HAL_UART_Receive_DMA
+  32 000e 08BD     		pop	{r3, pc}
+  33              	.L4:
+  34              		.align	2
+  35              	.L3:
+  36 0010 00000000 		.word	rx_buffer
+  37 0014 00000000 		.word	huart3
+  39              		.section	.text.dev_usart_write,"ax",%progbits
+  40              		.align	1
+  41              		.global	dev_usart_write
+  42              		.syntax unified
+  43              		.thumb
+  44              		.thumb_func
+  46              	dev_usart_write:
+  47              		@ args = 0, pretend = 0, frame = 0
+  48              		@ frame_needed = 0, uses_anonymous_args = 0
+  49 0000 B1F5807F 		cmp	r1, #256
+  50 0004 0DD8     		bhi	.L7
+  51 0006 38B5     		push	{r3, r4, r5, lr}
+  52 0008 0C46     		mov	r4, r1
+  53 000a 074D     		ldr	r5, .L12
+  54 000c 0A46     		mov	r2, r1
+  55 000e 0146     		mov	r1, r0
+  56 0010 2846     		mov	r0, r5
+  57 0012 FFF7FEFF 		bl	memcpy
+  58 0016 2246     		mov	r2, r4
+  59 0018 2946     		mov	r1, r5
+  60 001a 0448     		ldr	r0, .L12+4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s 			page 2
+
+
+  61 001c FFF7FEFF 		bl	HAL_UART_Transmit_DMA
+  62 0020 38BD     		pop	{r3, r4, r5, pc}
+  63              	.L7:
+  64 0022 4FF0FF30 		mov	r0, #-1
+  65 0026 7047     		bx	lr
+  66              	.L13:
+  67              		.align	2
+  68              	.L12:
+  69 0028 00000000 		.word	tx_buffer
+  70 002c 00000000 		.word	huart3
+  72              		.section	.text.HAL_UARTEx_RxEventCallback,"ax",%progbits
+  73              		.align	1
+  74              		.global	HAL_UARTEx_RxEventCallback
+  75              		.syntax unified
+  76              		.thumb
+  77              		.thumb_func
+  79              	HAL_UARTEx_RxEventCallback:
+  80              		@ args = 0, pretend = 0, frame = 0
+  81              		@ frame_needed = 0, uses_anonymous_args = 0
+  82              		@ link register save eliminated.
+  83 0000 7047     		bx	lr
+  85              		.section	.text.HAL_UART_ErrorCallback,"ax",%progbits
+  86              		.align	1
+  87              		.global	HAL_UART_ErrorCallback
+  88              		.syntax unified
+  89              		.thumb
+  90              		.thumb_func
+  92              	HAL_UART_ErrorCallback:
+  93              		@ args = 0, pretend = 0, frame = 8
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95 0000 0368     		ldr	r3, [r0]
+  96 0002 124A     		ldr	r2, .L22
+  97 0004 9342     		cmp	r3, r2
+  98 0006 00D0     		beq	.L21
+  99 0008 7047     		bx	lr
+ 100              	.L21:
+ 101 000a 00B5     		push	{lr}
+ 102 000c 83B0     		sub	sp, sp, #12
+ 103 000e 0022     		movs	r2, #0
+ 104 0010 0092     		str	r2, [sp]
+ 105 0012 1968     		ldr	r1, [r3]
+ 106 0014 0091     		str	r1, [sp]
+ 107 0016 5968     		ldr	r1, [r3, #4]
+ 108 0018 0091     		str	r1, [sp]
+ 109 001a 0099     		ldr	r1, [sp]
+ 110 001c 0192     		str	r2, [sp, #4]
+ 111 001e 1A68     		ldr	r2, [r3]
+ 112 0020 0192     		str	r2, [sp, #4]
+ 113 0022 5B68     		ldr	r3, [r3, #4]
+ 114 0024 0193     		str	r3, [sp, #4]
+ 115 0026 019B     		ldr	r3, [sp, #4]
+ 116 0028 2023     		movs	r3, #32
+ 117 002a 80F84230 		strb	r3, [r0, #66]
+ 118 002e 4FF48072 		mov	r2, #256
+ 119 0032 0749     		ldr	r1, .L22+4
+ 120 0034 FFF7FEFF 		bl	HAL_UARTEx_ReceiveToIdle_DMA
+ 121 0038 064B     		ldr	r3, .L22+8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s 			page 3
+
+
+ 122 003a 1A68     		ldr	r2, [r3]
+ 123 003c 1368     		ldr	r3, [r2]
+ 124 003e 23F00803 		bic	r3, r3, #8
+ 125 0042 1360     		str	r3, [r2]
+ 126 0044 03B0     		add	sp, sp, #12
+ 127              		@ sp needed
+ 128 0046 5DF804FB 		ldr	pc, [sp], #4
+ 129              	.L23:
+ 130 004a 00BF     		.align	2
+ 131              	.L22:
+ 132 004c 00480040 		.word	1073760256
+ 133 0050 00000000 		.word	rx_buffer
+ 134 0054 00000000 		.word	hdma_usart3_rx
+ 136              		.global	rx_buffer
+ 137              		.section	.bss.rx_buffer,"aw",%nobits
+ 138              		.align	2
+ 141              	rx_buffer:
+ 142 0000 00000000 		.space	256
+ 142      00000000 
+ 142      00000000 
+ 142      00000000 
+ 142      00000000 
+ 143              		.global	tx_buffer
+ 144              		.section	.bss.tx_buffer,"aw",%nobits
+ 145              		.align	2
+ 148              	tx_buffer:
+ 149 0000 00000000 		.space	256
+ 149      00000000 
+ 149      00000000 
+ 149      00000000 
+ 149      00000000 
+ 150              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 dev_usart.c
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:18     .text.dev_usart_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:24     .text.dev_usart_init:00000000 dev_usart_init
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:36     .text.dev_usart_init:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:141    .bss.rx_buffer:00000000 rx_buffer
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:40     .text.dev_usart_write:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:46     .text.dev_usart_write:00000000 dev_usart_write
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:69     .text.dev_usart_write:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:148    .bss.tx_buffer:00000000 tx_buffer
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:73     .text.HAL_UARTEx_RxEventCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:79     .text.HAL_UARTEx_RxEventCallback:00000000 HAL_UARTEx_RxEventCallback
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:86     .text.HAL_UART_ErrorCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:92     .text.HAL_UART_ErrorCallback:00000000 HAL_UART_ErrorCallback
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:132    .text.HAL_UART_ErrorCallback:0000004c $d
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:138    .bss.rx_buffer:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTpSSV6.s:145    .bss.tx_buffer:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_UART_Receive_DMA
+huart3
+memcpy
+HAL_UART_Transmit_DMA
+HAL_UARTEx_ReceiveToIdle_DMA
+hdma_usart3_rx

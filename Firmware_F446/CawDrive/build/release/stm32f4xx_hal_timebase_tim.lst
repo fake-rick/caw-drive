@@ -1,0 +1,184 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f4xx_hal_timebase_tim.c"
+  16              		.text
+  17              		.section	.text.HAL_InitTick,"ax",%progbits
+  18              		.align	1
+  19              		.global	HAL_InitTick
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	HAL_InitTick:
+  25              		@ args = 0, pretend = 0, frame = 32
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27 0000 30B5     		push	{r4, r5, lr}
+  28 0002 89B0     		sub	sp, sp, #36
+  29 0004 0446     		mov	r4, r0
+  30 0006 0023     		movs	r3, #0
+  31 0008 0193     		str	r3, [sp, #4]
+  32 000a 214B     		ldr	r3, .L9
+  33 000c 1A6C     		ldr	r2, [r3, #64]
+  34 000e 42F01002 		orr	r2, r2, #16
+  35 0012 1A64     		str	r2, [r3, #64]
+  36 0014 1B6C     		ldr	r3, [r3, #64]
+  37 0016 03F01003 		and	r3, r3, #16
+  38 001a 0193     		str	r3, [sp, #4]
+  39 001c 019B     		ldr	r3, [sp, #4]
+  40 001e 02A9     		add	r1, sp, #8
+  41 0020 03A8     		add	r0, sp, #12
+  42 0022 FFF7FEFF 		bl	HAL_RCC_GetClockConfig
+  43 0026 069B     		ldr	r3, [sp, #24]
+  44 0028 CBB9     		cbnz	r3, .L2
+  45 002a FFF7FEFF 		bl	HAL_RCC_GetPCLK1Freq
+  46 002e 0346     		mov	r3, r0
+  47              	.L3:
+  48 0030 184A     		ldr	r2, .L9+4
+  49 0032 A2FB0323 		umull	r2, r3, r2, r3
+  50 0036 9B0C     		lsrs	r3, r3, #18
+  51 0038 013B     		subs	r3, r3, #1
+  52 003a 1748     		ldr	r0, .L9+8
+  53 003c 174A     		ldr	r2, .L9+12
+  54 003e 0260     		str	r2, [r0]
+  55 0040 40F2E732 		movw	r2, #999
+  56 0044 C260     		str	r2, [r0, #12]
+  57 0046 4360     		str	r3, [r0, #4]
+  58 0048 0023     		movs	r3, #0
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s 			page 2
+
+
+  59 004a 0361     		str	r3, [r0, #16]
+  60 004c 8360     		str	r3, [r0, #8]
+  61 004e 8361     		str	r3, [r0, #24]
+  62 0050 FFF7FEFF 		bl	HAL_TIM_Base_Init
+  63 0054 0546     		mov	r5, r0
+  64 0056 30B1     		cbz	r0, .L7
+  65              	.L4:
+  66 0058 2846     		mov	r0, r5
+  67 005a 09B0     		add	sp, sp, #36
+  68              		@ sp needed
+  69 005c 30BD     		pop	{r4, r5, pc}
+  70              	.L2:
+  71 005e FFF7FEFF 		bl	HAL_RCC_GetPCLK1Freq
+  72 0062 4300     		lsls	r3, r0, #1
+  73 0064 E4E7     		b	.L3
+  74              	.L7:
+  75 0066 0C48     		ldr	r0, .L9+8
+  76 0068 FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
+  77 006c 0546     		mov	r5, r0
+  78 006e 0028     		cmp	r0, #0
+  79 0070 F2D1     		bne	.L4
+  80 0072 3620     		movs	r0, #54
+  81 0074 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+  82 0078 0F2C     		cmp	r4, #15
+  83 007a 01D9     		bls	.L8
+  84 007c 0125     		movs	r5, #1
+  85 007e EBE7     		b	.L4
+  86              	.L8:
+  87 0080 0022     		movs	r2, #0
+  88 0082 2146     		mov	r1, r4
+  89 0084 3620     		movs	r0, #54
+  90 0086 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  91 008a 054B     		ldr	r3, .L9+16
+  92 008c 1C60     		str	r4, [r3]
+  93 008e E3E7     		b	.L4
+  94              	.L10:
+  95              		.align	2
+  96              	.L9:
+  97 0090 00380240 		.word	1073887232
+  98 0094 83DE1B43 		.word	1125899907
+  99 0098 00000000 		.word	htim6
+ 100 009c 00100040 		.word	1073745920
+ 101 00a0 00000000 		.word	uwTickPrio
+ 103              		.section	.text.HAL_SuspendTick,"ax",%progbits
+ 104              		.align	1
+ 105              		.global	HAL_SuspendTick
+ 106              		.syntax unified
+ 107              		.thumb
+ 108              		.thumb_func
+ 110              	HAL_SuspendTick:
+ 111              		@ args = 0, pretend = 0, frame = 0
+ 112              		@ frame_needed = 0, uses_anonymous_args = 0
+ 113              		@ link register save eliminated.
+ 114 0000 034B     		ldr	r3, .L12
+ 115 0002 1A68     		ldr	r2, [r3]
+ 116 0004 D368     		ldr	r3, [r2, #12]
+ 117 0006 23F00103 		bic	r3, r3, #1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s 			page 3
+
+
+ 118 000a D360     		str	r3, [r2, #12]
+ 119 000c 7047     		bx	lr
+ 120              	.L13:
+ 121 000e 00BF     		.align	2
+ 122              	.L12:
+ 123 0010 00000000 		.word	htim6
+ 125              		.section	.text.HAL_ResumeTick,"ax",%progbits
+ 126              		.align	1
+ 127              		.global	HAL_ResumeTick
+ 128              		.syntax unified
+ 129              		.thumb
+ 130              		.thumb_func
+ 132              	HAL_ResumeTick:
+ 133              		@ args = 0, pretend = 0, frame = 0
+ 134              		@ frame_needed = 0, uses_anonymous_args = 0
+ 135              		@ link register save eliminated.
+ 136 0000 034B     		ldr	r3, .L15
+ 137 0002 1A68     		ldr	r2, [r3]
+ 138 0004 D368     		ldr	r3, [r2, #12]
+ 139 0006 43F00103 		orr	r3, r3, #1
+ 140 000a D360     		str	r3, [r2, #12]
+ 141 000c 7047     		bx	lr
+ 142              	.L16:
+ 143 000e 00BF     		.align	2
+ 144              	.L15:
+ 145 0010 00000000 		.word	htim6
+ 147              		.global	htim6
+ 148              		.section	.bss.htim6,"aw",%nobits
+ 149              		.align	2
+ 152              	htim6:
+ 153 0000 00000000 		.space	72
+ 153      00000000 
+ 153      00000000 
+ 153      00000000 
+ 153      00000000 
+ 154              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f4xx_hal_timebase_tim.c
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:18     .text.HAL_InitTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:24     .text.HAL_InitTick:00000000 HAL_InitTick
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:97     .text.HAL_InitTick:00000090 $d
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:152    .bss.htim6:00000000 htim6
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:104    .text.HAL_SuspendTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:110    .text.HAL_SuspendTick:00000000 HAL_SuspendTick
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:123    .text.HAL_SuspendTick:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:126    .text.HAL_ResumeTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:132    .text.HAL_ResumeTick:00000000 HAL_ResumeTick
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:145    .text.HAL_ResumeTick:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccLAFnGc.s:149    .bss.htim6:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_RCC_GetClockConfig
+HAL_RCC_GetPCLK1Freq
+HAL_TIM_Base_Init
+HAL_TIM_Base_Start_IT
+HAL_NVIC_EnableIRQ
+HAL_NVIC_SetPriority
+uwTickPrio

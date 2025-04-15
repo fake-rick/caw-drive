@@ -1,0 +1,580 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"heap_4.c"
+  16              		.text
+  17              		.section	.text.prvHeapInit,"ax",%progbits
+  18              		.align	1
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  23              	prvHeapInit:
+  24              		@ args = 0, pretend = 0, frame = 0
+  25              		@ frame_needed = 0, uses_anonymous_args = 0
+  26              		@ link register save eliminated.
+  27 0000 124A     		ldr	r2, .L4
+  28 0002 12F0070F 		tst	r2, #7
+  29 0006 1ED0     		beq	.L3
+  30 0008 D11D     		adds	r1, r2, #7
+  31 000a 21F00701 		bic	r1, r1, #7
+  32 000e C1F57053 		rsb	r3, r1, #15360
+  33 0012 1344     		add	r3, r3, r2
+  34 0014 0A46     		mov	r2, r1
+  35              	.L2:
+  36 0016 0E48     		ldr	r0, .L4+4
+  37 0018 0260     		str	r2, [r0]
+  38 001a 0021     		movs	r1, #0
+  39 001c 4160     		str	r1, [r0, #4]
+  40 001e 1344     		add	r3, r3, r2
+  41 0020 083B     		subs	r3, r3, #8
+  42 0022 23F00703 		bic	r3, r3, #7
+  43 0026 0B48     		ldr	r0, .L4+8
+  44 0028 0360     		str	r3, [r0]
+  45 002a 5960     		str	r1, [r3, #4]
+  46 002c 1960     		str	r1, [r3]
+  47 002e 991A     		subs	r1, r3, r2
+  48 0030 5160     		str	r1, [r2, #4]
+  49 0032 1360     		str	r3, [r2]
+  50 0034 084B     		ldr	r3, .L4+12
+  51 0036 1960     		str	r1, [r3]
+  52 0038 084B     		ldr	r3, .L4+16
+  53 003a 1960     		str	r1, [r3]
+  54 003c 084B     		ldr	r3, .L4+20
+  55 003e 4FF00042 		mov	r2, #-2147483648
+  56 0042 1A60     		str	r2, [r3]
+  57 0044 7047     		bx	lr
+  58              	.L3:
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 2
+
+
+  59 0046 4FF47053 		mov	r3, #15360
+  60 004a E4E7     		b	.L2
+  61              	.L5:
+  62              		.align	2
+  63              	.L4:
+  64 004c 00000000 		.word	ucHeap
+  65 0050 00000000 		.word	xStart
+  66 0054 00000000 		.word	pxEnd
+  67 0058 00000000 		.word	xMinimumEverFreeBytesRemaining
+  68 005c 00000000 		.word	xFreeBytesRemaining
+  69 0060 00000000 		.word	xBlockAllocatedBit
+  71              		.section	.text.prvInsertBlockIntoFreeList,"ax",%progbits
+  72              		.align	1
+  73              		.syntax unified
+  74              		.thumb
+  75              		.thumb_func
+  77              	prvInsertBlockIntoFreeList:
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  81 0000 164B     		ldr	r3, .L21
+  82              	.L7:
+  83 0002 1A46     		mov	r2, r3
+  84 0004 1B68     		ldr	r3, [r3]
+  85 0006 8342     		cmp	r3, r0
+  86 0008 FBD3     		bcc	.L7
+  87 000a 5168     		ldr	r1, [r2, #4]
+  88 000c 02EB010C 		add	ip, r2, r1
+  89 0010 8445     		cmp	ip, r0
+  90 0012 09D0     		beq	.L19
+  91              	.L8:
+  92 0014 4168     		ldr	r1, [r0, #4]
+  93 0016 00EB010C 		add	ip, r0, r1
+  94 001a 6345     		cmp	r3, ip
+  95 001c 09D0     		beq	.L20
+  96 001e 0360     		str	r3, [r0]
+  97 0020 9042     		cmp	r0, r2
+  98 0022 19D0     		beq	.L16
+  99 0024 1060     		str	r0, [r2]
+ 100 0026 7047     		bx	lr
+ 101              	.L19:
+ 102 0028 4068     		ldr	r0, [r0, #4]
+ 103 002a 0144     		add	r1, r1, r0
+ 104 002c 5160     		str	r1, [r2, #4]
+ 105 002e 1046     		mov	r0, r2
+ 106 0030 F0E7     		b	.L8
+ 107              	.L20:
+ 108 0032 10B4     		push	{r4}
+ 109 0034 0A4C     		ldr	r4, .L21+4
+ 110 0036 2468     		ldr	r4, [r4]
+ 111 0038 A342     		cmp	r3, r4
+ 112 003a 0BD0     		beq	.L10
+ 113 003c 5B68     		ldr	r3, [r3, #4]
+ 114 003e 1944     		add	r1, r1, r3
+ 115 0040 4160     		str	r1, [r0, #4]
+ 116 0042 1368     		ldr	r3, [r2]
+ 117 0044 1B68     		ldr	r3, [r3]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 3
+
+
+ 118 0046 0360     		str	r3, [r0]
+ 119              	.L11:
+ 120 0048 9042     		cmp	r0, r2
+ 121 004a 00D0     		beq	.L6
+ 122 004c 1060     		str	r0, [r2]
+ 123              	.L6:
+ 124 004e 5DF8044B 		ldr	r4, [sp], #4
+ 125 0052 7047     		bx	lr
+ 126              	.L10:
+ 127 0054 0460     		str	r4, [r0]
+ 128 0056 F7E7     		b	.L11
+ 129              	.L16:
+ 130 0058 7047     		bx	lr
+ 131              	.L22:
+ 132 005a 00BF     		.align	2
+ 133              	.L21:
+ 134 005c 00000000 		.word	xStart
+ 135 0060 00000000 		.word	pxEnd
+ 137              		.section	.text.pvPortMalloc,"ax",%progbits
+ 138              		.align	1
+ 139              		.global	pvPortMalloc
+ 140              		.syntax unified
+ 141              		.thumb
+ 142              		.thumb_func
+ 144              	pvPortMalloc:
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147 0000 38B5     		push	{r3, r4, r5, lr}
+ 148 0002 0446     		mov	r4, r0
+ 149 0004 FFF7FEFF 		bl	vTaskSuspendAll
+ 150 0008 384B     		ldr	r3, .L43
+ 151 000a 1B68     		ldr	r3, [r3]
+ 152 000c B3B1     		cbz	r3, .L42
+ 153              	.L24:
+ 154 000e 384B     		ldr	r3, .L43+4
+ 155 0010 1B68     		ldr	r3, [r3]
+ 156 0012 1C42     		tst	r4, r3
+ 157 0014 50D1     		bne	.L35
+ 158 0016 002C     		cmp	r4, #0
+ 159 0018 50D0     		beq	.L36
+ 160 001a 04F10802 		add	r2, r4, #8
+ 161 001e 14F0070F 		tst	r4, #7
+ 162 0022 02D0     		beq	.L26
+ 163 0024 22F00702 		bic	r2, r2, #7
+ 164 0028 0832     		adds	r2, r2, #8
+ 165              	.L26:
+ 166 002a 002A     		cmp	r2, #0
+ 167 002c 55D0     		beq	.L37
+ 168 002e 314B     		ldr	r3, .L43+8
+ 169 0030 1B68     		ldr	r3, [r3]
+ 170 0032 9342     		cmp	r3, r2
+ 171 0034 53D3     		bcc	.L38
+ 172 0036 3049     		ldr	r1, .L43+12
+ 173 0038 0C68     		ldr	r4, [r1]
+ 174 003a 04E0     		b	.L28
+ 175              	.L42:
+ 176 003c FFF7FEFF 		bl	prvHeapInit
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 4
+
+
+ 177 0040 E5E7     		b	.L24
+ 178              	.L39:
+ 179 0042 2146     		mov	r1, r4
+ 180 0044 1C46     		mov	r4, r3
+ 181              	.L28:
+ 182 0046 6368     		ldr	r3, [r4, #4]
+ 183 0048 9342     		cmp	r3, r2
+ 184 004a 02D2     		bcs	.L27
+ 185 004c 2368     		ldr	r3, [r4]
+ 186 004e 002B     		cmp	r3, #0
+ 187 0050 F7D1     		bne	.L39
+ 188              	.L27:
+ 189 0052 264B     		ldr	r3, .L43
+ 190 0054 1B68     		ldr	r3, [r3]
+ 191 0056 A342     		cmp	r3, r4
+ 192 0058 43D0     		beq	.L40
+ 193 005a 0D68     		ldr	r5, [r1]
+ 194 005c 0835     		adds	r5, r5, #8
+ 195 005e 2368     		ldr	r3, [r4]
+ 196 0060 0B60     		str	r3, [r1]
+ 197 0062 6368     		ldr	r3, [r4, #4]
+ 198 0064 9B1A     		subs	r3, r3, r2
+ 199 0066 102B     		cmp	r3, #16
+ 200 0068 10D9     		bls	.L29
+ 201 006a A018     		adds	r0, r4, r2
+ 202 006c 10F0070F 		tst	r0, #7
+ 203 0070 08D0     		beq	.L30
+ 204              		.syntax unified
+ 205              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 206 0072 4FF05003 			mov r3, #80												
+ 207 0076 83F31188 		msr basepri, r3											
+ 208 007a BFF36F8F 		isb														
+ 209 007e BFF34F8F 		dsb														
+ 210              	
+ 211              	@ 0 "" 2
+ 212              		.thumb
+ 213              		.syntax unified
+ 214              	.L31:
+ 215 0082 FEE7     		b	.L31
+ 216              	.L30:
+ 217 0084 4360     		str	r3, [r0, #4]
+ 218 0086 6260     		str	r2, [r4, #4]
+ 219 0088 FFF7FEFF 		bl	prvInsertBlockIntoFreeList
+ 220              	.L29:
+ 221 008c 6268     		ldr	r2, [r4, #4]
+ 222 008e 1949     		ldr	r1, .L43+8
+ 223 0090 0B68     		ldr	r3, [r1]
+ 224 0092 9B1A     		subs	r3, r3, r2
+ 225 0094 0B60     		str	r3, [r1]
+ 226 0096 1949     		ldr	r1, .L43+16
+ 227 0098 0968     		ldr	r1, [r1]
+ 228 009a 8B42     		cmp	r3, r1
+ 229 009c 01D2     		bcs	.L32
+ 230 009e 1749     		ldr	r1, .L43+16
+ 231 00a0 0B60     		str	r3, [r1]
+ 232              	.L32:
+ 233 00a2 134B     		ldr	r3, .L43+4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 5
+
+
+ 234 00a4 1B68     		ldr	r3, [r3]
+ 235 00a6 1343     		orrs	r3, r3, r2
+ 236 00a8 6360     		str	r3, [r4, #4]
+ 237 00aa 0023     		movs	r3, #0
+ 238 00ac 2360     		str	r3, [r4]
+ 239 00ae 144A     		ldr	r2, .L43+20
+ 240 00b0 1368     		ldr	r3, [r2]
+ 241 00b2 0133     		adds	r3, r3, #1
+ 242 00b4 1360     		str	r3, [r2]
+ 243 00b6 02E0     		b	.L25
+ 244              	.L35:
+ 245 00b8 0025     		movs	r5, #0
+ 246 00ba 00E0     		b	.L25
+ 247              	.L36:
+ 248 00bc 0025     		movs	r5, #0
+ 249              	.L25:
+ 250 00be FFF7FEFF 		bl	xTaskResumeAll
+ 251 00c2 15F0070F 		tst	r5, #7
+ 252 00c6 0ED0     		beq	.L23
+ 253              		.syntax unified
+ 254              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 255 00c8 4FF05003 			mov r3, #80												
+ 256 00cc 83F31188 		msr basepri, r3											
+ 257 00d0 BFF36F8F 		isb														
+ 258 00d4 BFF34F8F 		dsb														
+ 259              	
+ 260              	@ 0 "" 2
+ 261              		.thumb
+ 262              		.syntax unified
+ 263              	.L34:
+ 264 00d8 FEE7     		b	.L34
+ 265              	.L37:
+ 266 00da 0025     		movs	r5, #0
+ 267 00dc EFE7     		b	.L25
+ 268              	.L38:
+ 269 00de 0025     		movs	r5, #0
+ 270 00e0 EDE7     		b	.L25
+ 271              	.L40:
+ 272 00e2 0025     		movs	r5, #0
+ 273 00e4 EBE7     		b	.L25
+ 274              	.L23:
+ 275 00e6 2846     		mov	r0, r5
+ 276 00e8 38BD     		pop	{r3, r4, r5, pc}
+ 277              	.L44:
+ 278 00ea 00BF     		.align	2
+ 279              	.L43:
+ 280 00ec 00000000 		.word	pxEnd
+ 281 00f0 00000000 		.word	xBlockAllocatedBit
+ 282 00f4 00000000 		.word	xFreeBytesRemaining
+ 283 00f8 00000000 		.word	xStart
+ 284 00fc 00000000 		.word	xMinimumEverFreeBytesRemaining
+ 285 0100 00000000 		.word	xNumberOfSuccessfulAllocations
+ 287              		.section	.text.vPortFree,"ax",%progbits
+ 288              		.align	1
+ 289              		.global	vPortFree
+ 290              		.syntax unified
+ 291              		.thumb
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 6
+
+
+ 292              		.thumb_func
+ 294              	vPortFree:
+ 295              		@ args = 0, pretend = 0, frame = 0
+ 296              		@ frame_needed = 0, uses_anonymous_args = 0
+ 297 0000 0028     		cmp	r0, #0
+ 298 0002 34D0     		beq	.L52
+ 299 0004 38B5     		push	{r3, r4, r5, lr}
+ 300 0006 0446     		mov	r4, r0
+ 301 0008 A0F10805 		sub	r5, r0, #8
+ 302 000c 50F8043C 		ldr	r3, [r0, #-4]
+ 303 0010 174A     		ldr	r2, .L55
+ 304 0012 1268     		ldr	r2, [r2]
+ 305 0014 1342     		tst	r3, r2
+ 306 0016 08D1     		bne	.L47
+ 307              		.syntax unified
+ 308              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 309 0018 4FF05003 			mov r3, #80												
+ 310 001c 83F31188 		msr basepri, r3											
+ 311 0020 BFF36F8F 		isb														
+ 312 0024 BFF34F8F 		dsb														
+ 313              	
+ 314              	@ 0 "" 2
+ 315              		.thumb
+ 316              		.syntax unified
+ 317              	.L48:
+ 318 0028 FEE7     		b	.L48
+ 319              	.L47:
+ 320 002a 50F8081C 		ldr	r1, [r0, #-8]
+ 321 002e 41B1     		cbz	r1, .L49
+ 322              		.syntax unified
+ 323              	@ 195 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
+ 324 0030 4FF05003 			mov r3, #80												
+ 325 0034 83F31188 		msr basepri, r3											
+ 326 0038 BFF36F8F 		isb														
+ 327 003c BFF34F8F 		dsb														
+ 328              	
+ 329              	@ 0 "" 2
+ 330              		.thumb
+ 331              		.syntax unified
+ 332              	.L50:
+ 333 0040 FEE7     		b	.L50
+ 334              	.L49:
+ 335 0042 23EA0203 		bic	r3, r3, r2
+ 336 0046 40F8043C 		str	r3, [r0, #-4]
+ 337 004a FFF7FEFF 		bl	vTaskSuspendAll
+ 338 004e 54F8041C 		ldr	r1, [r4, #-4]
+ 339 0052 084A     		ldr	r2, .L55+4
+ 340 0054 1368     		ldr	r3, [r2]
+ 341 0056 0B44     		add	r3, r3, r1
+ 342 0058 1360     		str	r3, [r2]
+ 343 005a 2846     		mov	r0, r5
+ 344 005c FFF7FEFF 		bl	prvInsertBlockIntoFreeList
+ 345 0060 054A     		ldr	r2, .L55+8
+ 346 0062 1368     		ldr	r3, [r2]
+ 347 0064 0133     		adds	r3, r3, #1
+ 348 0066 1360     		str	r3, [r2]
+ 349 0068 FFF7FEFF 		bl	xTaskResumeAll
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 7
+
+
+ 350 006c 38BD     		pop	{r3, r4, r5, pc}
+ 351              	.L52:
+ 352 006e 7047     		bx	lr
+ 353              	.L56:
+ 354              		.align	2
+ 355              	.L55:
+ 356 0070 00000000 		.word	xBlockAllocatedBit
+ 357 0074 00000000 		.word	xFreeBytesRemaining
+ 358 0078 00000000 		.word	xNumberOfSuccessfulFrees
+ 360              		.section	.text.xPortGetFreeHeapSize,"ax",%progbits
+ 361              		.align	1
+ 362              		.global	xPortGetFreeHeapSize
+ 363              		.syntax unified
+ 364              		.thumb
+ 365              		.thumb_func
+ 367              	xPortGetFreeHeapSize:
+ 368              		@ args = 0, pretend = 0, frame = 0
+ 369              		@ frame_needed = 0, uses_anonymous_args = 0
+ 370              		@ link register save eliminated.
+ 371 0000 014B     		ldr	r3, .L58
+ 372 0002 1868     		ldr	r0, [r3]
+ 373 0004 7047     		bx	lr
+ 374              	.L59:
+ 375 0006 00BF     		.align	2
+ 376              	.L58:
+ 377 0008 00000000 		.word	xFreeBytesRemaining
+ 379              		.section	.text.xPortGetMinimumEverFreeHeapSize,"ax",%progbits
+ 380              		.align	1
+ 381              		.global	xPortGetMinimumEverFreeHeapSize
+ 382              		.syntax unified
+ 383              		.thumb
+ 384              		.thumb_func
+ 386              	xPortGetMinimumEverFreeHeapSize:
+ 387              		@ args = 0, pretend = 0, frame = 0
+ 388              		@ frame_needed = 0, uses_anonymous_args = 0
+ 389              		@ link register save eliminated.
+ 390 0000 014B     		ldr	r3, .L61
+ 391 0002 1868     		ldr	r0, [r3]
+ 392 0004 7047     		bx	lr
+ 393              	.L62:
+ 394 0006 00BF     		.align	2
+ 395              	.L61:
+ 396 0008 00000000 		.word	xMinimumEverFreeBytesRemaining
+ 398              		.section	.text.vPortInitialiseBlocks,"ax",%progbits
+ 399              		.align	1
+ 400              		.global	vPortInitialiseBlocks
+ 401              		.syntax unified
+ 402              		.thumb
+ 403              		.thumb_func
+ 405              	vPortInitialiseBlocks:
+ 406              		@ args = 0, pretend = 0, frame = 0
+ 407              		@ frame_needed = 0, uses_anonymous_args = 0
+ 408              		@ link register save eliminated.
+ 409 0000 7047     		bx	lr
+ 411              		.section	.text.vPortGetHeapStats,"ax",%progbits
+ 412              		.align	1
+ 413              		.global	vPortGetHeapStats
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 8
+
+
+ 414              		.syntax unified
+ 415              		.thumb
+ 416              		.thumb_func
+ 418              	vPortGetHeapStats:
+ 419              		@ args = 0, pretend = 0, frame = 0
+ 420              		@ frame_needed = 0, uses_anonymous_args = 0
+ 421 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 422 0002 0746     		mov	r7, r0
+ 423 0004 FFF7FEFF 		bl	vTaskSuspendAll
+ 424 0008 174B     		ldr	r3, .L73
+ 425 000a 1B68     		ldr	r3, [r3]
+ 426 000c 93B1     		cbz	r3, .L69
+ 427 000e 4FF0FF36 		mov	r6, #-1
+ 428 0012 0025     		movs	r5, #0
+ 429 0014 2C46     		mov	r4, r5
+ 430 0016 04E0     		b	.L68
+ 431              	.L67:
+ 432 0018 1B68     		ldr	r3, [r3]
+ 433 001a 144A     		ldr	r2, .L73+4
+ 434 001c 1268     		ldr	r2, [r2]
+ 435 001e 9A42     		cmp	r2, r3
+ 436 0020 0CD0     		beq	.L65
+ 437              	.L68:
+ 438 0022 0134     		adds	r4, r4, #1
+ 439 0024 5A68     		ldr	r2, [r3, #4]
+ 440 0026 AA42     		cmp	r2, r5
+ 441 0028 00D9     		bls	.L66
+ 442 002a 1546     		mov	r5, r2
+ 443              	.L66:
+ 444 002c B242     		cmp	r2, r6
+ 445 002e F3D2     		bcs	.L67
+ 446 0030 1646     		mov	r6, r2
+ 447 0032 F1E7     		b	.L67
+ 448              	.L69:
+ 449 0034 4FF0FF36 		mov	r6, #-1
+ 450 0038 0025     		movs	r5, #0
+ 451 003a 2C46     		mov	r4, r5
+ 452              	.L65:
+ 453 003c FFF7FEFF 		bl	xTaskResumeAll
+ 454 0040 7D60     		str	r5, [r7, #4]
+ 455 0042 BE60     		str	r6, [r7, #8]
+ 456 0044 FC60     		str	r4, [r7, #12]
+ 457 0046 FFF7FEFF 		bl	vPortEnterCritical
+ 458 004a 094B     		ldr	r3, .L73+8
+ 459 004c 1B68     		ldr	r3, [r3]
+ 460 004e 3B60     		str	r3, [r7]
+ 461 0050 084B     		ldr	r3, .L73+12
+ 462 0052 1B68     		ldr	r3, [r3]
+ 463 0054 7B61     		str	r3, [r7, #20]
+ 464 0056 084B     		ldr	r3, .L73+16
+ 465 0058 1B68     		ldr	r3, [r3]
+ 466 005a BB61     		str	r3, [r7, #24]
+ 467 005c 074B     		ldr	r3, .L73+20
+ 468 005e 1B68     		ldr	r3, [r3]
+ 469 0060 3B61     		str	r3, [r7, #16]
+ 470 0062 FFF7FEFF 		bl	vPortExitCritical
+ 471 0066 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 9
+
+
+ 472              	.L74:
+ 473              		.align	2
+ 474              	.L73:
+ 475 0068 00000000 		.word	xStart
+ 476 006c 00000000 		.word	pxEnd
+ 477 0070 00000000 		.word	xFreeBytesRemaining
+ 478 0074 00000000 		.word	xNumberOfSuccessfulAllocations
+ 479 0078 00000000 		.word	xNumberOfSuccessfulFrees
+ 480 007c 00000000 		.word	xMinimumEverFreeBytesRemaining
+ 482              		.section	.bss.xBlockAllocatedBit,"aw",%nobits
+ 483              		.align	2
+ 486              	xBlockAllocatedBit:
+ 487 0000 00000000 		.space	4
+ 488              		.section	.bss.xNumberOfSuccessfulFrees,"aw",%nobits
+ 489              		.align	2
+ 492              	xNumberOfSuccessfulFrees:
+ 493 0000 00000000 		.space	4
+ 494              		.section	.bss.xNumberOfSuccessfulAllocations,"aw",%nobits
+ 495              		.align	2
+ 498              	xNumberOfSuccessfulAllocations:
+ 499 0000 00000000 		.space	4
+ 500              		.section	.bss.xMinimumEverFreeBytesRemaining,"aw",%nobits
+ 501              		.align	2
+ 504              	xMinimumEverFreeBytesRemaining:
+ 505 0000 00000000 		.space	4
+ 506              		.section	.bss.xFreeBytesRemaining,"aw",%nobits
+ 507              		.align	2
+ 510              	xFreeBytesRemaining:
+ 511 0000 00000000 		.space	4
+ 512              		.section	.bss.pxEnd,"aw",%nobits
+ 513              		.align	2
+ 516              	pxEnd:
+ 517 0000 00000000 		.space	4
+ 518              		.section	.bss.xStart,"aw",%nobits
+ 519              		.align	2
+ 522              	xStart:
+ 523 0000 00000000 		.space	8
+ 523      00000000 
+ 524              		.section	.bss.ucHeap,"aw",%nobits
+ 525              		.align	2
+ 528              	ucHeap:
+ 529 0000 00000000 		.space	15360
+ 529      00000000 
+ 529      00000000 
+ 529      00000000 
+ 529      00000000 
+ 530              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 heap_4.c
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:18     .text.prvHeapInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:23     .text.prvHeapInit:00000000 prvHeapInit
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:64     .text.prvHeapInit:0000004c $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:528    .bss.ucHeap:00000000 ucHeap
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:522    .bss.xStart:00000000 xStart
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:516    .bss.pxEnd:00000000 pxEnd
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:504    .bss.xMinimumEverFreeBytesRemaining:00000000 xMinimumEverFreeBytesRemaining
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:510    .bss.xFreeBytesRemaining:00000000 xFreeBytesRemaining
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:486    .bss.xBlockAllocatedBit:00000000 xBlockAllocatedBit
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:72     .text.prvInsertBlockIntoFreeList:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:77     .text.prvInsertBlockIntoFreeList:00000000 prvInsertBlockIntoFreeList
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:134    .text.prvInsertBlockIntoFreeList:0000005c $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:138    .text.pvPortMalloc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:144    .text.pvPortMalloc:00000000 pvPortMalloc
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:280    .text.pvPortMalloc:000000ec $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:498    .bss.xNumberOfSuccessfulAllocations:00000000 xNumberOfSuccessfulAllocations
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:288    .text.vPortFree:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:294    .text.vPortFree:00000000 vPortFree
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:356    .text.vPortFree:00000070 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:492    .bss.xNumberOfSuccessfulFrees:00000000 xNumberOfSuccessfulFrees
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:361    .text.xPortGetFreeHeapSize:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:367    .text.xPortGetFreeHeapSize:00000000 xPortGetFreeHeapSize
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:377    .text.xPortGetFreeHeapSize:00000008 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:380    .text.xPortGetMinimumEverFreeHeapSize:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:386    .text.xPortGetMinimumEverFreeHeapSize:00000000 xPortGetMinimumEverFreeHeapSize
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:396    .text.xPortGetMinimumEverFreeHeapSize:00000008 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:399    .text.vPortInitialiseBlocks:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:405    .text.vPortInitialiseBlocks:00000000 vPortInitialiseBlocks
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:412    .text.vPortGetHeapStats:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:418    .text.vPortGetHeapStats:00000000 vPortGetHeapStats
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:475    .text.vPortGetHeapStats:00000068 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:483    .bss.xBlockAllocatedBit:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:489    .bss.xNumberOfSuccessfulFrees:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:495    .bss.xNumberOfSuccessfulAllocations:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:501    .bss.xMinimumEverFreeBytesRemaining:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:507    .bss.xFreeBytesRemaining:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:513    .bss.pxEnd:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:519    .bss.xStart:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccF2OKV8.s:525    .bss.ucHeap:00000000 $d
+
+UNDEFINED SYMBOLS
+vTaskSuspendAll
+xTaskResumeAll
+vPortEnterCritical
+vPortExitCritical

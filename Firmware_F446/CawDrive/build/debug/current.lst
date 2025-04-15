@@ -1,0 +1,124 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"current.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Controller/Current/current.c"
+  20              		.section	.text.HAL_ADCEx_InjectedConvCpltCallback,"ax",%progbits
+  21              		.align	1
+  22              		.global	HAL_ADCEx_InjectedConvCpltCallback
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	HAL_ADCEx_InjectedConvCpltCallback:
+  28              	.LVL0:
+  29              	.LFB239:
+   1:Controller/Current/current.c **** #include "./current.h"
+   2:Controller/Current/current.c **** 
+   3:Controller/Current/current.c **** #include "adc.h"
+   4:Controller/Current/current.c **** 
+   5:Controller/Current/current.c **** static float g_ia_offset = 0.0f;
+   6:Controller/Current/current.c **** static float g_ib_offset = 0.0f;
+   7:Controller/Current/current.c **** static float g_ic_offset = 0.0f;
+   8:Controller/Current/current.c **** 
+   9:Controller/Current/current.c **** void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef *hadc) {}
+  30              		.loc 1 9 66 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+  35              		.loc 1 9 67 view .LVU1
+  36 0000 7047     		bx	lr
+  37              		.cfi_endproc
+  38              	.LFE239:
+  40              		.section	.text.current_init,"ax",%progbits
+  41              		.align	1
+  42              		.global	current_init
+  43              		.syntax unified
+  44              		.thumb
+  45              		.thumb_func
+  47              	current_init:
+  48              	.LFB240:
+  10:Controller/Current/current.c **** 
+  11:Controller/Current/current.c **** void current_init(void) {
+  49              		.loc 1 11 25 view -0
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s 			page 2
+
+
+  50              		.cfi_startproc
+  51              		@ args = 0, pretend = 0, frame = 0
+  52              		@ frame_needed = 0, uses_anonymous_args = 0
+  53 0000 08B5     		push	{r3, lr}
+  54              		.cfi_def_cfa_offset 8
+  55              		.cfi_offset 3, -8
+  56              		.cfi_offset 14, -4
+  12:Controller/Current/current.c ****   HAL_ADCEx_InjectedStart_IT(&hadc1);
+  57              		.loc 1 12 3 view .LVU3
+  58 0002 0548     		ldr	r0, .L4
+  59 0004 FFF7FEFF 		bl	HAL_ADCEx_InjectedStart_IT
+  60              	.LVL1:
+  13:Controller/Current/current.c ****   HAL_ADCEx_InjectedStart(&hadc2);
+  61              		.loc 1 13 3 view .LVU4
+  62 0008 0448     		ldr	r0, .L4+4
+  63 000a FFF7FEFF 		bl	HAL_ADCEx_InjectedStart
+  64              	.LVL2:
+  14:Controller/Current/current.c ****   HAL_ADCEx_InjectedStart(&hadc3);
+  65              		.loc 1 14 3 view .LVU5
+  66 000e 0448     		ldr	r0, .L4+8
+  67 0010 FFF7FEFF 		bl	HAL_ADCEx_InjectedStart
+  68              	.LVL3:
+  15:Controller/Current/current.c **** }...
+  69              		.loc 1 15 1 is_stmt 0 view .LVU6
+  70 0014 08BD     		pop	{r3, pc}
+  71              	.L5:
+  72 0016 00BF     		.align	2
+  73              	.L4:
+  74 0018 00000000 		.word	hadc1
+  75 001c 00000000 		.word	hadc2
+  76 0020 00000000 		.word	hadc3
+  77              		.cfi_endproc
+  78              	.LFE240:
+  80              		.text
+  81              	.Letext0:
+  82              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+  83              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+  84              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
+  85              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+  86              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+  87              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+  88              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
+  89              		.file 9 "Core/Inc/adc.h"
+  90              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 current.c
+C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s:21     .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s:27     .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
+C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s:41     .text.current_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s:47     .text.current_init:00000000 current_init
+C:\Users\Rick\AppData\Local\Temp\ccuRp5Td.s:74     .text.current_init:00000018 $d
+
+UNDEFINED SYMBOLS
+HAL_ADCEx_InjectedStart_IT
+HAL_ADCEx_InjectedStart
+hadc1
+hadc2
+hadc3
