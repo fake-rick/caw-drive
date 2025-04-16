@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
   28:Core/Src/tim.c **** TIM_HandleTypeDef htim3;
   29:Core/Src/tim.c **** 
   30:Core/Src/tim.c **** /* TIM1 init function */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 2
 
 
   31:Core/Src/tim.c **** void MX_TIM1_Init(void)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
   85:Core/Src/tim.c ****     Error_Handler();
   86:Core/Src/tim.c ****   }
   87:Core/Src/tim.c ****   if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 3
 
 
   88:Core/Src/tim.c ****   {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
   47              		.loc 1 123 27 is_stmt 0 view .LVU4
   48 0010 0093     		str	r3, [sp]
   49 0012 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 4
 
 
  124:Core/Src/tim.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
   85 0030 0093     		str	r3, [sp]
  143:Core/Src/tim.c ****   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
   86              		.loc 1 143 3 is_stmt 1 view .LVU26
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 5
 
 
   87              		.loc 1 143 33 is_stmt 0 view .LVU27
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  132              	HAL_TIM_Base_MspInit:
  133              	.LVL4:
  134              	.LFB241:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 6
 
 
  153:Core/Src/tim.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  179:Core/Src/tim.c ****     HAL_NVIC_EnableIRQ(TIM1_BRK_TIM9_IRQn);
  180:Core/Src/tim.c ****     HAL_NVIC_SetPriority(TIM1_UP_TIM10_IRQn, 5, 0);
  181:Core/Src/tim.c ****     HAL_NVIC_EnableIRQ(TIM1_UP_TIM10_IRQn);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 7
 
 
  182:Core/Src/tim.c ****     HAL_NVIC_SetPriority(TIM1_CC_IRQn, 5, 0);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  200 0042 03F00203 		and	r3, r3, #2
  201 0046 0293     		str	r3, [sp, #8]
  166:Core/Src/tim.c ****     /**TIM1 GPIO Configuration
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 8
 
 
  202              		.loc 1 166 5 view .LVU53
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  242              	.LVL11:
  181:Core/Src/tim.c ****     HAL_NVIC_SetPriority(TIM1_CC_IRQn, 5, 0);
  243              		.loc 1 181 5 view .LVU68
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 9
 
 
  244 007a 1920     		movs	r0, #25
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  293 0006 0393     		str	r3, [sp, #12]
  294 0008 0493     		str	r3, [sp, #16]
  295 000a 0593     		str	r3, [sp, #20]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 10
 
 
  296 000c 0693     		str	r3, [sp, #24]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  200:Core/Src/tim.c **** 
  316              		.loc 1 200 5 is_stmt 1 view .LVU80
  317              	.LBB4:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 11
 
 
  200:Core/Src/tim.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  203:Core/Src/tim.c ****     /**TIM3 GPIO Configuration
  358              		.loc 1 203 5 view .LVU95
  359 0054 1B6B     		ldr	r3, [r3, #48]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 12
 
 
  360 0056 03F00203 		and	r3, r3, #2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  396 0078 0594     		str	r4, [sp, #20]
  219:Core/Src/tim.c ****     GPIO_InitStruct.Alternate = GPIO_AF2_TIM3;
  397              		.loc 1 219 5 is_stmt 1 view .LVU114
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 13
 
 
  219:Core/Src/tim.c ****     GPIO_InitStruct.Alternate = GPIO_AF2_TIM3;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  446 000e 0593     		str	r3, [sp, #20]
  232:Core/Src/tim.c ****   if(timHandle->Instance==TIM1)
  447              		.loc 1 232 3 is_stmt 1 view .LVU124
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 14
 
 
  448              		.loc 1 232 15 is_stmt 0 view .LVU125
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  238:Core/Src/tim.c ****     /**TIM1 GPIO Configuration
  475              		.loc 1 238 5 view .LVU131
  476 002c 1B6B     		ldr	r3, [r3, #48]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 15
 
 
  477 002e 03F00103 		and	r3, r3, #1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  520              		.thumb_func
  522              	MX_TIM1_Init:
  523              	.LFB239:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 16
 
 
   32:Core/Src/tim.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  567 0030 0360     		str	r3, [r0]
   47:Core/Src/tim.c ****   htim1.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;
  568              		.loc 1 47 3 is_stmt 1 view .LVU156
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 17
 
 
   47:Core/Src/tim.c ****   htim1.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  605 005a FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
  606              	.LVL28:
   58:Core/Src/tim.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 18
 
 
  607              		.loc 1 58 6 discriminator 1 view .LVU175
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
   74:Core/Src/tim.c ****   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
  646              		.loc 1 74 24 is_stmt 0 view .LVU191
  647 0086 0B92     		str	r2, [sp, #44]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 19
 
 
   75:Core/Src/tim.c ****   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  686 00b0 FFF7FEFF 		bl	HAL_TIM_PWM_ConfigChannel
  687              	.LVL33:
   87:Core/Src/tim.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 20
 
 
  688              		.loc 1 87 6 discriminator 1 view .LVU208
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  725 00d8 4FF48052 		mov	r2, #4096
  726 00dc 0592     		str	r2, [sp, #20]
  102:Core/Src/tim.c ****   sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 21
 
 
  727              		.loc 1 102 3 is_stmt 1 view .LVU226
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
   70:Core/Src/tim.c ****   }
  770              		.loc 1 70 5 view .LVU238
  771 010c FFF7FEFF 		bl	Error_Handler
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 22
 
 
  772              	.LVL40:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  820              		@ frame_needed = 0, uses_anonymous_args = 0
  821              		.loc 1 259 1 is_stmt 0 view .LVU245
  822 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 23
 
 
  823              		.cfi_def_cfa_offset 8
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  847              	.LVL49:
  275:Core/Src/tim.c **** 
  848              		.loc 1 275 5 is_stmt 0 view .LVU252
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 24
 
 
  849 001c FFF7FEFF 		bl	HAL_GPIO_DeInit
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  898              		.cfi_offset 14, -4
  291:Core/Src/tim.c **** 
  292:Core/Src/tim.c ****   if(timex_hallsensorHandle->Instance==TIM3)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 25
 
 
  899              		.loc 1 292 3 is_stmt 1 view .LVU260
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  928              	.LVL60:
  929              		.loc 1 313 1 is_stmt 0 view .LVU268
  930 0026 F0E7     		b	.L55
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 26
 
 
  931              	.L60:
@@ -1542,36 +1542,36 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 1
  966              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
  967              		.file 12 "Core/Inc/main.h"
  968              		.file 13 "<built-in>"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cct7GWze.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tim.c
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:21     .text.MX_TIM3_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:27     .text.MX_TIM3_Init:00000000 MX_TIM3_Init
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:120    .text.MX_TIM3_Init:00000054 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:946    .bss.htim3:00000000 htim3
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:126    .text.HAL_TIM_Base_MspInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:132    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:262    .text.HAL_TIM_Base_MspInit:00000094 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:268    .text.HAL_TIMEx_HallSensor_MspInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:274    .text.HAL_TIMEx_HallSensor_MspInit:00000000 HAL_TIMEx_HallSensor_MspInit
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:413    .text.HAL_TIMEx_HallSensor_MspInit:00000088 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:420    .text.HAL_TIM_MspPostInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:426    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:509    .text.HAL_TIM_MspPostInit:00000050 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:516    .text.MX_TIM1_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:522    .text.MX_TIM1_Init:00000000 MX_TIM1_Init
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:802    .text.MX_TIM1_Init:00000130 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:953    .bss.htim1:00000000 htim1
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:808    .text.HAL_TIM_Base_MspDeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:814    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:873    .text.HAL_TIM_Base_MspDeInit:00000040 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:881    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:887    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 HAL_TIMEx_HallSensor_MspDeInit
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:934    .text.HAL_TIMEx_HallSensor_MspDeInit:00000028 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:943    .bss.htim3:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cct7GWze.s:950    .bss.htim1:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:21     .text.MX_TIM3_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:27     .text.MX_TIM3_Init:00000000 MX_TIM3_Init
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:120    .text.MX_TIM3_Init:00000054 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:946    .bss.htim3:00000000 htim3
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:126    .text.HAL_TIM_Base_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:132    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:262    .text.HAL_TIM_Base_MspInit:00000094 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:268    .text.HAL_TIMEx_HallSensor_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:274    .text.HAL_TIMEx_HallSensor_MspInit:00000000 HAL_TIMEx_HallSensor_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:413    .text.HAL_TIMEx_HallSensor_MspInit:00000088 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:420    .text.HAL_TIM_MspPostInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:426    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:509    .text.HAL_TIM_MspPostInit:00000050 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:516    .text.MX_TIM1_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:522    .text.MX_TIM1_Init:00000000 MX_TIM1_Init
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:802    .text.MX_TIM1_Init:00000130 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:953    .bss.htim1:00000000 htim1
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:808    .text.HAL_TIM_Base_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:814    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:873    .text.HAL_TIM_Base_MspDeInit:00000040 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:881    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:887    .text.HAL_TIMEx_HallSensor_MspDeInit:00000000 HAL_TIMEx_HallSensor_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:934    .text.HAL_TIMEx_HallSensor_MspDeInit:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:943    .bss.htim3:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccHb7vxZ.s:950    .bss.htim1:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_TIMEx_HallSensor_Init

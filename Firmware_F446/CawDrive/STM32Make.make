@@ -75,10 +75,11 @@ endif
 ######################################
 # C sources
 C_SOURCES =  \
-Controller/Current/current.c \
 Controller/Devices/dev_usart.c \
 Controller/Drivers/drv8323/drv8323.c \
 Controller/PWM/pwm.c \
+Controller/Sensors/current.c \
+Controller/Sensors/vbus.c \
 Controller/State/state.c \
 Controller/controller.c \
 Core/Src/adc.c \
@@ -223,10 +224,10 @@ AS_INCLUDES = \
 # C includes
 C_INCLUDES =  \
 -IController \
--IController/Current \
 -IController/Devices \
 -IController/Drivers/drv8323 \
 -IController/PWM \
+-IController/Sensors \
 -IController/State \
 -ICore/Inc \
 -IDrivers/CMSIS/Device/ST/STM32F4xx/Include \

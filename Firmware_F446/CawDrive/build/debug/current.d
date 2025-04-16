@@ -1,5 +1,5 @@
-build/debug/current.o: Controller/Current/current.c \
- Controller/Current/./current.h Core/Inc/adc.h Core/Inc/main.h \
+build/debug/current.o: Controller/Sensors/current.c \
+ Controller/Sensors/./current.h Core/Inc/adc.h Core/Inc/main.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  Core/Inc/stm32f4xx_hal_conf.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -35,7 +35,7 @@ build/debug/current.o: Controller/Current/current.c \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  Controller/Devices/dev_usart.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
-Controller/Current/./current.h:
+Controller/Sensors/./current.h:
 Core/Inc/adc.h:
 Core/Inc/main.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:

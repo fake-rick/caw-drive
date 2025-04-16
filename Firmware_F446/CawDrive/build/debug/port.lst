@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
   29:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c ****  * Implementation of functions defined in portable.h for the ARM CM4F port.
   30:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c ****  *----------------------------------------------------------*/
   31:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 2
 
 
   32:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** /* Scheduler includes. */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
   86:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** #define portASPEN_AND_LSPEN_BITS			( 0x3UL << 30UL )
   87:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
   88:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** /* Constants required to set up the initial stack. */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 3
 
 
   89:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** #define portINITIAL_XPSR					( 0x01000000 )
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  143:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
  144:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** /* Each task maintains its own interrupt status in the critical nesting
  145:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** variable. */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 4
 
 
  146:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** static UBaseType_t uxCriticalNesting = 0xaaaaaaaa;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  200:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	*pxTopOfStack = ( StackType_t ) portTASK_RETURN_ADDRESS;	/* LR */
  201:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
  202:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	/* Save code space by skipping register initialisation. */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 5
 
 
  203:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	pxTopOfStack -= 5;	/* R12, R3, R2 and R1. */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
   10:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * subject to the following conditions:
   11:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *
   12:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * The above copyright notice and this permission notice shall be included in all
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 6
 
 
   13:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * copies or substantial portions of the Software.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
   67:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	not need to be guarded with a critical section. */
   68:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#define portTICK_TYPE_IS_ATOMIC 1
   69:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 7
 
 
   70:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  124:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#define configUSE_PORT_OPTIMISED_TASK_SELECTION 1
  125:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #endif
  126:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 8
 
 
  127:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** #if configUSE_PORT_OPTIMISED_TASK_SELECTION == 1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  181:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	else
  182:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	{
  183:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		xReturn = pdTRUE;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 9
 
 
  184:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	}
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
   87              	.LBE34:
   88              	.LBE33:
  229:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	while( ulDummy == 0 )
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 10
 
 
   89              		.loc 1 229 2 view .LVU15
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  258:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** }
  259:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** /*-----------------------------------------------------------*/
  260:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 11
 
 
  261:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** static void prvPortStartFirstTask( void )
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  151              	.LFB16:
  282:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** /*-----------------------------------------------------------*/
  283:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 12
 
 
  284:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** /*
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  338:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 		}
  339:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 		#endif
  340:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 13
 
 
  341:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 		#ifdef configPRIO_BITS
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  395:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** void vPortEndScheduler( void )
  396:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** {
  397:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	/* Not implemented in ports where there is nothing to return to.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 14
 
 
  398:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	Artificially force an assert. */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  452:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	"	msr basepri, r0						\n"
  453:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	"	dsb									\n"
  454:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	"	isb									\n"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 15
 
 
  455:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	"	bl vTaskSwitchContext				\n"
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  509:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
  510:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	__attribute__((weak)) void vPortSuppressTicksAndSleep( TickType_t xExpectedIdleTime )
  511:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 16
 
 
  512:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	uint32_t ulReloadValue, ulCompleteTickPeriods, ulCompletedSysTickDecrements;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  566:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 			/* Clear the SysTick count flag and set the count value back to
  567:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 			zero. */
  568:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 			portNVIC_SYSTICK_CURRENT_VALUE_REG = 0UL;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 17
 
 
  569:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  623:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 				portNVIC_SYSTICK_LOAD_REG with whatever remains of this tick
  624:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 				period. */
  625:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 				ulCalculatedLoadValue = ( ulTimerCountsForOneTick - 1UL ) - ( ulReloadValue - portNVIC_SYSTICK_
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 18
 
 
  626:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  680:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** {
  681:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	/* Calculate the constants required to configure the tick interrupt. */
  682:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	#if( configUSE_TICKLESS_IDLE == 1 )
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 19
 
 
  683:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	{
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  177              		.thumb
  178              		.thumb_func
  180              	pxPortInitialiseStack:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 20
 
 
  181              	.LVL0:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  217 001a 6FF00203 		mvn	r3, #2
  218 001e 40F8243C 		str	r3, [r0, #-36]
  211:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 21
 
 
  219              		.loc 1 211 2 is_stmt 1 view .LVU43
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  269              	.LFE7:
  271              		.section	.text.vPortEndScheduler,"ax",%progbits
  272              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 22
 
 
  273              		.global	vPortEndScheduler
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  320              		.cfi_endproc
  321              	.LFE10:
  323              		.section	.text.vPortEnterCritical,"ax",%progbits
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 23
 
 
  324              		.align	1
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  415:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	}
  370              		.loc 1 415 3 is_stmt 1 view .LVU69
  371 001e 4FF0E023 		mov	r3, #-536813568
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 24
 
 
  372 0022 D3F8043D 		ldr	r3, [r3, #3332]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  421 0002 1B68     		ldr	r3, [r3]
  422 0004 43B9     		cbnz	r3, .L26
  422:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	uxCriticalNesting--;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 25
 
 
  423              		.loc 1 422 2 discriminator 1 view .LVU78
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  203:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** }
  204:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
  205:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 26
 
 
  206:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  491              	.LFB13:
  432:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	/* This is a naked function. */
  492              		.loc 1 432 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 27
 
 
  493              		.cfi_startproc
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  544              		.syntax unified
  545              		.cfi_endproc
  546              	.LFE13:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 28
 
 
  548              		.section	.text.SysTick_Handler,"ax",%progbits
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  593 001c 4FF08052 		mov	r2, #268435456
  594 0020 C3F8042D 		str	r2, [r3, #3332]
  595              	.L33:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 29
 
 
  504:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** }
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  642              		.loc 1 695 55 is_stmt 0 view .LVU118
  643 000a 054B     		ldr	r3, .L36
  644 000c 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 30
 
 
  645 000e 0549     		ldr	r1, .L36+4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  690 0012 D3F8002D 		ldr	r2, [r3, #3328]
  691 0016 3B4B     		ldr	r3, .L51+4
  692 0018 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 31
 
 
  693 001a 1ED0     		beq	.L50
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  731 003e 1370     		strb	r3, [r2]
  325:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 		while( ( ucMaxPriorityValue & portTOP_BIT_OF_BYTE ) == portTOP_BIT_OF_BYTE )
  732              		.loc 1 325 3 is_stmt 1 view .LVU146
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 32
 
 
  325:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 		while( ( ucMaxPriorityValue & portTOP_BIT_OF_BYTE ) == portTOP_BIT_OF_BYTE )
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  775              		.loc 2 191 30 view .LVU158
  776              	.LBB55:
  193:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 33
 
 
  777              		.loc 2 193 1 view .LVU159
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  346:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 		}
  821              		.loc 1 346 4 is_stmt 1 view .LVU170
  822 008a 214B     		ldr	r3, .L51+16
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 34
 
 
  823 008c 1B68     		ldr	r3, [r3]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  864 00b4 144A     		ldr	r2, .L51+8
  865 00b6 1370     		strb	r3, [r2]
  866              	.LBE56:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 35
 
 
  362:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 	portNVIC_SYSPRI2_REG |= portNVIC_SYSTICK_PRI;
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  906 00fc 03B0     		add	sp, sp, #12
  907              		.cfi_def_cfa_offset 12
  908              		@ sp needed
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 36
 
 
  909 00fe 30BD     		pop	{r4, r5, pc}
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  728:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 			/* Look up the interrupt's priority. */
  729:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c **** 			ucCurrentPriority = pcInterruptPriorityRegisters[ ulCurrentInterrupt ];
  950              		.loc 1 729 4 is_stmt 1 view .LVU205
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 37
 
 
  951              		.loc 1 729 52 is_stmt 0 view .LVU206
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  977              	@ 0 "" 2
  978              		.thumb
  979              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 38
 
 
  980              	.L55:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  1015              	.LBE60:
  1016              	.LBE59:
  1017              		.loc 1 770 3 discriminator 3 view .LVU222
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 39
 
 
  1018              		.loc 1 770 3 discriminator 3 view .LVU223
@@ -2313,59 +2313,59 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 1
  1053              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h"
  1054              		.file 6 "Core/Inc/FreeRTOSConfig.h"
  1055              		.file 7 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc914wRC.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s 			page 40
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 port.c
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:21     .text.prvTaskExitError:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:26     .text.prvTaskExitError:00000000 prvTaskExitError
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:104    .text.prvTaskExitError:0000003c $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1047   .data.uxCriticalNesting:00000000 uxCriticalNesting
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:109    .text.prvPortStartFirstTask:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:114    .text.prvPortStartFirstTask:00000000 prvPortStartFirstTask
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:145    .text.vPortEnableVFP:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:150    .text.vPortEnableVFP:00000000 vPortEnableVFP
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:174    .text.pxPortInitialiseStack:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:180    .text.pxPortInitialiseStack:00000000 pxPortInitialiseStack
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:230    .text.pxPortInitialiseStack:00000028 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:235    .text.SVC_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:241    .text.SVC_Handler:00000000 SVC_Handler
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:262    .text.SVC_Handler:00000020 pxCurrentTCBConst2
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:262    .text.SVC_Handler:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:272    .text.vPortEndScheduler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:278    .text.vPortEndScheduler:00000000 vPortEndScheduler
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:319    .text.vPortEndScheduler:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:324    .text.vPortEnterCritical:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:330    .text.vPortEnterCritical:00000000 vPortEnterCritical
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:401    .text.vPortEnterCritical:00000040 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:406    .text.vPortExitCritical:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:412    .text.vPortExitCritical:00000000 vPortExitCritical
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:479    .text.vPortExitCritical:00000028 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:484    .text.PendSV_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:490    .text.PendSV_Handler:00000000 PendSV_Handler
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:539    .text.PendSV_Handler:00000060 pxCurrentTCBConst
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:539    .text.PendSV_Handler:00000060 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:549    .text.SysTick_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:555    .text.SysTick_Handler:00000000 SysTick_Handler
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:620    .text.vPortSetupTimerInterrupt:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:626    .text.vPortSetupTimerInterrupt:00000000 vPortSetupTimerInterrupt
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:661    .text.vPortSetupTimerInterrupt:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:667    .text.xPortStartScheduler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:673    .text.xPortStartScheduler:00000000 xPortStartScheduler
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:913    .text.xPortStartScheduler:00000100 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1041   .bss.ucMaxSysCallPriority:00000000 ucMaxSysCallPriority
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1036   .bss.ulMaxPRIGROUPValue:00000000 ulMaxPRIGROUPValue
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:923    .text.vPortValidateInterruptPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:929    .text.vPortValidateInterruptPriority:00000000 vPortValidateInterruptPriority
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1026   .text.vPortValidateInterruptPriority:00000050 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1033   .bss.ulMaxPRIGROUPValue:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1042   .bss.ucMaxSysCallPriority:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:1044   .data.uxCriticalNesting:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:173    .text.vPortEnableVFP:0000000e $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:2702   .text.vPortEnableVFP:00000010 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:144    .text.prvPortStartFirstTask:00000022 $d
-C:\Users\Rick\AppData\Local\Temp\cc914wRC.s:2702   .text.prvPortStartFirstTask:00000024 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:21     .text.prvTaskExitError:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:26     .text.prvTaskExitError:00000000 prvTaskExitError
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:104    .text.prvTaskExitError:0000003c $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1047   .data.uxCriticalNesting:00000000 uxCriticalNesting
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:109    .text.prvPortStartFirstTask:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:114    .text.prvPortStartFirstTask:00000000 prvPortStartFirstTask
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:145    .text.vPortEnableVFP:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:150    .text.vPortEnableVFP:00000000 vPortEnableVFP
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:174    .text.pxPortInitialiseStack:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:180    .text.pxPortInitialiseStack:00000000 pxPortInitialiseStack
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:230    .text.pxPortInitialiseStack:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:235    .text.SVC_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:241    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:262    .text.SVC_Handler:00000020 pxCurrentTCBConst2
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:262    .text.SVC_Handler:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:272    .text.vPortEndScheduler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:278    .text.vPortEndScheduler:00000000 vPortEndScheduler
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:319    .text.vPortEndScheduler:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:324    .text.vPortEnterCritical:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:330    .text.vPortEnterCritical:00000000 vPortEnterCritical
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:401    .text.vPortEnterCritical:00000040 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:406    .text.vPortExitCritical:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:412    .text.vPortExitCritical:00000000 vPortExitCritical
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:479    .text.vPortExitCritical:00000028 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:484    .text.PendSV_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:490    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:539    .text.PendSV_Handler:00000060 pxCurrentTCBConst
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:539    .text.PendSV_Handler:00000060 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:549    .text.SysTick_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:555    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:620    .text.vPortSetupTimerInterrupt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:626    .text.vPortSetupTimerInterrupt:00000000 vPortSetupTimerInterrupt
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:661    .text.vPortSetupTimerInterrupt:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:667    .text.xPortStartScheduler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:673    .text.xPortStartScheduler:00000000 xPortStartScheduler
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:913    .text.xPortStartScheduler:00000100 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1041   .bss.ucMaxSysCallPriority:00000000 ucMaxSysCallPriority
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1036   .bss.ulMaxPRIGROUPValue:00000000 ulMaxPRIGROUPValue
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:923    .text.vPortValidateInterruptPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:929    .text.vPortValidateInterruptPriority:00000000 vPortValidateInterruptPriority
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1026   .text.vPortValidateInterruptPriority:00000050 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1033   .bss.ulMaxPRIGROUPValue:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1042   .bss.ucMaxSysCallPriority:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:1044   .data.uxCriticalNesting:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:173    .text.vPortEnableVFP:0000000e $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:2702   .text.vPortEnableVFP:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:144    .text.prvPortStartFirstTask:00000022 $d
+C:\Users\Rick\AppData\Local\Temp\ccD0P5Fq.s:2702   .text.prvPortStartFirstTask:00000024 $d
 
 UNDEFINED SYMBOLS
 pxCurrentTCB

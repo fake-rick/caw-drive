@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
   28:Core/Src/syscalls.c **** #include <signal.h>
   29:Core/Src/syscalls.c **** #include <time.h>
   30:Core/Src/syscalls.c **** #include <sys/time.h>
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 2
 
 
   31:Core/Src/syscalls.c **** #include <sys/times.h>
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
   65              		.thumb_func
   67              	_kill:
   68              	.LVL0:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 3
 
 
   69              	.LFB27:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
   63:Core/Src/syscalls.c ****   _kill(status, -1);
  114              		.loc 1 63 3 is_stmt 1 view .LVU15
  115 0002 4FF0FF31 		mov	r1, #-1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 4
 
 
  116 0006 FFF7FEFF 		bl	_kill
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  161 000a FFF7FEFF 		bl	__io_getchar
  162              	.LVL7:
  163              		.loc 1 74 9 discriminator 1 view .LVU28
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 5
 
 
  164 000e 2146     		mov	r1, r4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  210              		.loc 1 82 3 is_stmt 1 view .LVU38
   83:Core/Src/syscalls.c ****   int DataIdx;
  211              		.loc 1 83 3 view .LVU39
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 6
 
 
   84:Core/Src/syscalls.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  256              		@ link register save eliminated.
   94:Core/Src/syscalls.c ****   (void)file;
  257              		.loc 1 94 3 view .LVU52
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 7
 
 
   95:Core/Src/syscalls.c ****   return -1;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  105:Core/Src/syscalls.c **** 
  106:Core/Src/syscalls.c **** int _isatty(int file)
  107:Core/Src/syscalls.c **** {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 8
 
 
  306              		.loc 1 107 1 is_stmt 1 view -0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  352              		.thumb
  353              		.thumb_func
  355              	_open:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 9
 
 
  356              	.LVL26:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  401              		.cfi_def_cfa_offset 8
  402              		.cfi_offset 3, -8
  403              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 10
 
 
  130:Core/Src/syscalls.c ****   (void)status;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  449              	.LFE37:
  451              		.section	.text._times,"ax",%progbits
  452              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 11
 
 
  453              		.global	_times
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  497              		.loc 1 153 1 is_stmt 0 view .LVU106
  498 0006 0020     		movs	r0, #0
  499              	.LVL35:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 12
 
 
  500              		.loc 1 153 1 view .LVU107
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  164:Core/Src/syscalls.c **** {
  548              		.loc 1 164 1 is_stmt 1 view -0
  549              		.cfi_startproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 13
 
 
  550              		@ args = 0, pretend = 0, frame = 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  596 0008 0360     		str	r3, [r0]
  175:Core/Src/syscalls.c ****   return -1;
  597              		.loc 1 175 3 is_stmt 1 view .LVU128
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 14
 
 
  176:Core/Src/syscalls.c **** }
@@ -809,51 +809,51 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 1
  627              		.file 7 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  628              		.file 8 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  629              		.file 9 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 syscalls.c
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:21     .text.initialise_monitor_handles:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:27     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:40     .text._getpid:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:46     .text._getpid:00000000 _getpid
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:61     .text._kill:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:67     .text._kill:00000000 _kill
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:95     .text._exit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:101    .text._exit:00000000 _exit
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:127    .text._read:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:133    .text._read:00000000 _read
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:188    .text._write:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:194    .text._write:00000000 _write
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:243    .text._close:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:249    .text._close:00000000 _close
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:268    .text._fstat:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:274    .text._fstat:00000000 _fstat
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:297    .text._isatty:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:303    .text._isatty:00000000 _isatty
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:322    .text._lseek:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:328    .text._lseek:00000000 _lseek
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:349    .text._open:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:355    .text._open:00000000 _open
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:386    .text._wait:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:392    .text._wait:00000000 _wait
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:419    .text._unlink:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:425    .text._unlink:00000000 _unlink
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:452    .text._times:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:458    .text._times:00000000 _times
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:477    .text._stat:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:483    .text._stat:00000000 _stat
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:506    .text._link:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:512    .text._link:00000000 _link
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:540    .text._fork:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:546    .text._fork:00000000 _fork
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:570    .text._execve:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:576    .text._execve:00000000 _execve
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:609    .data.environ:00000000 environ
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:606    .data.environ:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:616    .bss.__env:00000000 __env
-C:\Users\Rick\AppData\Local\Temp\ccbgIVlU.s:613    .bss.__env:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:21     .text.initialise_monitor_handles:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:27     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:40     .text._getpid:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:46     .text._getpid:00000000 _getpid
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:61     .text._kill:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:67     .text._kill:00000000 _kill
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:95     .text._exit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:101    .text._exit:00000000 _exit
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:127    .text._read:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:133    .text._read:00000000 _read
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:188    .text._write:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:194    .text._write:00000000 _write
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:243    .text._close:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:249    .text._close:00000000 _close
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:268    .text._fstat:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:274    .text._fstat:00000000 _fstat
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:297    .text._isatty:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:303    .text._isatty:00000000 _isatty
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:322    .text._lseek:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:328    .text._lseek:00000000 _lseek
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:349    .text._open:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:355    .text._open:00000000 _open
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:386    .text._wait:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:392    .text._wait:00000000 _wait
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:419    .text._unlink:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:425    .text._unlink:00000000 _unlink
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:452    .text._times:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:458    .text._times:00000000 _times
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:477    .text._stat:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:483    .text._stat:00000000 _stat
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:506    .text._link:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:512    .text._link:00000000 _link
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:540    .text._fork:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:546    .text._fork:00000000 _fork
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:570    .text._execve:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:576    .text._execve:00000000 _execve
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:609    .data.environ:00000000 environ
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:606    .data.environ:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:616    .bss.__env:00000000 __env
+C:\Users\Rick\AppData\Local\Temp\ccRqLjBp.s:613    .bss.__env:00000000 $d
 
 UNDEFINED SYMBOLS
 __errno

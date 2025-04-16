@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
   27:Drivers/CMSIS/Include/core_cm4.h **** #elif defined (__clang__)
   28:Drivers/CMSIS/Include/core_cm4.h ****   #pragma clang system_header   /* treat file as system include file */
   29:Drivers/CMSIS/Include/core_cm4.h **** #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 2
 
 
   30:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
   84:Drivers/CMSIS/Include/core_cm4.h ****   #else
   85:Drivers/CMSIS/Include/core_cm4.h ****     #define __FPU_USED         0U
   86:Drivers/CMSIS/Include/core_cm4.h ****   #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 3
 
 
   87:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  141:Drivers/CMSIS/Include/core_cm4.h ****       #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)
  142:Drivers/CMSIS/Include/core_cm4.h ****       #define __FPU_USED       0U
  143:Drivers/CMSIS/Include/core_cm4.h ****     #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 4
 
 
  144:Drivers/CMSIS/Include/core_cm4.h ****   #else
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  198:Drivers/CMSIS/Include/core_cm4.h ****     #define __VTOR_PRESENT             1U
  199:Drivers/CMSIS/Include/core_cm4.h ****     #warning "__VTOR_PRESENT not defined in device header file; using default!"
  200:Drivers/CMSIS/Include/core_cm4.h ****   #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 5
 
 
  201:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  255:Drivers/CMSIS/Include/core_cm4.h ****   \ingroup    CMSIS_core_register
  256:Drivers/CMSIS/Include/core_cm4.h ****   \defgroup   CMSIS_CORE  Status and Control Registers
  257:Drivers/CMSIS/Include/core_cm4.h ****   \brief      Core Register type definitions.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 6
 
 
  258:Drivers/CMSIS/Include/core_cm4.h ****   @{
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  312:Drivers/CMSIS/Include/core_cm4.h **** 
  313:Drivers/CMSIS/Include/core_cm4.h **** /* IPSR Register Definitions */
  314:Drivers/CMSIS/Include/core_cm4.h **** #define IPSR_ISR_Pos                        0U                                            /*!< IPSR
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 7
 
 
  315:Drivers/CMSIS/Include/core_cm4.h **** #define IPSR_ISR_Msk                       (0x1FFUL /*<< IPSR_ISR_Pos*/)                  /*!< IPSR
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  369:Drivers/CMSIS/Include/core_cm4.h **** #define xPSR_ISR_Pos                        0U                                            /*!< xPSR
  370:Drivers/CMSIS/Include/core_cm4.h **** #define xPSR_ISR_Msk                       (0x1FFUL /*<< xPSR_ISR_Pos*/)                  /*!< xPSR
  371:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 8
 
 
  372:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  426:Drivers/CMSIS/Include/core_cm4.h **** }  NVIC_Type;
  427:Drivers/CMSIS/Include/core_cm4.h **** 
  428:Drivers/CMSIS/Include/core_cm4.h **** /* Software Triggered Interrupt Register Definitions */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 9
 
 
  429:Drivers/CMSIS/Include/core_cm4.h **** #define NVIC_STIR_INTID_Pos                 0U                                         /*!< STIR: I
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  483:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_CPUID_REVISION_Pos              0U                                            /*!< SCB 
  484:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_CPUID_REVISION_Msk             (0xFUL /*<< SCB_CPUID_REVISION_Pos*/)          /*!< SCB 
  485:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 10
 
 
  486:Drivers/CMSIS/Include/core_cm4.h **** /* SCB Interrupt Control State Register Definitions */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  540:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_AIRCR_VECTRESET_Pos             0U                                            /*!< SCB 
  541:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_AIRCR_VECTRESET_Msk            (1UL /*<< SCB_AIRCR_VECTRESET_Pos*/)           /*!< SCB 
  542:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 11
 
 
  543:Drivers/CMSIS/Include/core_cm4.h **** /* SCB System Control Register Definitions */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  597:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_SHCSR_PENDSVACT_Pos            10U                                            /*!< SCB 
  598:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_SHCSR_PENDSVACT_Msk            (1UL << SCB_SHCSR_PENDSVACT_Pos)               /*!< SCB 
  599:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 12
 
 
  600:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_SHCSR_MONITORACT_Pos            8U                                            /*!< SCB 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  654:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_CFSR_UNSTKERR_Pos             (SCB_CFSR_BUSFAULTSR_Pos + 3U)                  /*!< SCB 
  655:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_CFSR_UNSTKERR_Msk             (1UL << SCB_CFSR_UNSTKERR_Pos)                  /*!< SCB 
  656:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 13
 
 
  657:Drivers/CMSIS/Include/core_cm4.h **** #define SCB_CFSR_IMPRECISERR_Pos          (SCB_CFSR_BUSFAULTSR_Pos + 2U)                  /*!< SCB 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  711:Drivers/CMSIS/Include/core_cm4.h **** /*@} end of group CMSIS_SCB */
  712:Drivers/CMSIS/Include/core_cm4.h **** 
  713:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 14
 
 
  714:Drivers/CMSIS/Include/core_cm4.h **** /**
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  768:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t VAL;                    /*!< Offset: 0x008 (R/W)  SysTick Current Value Register *
  769:Drivers/CMSIS/Include/core_cm4.h ****   __IM  uint32_t CALIB;                  /*!< Offset: 0x00C (R/ )  SysTick Calibration Register */
  770:Drivers/CMSIS/Include/core_cm4.h **** } SysTick_Type;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 15
 
 
  771:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  825:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t TER;                    /*!< Offset: 0xE00 (R/W)  ITM Trace Enable Register */
  826:Drivers/CMSIS/Include/core_cm4.h ****         uint32_t RESERVED1[15U];
  827:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t TPR;                    /*!< Offset: 0xE40 (R/W)  ITM Trace Privilege Register */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 16
 
 
  828:Drivers/CMSIS/Include/core_cm4.h ****         uint32_t RESERVED2[15U];
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  882:Drivers/CMSIS/Include/core_cm4.h **** #define ITM_LSR_ByteAcc_Pos                 2U                                            /*!< ITM 
  883:Drivers/CMSIS/Include/core_cm4.h **** #define ITM_LSR_ByteAcc_Msk                (1UL << ITM_LSR_ByteAcc_Pos)                   /*!< ITM 
  884:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 17
 
 
  885:Drivers/CMSIS/Include/core_cm4.h **** #define ITM_LSR_Access_Pos                  1U                                            /*!< ITM 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  939:Drivers/CMSIS/Include/core_cm4.h **** #define DWT_CTRL_NOEXTTRIG_Msk             (0x1UL << DWT_CTRL_NOEXTTRIG_Pos)           /*!< DWT CTR
  940:Drivers/CMSIS/Include/core_cm4.h **** 
  941:Drivers/CMSIS/Include/core_cm4.h **** #define DWT_CTRL_NOCYCCNT_Pos              25U                                         /*!< DWT CTR
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 18
 
 
  942:Drivers/CMSIS/Include/core_cm4.h **** #define DWT_CTRL_NOCYCCNT_Msk              (0x1UL << DWT_CTRL_NOCYCCNT_Pos)            /*!< DWT CTR
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  996:Drivers/CMSIS/Include/core_cm4.h **** #define DWT_SLEEPCNT_SLEEPCNT_Msk          (0xFFUL /*<< DWT_SLEEPCNT_SLEEPCNT_Pos*/)   /*!< DWT SLE
  997:Drivers/CMSIS/Include/core_cm4.h **** 
  998:Drivers/CMSIS/Include/core_cm4.h **** /* DWT LSU Count Register Definitions */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 19
 
 
  999:Drivers/CMSIS/Include/core_cm4.h **** #define DWT_LSUCNT_LSUCNT_Pos               0U                                         /*!< DWT LSU
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1053:Drivers/CMSIS/Include/core_cm4.h ****   __IM  uint32_t SSPSR;                  /*!< Offset: 0x000 (R/ )  Supported Parallel Port Size Reg
 1054:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t CSPSR;                  /*!< Offset: 0x004 (R/W)  Current Parallel Port Size Regis
 1055:Drivers/CMSIS/Include/core_cm4.h ****         uint32_t RESERVED0[2U];
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 20
 
 
 1056:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t ACPR;                   /*!< Offset: 0x010 (R/W)  Asynchronous Clock Prescaler Reg
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1110:Drivers/CMSIS/Include/core_cm4.h **** 
 1111:Drivers/CMSIS/Include/core_cm4.h **** /* TPI Integration ETM Data Register Definitions (FIFO0) */
 1112:Drivers/CMSIS/Include/core_cm4.h **** #define TPI_FIFO0_ITM_ATVALID_Pos          29U                                         /*!< TPI FIF
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 21
 
 
 1113:Drivers/CMSIS/Include/core_cm4.h **** #define TPI_FIFO0_ITM_ATVALID_Msk          (0x1UL << TPI_FIFO0_ITM_ATVALID_Pos)        /*!< TPI FIF
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1167:Drivers/CMSIS/Include/core_cm4.h **** #define TPI_ITATBCTR0_ATREADY1_Msk         (0x1UL /*<< TPI_ITATBCTR0_ATREADY1_Pos*/)   /*!< TPI ITA
 1168:Drivers/CMSIS/Include/core_cm4.h **** 
 1169:Drivers/CMSIS/Include/core_cm4.h **** /* TPI Integration Mode Control Register Definitions */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 22
 
 
 1170:Drivers/CMSIS/Include/core_cm4.h **** #define TPI_ITCTRL_Mode_Pos                 0U                                         /*!< TPI ITC
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1224:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t RBAR_A3;                /*!< Offset: 0x024 (R/W)  MPU Alias 3 Region Base Address 
 1225:Drivers/CMSIS/Include/core_cm4.h ****   __IOM uint32_t RASR_A3;                /*!< Offset: 0x028 (R/W)  MPU Alias 3 Region Attribute and
 1226:Drivers/CMSIS/Include/core_cm4.h **** } MPU_Type;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 23
 
 
 1227:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1281:Drivers/CMSIS/Include/core_cm4.h **** #define MPU_RASR_C_Msk                     (1UL << MPU_RASR_C_Pos)                        /*!< MPU 
 1282:Drivers/CMSIS/Include/core_cm4.h **** 
 1283:Drivers/CMSIS/Include/core_cm4.h **** #define MPU_RASR_B_Pos                     16U                                            /*!< MPU 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 24
 
 
 1284:Drivers/CMSIS/Include/core_cm4.h **** #define MPU_RASR_B_Msk                     (1UL << MPU_RASR_B_Pos)                        /*!< MPU 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1338:Drivers/CMSIS/Include/core_cm4.h **** 
 1339:Drivers/CMSIS/Include/core_cm4.h **** #define FPU_FPCCR_THREAD_Pos                3U                                            /*!< FPCC
 1340:Drivers/CMSIS/Include/core_cm4.h **** #define FPU_FPCCR_THREAD_Msk               (1UL << FPU_FPCCR_THREAD_Pos)                  /*!< FPCC
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 25
 
 
 1341:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1395:Drivers/CMSIS/Include/core_cm4.h **** #define FPU_MVFR1_FP_HPFP_Msk              (0xFUL << FPU_MVFR1_FP_HPFP_Pos)               /*!< MVFR
 1396:Drivers/CMSIS/Include/core_cm4.h **** 
 1397:Drivers/CMSIS/Include/core_cm4.h **** #define FPU_MVFR1_D_NaN_mode_Pos            4U                                            /*!< MVFR
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 26
 
 
 1398:Drivers/CMSIS/Include/core_cm4.h **** #define FPU_MVFR1_D_NaN_mode_Msk           (0xFUL << FPU_MVFR1_D_NaN_mode_Pos)            /*!< MVFR
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1452:Drivers/CMSIS/Include/core_cm4.h **** #define CoreDebug_DHCSR_C_SNAPSTALL_Msk    (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos)       /*!< Core
 1453:Drivers/CMSIS/Include/core_cm4.h **** 
 1454:Drivers/CMSIS/Include/core_cm4.h **** #define CoreDebug_DHCSR_C_MASKINTS_Pos      3U                                            /*!< Core
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 27
 
 
 1455:Drivers/CMSIS/Include/core_cm4.h **** #define CoreDebug_DHCSR_C_MASKINTS_Msk     (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)        /*!< Core
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1509:Drivers/CMSIS/Include/core_cm4.h **** 
 1510:Drivers/CMSIS/Include/core_cm4.h **** #define CoreDebug_DEMCR_VC_CORERESET_Pos    0U                                            /*!< Core
 1511:Drivers/CMSIS/Include/core_cm4.h **** #define CoreDebug_DEMCR_VC_CORERESET_Msk   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)  /*!< Core
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 28
 
 
 1512:Drivers/CMSIS/Include/core_cm4.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1566:Drivers/CMSIS/Include/core_cm4.h **** #define CoreDebug           ((CoreDebug_Type *)     CoreDebug_BASE)   /*!< Core Debug configuration
 1567:Drivers/CMSIS/Include/core_cm4.h **** 
 1568:Drivers/CMSIS/Include/core_cm4.h **** #if defined (__MPU_PRESENT) && (__MPU_PRESENT == 1U)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 29
 
 
 1569:Drivers/CMSIS/Include/core_cm4.h ****   #define MPU_BASE          (SCS_BASE +  0x0D90UL)                    /*!< Memory Protection Unit *
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1623:Drivers/CMSIS/Include/core_cm4.h ****   #ifndef CMSIS_VECTAB_VIRTUAL_HEADER_FILE
 1624:Drivers/CMSIS/Include/core_cm4.h ****     #define CMSIS_VECTAB_VIRTUAL_HEADER_FILE "cmsis_vectab_virtual.h"
 1625:Drivers/CMSIS/Include/core_cm4.h ****   #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 30
 
 
 1626:Drivers/CMSIS/Include/core_cm4.h ****   #include CMSIS_VECTAB_VIRTUAL_HEADER_FILE
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1680:Drivers/CMSIS/Include/core_cm4.h ****   \details Enables a device specific interrupt in the NVIC interrupt controller.
 1681:Drivers/CMSIS/Include/core_cm4.h ****   \param [in]      IRQn  Device specific interrupt number.
 1682:Drivers/CMSIS/Include/core_cm4.h ****   \note    IRQn must not be negative.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 31
 
 
 1683:Drivers/CMSIS/Include/core_cm4.h ****  */
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1696:Drivers/CMSIS/Include/core_cm4.h ****   \brief   Get Interrupt Enable status
 1697:Drivers/CMSIS/Include/core_cm4.h ****   \details Returns a device specific interrupt enable status from the NVIC interrupt controller.
 1698:Drivers/CMSIS/Include/core_cm4.h ****   \param [in]      IRQn  Device specific interrupt number.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 32
 
 
 1699:Drivers/CMSIS/Include/core_cm4.h ****   \return             0  Interrupt is not enabled.
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
   98              	.LBI36:
   99              		.file 3 "Drivers/CMSIS/Include/cmsis_gcc.h"
    1:Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 33
 
 
    2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
   56:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __USED                                 __attribute__((used))
   57:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   58:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __WEAK
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 34
 
 
   59:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  113:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __RESTRICT
  114:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __RESTRICT                             __restrict
  115:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 35
 
 
  116:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __COMPILER_BARRIER
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  170:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __INITIAL_SP              __StackTop
  171:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  172:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 36
 
 
  173:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __STACK_LIMIT
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  227:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  228:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __NOP()                             __ASM volatile ("nop")
  229:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 37
 
 
  230:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  111              		.loc 2 1728 5 view .LVU24
  112              	.LBB38:
  113              	.LBI38:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 38
 
 
  258:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1753:Drivers/CMSIS/Include/core_cm4.h **** 
 1754:Drivers/CMSIS/Include/core_cm4.h **** /**
 1755:Drivers/CMSIS/Include/core_cm4.h ****   \brief   Set Pending Interrupt
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 39
 
 
 1756:Drivers/CMSIS/Include/core_cm4.h ****   \details Sets the pending bit of a device specific interrupt in the NVIC pending register.
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1810:Drivers/CMSIS/Include/core_cm4.h ****   \param [in]      IRQn  Interrupt number.
 1811:Drivers/CMSIS/Include/core_cm4.h ****   \param [in]  priority  Priority to set.
 1812:Drivers/CMSIS/Include/core_cm4.h ****   \note    The priority cannot be set for every processor exception.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 40
 
 
 1813:Drivers/CMSIS/Include/core_cm4.h ****  */
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  186              		.align	2
  187              	.L12:
  188 0024 14ED00E0 		.word	-536810220
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 41
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 41
 
 
  189              		.cfi_endproc
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1845:Drivers/CMSIS/Include/core_cm4.h ****     return(((uint32_t)SCB->SHP[(((uint32_t)IRQn) & 0xFUL)-4UL] >> (8U - __NVIC_PRIO_BITS)));
  225              		.loc 2 1845 5 is_stmt 1 view .LVU53
  226              		.loc 2 1845 50 is_stmt 0 view .LVU54
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 42
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 42
 
 
  227 0014 00F00F00 		and	r0, r0, #15
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1865:Drivers/CMSIS/Include/core_cm4.h ****   uint32_t SubPriorityBits;
  264              		.loc 2 1865 3 view .LVU63
 1866:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 43
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 43
 
 
 1867:Drivers/CMSIS/Include/core_cm4.h ****   PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(__NVIC_PRIO_BITS)) ? (uint32_t)(__NV
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  311              		.thumb
  312              		.thumb_func
  314              	NVIC_DecodePriority:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 44
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 44
 
 
  315              	.LVL23:
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  348              	.LVL26:
  349              	.L24:
 1896:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 45
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 45
 
 
 1897:Drivers/CMSIS/Include/core_cm4.h ****   *pPreemptPriority = (Priority >> SubPriorityBits) & (uint32_t)((1UL << (PreemptPriorityBits)) - 1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1912:Drivers/CMSIS/Include/core_cm4.h **** {
 1913:Drivers/CMSIS/Include/core_cm4.h ****   uint32_t *vectors = (uint32_t *)SCB->VTOR;
 1914:Drivers/CMSIS/Include/core_cm4.h ****   vectors[(int32_t)IRQn + NVIC_USER_IRQ_OFFSET] = vector;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 46
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 46
 
 
 1915:Drivers/CMSIS/Include/core_cm4.h ****   /* ARM Application Note 321 states that the M4 does not require the architectural barrier */
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  413              		.loc 2 1943 40 view .LVU108
  414 0008 02F4E062 		and	r2, r2, #1792
 1942:Drivers/CMSIS/Include/core_cm4.h ****                            (SCB->AIRCR & SCB_AIRCR_PRIGROUP_Msk) |
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 47
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 47
 
 
  415              		.loc 2 1942 17 view .LVU109
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  462              	.LFB239:
    1:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** /**
    2:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   ******************************************************************************
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 48
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 48
 
 
    3:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @file    stm32f4xx_hal_cortex.c
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
   57:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****    (+) You can change the SysTick IRQ priority by calling the
   58:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****        HAL_NVIC_SetPriority(SysTick_IRQn,...) function just after the HAL_SYSTICK_Config() function
   59:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****        call. The HAL_NVIC_SetPriority() call the NVIC_SetPriority() function which is a CMSIS funct
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 49
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 49
 
 
   60:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  114:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****       This section provides the CORTEX HAL driver functions allowing to configure Interrupts
  115:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****       Systick functionalities 
  116:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 50
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 50
 
 
  117:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** @endverbatim
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1659:Drivers/CMSIS/Include/core_cm4.h ****   reg_value  =  (reg_value                                   |
  481              		.loc 2 1659 3 is_stmt 1 view .LVU125
 1659:Drivers/CMSIS/Include/core_cm4.h ****   reg_value  =  (reg_value                                   |
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 51
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 51
 
 
  482              		.loc 2 1659 13 is_stmt 0 view .LVU126
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  149:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** 
  150:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** /**
  151:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @brief  Sets the priority of an interrupt.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 52
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 52
 
 
  152:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @param  IRQn External interrupt number.
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  556 0008 C0F30220 		ubfx	r0, r0, #8, #3
  557              	.LVL43:
  558              		.loc 1 173 3 is_stmt 0 view .LVU148
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 53
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 53
 
 
  559 000c FFF7FEFF 		bl	NVIC_EncodePriority
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  191:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   NVIC_EnableIRQ(IRQn);
  598              		.loc 1 191 3 view .LVU156
  599 0002 FFF7FEFF 		bl	__NVIC_EnableIRQ
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 54
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 54
 
 
  600              	.LVL48:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  641              	HAL_NVIC_SystemReset:
  642              	.LFB243:
  209:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 55
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 55
 
 
  210:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** /**
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1953:Drivers/CMSIS/Include/core_cm4.h **** /*@} end of CMSIS_Core_NVICFunctions */
 1954:Drivers/CMSIS/Include/core_cm4.h **** 
 1955:Drivers/CMSIS/Include/core_cm4.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 56
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 56
 
 
 1956:Drivers/CMSIS/Include/core_cm4.h **** /* ##########################  MPU functions  #################################### */
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 2010:Drivers/CMSIS/Include/core_cm4.h **** 
 2011:Drivers/CMSIS/Include/core_cm4.h **** /**
 2012:Drivers/CMSIS/Include/core_cm4.h ****   \brief   System Tick Configuration
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 57
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 57
 
 
 2013:Drivers/CMSIS/Include/core_cm4.h ****   \details Initializes the System Timer and its interrupt, and starts the System Tick Timer.
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  706              		.loc 2 2031 18 is_stmt 0 view .LVU180
  707 0016 0020     		movs	r0, #0
  708              	.LVL56:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 58
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 58
 
 
  709              		.loc 2 2031 18 view .LVU181
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  246:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****       
  247:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** @endverbatim
  248:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 59
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 59
 
 
  249:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   */
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  769              		.loc 1 265 3 is_stmt 1 view .LVU196
  770              		.loc 1 265 13 is_stmt 0 view .LVU197
  771 000e 0022     		movs	r2, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 60
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 60
 
 
  772 0010 C3F89420 		str	r2, [r3, #148]
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  808 000c 42F48032 		orr	r2, r2, #65536
  809 0010 5A62     		str	r2, [r3, #36]
  286:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 61
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 61
 
 
  287:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   /* Ensure MPU setting take effects */
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  292:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** /**
  293:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @brief  Enables the MPU Region.
  294:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @retval None
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 62
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 62
 
 
  295:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   */
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  894              		@ link register save eliminated.
  314:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   /* Check the parameters */
  315:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   assert_param(IS_MPU_REGION_NUMBER(RegionNumber));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 63
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 63
 
 
  895              		.loc 1 315 3 view .LVU220
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  336:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   assert_param(IS_MPU_REGION_PERMISSION_ATTRIBUTE(MPU_Init->AccessPermission));
  931              		.loc 1 336 3 view .LVU229
  337:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   assert_param(IS_MPU_TEX_LEVEL(MPU_Init->TypeExtField));
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 64
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 64
 
 
  932              		.loc 1 337 3 view .LVU230
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  966              		.loc 1 355 34 view .LVU250
  967 002a 417B     		ldrb	r1, [r0, #13]	@ zero_extendqisi2
  354:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****               ((uint32_t)MPU_Init->TypeExtField            << MPU_RASR_TEX_Pos)  |
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 65
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 65
 
 
  968              		.loc 1 354 82 view .LVU251
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  364:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** /**
  365:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @brief  Clear pending events.
  366:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @retval None
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 66
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 66
 
 
  367:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   */
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1674:Drivers/CMSIS/Include/core_cm4.h **** }
  1050              		.loc 2 1674 3 view .LVU271
 1674:Drivers/CMSIS/Include/core_cm4.h **** }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 67
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 67
 
 
  1051              		.loc 2 1674 26 is_stmt 0 view .LVU272
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  1082              		.cfi_def_cfa_offset 16
  1083              		.cfi_offset 4, -16
  1084              		.cfi_offset 5, -12
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 68
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 68
 
 
  1085              		.cfi_offset 6, -8
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  426:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   NVIC_SetPendingIRQ(IRQn);
  1122              		.loc 1 426 3 view .LVU283
  1123              	.LBB60:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 69
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 69
 
 
  1124              	.LBI60:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  428:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** 
  429:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** /**
  430:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   * @brief  Gets Pending Interrupt (reads the pending register in the NVIC 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 70
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 70
 
 
  431:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   *         and returns the pending bit for the specified interrupt).
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  1199 001a 7047     		bx	lr
  1200              	.L76:
 1749:Drivers/CMSIS/Include/core_cm4.h ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 71
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 71
 
 
  1201              		.loc 2 1749 11 view .LVU308
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
 1777:Drivers/CMSIS/Include/core_cm4.h ****   {
  1238              		.loc 2 1777 6 is_stmt 0 view .LVU316
  1239 0000 0028     		cmp	r0, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 72
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 72
 
 
 1777:Drivers/CMSIS/Include/core_cm4.h ****   {
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  471:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** uint32_t HAL_NVIC_GetActive(IRQn_Type IRQn)
  472:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** {
  1279              		.loc 1 472 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 73
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 73
 
 
  1280              		.cfi_startproc
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  478:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c **** }
  1317              		.loc 1 478 1 view .LVU340
  1318 001e 7047     		bx	lr
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 74
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 74
 
 
  1319              	.L87:
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  1353              		.loc 1 500 1 view .LVU348
  1354 0010 7047     		bx	lr
  1355              	.L91:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 75
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 75
 
 
  494:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c ****   }
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  1390              		.thumb
  1391              		.thumb_func
  1393              	HAL_SYSTICK_IRQHandler:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 76
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 76
 
 
  1394              	.LFB258:
@@ -4526,87 +4526,87 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 1
  1414              		.file 5 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  1415              		.file 6 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  1416              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 77
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 77
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_cortex.c
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:21     .text.__NVIC_EnableIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:26     .text.__NVIC_EnableIRQ:00000000 __NVIC_EnableIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:60     .text.__NVIC_EnableIRQ:00000018 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:65     .text.__NVIC_DisableIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:70     .text.__NVIC_DisableIRQ:00000000 __NVIC_DisableIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:131    .text.__NVIC_DisableIRQ:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:136    .text.__NVIC_SetPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:141    .text.__NVIC_SetPriority:00000000 __NVIC_SetPriority
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:188    .text.__NVIC_SetPriority:00000024 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:193    .text.__NVIC_GetPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:198    .text.__NVIC_GetPriority:00000000 __NVIC_GetPriority
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:238    .text.__NVIC_GetPriority:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:243    .text.NVIC_EncodePriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:248    .text.NVIC_EncodePriority:00000000 NVIC_EncodePriority
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:309    .text.NVIC_DecodePriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:314    .text.NVIC_DecodePriority:00000000 NVIC_DecodePriority
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:382    .text.__NVIC_SystemReset:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:387    .text.__NVIC_SystemReset:00000000 __NVIC_SystemReset
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:448    .text.__NVIC_SystemReset:0000001c $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:454    .text.HAL_NVIC_SetPriorityGrouping:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:460    .text.HAL_NVIC_SetPriorityGrouping:00000000 HAL_NVIC_SetPriorityGrouping
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:514    .text.HAL_NVIC_SetPriorityGrouping:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:519    .text.HAL_NVIC_SetPriority:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:525    .text.HAL_NVIC_SetPriority:00000000 HAL_NVIC_SetPriority
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:574    .text.HAL_NVIC_SetPriority:0000001c $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:579    .text.HAL_NVIC_EnableIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:585    .text.HAL_NVIC_EnableIRQ:00000000 HAL_NVIC_EnableIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:607    .text.HAL_NVIC_DisableIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:613    .text.HAL_NVIC_DisableIRQ:00000000 HAL_NVIC_DisableIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:635    .text.HAL_NVIC_SystemReset:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:641    .text.HAL_NVIC_SystemReset:00000000 HAL_NVIC_SystemReset
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:659    .text.HAL_SYSTICK_Config:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:665    .text.HAL_SYSTICK_Config:00000000 HAL_SYSTICK_Config
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:730    .text.HAL_SYSTICK_Config:00000024 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:735    .text.HAL_MPU_Disable:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:741    .text.HAL_MPU_Disable:00000000 HAL_MPU_Disable
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:778    .text.HAL_MPU_Disable:00000018 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:783    .text.HAL_MPU_Enable:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:789    .text.HAL_MPU_Enable:00000000 HAL_MPU_Enable
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:843    .text.HAL_MPU_Enable:0000001c $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:848    .text.HAL_MPU_EnableRegion:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:854    .text.HAL_MPU_EnableRegion:00000000 HAL_MPU_EnableRegion
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:876    .text.HAL_MPU_EnableRegion:00000014 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:881    .text.HAL_MPU_DisableRegion:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:887    .text.HAL_MPU_DisableRegion:00000000 HAL_MPU_DisableRegion
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:909    .text.HAL_MPU_DisableRegion:00000014 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:914    .text.HAL_MPU_ConfigRegion:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:920    .text.HAL_MPU_ConfigRegion:00000000 HAL_MPU_ConfigRegion
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:997    .text.HAL_MPU_ConfigRegion:00000054 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1002   .text.HAL_CORTEX_ClearEvent:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1008   .text.HAL_CORTEX_ClearEvent:00000000 HAL_CORTEX_ClearEvent
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1032   .text.HAL_NVIC_GetPriorityGrouping:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1038   .text.HAL_NVIC_GetPriorityGrouping:00000000 HAL_NVIC_GetPriorityGrouping
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1062   .text.HAL_NVIC_GetPriorityGrouping:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1067   .text.HAL_NVIC_GetPriority:00000000 $t
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s 			page 78
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:21     .text.__NVIC_EnableIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:26     .text.__NVIC_EnableIRQ:00000000 __NVIC_EnableIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:60     .text.__NVIC_EnableIRQ:00000018 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:65     .text.__NVIC_DisableIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:70     .text.__NVIC_DisableIRQ:00000000 __NVIC_DisableIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:131    .text.__NVIC_DisableIRQ:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:136    .text.__NVIC_SetPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:141    .text.__NVIC_SetPriority:00000000 __NVIC_SetPriority
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:188    .text.__NVIC_SetPriority:00000024 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:193    .text.__NVIC_GetPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:198    .text.__NVIC_GetPriority:00000000 __NVIC_GetPriority
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:238    .text.__NVIC_GetPriority:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:243    .text.NVIC_EncodePriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:248    .text.NVIC_EncodePriority:00000000 NVIC_EncodePriority
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:309    .text.NVIC_DecodePriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:314    .text.NVIC_DecodePriority:00000000 NVIC_DecodePriority
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:382    .text.__NVIC_SystemReset:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:387    .text.__NVIC_SystemReset:00000000 __NVIC_SystemReset
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:448    .text.__NVIC_SystemReset:0000001c $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:454    .text.HAL_NVIC_SetPriorityGrouping:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:460    .text.HAL_NVIC_SetPriorityGrouping:00000000 HAL_NVIC_SetPriorityGrouping
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:514    .text.HAL_NVIC_SetPriorityGrouping:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:519    .text.HAL_NVIC_SetPriority:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:525    .text.HAL_NVIC_SetPriority:00000000 HAL_NVIC_SetPriority
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:574    .text.HAL_NVIC_SetPriority:0000001c $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:579    .text.HAL_NVIC_EnableIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:585    .text.HAL_NVIC_EnableIRQ:00000000 HAL_NVIC_EnableIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:607    .text.HAL_NVIC_DisableIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:613    .text.HAL_NVIC_DisableIRQ:00000000 HAL_NVIC_DisableIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:635    .text.HAL_NVIC_SystemReset:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:641    .text.HAL_NVIC_SystemReset:00000000 HAL_NVIC_SystemReset
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:659    .text.HAL_SYSTICK_Config:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:665    .text.HAL_SYSTICK_Config:00000000 HAL_SYSTICK_Config
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:730    .text.HAL_SYSTICK_Config:00000024 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:735    .text.HAL_MPU_Disable:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:741    .text.HAL_MPU_Disable:00000000 HAL_MPU_Disable
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:778    .text.HAL_MPU_Disable:00000018 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:783    .text.HAL_MPU_Enable:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:789    .text.HAL_MPU_Enable:00000000 HAL_MPU_Enable
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:843    .text.HAL_MPU_Enable:0000001c $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:848    .text.HAL_MPU_EnableRegion:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:854    .text.HAL_MPU_EnableRegion:00000000 HAL_MPU_EnableRegion
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:876    .text.HAL_MPU_EnableRegion:00000014 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:881    .text.HAL_MPU_DisableRegion:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:887    .text.HAL_MPU_DisableRegion:00000000 HAL_MPU_DisableRegion
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:909    .text.HAL_MPU_DisableRegion:00000014 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:914    .text.HAL_MPU_ConfigRegion:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:920    .text.HAL_MPU_ConfigRegion:00000000 HAL_MPU_ConfigRegion
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:997    .text.HAL_MPU_ConfigRegion:00000054 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1002   .text.HAL_CORTEX_ClearEvent:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1008   .text.HAL_CORTEX_ClearEvent:00000000 HAL_CORTEX_ClearEvent
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1032   .text.HAL_NVIC_GetPriorityGrouping:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1038   .text.HAL_NVIC_GetPriorityGrouping:00000000 HAL_NVIC_GetPriorityGrouping
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1062   .text.HAL_NVIC_GetPriorityGrouping:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1067   .text.HAL_NVIC_GetPriority:00000000 $t
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s 			page 78
 
 
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1073   .text.HAL_NVIC_GetPriority:00000000 HAL_NVIC_GetPriority
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1107   .text.HAL_NVIC_SetPendingIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1113   .text.HAL_NVIC_SetPendingIRQ:00000000 HAL_NVIC_SetPendingIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1155   .text.HAL_NVIC_SetPendingIRQ:00000018 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1160   .text.HAL_NVIC_GetPendingIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1166   .text.HAL_NVIC_GetPendingIRQ:00000000 HAL_NVIC_GetPendingIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1212   .text.HAL_NVIC_GetPendingIRQ:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1217   .text.HAL_NVIC_ClearPendingIRQ:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1223   .text.HAL_NVIC_ClearPendingIRQ:00000000 HAL_NVIC_ClearPendingIRQ
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1265   .text.HAL_NVIC_ClearPendingIRQ:00000018 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1270   .text.HAL_NVIC_GetActive:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1276   .text.HAL_NVIC_GetActive:00000000 HAL_NVIC_GetActive
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1322   .text.HAL_NVIC_GetActive:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1327   .text.HAL_SYSTICK_CLKSourceConfig:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1333   .text.HAL_SYSTICK_CLKSourceConfig:00000000 HAL_SYSTICK_CLKSourceConfig
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1368   .text.HAL_SYSTICK_Callback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1374   .text.HAL_SYSTICK_Callback:00000000 HAL_SYSTICK_Callback
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1387   .text.HAL_SYSTICK_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccvVWTRc.s:1393   .text.HAL_SYSTICK_IRQHandler:00000000 HAL_SYSTICK_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1073   .text.HAL_NVIC_GetPriority:00000000 HAL_NVIC_GetPriority
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1107   .text.HAL_NVIC_SetPendingIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1113   .text.HAL_NVIC_SetPendingIRQ:00000000 HAL_NVIC_SetPendingIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1155   .text.HAL_NVIC_SetPendingIRQ:00000018 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1160   .text.HAL_NVIC_GetPendingIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1166   .text.HAL_NVIC_GetPendingIRQ:00000000 HAL_NVIC_GetPendingIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1212   .text.HAL_NVIC_GetPendingIRQ:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1217   .text.HAL_NVIC_ClearPendingIRQ:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1223   .text.HAL_NVIC_ClearPendingIRQ:00000000 HAL_NVIC_ClearPendingIRQ
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1265   .text.HAL_NVIC_ClearPendingIRQ:00000018 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1270   .text.HAL_NVIC_GetActive:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1276   .text.HAL_NVIC_GetActive:00000000 HAL_NVIC_GetActive
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1322   .text.HAL_NVIC_GetActive:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1327   .text.HAL_SYSTICK_CLKSourceConfig:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1333   .text.HAL_SYSTICK_CLKSourceConfig:00000000 HAL_SYSTICK_CLKSourceConfig
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1368   .text.HAL_SYSTICK_Callback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1374   .text.HAL_SYSTICK_Callback:00000000 HAL_SYSTICK_Callback
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1387   .text.HAL_SYSTICK_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccNZMwOK.s:1393   .text.HAL_SYSTICK_IRQHandler:00000000 HAL_SYSTICK_IRQHandler
 
 NO UNDEFINED SYMBOLS

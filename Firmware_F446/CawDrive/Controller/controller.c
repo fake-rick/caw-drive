@@ -1,12 +1,16 @@
 #include "./controller.h"
 
-#include "./Current/current.h"
+#include <string.h>
+
 #include "./Devices/dev_usart.h"
 #include "./Drivers/drv8323/drv8323.h"
 #include "./PWM/pwm.h"
+#include "./Sensors/current.h"
 #include "./State/state.h"
+#include "./vbus.h"
 
 drv8323_t g_driver;
+static uint8_t g_tmp[8] = {0, 0, 0, 0, 0, 0, 0x80, 0x7f};
 
 void controller_init(void) {
   /// 初始化串口
@@ -37,8 +41,16 @@ void controller_init(void) {
 
   /// 电流采样初始化
   current_init();
+  /// VBUS电压采样初始化
+  vbus_init();
   /// 启动PWM
   pwm_start();
 
   state_set(STATE_IDLE);
+}
+
+void controller_step(void) {
+  float vbus = vbus_get();
+  memcpy(g_tmp, &vbus, sizeof(vbus));
+  dev_usart_write(g_tmp, sizeof(g_tmp));
 }

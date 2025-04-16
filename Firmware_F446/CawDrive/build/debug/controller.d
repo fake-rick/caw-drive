@@ -1,7 +1,6 @@
 build/debug/controller.o: Controller/controller.c \
- Controller/./controller.h Controller/./Current/current.h \
- Controller/./Devices/dev_usart.h Controller/./Drivers/drv8323/drv8323.h \
- Core/Inc/spi.h Core/Inc/main.h \
+ Controller/./controller.h Controller/./Devices/dev_usart.h \
+ Controller/./Drivers/drv8323/drv8323.h Core/Inc/spi.h Core/Inc/main.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  Core/Inc/stm32f4xx_hal_conf.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -35,9 +34,9 @@ build/debug/controller.o: Controller/controller.c \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- Controller/./PWM/pwm.h Core/Inc/tim.h Controller/./State/state.h
+ Controller/./PWM/pwm.h Core/Inc/tim.h Controller/./Sensors/current.h \
+ Controller/./State/state.h Controller/Sensors/./vbus.h
 Controller/./controller.h:
-Controller/./Current/current.h:
 Controller/./Devices/dev_usart.h:
 Controller/./Drivers/drv8323/drv8323.h:
 Core/Inc/spi.h:
@@ -79,4 +78,6 @@ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 Controller/./PWM/pwm.h:
 Core/Inc/tim.h:
+Controller/./Sensors/current.h:
 Controller/./State/state.h:
+Controller/Sensors/./vbus.h:

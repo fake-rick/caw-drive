@@ -4,10 +4,10 @@
       "name": "STM32",
       "includePath": [
         "Controller",
-        "Controller/Current",
         "Controller/Devices",
         "Controller/Drivers/drv8323",
         "Controller/PWM",
+        "Controller/Sensors",
         "Controller/State",
         "Core/Inc",
         "Drivers/CMSIS/Device/ST/STM32F4xx/Include",
