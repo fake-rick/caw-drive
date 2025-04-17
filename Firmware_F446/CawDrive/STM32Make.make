@@ -79,6 +79,7 @@ Controller/Devices/dev_usart.c \
 Controller/Drivers/drv8323/drv8323.c \
 Controller/PWM/pwm.c \
 Controller/Sensors/current.c \
+Controller/Sensors/temp.c \
 Controller/Sensors/vbus.c \
 Controller/State/state.c \
 Controller/controller.c \

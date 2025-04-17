@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -37,13 +37,14 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
    7:Controller/controller.c **** #include "./PWM/pwm.h"
    8:Controller/controller.c **** #include "./Sensors/current.h"
    9:Controller/controller.c **** #include "./State/state.h"
-  10:Controller/controller.c **** #include "./vbus.h"
-  11:Controller/controller.c **** 
-  12:Controller/controller.c **** drv8323_t g_driver;
-  13:Controller/controller.c **** static uint8_t g_tmp[8] = {0, 0, 0, 0, 0, 0, 0x80, 0x7f};
-  14:Controller/controller.c **** 
-  15:Controller/controller.c **** void controller_init(void) {
-  29              		.loc 1 15 28 view -0
+  10:Controller/controller.c **** #include "./temp.h"
+  11:Controller/controller.c **** #include "./vbus.h"
+  12:Controller/controller.c **** 
+  13:Controller/controller.c **** drv8323_t g_driver;
+  14:Controller/controller.c **** static uint8_t g_tmp[8] = {0, 0, 0, 0, 0, 0, 0x80, 0x7f};
+  15:Controller/controller.c **** 
+  16:Controller/controller.c **** void controller_init(void) {
+  29              		.loc 1 16 28 view -0
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
   32              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -56,60 +57,60 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
   39              		.cfi_offset 14, -4
   40 0002 87B0     		sub	sp, sp, #28
   41              		.cfi_def_cfa_offset 48
-  16:Controller/controller.c ****   /// 初始化串口
-  17:Controller/controller.c ****   dev_usart_init();
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 2
+  17:Controller/controller.c ****   /// 初始化串口
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 2
 
 
-  42              		.loc 1 17 3 view .LVU1
+  18:Controller/controller.c ****   dev_usart_init();
+  42              		.loc 1 18 3 view .LVU1
   43 0004 FFF7FEFF 		bl	dev_usart_init
   44              	.LVL0:
-  18:Controller/controller.c **** 
-  19:Controller/controller.c ****   /// 配置DRV8323
-  20:Controller/controller.c **** 
-  21:Controller/controller.c ****   // 使用PWM_MODE_3X控制时将互补引脚拉低
-  22:Controller/controller.c ****   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
-  45              		.loc 1 22 3 view .LVU2
+  19:Controller/controller.c **** 
+  20:Controller/controller.c ****   /// 配置DRV8323
+  21:Controller/controller.c **** 
+  22:Controller/controller.c ****   // 使用PWM_MODE_3X控制时将互补引脚拉低
+  23:Controller/controller.c ****   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
+  45              		.loc 1 23 3 view .LVU2
   46 0008 324C     		ldr	r4, .L3
   47 000a 0022     		movs	r2, #0
   48 000c 4FF40051 		mov	r1, #8192
   49 0010 2046     		mov	r0, r4
   50 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
   51              	.LVL1:
-  23:Controller/controller.c ****   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-  52              		.loc 1 23 3 view .LVU3
+  24:Controller/controller.c ****   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
+  52              		.loc 1 24 3 view .LVU3
   53 0016 0022     		movs	r2, #0
   54 0018 4FF48041 		mov	r1, #16384
   55 001c 2046     		mov	r0, r4
   56 001e FFF7FEFF 		bl	HAL_GPIO_WritePin
   57              	.LVL2:
-  24:Controller/controller.c ****   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
-  58              		.loc 1 24 3 view .LVU4
+  25:Controller/controller.c ****   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
+  58              		.loc 1 25 3 view .LVU4
   59 0022 0022     		movs	r2, #0
   60 0024 4FF40041 		mov	r1, #32768
   61 0028 2046     		mov	r0, r4
   62 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
   63              	.LVL3:
-  25:Controller/controller.c **** 
-  26:Controller/controller.c ****   drv8323_init(&g_driver, &hspi3);
-  64              		.loc 1 26 3 view .LVU5
+  26:Controller/controller.c **** 
+  27:Controller/controller.c ****   drv8323_init(&g_driver, &hspi3);
+  64              		.loc 1 27 3 view .LVU5
   65 002e 2A4E     		ldr	r6, .L3+4
   66 0030 2A49     		ldr	r1, .L3+8
   67 0032 3046     		mov	r0, r6
   68 0034 FFF7FEFF 		bl	drv8323_init
   69              	.LVL4:
-  27:Controller/controller.c ****   drv8323_calibrate(&g_driver);
-  70              		.loc 1 27 3 view .LVU6
+  28:Controller/controller.c ****   drv8323_calibrate(&g_driver);
+  70              		.loc 1 28 3 view .LVU6
   71 0038 3046     		mov	r0, r6
   72 003a FFF7FEFF 		bl	drv8323_calibrate
   73              	.LVL5:
-  28:Controller/controller.c ****   HAL_Delay(10);
-  74              		.loc 1 28 3 view .LVU7
+  29:Controller/controller.c ****   HAL_Delay(10);
+  74              		.loc 1 29 3 view .LVU7
   75 003e 0A20     		movs	r0, #10
   76 0040 FFF7FEFF 		bl	HAL_Delay
   77              	.LVL6:
-  29:Controller/controller.c ****   drv8323_write_dcr(&g_driver, 0x0, DIS_GDF_DIS, 0x0, PWM_MODE_3X, 0x0, 0x0,
-  78              		.loc 1 29 3 view .LVU8
+  30:Controller/controller.c ****   drv8323_write_dcr(&g_driver, 0x0, DIS_GDF_DIS, 0x0, PWM_MODE_3X, 0x0, 0x0,
+  78              		.loc 1 30 3 view .LVU8
   79 0044 0125     		movs	r5, #1
   80 0046 0595     		str	r5, [sp, #20]
   81 0048 0024     		movs	r4, #0
@@ -117,24 +118,24 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
   83 004c 0394     		str	r4, [sp, #12]
   84 004e 0294     		str	r4, [sp, #8]
   85 0050 0194     		str	r4, [sp, #4]
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 3
+
+
   86 0052 0095     		str	r5, [sp]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 3
-
-
   87 0054 2346     		mov	r3, r4
   88 0056 2A46     		mov	r2, r5
   89 0058 2146     		mov	r1, r4
   90 005a 3046     		mov	r0, r6
   91 005c FFF7FEFF 		bl	drv8323_write_dcr
   92              	.LVL7:
-  30:Controller/controller.c ****                     0x0, 0x0, 0x1);
-  31:Controller/controller.c ****   HAL_Delay(10);
-  93              		.loc 1 31 3 view .LVU9
+  31:Controller/controller.c ****                     0x0, 0x0, 0x1);
+  32:Controller/controller.c ****   HAL_Delay(10);
+  93              		.loc 1 32 3 view .LVU9
   94 0060 0A20     		movs	r0, #10
   95 0062 FFF7FEFF 		bl	HAL_Delay
   96              	.LVL8:
-  32:Controller/controller.c ****   drv8323_write_csacr(&g_driver, 0x0, 0x1, 0x0, CSA_GAIN_40, 0x0, 0x1, 0x1, 0x1,
-  97              		.loc 1 32 3 view .LVU10
+  33:Controller/controller.c ****   drv8323_write_csacr(&g_driver, 0x0, 0x1, 0x0, CSA_GAIN_40, 0x0, 0x1, 0x1, 0x1,
+  97              		.loc 1 33 3 view .LVU10
   98 0066 0327     		movs	r7, #3
   99 0068 0597     		str	r7, [sp, #20]
  100 006a 0495     		str	r5, [sp, #16]
@@ -148,14 +149,14 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  108 007a 3046     		mov	r0, r6
  109 007c FFF7FEFF 		bl	drv8323_write_csacr
  110              	.LVL9:
-  33:Controller/controller.c ****                       SEN_LVL_1_0);
-  34:Controller/controller.c ****   HAL_Delay(10);
- 111              		.loc 1 34 3 view .LVU11
+  34:Controller/controller.c ****                       SEN_LVL_1_0);
+  35:Controller/controller.c ****   HAL_Delay(10);
+ 111              		.loc 1 35 3 view .LVU11
  112 0080 0A20     		movs	r0, #10
  113 0082 FFF7FEFF 		bl	HAL_Delay
  114              	.LVL10:
-  35:Controller/controller.c ****   drv8323_write_csacr(&g_driver, 0x0, 0x1, 0x0, CSA_GAIN_40, 0x1, 0x0, 0x0, 0x0,
- 115              		.loc 1 35 3 view .LVU12
+  36:Controller/controller.c ****   drv8323_write_csacr(&g_driver, 0x0, 0x1, 0x0, CSA_GAIN_40, 0x1, 0x0, 0x0, 0x0,
+ 115              		.loc 1 36 3 view .LVU12
  116 0086 0597     		str	r7, [sp, #20]
  117 0088 0494     		str	r4, [sp, #16]
  118 008a 0394     		str	r4, [sp, #12]
@@ -168,19 +169,19 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  125 0098 3046     		mov	r0, r6
  126 009a FFF7FEFF 		bl	drv8323_write_csacr
  127              	.LVL11:
-  36:Controller/controller.c ****                       SEN_LVL_1_0);
-  37:Controller/controller.c ****   HAL_Delay(10);
- 128              		.loc 1 37 3 view .LVU13
+  37:Controller/controller.c ****                       SEN_LVL_1_0);
+  38:Controller/controller.c ****   HAL_Delay(10);
+ 128              		.loc 1 38 3 view .LVU13
  129 009e 0A20     		movs	r0, #10
  130 00a0 FFF7FEFF 		bl	HAL_Delay
  131              	.LVL12:
-  38:Controller/controller.c ****   drv8323_write_ocpcr(&g_driver, TRETRY_50US, DEADTIME_50NS, OCP_NONE,
- 132              		.loc 1 38 3 view .LVU14
+  39:Controller/controller.c ****   drv8323_write_ocpcr(&g_driver, TRETRY_50US, DEADTIME_50NS, OCP_NONE,
+ 132              		.loc 1 39 3 view .LVU14
  133 00a4 0F23     		movs	r3, #15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 4
+
+
  134 00a6 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 4
-
-
  135 00a8 0097     		str	r7, [sp]
  136 00aa 3B46     		mov	r3, r7
  137 00ac 2246     		mov	r2, r4
@@ -188,36 +189,36 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  139 00b0 3046     		mov	r0, r6
  140 00b2 FFF7FEFF 		bl	drv8323_write_ocpcr
  141              	.LVL13:
-  39:Controller/controller.c ****                       OCP_DEG_8US, VDS_LVL_1_88);
-  40:Controller/controller.c ****   drv8323_enable_gd(&g_driver);
- 142              		.loc 1 40 3 view .LVU15
+  40:Controller/controller.c ****                       OCP_DEG_8US, VDS_LVL_1_88);
+  41:Controller/controller.c ****   drv8323_enable_gd(&g_driver);
+ 142              		.loc 1 41 3 view .LVU15
  143 00b6 3046     		mov	r0, r6
  144 00b8 FFF7FEFF 		bl	drv8323_enable_gd
  145              	.LVL14:
-  41:Controller/controller.c **** 
-  42:Controller/controller.c ****   /// 电流采样初始化
-  43:Controller/controller.c ****   current_init();
- 146              		.loc 1 43 3 view .LVU16
+  42:Controller/controller.c **** 
+  43:Controller/controller.c ****   /// 电流采样初始化
+  44:Controller/controller.c ****   current_init();
+ 146              		.loc 1 44 3 view .LVU16
  147 00bc FFF7FEFF 		bl	current_init
  148              	.LVL15:
-  44:Controller/controller.c ****   /// VBUS电压采样初始化
-  45:Controller/controller.c ****   vbus_init();
- 149              		.loc 1 45 3 view .LVU17
+  45:Controller/controller.c ****   /// VBUS电压采样初始化
+  46:Controller/controller.c ****   vbus_init();
+ 149              		.loc 1 46 3 view .LVU17
  150 00c0 FFF7FEFF 		bl	vbus_init
  151              	.LVL16:
-  46:Controller/controller.c ****   /// 启动PWM
-  47:Controller/controller.c ****   pwm_start();
- 152              		.loc 1 47 3 view .LVU18
+  47:Controller/controller.c ****   /// 启动PWM
+  48:Controller/controller.c ****   pwm_start();
+ 152              		.loc 1 48 3 view .LVU18
  153 00c4 FFF7FEFF 		bl	pwm_start
  154              	.LVL17:
-  48:Controller/controller.c **** 
-  49:Controller/controller.c ****   state_set(STATE_IDLE);
- 155              		.loc 1 49 3 view .LVU19
+  49:Controller/controller.c **** 
+  50:Controller/controller.c ****   state_set(STATE_IDLE);
+ 155              		.loc 1 50 3 view .LVU19
  156 00c8 2846     		mov	r0, r5
  157 00ca FFF7FEFF 		bl	state_set
  158              	.LVL18:
-  50:Controller/controller.c **** }
- 159              		.loc 1 50 1 is_stmt 0 view .LVU20
+  51:Controller/controller.c **** }
+ 159              		.loc 1 51 1 is_stmt 0 view .LVU20
  160 00ce 07B0     		add	sp, sp, #28
  161              		.cfi_def_cfa_offset 20
  162              		@ sp needed
@@ -237,13 +238,13 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  177              		.thumb
  178              		.thumb_func
  180              	controller_step:
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 5
+
+
  181              	.LFB240:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 5
-
-
-  51:Controller/controller.c **** 
-  52:Controller/controller.c **** void controller_step(void) {
- 182              		.loc 1 52 28 is_stmt 1 view -0
+  52:Controller/controller.c **** 
+  53:Controller/controller.c **** void controller_step(void) {
+ 182              		.loc 1 53 28 is_stmt 1 view -0
  183              		.cfi_startproc
  184              		@ args = 0, pretend = 0, frame = 8
  185              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -252,32 +253,32 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  188              		.cfi_offset 14, -4
  189 0002 83B0     		sub	sp, sp, #12
  190              		.cfi_def_cfa_offset 16
-  53:Controller/controller.c ****   float vbus = vbus_get();
- 191              		.loc 1 53 3 view .LVU22
- 192              		.loc 1 53 16 is_stmt 0 view .LVU23
- 193 0004 FFF7FEFF 		bl	vbus_get
+  54:Controller/controller.c ****   float temp = temp_get();
+ 191              		.loc 1 54 3 view .LVU22
+ 192              		.loc 1 54 16 is_stmt 0 view .LVU23
+ 193 0004 FFF7FEFF 		bl	temp_get
  194              	.LVL19:
  195 0008 8DED010A 		vstr.32	s0, [sp, #4]
  196              	.LVL20:
-  54:Controller/controller.c ****   memcpy(g_tmp, &vbus, sizeof(vbus));
- 197              		.loc 1 54 3 is_stmt 1 view .LVU24
+  55:Controller/controller.c ****   memcpy(g_tmp, &temp, sizeof(temp));
+ 197              		.loc 1 55 3 is_stmt 1 view .LVU24
  198 000c 0448     		ldr	r0, .L7
  199 000e 019B     		ldr	r3, [sp, #4]
  200 0010 0360     		str	r3, [r0]
-  55:Controller/controller.c ****   dev_usart_write(g_tmp, sizeof(g_tmp));
- 201              		.loc 1 55 3 view .LVU25
+  56:Controller/controller.c ****   dev_usart_write(g_tmp, sizeof(g_tmp));
+ 201              		.loc 1 56 3 view .LVU25
  202 0012 0821     		movs	r1, #8
  203 0014 FFF7FEFF 		bl	dev_usart_write
  204              	.LVL21:
-  56:Controller/controller.c **** }...
- 205              		.loc 1 56 1 is_stmt 0 view .LVU26
+  57:Controller/controller.c **** }...
+ 205              		.loc 1 57 1 is_stmt 0 view .LVU26
  206 0018 03B0     		add	sp, sp, #12
  207              		.cfi_def_cfa_offset 4
  208              		@ sp needed
  209 001a 5DF804FB 		ldr	pc, [sp], #4
  210              	.LVL22:
  211              	.L8:
- 212              		.loc 1 56 1 view .LVU27
+ 212              		.loc 1 57 1 view .LVU27
  213 001e 00BF     		.align	2
  214              	.L7:
  215 0020 00000000 		.word	g_tmp
@@ -297,10 +298,10 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  233              	.Letext0:
  234              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  235              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 6
+
+
  236              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 6
-
-
  237              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  238              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
  239              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
@@ -313,21 +314,22 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 1
  246              		.file 14 "Controller/./Sensors/current.h"
  247              		.file 15 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
  248              		.file 16 "Controller/./Devices/dev_usart.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s 			page 7
+ 249              		.file 17 "Controller/Sensors/./temp.h"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 controller.c
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:21     .text.controller_init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:27     .text.controller_init:00000000 controller_init
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:167    .text.controller_init:000000d4 $d
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:230    .bss.g_driver:00000000 g_driver
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:174    .text.controller_step:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:180    .text.controller_step:00000000 controller_step
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:215    .text.controller_step:00000020 $d
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:223    .data.g_tmp:00000000 g_tmp
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:220    .data.g_tmp:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccMroKKf.s:227    .bss.g_driver:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:21     .text.controller_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:27     .text.controller_init:00000000 controller_init
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:167    .text.controller_init:000000d4 $d
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:230    .bss.g_driver:00000000 g_driver
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:174    .text.controller_step:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:180    .text.controller_step:00000000 controller_step
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:215    .text.controller_step:00000020 $d
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:223    .data.g_tmp:00000000 g_tmp
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:220    .data.g_tmp:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cco6DTCR.s:227    .bss.g_driver:00000000 $d
 
 UNDEFINED SYMBOLS
 dev_usart_init
@@ -344,5 +346,5 @@ vbus_init
 pwm_start
 state_set
 hspi3
-vbus_get
+temp_get
 dev_usart_write

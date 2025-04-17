@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
   29:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * A sample implementation of pvPortMalloc() and vPortFree() that combines
   30:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * (coalescences) adjacent memory blocks as they are freed, and in so doing
   31:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * limits memory fragmentation.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 2
 
 
   32:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
   86:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * Called automatically to setup the required heap structures the first time
   87:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  * pvPortMalloc() is called.
   88:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c ****  */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 3
 
 
   89:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** static void prvHeapInit( void );
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  143:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				xWantedSize += xHeapStructSize;
  144:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  145:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				/* Ensure that blocks are always aligned to the required number
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 4
 
 
  146:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				of bytes. */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  200:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 						pxNewBlockLink->xBlockSize = pxBlock->xBlockSize - xWantedSize;
  201:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 						pxBlock->xBlockSize = xWantedSize;
  202:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 5
 
 
  203:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 						/* Insert the new block into the list of free blocks. */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  257:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		}
  258:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	}
  259:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	#endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 6
 
 
  260:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  314:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  315:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** size_t xPortGetFreeHeapSize( void )
  316:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 7
 
 
  317:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	return xFreeBytesRemaining;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
   52 000a 21F00701 		bic	r1, r1, #7
   53              	.LVL3:
  347:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		xTotalHeapSize -= uxAddress - ( size_t ) ucHeap;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 8
 
 
   54              		.loc 1 347 3 is_stmt 1 view .LVU13
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  364:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	pxEnd->pxNextFreeBlock = NULL;
   91              		.loc 1 364 2 is_stmt 1 view .LVU31
   92              		.loc 1 364 25 is_stmt 0 view .LVU32
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 9
 
 
   93 002c 1960     		str	r1, [r3]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  132 0050 00000000 		.word	xStart
  133 0054 00000000 		.word	pxEnd
  134 0058 00000000 		.word	xMinimumEverFreeBytesRemaining
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 10
 
 
  135 005c 00000000 		.word	xFreeBytesRemaining
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  173 000a 5168     		ldr	r1, [r2, #4]
  174              		.loc 1 396 12 view .LVU60
  175 000c 02EB010C 		add	ip, r2, r1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 11
 
 
  176              		.loc 1 396 4 view .LVU61
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  195              		.loc 1 431 4 is_stmt 0 view .LVU71
  196 0020 9042     		cmp	r0, r2
  197 0022 19D0     		beq	.L16
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 12
 
 
  432:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	{
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  234 003e 1944     		add	r1, r1, r3
  235 0040 4160     		str	r1, [r0, #4]
  415:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 13
 
 
  236              		.loc 1 415 4 is_stmt 1 view .LVU87
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  279              		.align	1
  280              		.global	pvPortMalloc
  281              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 14
 
 
  282              		.thumb
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  323 0016 002C     		cmp	r4, #0
  324 0018 50D0     		beq	.L36
  143:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 15
 
 
  325              		.loc 1 143 5 is_stmt 1 view .LVU114
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  362 003a 04E0     		b	.L28
  363              	.LVL30:
  364              	.L42:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 16
 
 
  126:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		}
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  185:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  404              		.loc 1 185 48 is_stmt 0 view .LVU147
  405 005e 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 17
 
 
  185:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
   25:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * 1 tab == 4 spaces!
   26:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ****  */
   27:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 18
 
 
   28:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
   82:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT;								\
   83:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 																				\
   84:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	/* Barriers are normally not required but do ensure the code is completely	\
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 19
 
 
   85:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	within the specified behaviour for the architecture. */						\
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  139:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#if( configMAX_PRIORITIES > 32 )
  140:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 		#error configUSE_PORT_OPTIMISED_TASK_SELECTION can only be set to 1 when configMAX_PRIORITIES is 
  141:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#endif
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 20
 
 
  142:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  429              		.loc 2 193 1 view .LVU158
  194:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 
  195:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	__asm volatile
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 21
 
 
  430              		.loc 2 195 2 view .LVU159
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  470 0096 1949     		ldr	r1, .L43+16
  471 0098 0968     		ldr	r1, [r1]
  213:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 					{
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 22
 
 
  472              		.loc 1 213 8 view .LVU174
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  512              	.LVL40:
  261:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	return pvReturn;
  513              		.loc 1 261 2 is_stmt 1 view .LVU189
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 23
 
 
  514 00c2 15F0070F 		tst	r5, #7
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  559              		.loc 1 263 1 view .LVU199
  560 00ea 00BF     		.align	2
  561              	.L43:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 24
 
 
  562 00ec 00000000 		.word	pxEnd
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  608 0014 1342     		tst	r3, r2
  609 0016 08D1     		bne	.L47
  281:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		configASSERT( pxLink->pxNextFreeBlock == NULL );
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 25
 
 
  610              		.loc 1 281 3 discriminator 1 view .LVU210
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  655              	.L50:
  656              	.LBE19:
  657              	.LBE18:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 26
 
 
  282:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  309:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 		}
  695              		.loc 1 309 28 is_stmt 1 view .LVU239
  312:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 27
 
 
  696              		.loc 1 312 1 is_stmt 0 view .LVU240
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  750              	.LFB8:
  322:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	return xMinimumEverFreeBytesRemaining;
  751              		.loc 1 322 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 28
 
 
  752              		.cfi_startproc
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  802 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
  803              		.cfi_def_cfa_offset 24
  804              		.cfi_offset 3, -24
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 29
 
 
  805              		.cfi_offset 4, -20
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  466:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				if( pxBlock->xBlockSize < xMinSize )
  467:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				{
  468:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 					xMinSize = pxBlock->xBlockSize;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 30
 
 
  469:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 				}
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  445:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
  871              		.loc 1 445 35 view .LVU276
  872 0034 4FF0FF36 		mov	r6, #-1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 31
 
 
  445:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  911 005c 074B     		ldr	r3, .L73+20
  912 005e 1B68     		ldr	r3, [r3]
  913 0060 3B61     		str	r3, [r7, #16]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 32
 
 
  489:Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c **** 	}
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  980      00000000 
  980      00000000 
  980      00000000 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 33
 
 
  980      00000000 
@@ -1929,50 +1929,50 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 1
  985              		.file 5 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  986              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/include/portable.h"
  987              		.file 7 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 heap_4.c
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:21     .text.prvHeapInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:26     .text.prvHeapInit:00000000 prvHeapInit
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:131    .text.prvHeapInit:0000004c $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:979    .bss.ucHeap:00000000 ucHeap
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:973    .bss.xStart:00000000 xStart
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:967    .bss.pxEnd:00000000 pxEnd
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:955    .bss.xMinimumEverFreeBytesRemaining:00000000 xMinimumEverFreeBytesRemaining
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:961    .bss.xFreeBytesRemaining:00000000 xFreeBytesRemaining
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:937    .bss.xBlockAllocatedBit:00000000 xBlockAllocatedBit
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:141    .text.prvInsertBlockIntoFreeList:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:146    .text.prvInsertBlockIntoFreeList:00000000 prvInsertBlockIntoFreeList
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:273    .text.prvInsertBlockIntoFreeList:0000005c $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:279    .text.pvPortMalloc:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:285    .text.pvPortMalloc:00000000 pvPortMalloc
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:562    .text.pvPortMalloc:000000ec $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:949    .bss.xNumberOfSuccessfulAllocations:00000000 xNumberOfSuccessfulAllocations
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:572    .text.vPortFree:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:578    .text.vPortFree:00000000 vPortFree
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:710    .text.vPortFree:00000070 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:943    .bss.xNumberOfSuccessfulFrees:00000000 xNumberOfSuccessfulFrees
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:717    .text.xPortGetFreeHeapSize:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:723    .text.xPortGetFreeHeapSize:00000000 xPortGetFreeHeapSize
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:738    .text.xPortGetFreeHeapSize:00000008 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:743    .text.xPortGetMinimumEverFreeHeapSize:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:749    .text.xPortGetMinimumEverFreeHeapSize:00000000 xPortGetMinimumEverFreeHeapSize
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:764    .text.xPortGetMinimumEverFreeHeapSize:00000008 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:769    .text.vPortInitialiseBlocks:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:775    .text.vPortInitialiseBlocks:00000000 vPortInitialiseBlocks
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:788    .text.vPortGetHeapStats:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:794    .text.vPortGetHeapStats:00000000 vPortGetHeapStats
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:924    .text.vPortGetHeapStats:00000068 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:934    .bss.xBlockAllocatedBit:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:940    .bss.xNumberOfSuccessfulFrees:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:946    .bss.xNumberOfSuccessfulAllocations:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:952    .bss.xMinimumEverFreeBytesRemaining:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:958    .bss.xFreeBytesRemaining:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:964    .bss.pxEnd:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:970    .bss.xStart:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccnM5bfg.s:976    .bss.ucHeap:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:21     .text.prvHeapInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:26     .text.prvHeapInit:00000000 prvHeapInit
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:131    .text.prvHeapInit:0000004c $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:979    .bss.ucHeap:00000000 ucHeap
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:973    .bss.xStart:00000000 xStart
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:967    .bss.pxEnd:00000000 pxEnd
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:955    .bss.xMinimumEverFreeBytesRemaining:00000000 xMinimumEverFreeBytesRemaining
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:961    .bss.xFreeBytesRemaining:00000000 xFreeBytesRemaining
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:937    .bss.xBlockAllocatedBit:00000000 xBlockAllocatedBit
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:141    .text.prvInsertBlockIntoFreeList:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:146    .text.prvInsertBlockIntoFreeList:00000000 prvInsertBlockIntoFreeList
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:273    .text.prvInsertBlockIntoFreeList:0000005c $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:279    .text.pvPortMalloc:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:285    .text.pvPortMalloc:00000000 pvPortMalloc
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:562    .text.pvPortMalloc:000000ec $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:949    .bss.xNumberOfSuccessfulAllocations:00000000 xNumberOfSuccessfulAllocations
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:572    .text.vPortFree:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:578    .text.vPortFree:00000000 vPortFree
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:710    .text.vPortFree:00000070 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:943    .bss.xNumberOfSuccessfulFrees:00000000 xNumberOfSuccessfulFrees
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:717    .text.xPortGetFreeHeapSize:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:723    .text.xPortGetFreeHeapSize:00000000 xPortGetFreeHeapSize
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:738    .text.xPortGetFreeHeapSize:00000008 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:743    .text.xPortGetMinimumEverFreeHeapSize:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:749    .text.xPortGetMinimumEverFreeHeapSize:00000000 xPortGetMinimumEverFreeHeapSize
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:764    .text.xPortGetMinimumEverFreeHeapSize:00000008 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:769    .text.vPortInitialiseBlocks:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:775    .text.vPortInitialiseBlocks:00000000 vPortInitialiseBlocks
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:788    .text.vPortGetHeapStats:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:794    .text.vPortGetHeapStats:00000000 vPortGetHeapStats
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:924    .text.vPortGetHeapStats:00000068 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:934    .bss.xBlockAllocatedBit:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:940    .bss.xNumberOfSuccessfulFrees:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:946    .bss.xNumberOfSuccessfulAllocations:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:952    .bss.xMinimumEverFreeBytesRemaining:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:958    .bss.xFreeBytesRemaining:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:964    .bss.pxEnd:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:970    .bss.xStart:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccQn35oI.s:976    .bss.ucHeap:00000000 $d
 
 UNDEFINED SYMBOLS
 vTaskSuspendAll

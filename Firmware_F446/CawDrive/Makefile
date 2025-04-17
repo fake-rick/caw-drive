@@ -89,7 +89,8 @@ Controller/State/state.c \
 Controller/controller.c \
 Controller/Sensors/current.c \
 Controller/PWM/pwm.c \
-Controller/Sensors/vbus.c
+Controller/Sensors/vbus.c \
+Controller/Sensors/temp.c
 
 # ASM sources
 ASM_SOURCES =  \

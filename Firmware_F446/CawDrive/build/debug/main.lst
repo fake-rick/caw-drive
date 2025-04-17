@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
   27:Core/Src/main.c **** #include "tim.h"
   28:Core/Src/main.c **** #include "usart.h"
   29:Core/Src/main.c **** #include "gpio.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 2
 
 
   30:Core/Src/main.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
   84:Core/Src/main.c **** 
   85:Core/Src/main.c ****   /* USER CODE BEGIN Init */
   86:Core/Src/main.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 3
 
 
   87:Core/Src/main.c ****   /* USER CODE END Init */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  141:Core/Src/main.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
  142:Core/Src/main.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
  143:Core/Src/main.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 4
 
 
  144:Core/Src/main.c ****   /** Configure the main internal regulator output voltage
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		.loc 1 194 1 is_stmt 0 view .LVU1
   35 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 5
 
 
   36              		.cfi_def_cfa_offset 8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
   73              		.loc 1 212 1 is_stmt 1 view -0
   74              		.cfi_startproc
   75              		@ Volatile: function does not return.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 6
 
 
   76              		@ args = 0, pretend = 0, frame = 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
   45:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   46:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
   47:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_INLINE                        static inline
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 7
 
 
   48:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  102:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_READ
  103:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
  104:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 8
 
 
  105:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  159:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = 0u;
  160:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
  161:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 9
 
 
  162:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  216:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+l" (r)
  217:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
  218:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 10
 
 
  219:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=r" (r)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  273:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  274:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  275:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 11
 
 
  276:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Memory Barrier
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  330:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  331:Drivers/CMSIS/Include/cmsis_gcc.h ****   int16_t result;
  332:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 12
 
 
  333:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM ("revsh %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  387:Drivers/CMSIS/Include/cmsis_gcc.h ****     result <<= 1U;
  388:Drivers/CMSIS/Include/cmsis_gcc.h ****     result |= value & 1U;
  389:Drivers/CMSIS/Include/cmsis_gcc.h ****     s--;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 13
 
 
  390:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  444:Drivers/CMSIS/Include/cmsis_gcc.h ****    return ((uint8_t) result);    /* Add explicit type cast here */
  445:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  446:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 14
 
 
  447:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  501:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  502:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  503:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   STR Exclusive (16 bit)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 15
 
 
  504:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a exclusive STR instruction for 16 bit values.
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  558:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  ARG2  Bit position to saturate to (1..32)
  559:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return             Saturated value
  560:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 16
 
 
  561:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __SSAT(ARG1, ARG2) \
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  615:Drivers/CMSIS/Include/cmsis_gcc.h ****     /* Prior to GCC 4.8, "Q" will be expanded to [rx, #0] which is not
  616:Drivers/CMSIS/Include/cmsis_gcc.h ****        accepted by assembler. So has to use following less efficient pattern.
  617:Drivers/CMSIS/Include/cmsis_gcc.h ****     */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 17
 
 
  618:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrbt %0, [%1]" : "=r" (result) : "r" (ptr) : "memory" );
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  672:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  673:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  674:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   STRT Unprivileged (16 bit)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 18
 
 
  675:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a Unprivileged STRT instruction for 16 bit values.
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  729:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    sat  Bit position to saturate to (0..31)
  730:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return             Saturated value
  731:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 19
 
 
  732:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __USAT(int32_t val, uint32_t sat)
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  786:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  787:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Load-Acquire (32 bit)
  788:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a LDA instruction for 32 bit values.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 20
 
 
  789:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  843:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint8_t __LDAEXB(volatile uint8_t *ptr)
  844:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  845:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t result;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 21
 
 
  846:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  900:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Store-Release Exclusive (16 bit)
  901:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a STLH exclusive instruction for 16 bit values.
  902:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  value  Value to store
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 22
 
 
  903:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to location
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  957:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting special-purpose register PRIMASK.
  958:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
  959:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 23
 
 
  960:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  129              		.loc 1 142 3 is_stmt 1 view .LVU18
  142:Core/Src/main.c **** 
  130              		.loc 1 142 22 is_stmt 0 view .LVU19
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 24
 
 
  131 0010 0023     		movs	r3, #0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  152:Core/Src/main.c ****   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
  172              		.loc 1 152 36 is_stmt 0 view .LVU33
  173 0048 0123     		movs	r3, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 25
 
 
  174 004a 0793     		str	r3, [sp, #28]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  209              		.loc 1 161 6 discriminator 1 view .LVU52
  210 0070 90B9     		cbnz	r0, .L13
  168:Core/Src/main.c ****                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 26
 
 
  211              		.loc 1 168 3 is_stmt 1 view .LVU53
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  177:Core/Src/main.c ****   }
  251              		.loc 1 177 5 view .LVU68
  252 009c FFF7FEFF 		bl	Error_Handler
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 27
 
 
  253              	.LVL8:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  102:Core/Src/main.c ****   MX_ADC3_Init();
  301              		.loc 1 102 3 view .LVU77
  302 001e FFF7FEFF 		bl	MX_ADC2_Init
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 28
 
 
  303              	.LVL16:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  346              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h"
  347              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h"
  348              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 29
 
 
  349              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
@@ -1694,21 +1694,21 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 1
  359              		.file 20 "Core/Inc/dma.h"
  360              		.file 21 "Core/Inc/gpio.h"
  361              		.file 22 "<built-in>"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s 			page 30
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:21     .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:27     .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:60     .text.HAL_TIM_PeriodElapsedCallback:00000014 $d
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:65     .text.Error_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:71     .text.Error_Handler:00000000 Error_Handler
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:103    .text.SystemClock_Config:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:109    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:257    .text.SystemClock_Config:000000a0 $d
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:263    .text.main:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccXuyKjq.s:269    .text.main:00000000 main
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:21     .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:27     .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:60     .text.HAL_TIM_PeriodElapsedCallback:00000014 $d
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:65     .text.Error_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:71     .text.Error_Handler:00000000 Error_Handler
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:103    .text.SystemClock_Config:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:109    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:257    .text.SystemClock_Config:000000a0 $d
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:263    .text.main:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccsfn4p3.s:269    .text.main:00000000 main
 
 UNDEFINED SYMBOLS
 HAL_IncTick

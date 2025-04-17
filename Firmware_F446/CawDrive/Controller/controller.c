@@ -7,6 +7,7 @@
 #include "./PWM/pwm.h"
 #include "./Sensors/current.h"
 #include "./State/state.h"
+#include "./temp.h"
 #include "./vbus.h"
 
 drv8323_t g_driver;
@@ -50,7 +51,7 @@ void controller_init(void) {
 }
 
 void controller_step(void) {
-  float vbus = vbus_get();
-  memcpy(g_tmp, &vbus, sizeof(vbus));
+  float temp = temp_get();
+  memcpy(g_tmp, &temp, sizeof(temp));
   dev_usart_write(g_tmp, sizeof(g_tmp));
 }
