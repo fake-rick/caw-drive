@@ -6,6 +6,7 @@
 #include "./Drivers/drv8323/drv8323.h"
 #include "./PWM/pwm.h"
 #include "./Sensors/current.h"
+#include "./Sensors/hall.h"
 #include "./State/state.h"
 #include "./temp.h"
 #include "./vbus.h"
@@ -39,19 +40,17 @@ void controller_init(void) {
   drv8323_write_ocpcr(&g_driver, TRETRY_50US, DEADTIME_50NS, OCP_NONE,
                       OCP_DEG_8US, VDS_LVL_1_88);
   drv8323_enable_gd(&g_driver);
-
-  /// 电流采样初始化
+  HAL_Delay(10);
   current_init();
-  /// VBUS电压采样初始化
   vbus_init();
-  /// 启动PWM
-  pwm_start();
+  pwm_init();
+  hall_init();
 
   state_set(STATE_IDLE);
 }
 
 void controller_step(void) {
   float temp = temp_get();
-  memcpy(g_tmp, &temp, sizeof(temp));
-  dev_usart_write(g_tmp, sizeof(g_tmp));
+  // memcpy(g_tmp, &temp, sizeof(temp));
+  // dev_usart_write(g_tmp, sizeof(g_tmp));
 }

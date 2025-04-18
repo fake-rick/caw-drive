@@ -9,6 +9,7 @@
 #define PWM_CH2 0x00000004U
 #define PWM_CH3 0x00000008U
 
+void pwm_init(void);
 void pwm_start(void);
 void pwm_stop(void);
 

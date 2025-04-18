@@ -69,6 +69,8 @@ ln -s ../../caw-embedded caw_embedded
 
 ![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-1.png)
 
+![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-4.png)
+
 ![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-2.png)
 
 ![](https://github.com/fake-rick/caw-drive/blob/master/Docs/imgs/cawdrive-3.png)

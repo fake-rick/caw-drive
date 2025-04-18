@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
   27:Controller/Sensors/current.c **** 
   28:Controller/Sensors/current.c **** static uint8_t g_tmp[16] = {0, 0, 0, 0, 0, 0, 0,    0,
   29:Controller/Sensors/current.c ****                             0, 0, 0, 0, 0, 0, 0x80, 0x7f};
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 2
 
 
   30:Controller/Sensors/current.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
   55              		.loc 1 58 13 is_stmt 0 view .LVU11
   56 0010 5A4A     		ldr	r2, .L14+8
   57 0012 9342     		cmp	r3, r2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 3
 
 
   58 0014 6DD0     		beq	.L12
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
   85              	.LVL2:
   86              	.L10:
   87              	.LBB2:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 4
 
 
   37:Controller/Sensors/current.c ****     if (0 == g_adc1_state) {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
   42:Controller/Sensors/current.c ****       }
  127              		.loc 1 42 9 is_stmt 1 view .LVU37
   42:Controller/Sensors/current.c ****       }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 5
 
 
  128              		.loc 1 42 22 is_stmt 0 view .LVU38
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  169              		.loc 1 50 7 is_stmt 1 view .LVU51
   50:Controller/Sensors/current.c ****       if (100 == ++adc2_cnt) {
  170              		.loc 1 50 19 is_stmt 0 view .LVU52
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 6
 
 
  171 00a4 404A     		ldr	r2, .L14+52
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  213 00ec C2ED007A 		vstr.32	s15, [r2]
  214 00f0 91E7     		b	.L4
  215              	.LVL12:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 7
 
 
  216              	.L12:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  254              		.loc 1 63 21 is_stmt 0 view .LVU80
  255 0122 DFED1D6A 		vldr.32	s13, .L14+36
  256 0126 87EEA67A 		vdiv.f32	s14, s15, s13
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 8
 
 
  257 012a 234A     		ldr	r2, .L14+68
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
   79:Controller/Sensors/current.c ****     g_current[2] = g_ic;
  299              		.loc 1 79 18 is_stmt 0 view .LVU93
  300 0166 124A     		ldr	r2, .L14+60
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 9
 
 
  301 0168 1268     		ldr	r2, [r2]	@ float
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  353              		.cfi_offset 14, -4
   88:Controller/Sensors/current.c ****   // 计算增益(计算出电压值 除以 采样电阻值 除以 放大倍数)
   89:Controller/Sensors/current.c ****   g_gain = (ADC_VOLTAGE_REF / ADC_RESOLUTION) / (SHUNT_RESISTANCE * AMP_GAIN);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 10
 
 
  354              		.loc 1 89 3 view .LVU97
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  402 0002 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
  403              		.loc 1 97 6 view .LVU106
  404 0004 82B1     		cbz	r2, .L22
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 11
 
 
  405 0006 0346     		mov	r3, r0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  449 0032 7047     		bx	lr
  450              	.LVL29:
  451              	.L24:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 12
 
 
   98:Controller/Sensors/current.c ****     return -1;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  524              		.section	.bss.g_gain,"aw",%nobits
  525              		.align	2
  528              	g_gain:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 13
 
 
  529 0000 00000000 		.space	4
@@ -747,48 +747,48 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 1
  558              		.file 10 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
  559              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h"
  560              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 current.c
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:21     .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:27     .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:312    .text.HAL_ADCEx_InjectedConvCpltCallback:00000174 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:504    .bss.g_adc1_state:00000000 g_adc1_state
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:499    .bss.g_adc2_state:00000000 g_adc2_state
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:494    .bss.g_adc3_state:00000000 g_adc3_state
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:546    .bss.g_ia_offset:00000000 g_ia_offset
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:483    .bss.adc1_cnt.2:00000000 adc1_cnt.2
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:528    .bss.g_gain:00000000 g_gain
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:522    .bss.g_ia:00000000 g_ia
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:540    .bss.g_ib_offset:00000000 g_ib_offset
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:477    .bss.adc2_cnt.1:00000000 adc2_cnt.1
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:516    .bss.g_ib:00000000 g_ib
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:534    .bss.g_ic_offset:00000000 g_ic_offset
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:471    .bss.adc3_cnd.0:00000000 adc3_cnd.0
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:510    .bss.g_ic:00000000 g_ic
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:489    .bss.g_current:00000000 g_current
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:338    .text.current_init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:344    .text.current_init:00000000 current_init
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:376    .text.current_init:0000001c $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:385    .text.current_get:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:391    .text.current_get:00000000 current_get
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:460    .text.current_get:0000003c $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:468    .bss.adc3_cnd.0:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:474    .bss.adc2_cnt.1:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:480    .bss.adc1_cnt.2:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:486    .bss.g_current:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:495    .bss.g_adc3_state:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:500    .bss.g_adc2_state:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:505    .bss.g_adc1_state:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:507    .bss.g_ic:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:513    .bss.g_ib:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:519    .bss.g_ia:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:525    .bss.g_gain:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:531    .bss.g_ic_offset:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:537    .bss.g_ib_offset:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccxAqQfJ.s:543    .bss.g_ia_offset:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:21     .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:27     .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:312    .text.HAL_ADCEx_InjectedConvCpltCallback:00000174 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:504    .bss.g_adc1_state:00000000 g_adc1_state
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:499    .bss.g_adc2_state:00000000 g_adc2_state
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:494    .bss.g_adc3_state:00000000 g_adc3_state
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:546    .bss.g_ia_offset:00000000 g_ia_offset
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:483    .bss.adc1_cnt.2:00000000 adc1_cnt.2
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:528    .bss.g_gain:00000000 g_gain
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:522    .bss.g_ia:00000000 g_ia
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:540    .bss.g_ib_offset:00000000 g_ib_offset
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:477    .bss.adc2_cnt.1:00000000 adc2_cnt.1
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:516    .bss.g_ib:00000000 g_ib
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:534    .bss.g_ic_offset:00000000 g_ic_offset
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:471    .bss.adc3_cnd.0:00000000 adc3_cnd.0
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:510    .bss.g_ic:00000000 g_ic
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:489    .bss.g_current:00000000 g_current
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:338    .text.current_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:344    .text.current_init:00000000 current_init
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:376    .text.current_init:0000001c $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:385    .text.current_get:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:391    .text.current_get:00000000 current_get
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:460    .text.current_get:0000003c $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:468    .bss.adc3_cnd.0:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:474    .bss.adc2_cnt.1:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:480    .bss.adc1_cnt.2:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:486    .bss.g_current:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:495    .bss.g_adc3_state:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:500    .bss.g_adc2_state:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:505    .bss.g_adc1_state:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:507    .bss.g_ic:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:513    .bss.g_ib:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:519    .bss.g_ia:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:525    .bss.g_gain:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:531    .bss.g_ic_offset:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:537    .bss.g_ib_offset:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccTDXgv0.s:543    .bss.g_ia_offset:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_TogglePin

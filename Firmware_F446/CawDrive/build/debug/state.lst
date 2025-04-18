@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
   46              	.LFE239:
   48              		.section	.text.led_ctl,"ax",%progbits
   49              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 2
 
 
   50              		.global	led_ctl
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
   24:Controller/State/state.c **** 
   25:Controller/State/state.c ****   if (led_state & 0x04) {
   92              		.loc 1 25 3 view .LVU13
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 3
 
 
   93              		.loc 1 25 6 is_stmt 0 view .LVU14
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
  138              	.LFE240:
  140              		.section	.text.state_step,"ax",%progbits
  141              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 4
 
 
  142              		.global	state_step
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
   47:Controller/State/state.c ****       g_led_state = g_led_state >> 1;
   48:Controller/State/state.c ****       if (0x01 == g_led_state) {
   49:Controller/State/state.c ****         dir = 0;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 5
 
 
   50:Controller/State/state.c ****       }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
  204 0036 1370     		strb	r3, [r2]
   43:Controller/State/state.c ****       if (0x04 == g_led_state) {
  205              		.loc 1 43 7 is_stmt 1 view .LVU37
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 6
 
 
   43:Controller/State/state.c ****       if (0x04 == g_led_state) {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
  246 0064 0B4B     		ldr	r3, .L27+4
  247 0066 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
   60:Controller/State/state.c ****     if (0x01 != g_led_state) {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 7
 
 
  248              		.loc 1 60 8 view .LVU52
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
  299 0000 01       		.byte	1
  300              		.section	.bss.g_state,"aw",%nobits
  303              	g_state:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 8
 
 
  304 0000 00       		.space	1
@@ -429,28 +429,28 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 1
  309              		.file 4 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  310              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
  311              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cconpSCK.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 state.c
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:21     .text.state_set:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:27     .text.state_set:00000000 state_set
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:44     .text.state_set:00000008 $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:303    .bss.g_state:00000000 g_state
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:49     .text.led_ctl:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:55     .text.led_ctl:00000000 led_ctl
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:136    .text.led_ctl:0000005c $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:141    .text.state_step:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:147    .text.state_step:00000000 state_step
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:165    .text.state_step:0000000e $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:284    .text.state_step:00000090 $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:298    .data.g_led_state:00000000 g_led_state
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:293    .bss.dir.0:00000000 dir.0
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:294    .bss.dir.0:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:304    .bss.g_state:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:170    .text.state_step:00000013 $d
-C:\Users\Rick\AppData\Local\Temp\ccRd2TWv.s:170    .text.state_step:00000014 $t
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:21     .text.state_set:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:27     .text.state_set:00000000 state_set
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:44     .text.state_set:00000008 $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:303    .bss.g_state:00000000 g_state
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:49     .text.led_ctl:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:55     .text.led_ctl:00000000 led_ctl
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:136    .text.led_ctl:0000005c $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:141    .text.state_step:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:147    .text.state_step:00000000 state_step
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:165    .text.state_step:0000000e $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:284    .text.state_step:00000090 $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:298    .data.g_led_state:00000000 g_led_state
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:293    .bss.dir.0:00000000 dir.0
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:294    .bss.dir.0:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:304    .bss.g_state:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:170    .text.state_step:00000013 $d
+C:\Users\Rick\AppData\Local\Temp\cconpSCK.s:170    .text.state_step:00000014 $t
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

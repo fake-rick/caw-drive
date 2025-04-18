@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -20,29 +20,29 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 1
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
   19              		.file 1 "Controller/PWM/pwm.c"
-  20              		.section	.text.pwm_start,"ax",%progbits
+  20              		.section	.text.pwm_init,"ax",%progbits
   21              		.align	1
-  22              		.global	pwm_start
+  22              		.global	pwm_init
   23              		.syntax unified
   24              		.thumb
   25              		.thumb_func
-  27              	pwm_start:
+  27              	pwm_init:
   28              	.LFB239:
    1:Controller/PWM/pwm.c **** #include "./pwm.h"
    2:Controller/PWM/pwm.c **** 
-   3:Controller/PWM/pwm.c **** void pwm_start(void) {
-  29              		.loc 1 3 22 view -0
+   3:Controller/PWM/pwm.c **** void pwm_init(void) {
+  29              		.loc 1 3 21 view -0
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
   32              		@ frame_needed = 0, uses_anonymous_args = 0
-  33 0000 10B5     		push	{r4, lr}
+  33 0000 08B5     		push	{r3, lr}
   34              		.cfi_def_cfa_offset 8
-  35              		.cfi_offset 4, -8
+  35              		.cfi_offset 3, -8
   36              		.cfi_offset 14, -4
    4:Controller/PWM/pwm.c ****   TIM1->ARR = 8000 - 1;
   37              		.loc 1 4 3 view .LVU1
   38              		.loc 1 4 13 is_stmt 0 view .LVU2
-  39 0002 124B     		ldr	r3, .L3
+  39 0002 064B     		ldr	r3, .L3
   40 0004 41F63F72 		movw	r2, #7999
   41 0008 DA62     		str	r2, [r3, #44]
    5:Controller/PWM/pwm.c ****   TIM1->CCR4 = 8000 - 2;
@@ -50,159 +50,187 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 1
   43              		.loc 1 5 14 is_stmt 0 view .LVU4
   44 000a 41F63E72 		movw	r2, #7998
   45 000e 1A64     		str	r2, [r3, #64]
-   6:Controller/PWM/pwm.c **** 
-   7:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  46              		.loc 1 7 3 is_stmt 1 view .LVU5
-  47 0010 0F4C     		ldr	r4, .L3+4
-  48 0012 0021     		movs	r1, #0
-  49 0014 2046     		mov	r0, r4
-  50 0016 FFF7FEFF 		bl	HAL_TIM_PWM_Start
-  51              	.LVL0:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 2
+   6:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+  46              		.loc 1 6 3 is_stmt 1 view .LVU5
+  47 0010 0C21     		movs	r1, #12
+  48 0012 0348     		ldr	r0, .L3+4
+  49 0014 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+  50              	.LVL0:
+   7:Controller/PWM/pwm.c **** }
+  51              		.loc 1 7 1 is_stmt 0 view .LVU6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s 			page 2
 
 
-   8:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-  52              		.loc 1 8 3 view .LVU6
-  53 001a 0421     		movs	r1, #4
-  54 001c 2046     		mov	r0, r4
-  55 001e FFF7FEFF 		bl	HAL_TIM_PWM_Start
-  56              	.LVL1:
-   9:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-  57              		.loc 1 9 3 view .LVU7
-  58 0022 0821     		movs	r1, #8
-  59 0024 2046     		mov	r0, r4
-  60 0026 FFF7FEFF 		bl	HAL_TIM_PWM_Start
-  61              	.LVL2:
-  10:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-  62              		.loc 1 10 3 view .LVU8
-  63 002a 0021     		movs	r1, #0
-  64 002c 2046     		mov	r0, r4
-  65 002e FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
-  66              	.LVL3:
-  11:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
-  67              		.loc 1 11 3 view .LVU9
-  68 0032 0421     		movs	r1, #4
-  69 0034 2046     		mov	r0, r4
-  70 0036 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
-  71              	.LVL4:
-  12:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
-  72              		.loc 1 12 3 view .LVU10
-  73 003a 0821     		movs	r1, #8
-  74 003c 2046     		mov	r0, r4
-  75 003e FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
-  76              	.LVL5:
-  13:Controller/PWM/pwm.c **** 
-  14:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
-  77              		.loc 1 14 3 view .LVU11
-  78 0042 0C21     		movs	r1, #12
-  79 0044 2046     		mov	r0, r4
-  80 0046 FFF7FEFF 		bl	HAL_TIM_PWM_Start
-  81              	.LVL6:
-  15:Controller/PWM/pwm.c **** }
-  82              		.loc 1 15 1 is_stmt 0 view .LVU12
-  83 004a 10BD     		pop	{r4, pc}
-  84              	.L4:
-  85              		.align	2
-  86              	.L3:
-  87 004c 00000140 		.word	1073807360
-  88 0050 00000000 		.word	htim1
-  89              		.cfi_endproc
-  90              	.LFE239:
-  92              		.section	.text.pwm_stop,"ax",%progbits
-  93              		.align	1
-  94              		.global	pwm_stop
-  95              		.syntax unified
-  96              		.thumb
-  97              		.thumb_func
-  99              	pwm_stop:
- 100              	.LFB240:
-  16:Controller/PWM/pwm.c **** 
-  17:Controller/PWM/pwm.c **** void pwm_stop(void) {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 3
+  52 0018 08BD     		pop	{r3, pc}
+  53              	.L4:
+  54 001a 00BF     		.align	2
+  55              	.L3:
+  56 001c 00000140 		.word	1073807360
+  57 0020 00000000 		.word	htim1
+  58              		.cfi_endproc
+  59              	.LFE239:
+  61              		.section	.text.pwm_start,"ax",%progbits
+  62              		.align	1
+  63              		.global	pwm_start
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  68              	pwm_start:
+  69              	.LFB240:
+   8:Controller/PWM/pwm.c **** 
+   9:Controller/PWM/pwm.c **** void pwm_start(void) {
+  70              		.loc 1 9 22 is_stmt 1 view -0
+  71              		.cfi_startproc
+  72              		@ args = 0, pretend = 0, frame = 0
+  73              		@ frame_needed = 0, uses_anonymous_args = 0
+  74 0000 10B5     		push	{r4, lr}
+  75              		.cfi_def_cfa_offset 8
+  76              		.cfi_offset 4, -8
+  77              		.cfi_offset 14, -4
+  10:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  78              		.loc 1 10 3 view .LVU8
+  79 0002 0D4C     		ldr	r4, .L7
+  80 0004 0021     		movs	r1, #0
+  81 0006 2046     		mov	r0, r4
+  82 0008 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+  83              	.LVL1:
+  11:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+  84              		.loc 1 11 3 view .LVU9
+  85 000c 0421     		movs	r1, #4
+  86 000e 2046     		mov	r0, r4
+  87 0010 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+  88              	.LVL2:
+  12:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  89              		.loc 1 12 3 view .LVU10
+  90 0014 0821     		movs	r1, #8
+  91 0016 2046     		mov	r0, r4
+  92 0018 FFF7FEFF 		bl	HAL_TIM_PWM_Start
+  93              	.LVL3:
+  13:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+  94              		.loc 1 13 3 view .LVU11
+  95 001c 0021     		movs	r1, #0
+  96 001e 2046     		mov	r0, r4
+  97 0020 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
+  98              	.LVL4:
+  14:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+  99              		.loc 1 14 3 view .LVU12
+ 100 0024 0421     		movs	r1, #4
+ 101 0026 2046     		mov	r0, r4
+ 102 0028 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
+ 103              	.LVL5:
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s 			page 3
 
 
- 101              		.loc 1 17 21 is_stmt 1 view -0
- 102              		.cfi_startproc
- 103              		@ args = 0, pretend = 0, frame = 0
- 104              		@ frame_needed = 0, uses_anonymous_args = 0
- 105 0000 10B5     		push	{r4, lr}
- 106              		.cfi_def_cfa_offset 8
- 107              		.cfi_offset 4, -8
- 108              		.cfi_offset 14, -4
-  18:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
- 109              		.loc 1 18 3 view .LVU14
- 110 0002 0D4C     		ldr	r4, .L7
- 111 0004 0021     		movs	r1, #0
- 112 0006 2046     		mov	r0, r4
- 113 0008 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
- 114              	.LVL7:
-  19:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
- 115              		.loc 1 19 3 view .LVU15
- 116 000c 0421     		movs	r1, #4
- 117 000e 2046     		mov	r0, r4
- 118 0010 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
- 119              	.LVL8:
-  20:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
- 120              		.loc 1 20 3 view .LVU16
- 121 0014 0821     		movs	r1, #8
- 122 0016 2046     		mov	r0, r4
- 123 0018 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
- 124              	.LVL9:
-  21:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
- 125              		.loc 1 21 3 view .LVU17
- 126 001c 0021     		movs	r1, #0
- 127 001e 2046     		mov	r0, r4
- 128 0020 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Stop
- 129              	.LVL10:
-  22:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_2);
- 130              		.loc 1 22 3 view .LVU18
- 131 0024 0421     		movs	r1, #4
- 132 0026 2046     		mov	r0, r4
- 133 0028 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Stop
- 134              	.LVL11:
-  23:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_3);
- 135              		.loc 1 23 3 view .LVU19
- 136 002c 0821     		movs	r1, #8
- 137 002e 2046     		mov	r0, r4
- 138 0030 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Stop
- 139              	.LVL12:
-  24:Controller/PWM/pwm.c **** }...
- 140              		.loc 1 24 1 is_stmt 0 view .LVU20
- 141 0034 10BD     		pop	{r4, pc}
- 142              	.L8:
- 143 0036 00BF     		.align	2
- 144              	.L7:
- 145 0038 00000000 		.word	htim1
- 146              		.cfi_endproc
- 147              	.LFE240:
- 149              		.text
- 150              	.Letext0:
- 151              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 4
+  15:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+ 104              		.loc 1 15 3 view .LVU13
+ 105 002c 0821     		movs	r1, #8
+ 106 002e 2046     		mov	r0, r4
+ 107 0030 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
+ 108              	.LVL6:
+  16:Controller/PWM/pwm.c **** }
+ 109              		.loc 1 16 1 is_stmt 0 view .LVU14
+ 110 0034 10BD     		pop	{r4, pc}
+ 111              	.L8:
+ 112 0036 00BF     		.align	2
+ 113              	.L7:
+ 114 0038 00000000 		.word	htim1
+ 115              		.cfi_endproc
+ 116              	.LFE240:
+ 118              		.section	.text.pwm_stop,"ax",%progbits
+ 119              		.align	1
+ 120              		.global	pwm_stop
+ 121              		.syntax unified
+ 122              		.thumb
+ 123              		.thumb_func
+ 125              	pwm_stop:
+ 126              	.LFB241:
+  17:Controller/PWM/pwm.c **** 
+  18:Controller/PWM/pwm.c **** void pwm_stop(void) {
+ 127              		.loc 1 18 21 is_stmt 1 view -0
+ 128              		.cfi_startproc
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131 0000 10B5     		push	{r4, lr}
+ 132              		.cfi_def_cfa_offset 8
+ 133              		.cfi_offset 4, -8
+ 134              		.cfi_offset 14, -4
+  19:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+ 135              		.loc 1 19 3 view .LVU16
+ 136 0002 0D4C     		ldr	r4, .L11
+ 137 0004 0021     		movs	r1, #0
+ 138 0006 2046     		mov	r0, r4
+ 139 0008 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
+ 140              	.LVL7:
+  20:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
+ 141              		.loc 1 20 3 view .LVU17
+ 142 000c 0421     		movs	r1, #4
+ 143 000e 2046     		mov	r0, r4
+ 144 0010 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
+ 145              	.LVL8:
+  21:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_3);
+ 146              		.loc 1 21 3 view .LVU18
+ 147 0014 0821     		movs	r1, #8
+ 148 0016 2046     		mov	r0, r4
+ 149 0018 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
+ 150              	.LVL9:
+  22:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_1);
+ 151              		.loc 1 22 3 view .LVU19
+ 152 001c 0021     		movs	r1, #0
+ 153 001e 2046     		mov	r0, r4
+ 154 0020 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Stop
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s 			page 4
 
 
- 152              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
- 153              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
- 154              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 155              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 156              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
- 157              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
- 158              		.file 9 "Core/Inc/tim.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s 			page 5
+ 155              	.LVL10:
+  23:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_2);
+ 156              		.loc 1 23 3 view .LVU20
+ 157 0024 0421     		movs	r1, #4
+ 158 0026 2046     		mov	r0, r4
+ 159 0028 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Stop
+ 160              	.LVL11:
+  24:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Stop(&htim1, TIM_CHANNEL_3);
+ 161              		.loc 1 24 3 view .LVU21
+ 162 002c 0821     		movs	r1, #8
+ 163 002e 2046     		mov	r0, r4
+ 164 0030 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Stop
+ 165              	.LVL12:
+  25:Controller/PWM/pwm.c **** }...
+ 166              		.loc 1 25 1 is_stmt 0 view .LVU22
+ 167 0034 10BD     		pop	{r4, pc}
+ 168              	.L12:
+ 169 0036 00BF     		.align	2
+ 170              	.L11:
+ 171 0038 00000000 		.word	htim1
+ 172              		.cfi_endproc
+ 173              	.LFE241:
+ 175              		.text
+ 176              	.Letext0:
+ 177              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+ 178              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+ 179              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
+ 180              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 181              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 182              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+ 183              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
+ 184              		.file 9 "Core/Inc/tim.h"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 pwm.c
-C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s:21     .text.pwm_start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s:27     .text.pwm_start:00000000 pwm_start
-C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s:87     .text.pwm_start:0000004c $d
-C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s:93     .text.pwm_stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s:99     .text.pwm_stop:00000000 pwm_stop
-C:\Users\Rick\AppData\Local\Temp\ccX8i4we.s:145    .text.pwm_stop:00000038 $d
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:21     .text.pwm_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:27     .text.pwm_init:00000000 pwm_init
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:56     .text.pwm_init:0000001c $d
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:62     .text.pwm_start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:68     .text.pwm_start:00000000 pwm_start
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:114    .text.pwm_start:00000038 $d
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:119    .text.pwm_stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:125    .text.pwm_stop:00000000 pwm_stop
+C:\Users\Rick\AppData\Local\Temp\ccIPDlkB.s:171    .text.pwm_stop:00000038 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_PWM_Start
-HAL_TIMEx_PWMN_Start
 htim1
+HAL_TIMEx_PWMN_Start
 HAL_TIM_PWM_Stop
 HAL_TIMEx_PWMN_Stop

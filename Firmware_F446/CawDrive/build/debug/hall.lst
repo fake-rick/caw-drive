@@ -1,0 +1,129 @@
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"hall.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Controller/Sensors/hall.c"
+  20              		.section	.text.hall_init,"ax",%progbits
+  21              		.align	1
+  22              		.global	hall_init
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	hall_init:
+  28              	.LFB239:
+   1:Controller/Sensors/hall.c **** #include "./hall.h"
+   2:Controller/Sensors/hall.c **** 
+   3:Controller/Sensors/hall.c **** #include "dev_usart.h"
+   4:Controller/Sensors/hall.c **** #include "tim.h"
+   5:Controller/Sensors/hall.c **** 
+   6:Controller/Sensors/hall.c **** void hall_init(void) { HAL_TIMEx_HallSensor_Start_IT(&htim3); }
+  29              		.loc 1 6 22 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  37              		.loc 1 6 24 view .LVU1
+  38 0002 0248     		ldr	r0, .L3
+  39 0004 FFF7FEFF 		bl	HAL_TIMEx_HallSensor_Start_IT
+  40              	.LVL0:
+  41              		.loc 1 6 63 is_stmt 0 view .LVU2
+  42 0008 08BD     		pop	{r3, pc}
+  43              	.L4:
+  44 000a 00BF     		.align	2
+  45              	.L3:
+  46 000c 00000000 		.word	htim3
+  47              		.cfi_endproc
+  48              	.LFE239:
+  50              		.section	.rodata.HAL_TIM_IC_CaptureCallback.str1.4,"aMS",%progbits,1
+  51              		.align	2
+  52              	.LC0:
+  53 0000 68656C6C 		.ascii	"hello\015\012\000"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s 			page 2
+
+
+  53      6F0D0A00 
+  54              		.section	.text.HAL_TIM_IC_CaptureCallback,"ax",%progbits
+  55              		.align	1
+  56              		.global	HAL_TIM_IC_CaptureCallback
+  57              		.syntax unified
+  58              		.thumb
+  59              		.thumb_func
+  61              	HAL_TIM_IC_CaptureCallback:
+  62              	.LVL1:
+  63              	.LFB240:
+   7:Controller/Sensors/hall.c **** 
+   8:Controller/Sensors/hall.c **** void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim) {
+  64              		.loc 1 8 58 is_stmt 1 view -0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 0, uses_anonymous_args = 0
+  68              		.loc 1 8 58 is_stmt 0 view .LVU4
+  69 0000 08B5     		push	{r3, lr}
+  70              		.cfi_def_cfa_offset 8
+  71              		.cfi_offset 3, -8
+  72              		.cfi_offset 14, -4
+   9:Controller/Sensors/hall.c ****   dev_usart_write("hello\r\n", 8);
+  73              		.loc 1 9 3 is_stmt 1 view .LVU5
+  74 0002 0821     		movs	r1, #8
+  75 0004 0148     		ldr	r0, .L7
+  76              	.LVL2:
+  77              		.loc 1 9 3 is_stmt 0 view .LVU6
+  78 0006 FFF7FEFF 		bl	dev_usart_write
+  79              	.LVL3:
+  10:Controller/Sensors/hall.c **** }...
+  80              		.loc 1 10 1 view .LVU7
+  81 000a 08BD     		pop	{r3, pc}
+  82              	.L8:
+  83              		.align	2
+  84              	.L7:
+  85 000c 00000000 		.word	.LC0
+  86              		.cfi_endproc
+  87              	.LFE240:
+  89              		.text
+  90              	.Letext0:
+  91              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+  92              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
+  93              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
+  94              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+  95              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+  96              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+  97              		.file 8 "Controller/Devices/dev_usart.h"
+  98              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
+  99              		.file 10 "Core/Inc/tim.h"
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 hall.c
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:21     .text.hall_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:27     .text.hall_init:00000000 hall_init
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:46     .text.hall_init:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:51     .rodata.HAL_TIM_IC_CaptureCallback.str1.4:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:55     .text.HAL_TIM_IC_CaptureCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:61     .text.HAL_TIM_IC_CaptureCallback:00000000 HAL_TIM_IC_CaptureCallback
+C:\Users\Rick\AppData\Local\Temp\ccuUzY7i.s:85     .text.HAL_TIM_IC_CaptureCallback:0000000c $d
+
+UNDEFINED SYMBOLS
+HAL_TIMEx_HallSensor_Start_IT
+htim3
+dev_usart_write

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
   43 0006 ADF80E10 		strh	r1, [sp, #14]	@ movhi
   14:Controller/Drivers/drv8323/drv8323.c ****   uint16_t ret;
   44              		.loc 1 14 3 is_stmt 1 view .LVU2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 2
 
 
   15:Controller/Drivers/drv8323/drv8323.c ****   _NSS(0);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
   89              	.L3:
   90 0044 000C0240 		.word	1073875968
   91              		.cfi_endproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 3
 
 
   92              	.LFE239:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  141 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
  142              	.LVL14:
   32:Controller/Drivers/drv8323/drv8323.c ****   _CAL(0);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 4
 
 
  143              		.loc 1 32 3 view .LVU25
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  193              		.section	.text.drv8323_read_fsr2,"ax",%progbits
  194              		.align	1
  195              		.global	drv8323_read_fsr2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 5
 
 
  196              		.syntax unified
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  245 0002 6FEA0171 		mvn	r1, r1, lsl #28
  246              	.LVL24:
  247              		.loc 1 47 45 view .LVU44
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 6
 
 
  248 0006 6FEA5141 		mvn	r1, r1, lsr #17
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
   54:Controller/Drivers/drv8323/drv8323.c **** 
   55:Controller/Drivers/drv8323/drv8323.c **** void drv8323_write_dcr(drv8323_t* self, uint16_t dis_cpuv, uint16_t dis_gdf,
   56:Controller/Drivers/drv8323/drv8323.c ****                        uint16_t otw_rep, uint16_t pwm_mode, uint16_t pwm_com,
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 7
 
 
   57:Controller/Drivers/drv8323/drv8323.c ****                        uint16_t pwm_dir, uint16_t coast, uint16_t brake,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  348 004c 1943     		orrs	r1, r1, r3
  349              	.LVL33:
   62:Controller/Drivers/drv8323/drv8323.c ****   _SPI_WRITE(self, val);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 8
 
 
  350              		.loc 1 62 3 is_stmt 1 view .LVU68
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  399              		.cfi_endproc
  400              	.LFE246:
  402              		.section	.text.drv8323_write_lsr,"ax",%progbits
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 9
 
 
  403              		.align	1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  452              		.align	1
  453              		.global	drv8323_write_ocpcr
  454              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 10
 
 
  455              		.thumb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  501 002c 08BD     		pop	{r3, pc}
  502              		.loc 1 84 1 view .LVU108
  503              		.cfi_endproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 11
 
 
  504              	.LFE248:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  553 0032 1BB2     		sxth	r3, r3
   92:Controller/Drivers/drv8323/drv8323.c ****                  (csa_cal_a << 4) | (csa_cal_b << 3) | (csa_cal_c << 2) |
  554              		.loc 1 92 35 view .LVU121
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 12
 
 
  555 0034 BDF81420 		ldrh	r2, [sp, #20]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  604 000e 92B2     		uxth	r2, r2
  605              	.LVL58:
   99:Controller/Drivers/drv8323/drv8323.c ****   drv8323_write_register(self, DCR, val);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 13
 
 
  606              		.loc 1 99 3 is_stmt 1 view .LVU133
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  656              	.LFE251:
  658              		.section	.text.drv8323_calibrate,"ax",%progbits
  659              		.align	1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 14
 
 
  660              		.global	drv8323_calibrate
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  119:Controller/Drivers/drv8323/drv8323.c **** 
  120:Controller/Drivers/drv8323/drv8323.c ****   // if (val1 & (1 << 10)) {
  121:Controller/Drivers/drv8323/drv8323.c ****   //   _printf("FAULT");
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 15
 
 
  122:Controller/Drivers/drv8323/drv8323.c ****   // }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  176:Controller/Drivers/drv8323/drv8323.c ****   // if (val2 & (1 << 3)) {
  177:Controller/Drivers/drv8323/drv8323.c ****   //   _printf("VGS_HB");
  178:Controller/Drivers/drv8323/drv8323.c ****   // }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 16
 
 
  179:Controller/Drivers/drv8323/drv8323.c ****   // if (val2 & (1 << 2)) {
@@ -954,45 +954,45 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 1
  737              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h"
  738              		.file 9 "Controller/Drivers/drv8323/drv8323.h"
  739              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc1J810c.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 drv8323.c
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:21     .text._SPI_WRITE:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:27     .text._SPI_WRITE:00000000 _SPI_WRITE
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:90     .text._SPI_WRITE:00000044 $d
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:95     .text.drv8323_init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:101    .text.drv8323_init:00000000 drv8323_init
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:158    .text.drv8323_init:00000040 $d
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:163    .text.drv8323_read_fsr1:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:169    .text.drv8323_read_fsr1:00000000 drv8323_read_fsr1
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:194    .text.drv8323_read_fsr2:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:200    .text.drv8323_read_fsr2:00000000 drv8323_read_fsr2
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:225    .text.drv8323_read_register:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:231    .text.drv8323_read_register:00000000 drv8323_read_register
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:260    .text.drv8323_write_register:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:266    .text.drv8323_write_register:00000000 drv8323_write_register
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:291    .text.drv8323_write_dcr:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:297    .text.drv8323_write_dcr:00000000 drv8323_write_dcr
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:362    .text.drv8323_write_hsr:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:368    .text.drv8323_write_hsr:00000000 drv8323_write_hsr
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:403    .text.drv8323_write_lsr:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:409    .text.drv8323_write_lsr:00000000 drv8323_write_lsr
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:452    .text.drv8323_write_ocpcr:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:458    .text.drv8323_write_ocpcr:00000000 drv8323_write_ocpcr
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:507    .text.drv8323_write_csacr:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:513    .text.drv8323_write_csacr:00000000 drv8323_write_csacr
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:578    .text.drv8323_enable_gd:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:584    .text.drv8323_enable_gd:00000000 drv8323_enable_gd
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:618    .text.drv8323_disable_gd:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:624    .text.drv8323_disable_gd:00000000 drv8323_disable_gd
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:659    .text.drv8323_calibrate:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:665    .text.drv8323_calibrate:00000000 drv8323_calibrate
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:690    .text.drv8323_print_faults:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:696    .text.drv8323_print_faults:00000000 drv8323_print_faults
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:710    .text.drv8323_reg_val:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0EfFbq.s:716    .text.drv8323_reg_val:00000000 drv8323_reg_val
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:21     .text._SPI_WRITE:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:27     .text._SPI_WRITE:00000000 _SPI_WRITE
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:90     .text._SPI_WRITE:00000044 $d
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:95     .text.drv8323_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:101    .text.drv8323_init:00000000 drv8323_init
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:158    .text.drv8323_init:00000040 $d
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:163    .text.drv8323_read_fsr1:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:169    .text.drv8323_read_fsr1:00000000 drv8323_read_fsr1
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:194    .text.drv8323_read_fsr2:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:200    .text.drv8323_read_fsr2:00000000 drv8323_read_fsr2
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:225    .text.drv8323_read_register:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:231    .text.drv8323_read_register:00000000 drv8323_read_register
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:260    .text.drv8323_write_register:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:266    .text.drv8323_write_register:00000000 drv8323_write_register
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:291    .text.drv8323_write_dcr:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:297    .text.drv8323_write_dcr:00000000 drv8323_write_dcr
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:362    .text.drv8323_write_hsr:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:368    .text.drv8323_write_hsr:00000000 drv8323_write_hsr
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:403    .text.drv8323_write_lsr:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:409    .text.drv8323_write_lsr:00000000 drv8323_write_lsr
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:452    .text.drv8323_write_ocpcr:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:458    .text.drv8323_write_ocpcr:00000000 drv8323_write_ocpcr
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:507    .text.drv8323_write_csacr:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:513    .text.drv8323_write_csacr:00000000 drv8323_write_csacr
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:578    .text.drv8323_enable_gd:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:584    .text.drv8323_enable_gd:00000000 drv8323_enable_gd
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:618    .text.drv8323_disable_gd:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:624    .text.drv8323_disable_gd:00000000 drv8323_disable_gd
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:659    .text.drv8323_calibrate:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:665    .text.drv8323_calibrate:00000000 drv8323_calibrate
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:690    .text.drv8323_print_faults:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:696    .text.drv8323_print_faults:00000000 drv8323_print_faults
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:710    .text.drv8323_reg_val:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\cc1J810c.s:716    .text.drv8323_reg_val:00000000 drv8323_reg_val
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

@@ -5,5 +5,11 @@
         "adc.h": "c",
         "stm32f4xx_hal_adc_ex.h": "c",
         "vbus.h": "c"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
     }
 }
