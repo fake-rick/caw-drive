@@ -4,6 +4,7 @@
 
 #include "./Devices/dev_usart.h"
 #include "./Drivers/drv8323/drv8323.h"
+#include "./FOC/VF.h"
 #include "./PWM/pwm.h"
 #include "./Sensors/current.h"
 #include "./Sensors/hall.h"
@@ -12,7 +13,10 @@
 #include "./vbus.h"
 
 drv8323_t g_driver;
-static uint8_t g_tmp[8] = {0, 0, 0, 0, 0, 0, 0x80, 0x7f};
+
+float load_data[5];
+static uint8_t g_tmp[24] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,    0,
+                            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x80, 0x7f};
 
 void controller_init(void) {
   /// 初始化串口
@@ -21,9 +25,9 @@ void controller_init(void) {
   /// 配置DRV8323
 
   // 使用PWM_MODE_3X控制时将互补引脚拉低
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET);
 
   drv8323_init(&g_driver, &hspi3);
   drv8323_calibrate(&g_driver);
@@ -40,17 +44,58 @@ void controller_init(void) {
   drv8323_write_ocpcr(&g_driver, TRETRY_50US, DEADTIME_50NS, OCP_NONE,
                       OCP_DEG_8US, VDS_LVL_1_88);
   drv8323_enable_gd(&g_driver);
+
   HAL_Delay(10);
+
+  // rtU.SpeedRef = 800;
+
+  rtU.Vbus = vbus_get();
+
   current_init();
   vbus_init();
-  pwm_init();
   hall_init();
+  pwm_init();
 
-  state_set(STATE_IDLE);
+  // rtU.Motor_OnOff = 1;
+
+  rtU.ud = 0;
+  rtU.uq = 12;
+  rtU.Freq = 4;
+
+  pwm_start();
+
+  state_set(STATE_RUN);
 }
 
 void controller_step(void) {
-  float temp = temp_get();
-  // memcpy(g_tmp, &temp, sizeof(temp));
-  // dev_usart_write(g_tmp, sizeof(g_tmp));
+  // float temp = temp_get();
+  rtU.Vbus = vbus_get();
+}
+
+void core_callback() {
+  // hall_step();
+  // rtU.theta = hall_get_theta();
+  // rtU.SpeedFd = hall_get_speed();
+
+  float current[3];
+
+  current_get(current);
+
+  // rtU.ia = current[0];
+  // rtU.ib = current[1];
+  // rtU.ic = current[2];
+  VF_step();
+
+  TIM1->CCR1 = rtY.tABC[0];
+  TIM1->CCR2 = rtY.tABC[1];
+  TIM1->CCR3 = rtY.tABC[2];
+
+  load_data[0] = current[0];
+  load_data[1] = current[1];
+  load_data[2] = current[2];
+  load_data[3] = rtY.tABC[0];
+  load_data[4] = rtY.tABC[1];
+  memcpy(g_tmp, (uint8_t *)load_data, sizeof(load_data));
+
+  dev_usart_write(g_tmp, sizeof(g_tmp));
 }

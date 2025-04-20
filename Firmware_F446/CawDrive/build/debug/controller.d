@@ -34,7 +34,8 @@ build/debug/controller.o: Controller/controller.c \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- Controller/./PWM/pwm.h Core/Inc/tim.h Controller/./Sensors/current.h \
+ Controller/./FOC/VF.h Controller/./FOC/rtwtypes.h Controller/./PWM/pwm.h \
+ Core/Inc/tim.h Controller/./Sensors/current.h \
  Controller/./Sensors/hall.h Controller/./State/state.h \
  Controller/Sensors/./temp.h Controller/Sensors/./vbus.h
 Controller/./controller.h:
@@ -77,6 +78,8 @@ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+Controller/./FOC/VF.h:
+Controller/./FOC/rtwtypes.h:
 Controller/./PWM/pwm.h:
 Core/Inc/tim.h:
 Controller/./Sensors/current.h:

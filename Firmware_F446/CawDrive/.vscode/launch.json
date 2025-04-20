@@ -10,6 +10,10 @@
             "servertype": "openocd",
             "preLaunchTask": "Build STM",
             "device": "stm32f446",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
             "configFiles": [
                 "openocd.cfg"
             ]
@@ -24,6 +28,10 @@
             "servertype": "openocd",
             "preLaunchTask": "Build STM",
             "device": "stm32f446",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
             "configFiles": [
                 "openocd.cfg"
             ]

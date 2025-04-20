@@ -6,18 +6,18 @@
 #include "dev_usart.h"
 #include "stm32f4xx_hal_adc_ex.h"
 
-#define ADC_RESOLUTION 4096.0f
-#define ADC_VOLTAGE_REF 3.3f
-#define SHUNT_RESISTANCE 0.005f
-#define AMP_GAIN 40.0f
+#define ADC_RESOLUTION 4096.0
+#define ADC_VOLTAGE_REF 3.3
+#define SHUNT_RESISTANCE 0.005
+#define AMP_GAIN 40.0
 
-static float g_ia_offset = 0.0f;
-static float g_ib_offset = 0.0f;
-static float g_ic_offset = 0.0f;
-static float g_gain = 0.0f;
-static float g_ia = 0.0f;
-static float g_ib = 0.0f;
-static float g_ic = 0.0f;
+static float g_ia_offset = 0.0;
+static float g_ib_offset = 0.0;
+static float g_ic_offset = 0.0;
+static float g_gain = 0.0;
+static float g_ia = 0.0;
+static float g_ib = 0.0;
+static float g_ic = 0.0;
 
 static uint8_t g_adc1_state = 0;
 static uint8_t g_adc2_state = 0;
@@ -27,6 +27,8 @@ static float g_current[3] = {0.0f, 0.0f, 0.0f};
 
 static uint8_t g_tmp[16] = {0, 0, 0, 0, 0, 0, 0,    0,
                             0, 0, 0, 0, 0, 0, 0x80, 0x7f};
+
+__weak void core_callback() {}
 
 void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef* hadc) {
   static int16_t adc1_cnt = 0;
@@ -79,8 +81,7 @@ void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef* hadc) {
     g_current[1] = g_ib;
     g_current[2] = g_ic;
 
-    // memcpy(g_tmp, g_current, sizeof(g_current));
-    // dev_usart_write(g_tmp, sizeof(g_tmp));
+    core_callback();
   }
 }
 

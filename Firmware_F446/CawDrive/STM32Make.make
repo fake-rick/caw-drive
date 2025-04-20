@@ -77,6 +77,7 @@ endif
 C_SOURCES =  \
 Controller/Devices/dev_usart.c \
 Controller/Drivers/drv8323/drv8323.c \
+Controller/FOC/VF.c \
 Controller/PWM/pwm.c \
 Controller/Sensors/current.c \
 Controller/Sensors/hall.c \
@@ -87,7 +88,6 @@ Controller/controller.c \
 Core/Src/adc.c \
 Core/Src/can.c \
 Core/Src/dma.c \
-Core/Src/freertos.c \
 Core/Src/gpio.c \
 Core/Src/i2c.c \
 Core/Src/main.c \
@@ -122,17 +122,7 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c \
-Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c \
-Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
-Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
-Middlewares/Third_Party/FreeRTOS/Source/list.c \
-Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c \
-Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
-Middlewares/Third_Party/FreeRTOS/Source/queue.c \
-Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
-Middlewares/Third_Party/FreeRTOS/Source/tasks.c \
-Middlewares/Third_Party/FreeRTOS/Source/timers.c
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c
 
 
 CXX_SOURCES = \
@@ -228,6 +218,7 @@ C_INCLUDES =  \
 -IController \
 -IController/Devices \
 -IController/Drivers/drv8323 \
+-IController/FOC \
 -IController/PWM \
 -IController/Sensors \
 -IController/State \
@@ -236,10 +227,7 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Include \
 -IDrivers/STM32F4xx_HAL_Driver/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
--IMiddlewares/ST/ARM/DSP/Inc \
--IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS \
--IMiddlewares/Third_Party/FreeRTOS/Source/include \
--IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+-IMiddlewares/ST/ARM/DSP/Inc
 
 
 
@@ -272,8 +260,9 @@ CXXFLAGS += $(ASSEMBLER_LIST_OUTPUT_FLAG)
 LDSCRIPT = STM32F446XX_FLASH.ld
 
 # libraries
-LIBS = -lc -lm -lnosys 
+LIBS = -larm_cortexM4lf_math -lc -lm -lnosys 
 LIBDIR = \
+-LMiddlewares/ST/ARM/DSP/Lib
 
 
 # Additional LD Flags from config file

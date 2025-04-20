@@ -6,6 +6,7 @@
         "Controller",
         "Controller/Devices",
         "Controller/Drivers/drv8323",
+        "Controller/FOC",
         "Controller/PWM",
         "Controller/Sensors",
         "Controller/State",
@@ -14,10 +15,7 @@
         "Drivers/CMSIS/Include",
         "Drivers/STM32F4xx_HAL_Driver/Inc",
         "Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
-        "Middlewares/ST/ARM/DSP/Inc",
-        "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS",
-        "Middlewares/Third_Party/FreeRTOS/Source/include",
-        "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+        "Middlewares/ST/ARM/DSP/Inc"
       ],
       "defines": [
         "STM32F446xx",
