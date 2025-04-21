@@ -1,0 +1,8 @@
+(version 1)
+(rule "ic area"
+   (constraint clearance (min 5.5mil))
+   (condition "A.Type != 'zone' && A.insideArea('ic_zone')"))
+
+(rule "ic area lsm6dsr"
+   (constraint clearance (min 5.5mil))
+   (condition "A.insideArea('ic_zone_lsm6dsr')"))
