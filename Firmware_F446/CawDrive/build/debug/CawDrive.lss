@@ -3283,17 +3283,17 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
  8001b40:	40020400 	.word	0x40020400
 
 08001b44 <HAL_TIM_PeriodElapsedCallback>:
- * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
- * a global variable "uwTick" used as application time base.
- * @param  htim : TIM handle
- * @retval None
- */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
  8001b44:	b508      	push	{r3, lr}
   /* USER CODE BEGIN Callback 0 */
 
   /* USER CODE END Callback 0 */
-  if (htim->Instance == TIM6) {
+  if (htim->Instance == TIM6)
  8001b46:	6802      	ldr	r2, [r0, #0]
  8001b48:	4b03      	ldr	r3, [pc, #12]	@ (8001b58 <HAL_TIM_PeriodElapsedCallback+0x14>)
  8001b4a:	429a      	cmp	r2, r3
@@ -3320,8 +3320,8 @@ __STATIC_FORCEINLINE void __disable_irq(void)
 {
   __ASM volatile ("cpsid i" : : : "memory");
  8001b5c:	b672      	cpsid	i
- */
-void Error_Handler(void) {
+void Error_Handler(void)
+{
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
@@ -3329,7 +3329,7 @@ void Error_Handler(void) {
  8001b5e:	e7fe      	b.n	8001b5e <Error_Handler+0x2>
 
 08001b60 <SystemClock_Config>:
-void SystemClock_Config(void) {
+{
  8001b60:	b510      	push	{r4, lr}
  8001b62:	b094      	sub	sp, #80	@ 0x50
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -3389,11 +3389,11 @@ void SystemClock_Config(void) {
  8001bc6:	9312      	str	r3, [sp, #72]	@ 0x48
   RCC_OscInitStruct.PLL.PLLR = 2;
  8001bc8:	9313      	str	r3, [sp, #76]	@ 0x4c
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
  8001bca:	4620      	mov	r0, r4
  8001bcc:	f001 fd06 	bl	80035dc <HAL_RCC_OscConfig>
  8001bd0:	b990      	cbnz	r0, 8001bf8 <SystemClock_Config+0x98>
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK |
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
  8001bd2:	230f      	movs	r3, #15
  8001bd4:	9302      	str	r3, [sp, #8]
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
@@ -3408,7 +3408,7 @@ void SystemClock_Config(void) {
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
  8001be4:	f44f 5380 	mov.w	r3, #4096	@ 0x1000
  8001be8:	9306      	str	r3, [sp, #24]
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK) {
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
  8001bea:	2105      	movs	r1, #5
  8001bec:	a802      	add	r0, sp, #8
  8001bee:	f001 fb3f 	bl	8003270 <HAL_RCC_ClockConfig>
@@ -3424,7 +3424,7 @@ void SystemClock_Config(void) {
  8001c04:	40007000 	.word	0x40007000
 
 08001c08 <main>:
-int main(void) {
+{
  8001c08:	b508      	push	{r3, lr}
   HAL_Init();
  8001c0a:	f000 f8b7 	bl	8001d7c <HAL_Init>
@@ -3468,12 +3468,12 @@ int main(void) {
 
 void pwm_init(void) {
  8001c50:	b510      	push	{r4, lr}
-  TIM1->ARR = 8000 - 1;
+  TIM1->ARR = 16000 - 1;
  8001c52:	4b08      	ldr	r3, [pc, #32]	@ (8001c74 <pwm_init+0x24>)
- 8001c54:	f641 723f 	movw	r2, #7999	@ 0x1f3f
+ 8001c54:	f643 627f 	movw	r2, #15999	@ 0x3e7f
  8001c58:	62da      	str	r2, [r3, #44]	@ 0x2c
-  TIM1->CCR4 = 8000 - 2;
- 8001c5a:	f641 723e 	movw	r2, #7998	@ 0x1f3e
+  TIM1->CCR4 = 16000 - 2;
+ 8001c5a:	f643 627e 	movw	r2, #15998	@ 0x3e7e
  8001c5e:	641a      	str	r2, [r3, #64]	@ 0x40
   HAL_TIM_Base_Start(&htim1);
  8001c60:	4c05      	ldr	r4, [pc, #20]	@ (8001c78 <pwm_init+0x28>)
@@ -13246,8 +13246,8 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
  8005866:	6044      	str	r4, [r0, #4]
   htim1.Init.CounterMode = TIM_COUNTERMODE_CENTERALIGNED1;
  8005868:	6085      	str	r5, [r0, #8]
-  htim1.Init.Period = 8000-1;
- 800586a:	f641 733f 	movw	r3, #7999	@ 0x1f3f
+  htim1.Init.Period = 16000-1;
+ 800586a:	f643 637f 	movw	r3, #15999	@ 0x3e7f
  800586e:	60c3      	str	r3, [r0, #12]
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV2;
  8005870:	f44f 7380 	mov.w	r3, #256	@ 0x100
@@ -13325,8 +13325,8 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
   sConfigOC.OCMode = TIM_OCMODE_PWM2;
  80058ec:	2370      	movs	r3, #112	@ 0x70
  80058ee:	9309      	str	r3, [sp, #36]	@ 0x24
-  sConfigOC.Pulse = 8000-2;
- 80058f0:	f641 733e 	movw	r3, #7998	@ 0x1f3e
+  sConfigOC.Pulse = 16000-2;
+ 80058f0:	f643 637e 	movw	r3, #15998	@ 0x3e7e
  80058f4:	930a      	str	r3, [sp, #40]	@ 0x28
   if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
  80058f6:	220c      	movs	r2, #12

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
   28:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN TD */
   29:Core/Src/stm32f4xx_it.c **** 
   30:Core/Src/stm32f4xx_it.c **** /* USER CODE END TD */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 2
 
 
   31:Core/Src/stm32f4xx_it.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
   34              		@ link register save eliminated.
   35              	.L2:
   80:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 3
 
 
   81:Core/Src/stm32f4xx_it.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
   69              		.syntax unified
   70              		.thumb
   71              		.thumb_func
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 4
 
 
   73              	MemManage_Handler:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  126:Core/Src/stm32f4xx_it.c **** 
  127:Core/Src/stm32f4xx_it.c ****   /* USER CODE END BusFault_IRQn 0 */
  128:Core/Src/stm32f4xx_it.c ****   while (1)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 5
 
 
  105              		.loc 1 128 3 view .LVU13
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  142              	SVC_Handler:
  143              	.LFB244:
  148:Core/Src/stm32f4xx_it.c **** }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 6
 
 
  149:Core/Src/stm32f4xx_it.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  175              		.global	PendSV_Handler
  176              		.syntax unified
  177              		.thumb
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 7
 
 
  178              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  208              		.cfi_endproc
  209              	.LFE247:
  211              		.section	.text.DMA1_Stream1_IRQHandler,"ax",%progbits
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 8
 
 
  212              		.align	1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  248              	DMA1_Stream3_IRQHandler:
  249              	.LFB249:
  223:Core/Src/stm32f4xx_it.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 9
 
 
  224:Core/Src/stm32f4xx_it.c **** /**
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  287              		.cfi_offset 14, -4
  243:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN ADC_IRQn 0 */
  244:Core/Src/stm32f4xx_it.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 10
 
 
  245:Core/Src/stm32f4xx_it.c ****   /* USER CODE END ADC_IRQn 0 */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  261:Core/Src/stm32f4xx_it.c ****   /* USER CODE END TIM1_BRK_TIM9_IRQn 0 */
  262:Core/Src/stm32f4xx_it.c ****   HAL_TIM_IRQHandler(&htim1);
  328              		.loc 1 262 3 view .LVU40
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 11
 
 
  329 0002 0248     		ldr	r0, .L29
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  367 000c 00000000 		.word	htim1
  368              		.cfi_endproc
  369              	.LFE252:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 12
 
 
  371              		.section	.text.TIM1_CC_IRQHandler,"ax",%progbits
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  299:Core/Src/stm32f4xx_it.c **** void TIM3_IRQHandler(void)
  300:Core/Src/stm32f4xx_it.c **** {
  410              		.loc 1 300 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 13
 
 
  411              		.cfi_startproc
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  449 0002 0248     		ldr	r0, .L45
  450 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
  451              	.LVL9:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 14
 
 
  319:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN USART3_IRQn 1 */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  491              		.text
  492              	.Letext0:
  493              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 15
 
 
  494              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
@@ -849,56 +849,56 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 1
  499              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
  500              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
  501              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_it.c
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:21     .text.NMI_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:27     .text.NMI_Handler:00000000 NMI_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:44     .text.HardFault_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:50     .text.HardFault_Handler:00000000 HardFault_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:67     .text.MemManage_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:73     .text.MemManage_Handler:00000000 MemManage_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:90     .text.BusFault_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:96     .text.BusFault_Handler:00000000 BusFault_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:113    .text.UsageFault_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:119    .text.UsageFault_Handler:00000000 UsageFault_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:136    .text.SVC_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:142    .text.SVC_Handler:00000000 SVC_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:155    .text.DebugMon_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:161    .text.DebugMon_Handler:00000000 DebugMon_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:174    .text.PendSV_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:180    .text.PendSV_Handler:00000000 PendSV_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:193    .text.SysTick_Handler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:199    .text.SysTick_Handler:00000000 SysTick_Handler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:212    .text.DMA1_Stream1_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:218    .text.DMA1_Stream1_IRQHandler:00000000 DMA1_Stream1_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:237    .text.DMA1_Stream1_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:242    .text.DMA1_Stream3_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:248    .text.DMA1_Stream3_IRQHandler:00000000 DMA1_Stream3_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:267    .text.DMA1_Stream3_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:272    .text.ADC_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:278    .text.ADC_IRQHandler:00000000 ADC_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:305    .text.ADC_IRQHandler:00000018 $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:312    .text.TIM1_BRK_TIM9_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:318    .text.TIM1_BRK_TIM9_IRQHandler:00000000 TIM1_BRK_TIM9_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:337    .text.TIM1_BRK_TIM9_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:342    .text.TIM1_UP_TIM10_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:348    .text.TIM1_UP_TIM10_IRQHandler:00000000 TIM1_UP_TIM10_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:367    .text.TIM1_UP_TIM10_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:372    .text.TIM1_CC_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:378    .text.TIM1_CC_IRQHandler:00000000 TIM1_CC_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:397    .text.TIM1_CC_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:402    .text.TIM3_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:408    .text.TIM3_IRQHandler:00000000 TIM3_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:427    .text.TIM3_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:432    .text.USART3_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:438    .text.USART3_IRQHandler:00000000 USART3_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:457    .text.USART3_IRQHandler:0000000c $d
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:462    .text.TIM6_DAC_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:468    .text.TIM6_DAC_IRQHandler:00000000 TIM6_DAC_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s:487    .text.TIM6_DAC_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:21     .text.NMI_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:27     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:44     .text.HardFault_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:50     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:67     .text.MemManage_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:73     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:90     .text.BusFault_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:96     .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:113    .text.UsageFault_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:119    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:136    .text.SVC_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:142    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:155    .text.DebugMon_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:161    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:174    .text.PendSV_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:180    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:193    .text.SysTick_Handler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:199    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:212    .text.DMA1_Stream1_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:218    .text.DMA1_Stream1_IRQHandler:00000000 DMA1_Stream1_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:237    .text.DMA1_Stream1_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:242    .text.DMA1_Stream3_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:248    .text.DMA1_Stream3_IRQHandler:00000000 DMA1_Stream3_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:267    .text.DMA1_Stream3_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:272    .text.ADC_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:278    .text.ADC_IRQHandler:00000000 ADC_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:305    .text.ADC_IRQHandler:00000018 $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:312    .text.TIM1_BRK_TIM9_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:318    .text.TIM1_BRK_TIM9_IRQHandler:00000000 TIM1_BRK_TIM9_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:337    .text.TIM1_BRK_TIM9_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:342    .text.TIM1_UP_TIM10_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:348    .text.TIM1_UP_TIM10_IRQHandler:00000000 TIM1_UP_TIM10_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:367    .text.TIM1_UP_TIM10_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:372    .text.TIM1_CC_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:378    .text.TIM1_CC_IRQHandler:00000000 TIM1_CC_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:397    .text.TIM1_CC_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:402    .text.TIM3_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:408    .text.TIM3_IRQHandler:00000000 TIM3_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:427    .text.TIM3_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:432    .text.USART3_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:438    .text.USART3_IRQHandler:00000000 USART3_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:457    .text.USART3_IRQHandler:0000000c $d
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:462    .text.TIM6_DAC_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:468    .text.TIM6_DAC_IRQHandler:00000000 TIM6_DAC_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s:487    .text.TIM6_DAC_IRQHandler:0000000c $d
 
 UNDEFINED SYMBOLS
 HAL_DMA_IRQHandler
@@ -909,7 +909,7 @@ hadc1
 hadc2
 hadc3
 HAL_TIM_IRQHandler
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccFoZRrJ.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccZ7HWSB.s 			page 17
 
 
 htim1

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'VF'.
  *
- * Model version                  : 1.1
+ * Model version                  : 1.2
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Mar 26 01:49:43 2025
+ * C/C++ source code generated on : Mon Apr 21 16:53:27 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M

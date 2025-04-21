@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -39,16 +39,16 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 1
   34              		.cfi_def_cfa_offset 8
   35              		.cfi_offset 4, -8
   36              		.cfi_offset 14, -4
-   4:Controller/PWM/pwm.c ****   TIM1->ARR = 8000 - 1;
+   4:Controller/PWM/pwm.c ****   TIM1->ARR = 16000 - 1;
   37              		.loc 1 4 3 view .LVU1
   38              		.loc 1 4 13 is_stmt 0 view .LVU2
   39 0002 084B     		ldr	r3, .L3
-  40 0004 41F63F72 		movw	r2, #7999
+  40 0004 43F67F62 		movw	r2, #15999
   41 0008 DA62     		str	r2, [r3, #44]
-   5:Controller/PWM/pwm.c ****   TIM1->CCR4 = 8000 - 2;
+   5:Controller/PWM/pwm.c ****   TIM1->CCR4 = 16000 - 2;
   42              		.loc 1 5 3 is_stmt 1 view .LVU3
   43              		.loc 1 5 14 is_stmt 0 view .LVU4
-  44 000a 41F63E72 		movw	r2, #7998
+  44 000a 43F67E62 		movw	r2, #15998
   45 000e 1A64     		str	r2, [r3, #64]
    6:Controller/PWM/pwm.c ****   HAL_TIM_Base_Start(&htim1);
   46              		.loc 1 6 3 is_stmt 1 view .LVU5
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 1
   50              	.LVL0:
    7:Controller/PWM/pwm.c ****   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
   51              		.loc 1 7 3 view .LVU6
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s 			page 2
 
 
   52 0018 0C21     		movs	r1, #12
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 1
  101 001e 2046     		mov	r0, r4
  102 0020 FFF7FEFF 		bl	HAL_TIMEx_PWMN_Start
  103              	.LVL5:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s 			page 3
 
 
   15:Controller/PWM/pwm.c ****   HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 1
  152 0014 0821     		movs	r1, #8
  153 0016 2046     		mov	r0, r4
  154 0018 FFF7FEFF 		bl	HAL_TIM_PWM_Stop
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s 			page 4
 
 
  155              	.LVL10:
@@ -219,20 +219,20 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 1
  187              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
  188              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
  189              		.file 9 "Core/Inc/tim.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 pwm.c
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:21     .text.pwm_init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:27     .text.pwm_init:00000000 pwm_init
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:61     .text.pwm_init:00000024 $d
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:67     .text.pwm_start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:73     .text.pwm_start:00000000 pwm_start
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:119    .text.pwm_start:00000038 $d
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:124    .text.pwm_stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:130    .text.pwm_stop:00000000 pwm_stop
-C:\Users\Rick\AppData\Local\Temp\ccBDaS17.s:176    .text.pwm_stop:00000038 $d
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:21     .text.pwm_init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:27     .text.pwm_init:00000000 pwm_init
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:61     .text.pwm_init:00000024 $d
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:67     .text.pwm_start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:73     .text.pwm_start:00000000 pwm_start
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:119    .text.pwm_start:00000038 $d
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:124    .text.pwm_stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:130    .text.pwm_stop:00000000 pwm_stop
+C:\Users\Rick\AppData\Local\Temp\ccHLjMj3.s:176    .text.pwm_stop:00000038 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_Base_Start

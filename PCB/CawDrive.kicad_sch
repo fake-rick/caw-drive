@@ -5504,6 +5504,12 @@
 		(uuid "ceb355cb-7ce5-4d57-b782-c245631eb205")
 	)
 	(junction
+		(at 102.87 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcf621f1-44a9-4c29-a8eb-c5e876f7c5f6")
+	)
+	(junction
 		(at 157.48 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12274,6 +12280,71 @@
 			(project ""
 				(path "/80524a83-b783-469c-b956-da06086e2ffd"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 102.87 24.13 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56679626-af8c-4b2e-84da-6f82d69ec2fc")
+		(property "Reference" "#FLG09"
+			(at 100.965 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 99.06 19.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 102.87 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5981fe8-5cf7-4d96-a0b6-e58df3ddd97d")
+		)
+		(instances
+			(project "CawDrive"
+				(path "/80524a83-b783-469c-b956-da06086e2ffd"
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
   28:Core/Src/usart.c **** DMA_HandleTypeDef hdma_usart3_tx;
   29:Core/Src/usart.c **** DMA_HandleTypeDef hdma_usart3_rx;
   30:Core/Src/usart.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 2
 
 
   31:Core/Src/usart.c **** /* USART3 init function */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
   63              		.loc 1 50 3 is_stmt 1 view .LVU15
   64              		.loc 1 50 28 is_stmt 0 view .LVU16
   65 001c C361     		str	r3, [r0, #28]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 3
 
 
   51:Core/Src/usart.c ****   if (HAL_UART_Init(&huart3) != HAL_OK)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  109              		.cfi_offset 7, -20
  110              		.cfi_offset 8, -16
  111              		.cfi_offset 9, -12
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 4
 
 
  112              		.cfi_offset 10, -8
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
   96:Core/Src/usart.c ****     hdma_usart3_tx.Init.Channel = DMA_CHANNEL_4;
   97:Core/Src/usart.c ****     hdma_usart3_tx.Init.Direction = DMA_MEMORY_TO_PERIPH;
   98:Core/Src/usart.c ****     hdma_usart3_tx.Init.PeriphInc = DMA_PINC_DISABLE;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 5
 
 
   99:Core/Src/usart.c ****     hdma_usart3_tx.Init.MemInc = DMA_MINC_ENABLE;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  146              		.loc 1 71 5 view .LVU33
  147 0022 0025     		movs	r5, #0
  148 0024 0095     		str	r5, [sp]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 6
 
 
   71:Core/Src/usart.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  189 0060 0293     		str	r3, [sp, #8]
   74:Core/Src/usart.c ****     /**USART3 GPIO Configuration
  190              		.loc 1 74 5 view .LVU48
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 7
 
 
  191 0062 029B     		ldr	r3, [sp, #8]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  227              		.loc 1 88 26 is_stmt 0 view .LVU66
  228 0094 0595     		str	r5, [sp, #20]
   89:Core/Src/usart.c ****     GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 8
 
 
  229              		.loc 1 89 5 is_stmt 1 view .LVU67
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  102:Core/Src/usart.c ****     hdma_usart3_tx.Init.Priority = DMA_PRIORITY_LOW;
  265              		.loc 1 102 5 is_stmt 1 view .LVU86
  102:Core/Src/usart.c ****     hdma_usart3_tx.Init.Priority = DMA_PRIORITY_LOW;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 9
 
 
  266              		.loc 1 102 30 is_stmt 0 view .LVU87
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  116:Core/Src/usart.c ****     hdma_usart3_rx.Init.MemInc = DMA_MINC_ENABLE;
  302              		.loc 1 116 35 is_stmt 0 view .LVU106
  303 00e0 C360     		str	r3, [r0, #12]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 10
 
 
  117:Core/Src/usart.c ****     hdma_usart3_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  338 00fe 0022     		movs	r2, #0
  339 0100 1146     		mov	r1, r2
  340 0102 2720     		movs	r0, #39
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 11
 
 
  341 0104 FFF7FEFF 		bl	HAL_NVIC_SetPriority
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  389              		.loc 1 142 5 view .LVU134
  390 0002 0F4B     		ldr	r3, .L24
  391 0004 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 12
 
 
  392 0006 00D0     		beq	.L23
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  162:Core/Src/usart.c ****     /* USART3 interrupt Deinit */
  163:Core/Src/usart.c ****     HAL_NVIC_DisableIRQ(USART3_IRQn);
  426              		.loc 1 163 5 view .LVU142
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 13
 
 
  427 0036 2720     		movs	r0, #39
@@ -778,32 +778,32 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 1
  471              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
  472              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  473              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 14
 
 
  474              		.file 9 "Core/Inc/usart.h"
  475              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
  476              		.file 11 "Core/Inc/main.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usart.c
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:21     .text.MX_USART3_UART_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:27     .text.MX_USART3_UART_Init:00000000 MX_USART3_UART_Init
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:84     .text.MX_USART3_UART_Init:0000002c $d
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:463    .bss.huart3:00000000 huart3
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:90     .text.HAL_UART_MspInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:96     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:362    .text.HAL_UART_MspInit:0000011c $d
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:456    .bss.hdma_usart3_tx:00000000 hdma_usart3_tx
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:449    .bss.hdma_usart3_rx:00000000 hdma_usart3_rx
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:373    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:379    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:437    .text.HAL_UART_MspDeInit:00000040 $d
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:446    .bss.hdma_usart3_rx:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:453    .bss.hdma_usart3_tx:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc0Y7Xxk.s:460    .bss.huart3:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:21     .text.MX_USART3_UART_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:27     .text.MX_USART3_UART_Init:00000000 MX_USART3_UART_Init
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:84     .text.MX_USART3_UART_Init:0000002c $d
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:463    .bss.huart3:00000000 huart3
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:90     .text.HAL_UART_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:96     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:362    .text.HAL_UART_MspInit:0000011c $d
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:456    .bss.hdma_usart3_tx:00000000 hdma_usart3_tx
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:449    .bss.hdma_usart3_rx:00000000 hdma_usart3_rx
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:373    .text.HAL_UART_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:379    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:437    .text.HAL_UART_MspDeInit:00000040 $d
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:446    .bss.hdma_usart3_rx:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:453    .bss.hdma_usart3_tx:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccDCqPGf.s:460    .bss.huart3:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_UART_Init
