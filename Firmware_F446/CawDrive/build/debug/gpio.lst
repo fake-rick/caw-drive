@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
   28:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   29:Core/Src/gpio.c **** /* Configure GPIO                                                             */
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 2
 
 
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
   65 0022 02F00402 		and	r2, r2, #4
   66 0026 0092     		str	r2, [sp]
   67              		.loc 1 48 3 view .LVU7
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 3
 
 
   68 0028 009A     		ldr	r2, [sp]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
   52:Core/Src/gpio.c ****   __HAL_RCC_GPIOD_CLK_ENABLE();
  119              		.loc 1 52 3 view .LVU27
  120              	.LBB6:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 4
 
 
  121              		.loc 1 52 3 view .LVU28
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
  162              	.LVL3:
   66:Core/Src/gpio.c **** 
   67:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 5
 
 
   68:Core/Src/gpio.c ****   HAL_GPIO_WritePin(ENCODER_SPI_NSS_GPIO_Port, ENCODER_SPI_NSS_Pin, GPIO_PIN_SET);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
   84:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
  201              		.loc 1 84 3 is_stmt 1 view .LVU55
  202 00e2 2946     		mov	r1, r5
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 6
 
 
  203 00e4 5046     		mov	r0, r10
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
  102:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = DRV_SPI_NSS_Pin;
  240              		.loc 1 102 3 view .LVU72
  241              		.loc 1 102 23 is_stmt 0 view .LVU73
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 7
 
 
  242 0114 0423     		movs	r3, #4
@@ -404,14 +404,14 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 1
  277              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  278              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
  279              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
-C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s:21     .text.MX_GPIO_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s:27     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\Rick\AppData\Local\Temp\ccNMPVzP.s:266    .text.MX_GPIO_Init:0000012c $d
+C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s:21     .text.MX_GPIO_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s:27     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\Rick\AppData\Local\Temp\ccRZ7s2s.s:266    .text.MX_GPIO_Init:0000012c $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

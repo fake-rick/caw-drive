@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   (#) Interrupt generation at the end of conversion, end of injected conversion,
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       and in case of analog watchdog or overrun events
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   (#) Single and continuous conversion modes.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 2
 
 
   31:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   (#) Scan mode for automatic conversion of channel 0 to channel x.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   (#) Optionally, configure the analog watchdog parameters (channels
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       monitored, thresholds, ...) using function HAL_ADC_AnalogWDGConfig().
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 3
 
 
   88:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****      [..]
  144:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****        (@) You can refer to the ADC HAL driver header file for more useful macros
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 4
 
 
  145:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  199:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     [..]
  200:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****      HAL_ADC_UnRegisterCallback takes as parameters the HAL peripheral handle,
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 5
 
 
  202:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****      and the Callback ID.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  256:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @{
  257:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   */
  258:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 6
 
 
  259:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** #ifdef HAL_ADC_MODULE_ENABLED
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  313:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   HAL_StatusTypeDef tmp_hal_status = HAL_OK;
  314:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  315:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Check ADC handle */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 7
 
 
  316:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   if (hadc == NULL)
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  370:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  371:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Set ADC state */
  372:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     ADC_STATE_CLR_SET(hadc->State,
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 8
 
 
  373:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****                       HAL_ADC_STATE_REG_BUSY | HAL_ADC_STATE_INJ_BUSY,
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  427:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   if (HAL_IS_BIT_CLR(hadc->Instance->CR2, ADC_CR2_ADON))
  428:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  429:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** #if (USE_HAL_ADC_REGISTER_CALLBACKS == 1)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 9
 
 
  430:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     if (hadc->MspDeInitCallback == NULL)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  484:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   }
  485:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  486:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   if ((hadc->State & HAL_ADC_STATE_READY) != 0UL)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 10
 
 
  487:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  541:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         hadc->ErrorCode |= HAL_ADC_ERROR_INVALID_CALLBACK;
  542:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  543:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         /* Return error status */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 11
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 11
 
 
  544:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         status = HAL_ERROR;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  598:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         break;
  599:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  600:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       case HAL_ADC_INJ_CONVERSION_COMPLETE_CB_ID :
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 12
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 12
 
 
  601:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         hadc->InjectedConvCpltCallback = HAL_ADCEx_InjectedConvCpltCallback;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  655:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  656:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** /**
  657:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @brief  Initializes the ADC MSP.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 13
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 13
 
 
  658:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @param  hadc pointer to a ADC_HandleTypeDef structure that contains
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  712:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @param  hadc pointer to a ADC_HandleTypeDef structure that contains
  713:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   *         the configuration information for the specified ADC.
  714:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @retval HAL status
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 14
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 14
 
 
  715:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  769:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
  770:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       /* Reset ADC all error code fields */
  771:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       ADC_CLEAR_ERRORCODE(hadc);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 15
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 15
 
 
  772:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  826:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   return HAL_OK;
  827:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** }
  828:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 16
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 16
 
 
  829:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** /**
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  883:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** {
  884:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   uint32_t tickstart = 0U;
  885:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 17
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 17
 
 
  886:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Verification that ADC configuration is compliant with polling for      */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  940:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /*       sequence disabled or with end of conversion flag set to            */
  941:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /*       of end of sequence.                                                */
  942:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   if (ADC_IS_SOFTWARE_START_REGULAR(hadc)                   &&
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 18
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 18
 
 
  943:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       (hadc->Init.ContinuousConvMode == DISABLE)            &&
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  997:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****           __HAL_UNLOCK(hadc);
  998:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  999:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****           return HAL_TIMEOUT;
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 19
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 19
 
 
 1000:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         }
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1054:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Enable the Peripheral */
 1055:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     __HAL_ADC_ENABLE(hadc);
 1056:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 20
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 20
 
 
 1057:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Delay for ADC stabilization time */
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1111:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
 1112:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Check if Multimode enabled */
 1113:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     if (HAL_IS_BIT_CLR(tmpADC_Common->CCR, ADC_CCR_MULTI))
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 21
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 21
 
 
 1114:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1168:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   __HAL_LOCK(hadc);
 1169:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
 1170:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Stop potential conversion on going, on regular and injected groups */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 22
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 22
 
 
 1171:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Disable ADC peripheral */
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1225:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Note: On STM32F4, there is no independent flag of end of sequence.   */
 1226:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /*       The test of scan sequence on going is done either with scan    */
 1227:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /*       sequence disabled or with end of conversion flag set to        */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 23
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 23
 
 
 1228:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /*       of end of sequence.                                            */
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1282:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
 1283:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       /* Disable ADC end of single conversion interrupt on group injected */
 1284:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       __HAL_ADC_DISABLE_IT(hadc, ADC_IT_JEOC);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 24
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 24
 
 
 1285:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1339:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     SET_BIT(hadc->ErrorCode, HAL_ADC_ERROR_OVR);
 1340:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
 1341:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Clear ADC overrun flag */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 25
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 25
 
 
 1342:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     __HAL_ADC_CLEAR_FLAG(hadc, ADC_FLAG_OVR);
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1396:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
 1397:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     CLEAR_BIT(hadc->Instance->CR2, ADC_CR2_DMA);
 1398:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 26
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 26
 
 
 1399:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1453:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* (To ensure of no unknown state from potential previous ADC operations) */
 1454:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     __HAL_ADC_CLEAR_FLAG(hadc, ADC_FLAG_EOC | ADC_FLAG_OVR);
 1455:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 27
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 27
 
 
 1456:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Enable ADC overrun interrupt */
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1510:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @retval HAL status
 1511:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   */
 1512:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** HAL_StatusTypeDef HAL_ADC_Stop_DMA(ADC_HandleTypeDef *hadc)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 28
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 28
 
 
 1513:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** {
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1567:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   */
 1568:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** uint32_t HAL_ADC_GetValue(ADC_HandleTypeDef *hadc)
 1569:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 29
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 29
 
 
 1570:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Return the selected ADC converted value */
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1624:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   *         - If needed, restart a new ADC conversion using function
 1625:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   *           "HAL_ADC_Start_DMA()"
 1626:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   *           (this function is also clearing overrun flag)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 30
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 30
 
 
 1627:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   * @param  hadc pointer to a ADC_HandleTypeDef structure that contains
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1681:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
 1682:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* if ADC_Channel_10 ... ADC_Channel_18 is selected */
 1683:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   if (sConfig->Channel > ADC_CHANNEL_9)
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 31
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 31
 
 
 1684:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1738:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
 1739:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       tmpADC_Common->CCR &= ~ADC_CCR_TSVREFE;
 1740:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 32
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 32
 
 
 1741:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Enable the VBAT channel*/
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1795:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   uint32_t tmp = 0U;
 1796:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** #endif /* USE_FULL_ASSERT  */
 1797:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 33
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 33
 
 
 1798:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Check the parameters */
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1852:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** /** @defgroup ADC_Exported_Functions_Group4 ADC Peripheral State functions
 1853:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****  *  @brief   ADC Peripheral State functions
 1854:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****  *
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 34
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 34
 
 
 1855:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** @verbatim
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
   32              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 35
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 35
 
 
   33              		@ link register save eliminated.
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
   69              		.loc 1 1925 3 is_stmt 1 view .LVU19
   70              		.loc 1 1925 7 is_stmt 0 view .LVU20
   71 0028 0268     		ldr	r2, [r0]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 36
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 36
 
 
   72              		.loc 1 1925 17 view .LVU21
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1940:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     hadc->Instance->CR2 &= ~(ADC_CR2_EXTSEL);
  112              		.loc 1 1940 5 is_stmt 1 view .LVU40
  113              		.loc 1 1940 9 is_stmt 0 view .LVU41
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 37
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 37
 
 
  114 0058 0268     		ldr	r2, [r0]
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  153 0082 9368     		ldr	r3, [r2, #8]
  154              		.loc 1 1955 23 view .LVU61
  155 0084 23F00203 		bic	r3, r3, #2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 38
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 38
 
 
  156 0088 9360     		str	r3, [r2, #8]
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  198              		.loc 1 1967 25 view .LVU83
  199 00ba 43EA4233 		orr	r3, r3, r2, lsl #13
  200 00be 4B60     		str	r3, [r1, #4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 39
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 39
 
 
  201              	.L5:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1984:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   hadc->Instance->CR2 &= ~(ADC_CR2_EOCS);
  239              		.loc 1 1984 3 is_stmt 1 view .LVU102
  240              		.loc 1 1984 7 is_stmt 0 view .LVU103
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 40
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 40
 
 
  241 00f0 0268     		ldr	r2, [r0]
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  282 0120 5368     		ldr	r3, [r2, #4]
 1972:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   }
  283              		.loc 1 1972 25 view .LVU123
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 41
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 41
 
 
  284 0122 23F40063 		bic	r3, r3, #2048
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  334              		.loc 1 312 1 view .LVU131
  335 0002 10B5     		push	{r4, lr}
  336              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 42
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 42
 
 
  337              		.cfi_offset 4, -8
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  370              		.loc 1 393 3 is_stmt 1 view .LVU152
  393:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  371              		.loc 1 393 3 view .LVU153
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 43
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 43
 
 
  372 0014 0023     		movs	r3, #0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  318:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   }
  415              		.loc 1 318 12 is_stmt 0 view .LVU165
  416 0052 0120     		movs	r0, #1
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 44
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 44
 
 
  417              	.LVL9:
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  466              		.cfi_offset 14, -4
  467 0004 0446     		mov	r4, r0
  416:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 45
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 45
 
 
  468              		.loc 1 416 3 is_stmt 1 view .LVU175
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  508              	.L25:
  509              		.cfi_def_cfa_offset 0
  510              		.cfi_restore 4
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 46
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 46
 
 
  511              		.cfi_restore 14
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  731:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  554              		.loc 1 731 3 view .LVU203
  731:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 47
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 47
 
 
  555              		.loc 1 731 12 is_stmt 0 view .LVU204
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  595 004a 9368     		ldr	r3, [r2, #8]
  746:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  596              		.loc 1 746 6 view .LVU219
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 48
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 48
 
 
  597 004c 13F0010F 		tst	r3, #1
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  637 0090 1360     		str	r3, [r2]
  789:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
  638              		.loc 1 789 5 view .LVU234
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 49
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 49
 
 
  789:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  797:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         {
  681              		.loc 1 797 9 is_stmt 1 view .LVU247
  797:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 50
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 50
 
 
  682              		.loc 1 797 28 is_stmt 0 view .LVU248
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  722              	.LVL26:
  826:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** }
  723              		.loc 1 826 10 view .LVU263
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 51
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 51
 
 
  724 00f6 12E0     		b	.L32
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  766              		.loc 1 726 3 discriminator 1 view .LVU275
  767 0122 0220     		movs	r0, #2
  768              	.LVL32:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 52
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 52
 
 
  726:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  816 0006 19D0     		beq	.L58
  845:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  817              		.loc 1 845 3 discriminator 2 view .LVU285
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 53
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 53
 
 
  818 0008 0123     		movs	r3, #1
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  858              		.cfi_endproc
  859              	.LFE244:
  861              		.section	.text.HAL_ADC_PollForConversion,"ax",%progbits
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 54
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 54
 
 
  862              		.align	1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  908:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  906              		.loc 1 908 3 is_stmt 1 view .LVU311
  907              	.L63:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 55
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 55
 
 
  908:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  945              		.loc 1 896 5 is_stmt 1 view .LVU328
  946 004c 036C     		ldr	r3, [r0, #64]
  947 004e 43F02003 		orr	r3, r3, #32
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 56
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 56
 
 
  948 0052 0364     		str	r3, [r0, #64]
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  987 0082 207E     		ldrb	r0, [r4, #24]	@ zero_extendqisi2
  942:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       (hadc->Init.ContinuousConvMode == DISABLE)            &&
  988              		.loc 1 942 61 discriminator 1 view .LVU344
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 57
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 57
 
 
  989 0084 B0B9     		cbnz	r0, .L69
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1032              		.align	1
  1033              		.global	HAL_ADC_PollForEvent
  1034              		.syntax unified
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 58
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 58
 
 
  1035              		.thumb
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1077              		.loc 1 986 5 is_stmt 1 view .LVU369
  986:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
  1078              		.loc 1 986 8 is_stmt 0 view .LVU370
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 59
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 59
 
 
  1079 001a B7F1FF3F 		cmp	r7, #-1
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1117              		.loc 1 1006 6 is_stmt 0 view .LVU386
  1118 004c 012E     		cmp	r6, #1
  1119 004e 0DD0     		beq	.L85
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 60
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 60
 
 
 1018:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     /* Set ADC error code to overrun */
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1166              		.loc 1 1038 1 is_stmt 0 view .LVU396
  1167 0000 82B0     		sub	sp, sp, #8
  1168              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 61
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 61
 
 
 1039:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   ADC_Common_TypeDef *tmpADC_Common;
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1059:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     while (counter != 0U)
  1206              		.loc 1 1059 13 view .LVU414
  1207 0038 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 62
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 62
 
 
 1060:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1248              		.loc 1 1084 5 view .LVU428
 1084:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
  1249              		.loc 1 1084 9 is_stmt 0 view .LVU429
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 63
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 63
 
 
  1250 0076 036C     		ldr	r3, [r0, #64]
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1289              		.loc 1 1116 36 discriminator 1 view .LVU444
  1290 00b2 02F58072 		add	r2, r2, #256
  1291 00b6 9342     		cmp	r3, r2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 64
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 64
 
 
  1292 00b8 07D0     		beq	.L105
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1150:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** }
  1333              		.loc 1 1150 10 view .LVU458
  1334 00e8 20E0     		b	.L87
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 65
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 65
 
 
  1335              	.LVL63:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1150:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** }
  1375              		.loc 1 1150 10 view .LVU473
  1376 0116 0020     		movs	r0, #0
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 66
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 66
 
 
  1377              	.LVL68:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1420              		.loc 1 1150 10 view .LVU484
  1421 013a F7E7     		b	.L87
  1422              	.L109:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 67
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 67
 
 
  1423              		.align	2
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1469 0020 0DD1     		bne	.L112
 1178:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  1470              		.loc 1 1178 5 is_stmt 1 view .LVU495
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 68
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 68
 
 
  1471 0022 5A68     		ldr	r2, [r3, #4]
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1365:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   __IO uint32_t counter = 0U;
  1517              		.loc 1 1365 1 is_stmt 0 view .LVU506
  1518 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 69
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 69
 
 
  1519              		.cfi_def_cfa_offset 8
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1557              		.loc 1 1386 5 view .LVU522
 1386:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     while (counter != 0U)
  1558              		.loc 1 1386 53 is_stmt 0 view .LVU523
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 70
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 70
 
 
  1559 002e 534A     		ldr	r2, .L137
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1599 0062 9068     		ldr	r0, [r2, #8]
 1401:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  1600              		.loc 1 1401 6 view .LVU538
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 71
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 71
 
 
  1601 0064 10F0010F 		tst	r0, #1
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1640              		.loc 1 1440 9 is_stmt 0 view .LVU553
  1641 00a4 A26B     		ldr	r2, [r4, #56]
 1440:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 72
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 72
 
 
  1642              		.loc 1 1440 40 view .LVU554
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1463:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  1681              		.loc 1 1463 5 view .LVU570
  1682 00da A06B     		ldr	r0, [r4, #56]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 73
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 73
 
 
  1683 00dc FFF7FEFF 		bl	HAL_DMA_Start_IT
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1725              	.L125:
 1474:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         {
  1726              		.loc 1 1474 9 is_stmt 1 view .LVU583
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 74
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 74
 
 
 1474:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****         {
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1766 0148 12F0405F 		tst	r2, #805306368
  1767 014c 14D1     		bne	.L132
 1489:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 75
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 75
 
 
  1768              		.loc 1 1489 9 is_stmt 1 view .LVU599
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1811 0176 F9E7     		b	.L115
  1812              	.L132:
 1503:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** }
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 76
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 76
 
 
  1813              		.loc 1 1503 10 view .LVU611
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1524:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  1861              		.loc 1 1524 3 view .LVU620
  1862 0012 0268     		ldr	r2, [r0]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 77
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 77
 
 
  1863 0014 9368     		ldr	r3, [r2, #8]
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1904              	.L141:
 1556:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  1905              		.loc 1 1556 3 view .LVU634
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 78
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 78
 
 
 1556:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  1948              		.section	.text.HAL_ADC_GetValue,"ax",%progbits
  1949              		.align	1
  1950              		.global	HAL_ADC_GetValue
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 79
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 79
 
 
  1951              		.syntax unified
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2002              	HAL_ADC_ConvHalfCpltCallback:
  2003              	.LVL108:
  2004              	.LFB254:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 80
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 80
 
 
 1596:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Prevent unused argument(s) compilation warning */
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 2020:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       __HAL_ADC_DISABLE_IT(hadc, ADC_IT_EOC);
 2021:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
 2022:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       /* Set ADC state */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 81
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 81
 
 
 2023:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       CLEAR_BIT(hadc->State, HAL_ADC_STATE_REG_BUSY);
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 2066:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   /* Half conversion callback */
 2067:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** #if (USE_HAL_ADC_REGISTER_CALLBACKS == 1)
 2068:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   hadc->ConvHalfCpltCallback(hadc);
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 82
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 82
 
 
 2069:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** #else
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2084              		.loc 1 1638 1 is_stmt 0 view .LVU670
  2085 0000 7047     		bx	lr
  2086              		.cfi_endproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 83
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 83
 
 
  2087              	.LFE256:
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1214:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  2129              		.loc 1 1214 6 is_stmt 0 view .LVU685
  2130 000a 16F0020F 		tst	r6, #2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 84
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 84
 
 
  2131 000e 2FD0     		beq	.L159
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2170 0042 5A68     		ldr	r2, [r3, #4]
  2171 0044 22F02002 		bic	r2, r2, #32
  2172 0048 5A60     		str	r2, [r3, #4]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 85
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 85
 
 
 1241:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2212              		.loc 1 1266 5 is_stmt 1 view .LVU715
 1266:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
  2213              		.loc 1 1266 9 is_stmt 0 view .LVU716
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 86
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 86
 
 
  2214 007e 236C     		ldr	r3, [r4, #64]
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1280:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****           (hadc->Init.ContinuousConvMode == DISABLE))))
  2254              		.loc 1 1280 53 view .LVU731
  2255 00ba 7AB9     		cbnz	r2, .L165
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 87
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 87
 
 
 1284:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1312:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
  2296              		.loc 1 1312 5 is_stmt 1 view .LVU746
 1312:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 88
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 88
 
 
  2297              		.loc 1 1312 9 is_stmt 0 view .LVU747
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1339:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  2339              		.loc 1 1339 5 view .LVU760
  2340 0126 636C     		ldr	r3, [r4, #68]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 89
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 89
 
 
  2341 0128 43F00203 		orr	r3, r3, #2
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2382              	.LVL139:
 2083:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   hadc->State = HAL_ADC_STATE_ERROR_DMA;
  2383              		.loc 1 2083 3 is_stmt 1 view .LVU770
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 90
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 90
 
 
  2384              		.loc 1 2083 15 is_stmt 0 view .LVU771
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2425              		.loc 1 2000 7 is_stmt 0 view .LVU782
  2426 0006 026C     		ldr	r2, [r0, #64]
 2000:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 91
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 91
 
 
  2427              		.loc 1 2000 6 view .LVU783
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 2025:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       {
  2467              		.loc 1 2025 11 is_stmt 0 view .LVU798
  2468 0044 036C     		ldr	r3, [r0, #64]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 92
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 92
 
 
 2025:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****       {
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 2046:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** #endif /* USE_HAL_ADC_REGISTER_CALLBACKS */
  2509              		.loc 1 2046 7 is_stmt 0 view .LVU813
  2510 0070 F2E7     		b	.L174
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 93
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 93
 
 
  2511              		.cfi_endproc
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2554              		.loc 1 1683 3 view .LVU826
 1683:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  2555              		.loc 1 1683 14 is_stmt 0 view .LVU827
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 94
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 94
 
 
  2556 001a 0A68     		ldr	r2, [r1]
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1704:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  2596              		.loc 1 1704 5 is_stmt 1 view .LVU842
 1704:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 95
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 95
 
 
  2597              		.loc 1 1704 9 is_stmt 0 view .LVU843
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1747:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   {
  2637              		.loc 1 1747 6 view .LVU858
  2638 0090 414A     		ldr	r2, .L198
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 96
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 96
 
 
  2639 0092 9042     		cmp	r0, r2
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1697:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   }
  2681              		.loc 1 1697 19 view .LVU871
  2682 00bc 2069     		ldr	r0, [r4, #16]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 97
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 97
 
 
 1697:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****   }
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2723 00fe 2A63     		str	r2, [r5, #48]
  2724 0100 C1E7     		b	.L187
  2725              	.L188:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 98
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 98
 
 
 1722:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2765 0138 5068     		ldr	r0, [r2, #4]
 1739:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c ****     }
  2766              		.loc 1 1739 26 view .LVU901
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 99
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 99
 
 
  2767 013a 20F40000 		bic	r0, r0, #8388608
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2805              		.loc 1 1757 8 view .LVU917
  2806 016a 0D4A     		ldr	r2, .L198+8
  2807 016c 9142     		cmp	r1, r2
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 100
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 100
 
 
  2808 016e 92D1     		bne	.L190
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2853              		.global	HAL_ADC_AnalogWDGConfig
  2854              		.syntax unified
  2855              		.thumb
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 101
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 101
 
 
  2856              		.thumb_func
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
 1824:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  2897              		.loc 1 1824 3 is_stmt 1 view .LVU942
 1824:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 102
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 102
 
 
  2898              		.loc 1 1824 7 is_stmt 0 view .LVU943
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2934 0048 4268     		ldr	r2, [r0, #4]
 1836:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c **** 
  2935              		.loc 1 1836 23 view .LVU962
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 103
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 103
 
 
  2936 004a 22F01F02 		bic	r2, r2, #31
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  2977              		.loc 1 1846 1 view .LVU975
  2978 0074 7047     		bx	lr
  2979              		.cfi_endproc
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 104
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 104
 
 
  2980              	.LFE258:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  3031              	.Letext0:
  3032              		.file 2 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
  3033              		.file 3 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 105
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 105
 
 
  3034              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
@@ -6249,71 +6249,71 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 1
  3039              		.file 9 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
  3040              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h"
  3041              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 106
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 106
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_adc.c
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:21     .text.ADC_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:26     .text.ADC_Init:00000000 ADC_Init
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:290    .text.ADC_Init:0000012c $d
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:296    .text.HAL_ADC_MspInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:302    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:317    .text.HAL_ADC_Init:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:323    .text.HAL_ADC_Init:00000000 HAL_ADC_Init
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:424    .text.HAL_ADC_MspDeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:430    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:445    .text.HAL_ADC_DeInit:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:451    .text.HAL_ADC_DeInit:00000000 HAL_ADC_DeInit
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:521    .text.HAL_ADC_Start:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:527    .text.HAL_ADC_Start:00000000 HAL_ADC_Start
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:788    .text.HAL_ADC_Start:00000130 $d
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:797    .text.HAL_ADC_Stop:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:803    .text.HAL_ADC_Stop:00000000 HAL_ADC_Stop
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:862    .text.HAL_ADC_PollForConversion:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:868    .text.HAL_ADC_PollForConversion:00000000 HAL_ADC_PollForConversion
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1032   .text.HAL_ADC_PollForEvent:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1038   .text.HAL_ADC_PollForEvent:00000000 HAL_ADC_PollForEvent
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1152   .text.HAL_ADC_Start_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1158   .text.HAL_ADC_Start_IT:00000000 HAL_ADC_Start_IT
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1425   .text.HAL_ADC_Start_IT:0000013c $d
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1434   .text.HAL_ADC_Stop_IT:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1440   .text.HAL_ADC_Stop_IT:00000000 HAL_ADC_Stop_IT
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1504   .text.HAL_ADC_Start_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1510   .text.HAL_ADC_Start_DMA:00000000 HAL_ADC_Start_DMA
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1819   .text.HAL_ADC_Start_DMA:0000017c $d
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2407   .text.ADC_DMAConvCplt:00000000 ADC_DMAConvCplt
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2022   .text.ADC_DMAHalfConvCplt:00000000 ADC_DMAHalfConvCplt
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2367   .text.ADC_DMAError:00000000 ADC_DMAError
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1831   .text.HAL_ADC_Stop_DMA:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1837   .text.HAL_ADC_Stop_DMA:00000000 HAL_ADC_Stop_DMA
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1949   .text.HAL_ADC_GetValue:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1955   .text.HAL_ADC_GetValue:00000000 HAL_ADC_GetValue
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1975   .text.HAL_ADC_ConvCpltCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1981   .text.HAL_ADC_ConvCpltCallback:00000000 HAL_ADC_ConvCpltCallback
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:1996   .text.HAL_ADC_ConvHalfCpltCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2002   .text.HAL_ADC_ConvHalfCpltCallback:00000000 HAL_ADC_ConvHalfCpltCallback
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2017   .text.ADC_DMAHalfConvCplt:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2048   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2054   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 HAL_ADC_LevelOutOfWindowCallback
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2069   .text.HAL_ADC_ErrorCallback:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2075   .text.HAL_ADC_ErrorCallback:00000000 HAL_ADC_ErrorCallback
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2090   .text.HAL_ADC_IRQHandler:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2096   .text.HAL_ADC_IRQHandler:00000000 HAL_ADC_IRQHandler
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2362   .text.ADC_DMAError:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2402   .text.ADC_DMAConvCplt:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2515   .text.HAL_ADC_ConfigChannel:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2521   .text.HAL_ADC_ConfigChannel:00000000 HAL_ADC_ConfigChannel
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2843   .text.HAL_ADC_ConfigChannel:00000198 $d
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2852   .text.HAL_ADC_AnalogWDGConfig:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2858   .text.HAL_ADC_AnalogWDGConfig:00000000 HAL_ADC_AnalogWDGConfig
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2983   .text.HAL_ADC_GetState:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:2989   .text.HAL_ADC_GetState:00000000 HAL_ADC_GetState
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s 			page 107
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:21     .text.ADC_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:26     .text.ADC_Init:00000000 ADC_Init
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:290    .text.ADC_Init:0000012c $d
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:296    .text.HAL_ADC_MspInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:302    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:317    .text.HAL_ADC_Init:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:323    .text.HAL_ADC_Init:00000000 HAL_ADC_Init
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:424    .text.HAL_ADC_MspDeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:430    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:445    .text.HAL_ADC_DeInit:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:451    .text.HAL_ADC_DeInit:00000000 HAL_ADC_DeInit
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:521    .text.HAL_ADC_Start:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:527    .text.HAL_ADC_Start:00000000 HAL_ADC_Start
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:788    .text.HAL_ADC_Start:00000130 $d
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:797    .text.HAL_ADC_Stop:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:803    .text.HAL_ADC_Stop:00000000 HAL_ADC_Stop
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:862    .text.HAL_ADC_PollForConversion:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:868    .text.HAL_ADC_PollForConversion:00000000 HAL_ADC_PollForConversion
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1032   .text.HAL_ADC_PollForEvent:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1038   .text.HAL_ADC_PollForEvent:00000000 HAL_ADC_PollForEvent
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1152   .text.HAL_ADC_Start_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1158   .text.HAL_ADC_Start_IT:00000000 HAL_ADC_Start_IT
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1425   .text.HAL_ADC_Start_IT:0000013c $d
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1434   .text.HAL_ADC_Stop_IT:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1440   .text.HAL_ADC_Stop_IT:00000000 HAL_ADC_Stop_IT
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1504   .text.HAL_ADC_Start_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1510   .text.HAL_ADC_Start_DMA:00000000 HAL_ADC_Start_DMA
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1819   .text.HAL_ADC_Start_DMA:0000017c $d
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2407   .text.ADC_DMAConvCplt:00000000 ADC_DMAConvCplt
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2022   .text.ADC_DMAHalfConvCplt:00000000 ADC_DMAHalfConvCplt
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2367   .text.ADC_DMAError:00000000 ADC_DMAError
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1831   .text.HAL_ADC_Stop_DMA:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1837   .text.HAL_ADC_Stop_DMA:00000000 HAL_ADC_Stop_DMA
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1949   .text.HAL_ADC_GetValue:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1955   .text.HAL_ADC_GetValue:00000000 HAL_ADC_GetValue
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1975   .text.HAL_ADC_ConvCpltCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1981   .text.HAL_ADC_ConvCpltCallback:00000000 HAL_ADC_ConvCpltCallback
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:1996   .text.HAL_ADC_ConvHalfCpltCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2002   .text.HAL_ADC_ConvHalfCpltCallback:00000000 HAL_ADC_ConvHalfCpltCallback
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2017   .text.ADC_DMAHalfConvCplt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2048   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2054   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 HAL_ADC_LevelOutOfWindowCallback
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2069   .text.HAL_ADC_ErrorCallback:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2075   .text.HAL_ADC_ErrorCallback:00000000 HAL_ADC_ErrorCallback
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2090   .text.HAL_ADC_IRQHandler:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2096   .text.HAL_ADC_IRQHandler:00000000 HAL_ADC_IRQHandler
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2362   .text.ADC_DMAError:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2402   .text.ADC_DMAConvCplt:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2515   .text.HAL_ADC_ConfigChannel:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2521   .text.HAL_ADC_ConfigChannel:00000000 HAL_ADC_ConfigChannel
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2843   .text.HAL_ADC_ConfigChannel:00000198 $d
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2852   .text.HAL_ADC_AnalogWDGConfig:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2858   .text.HAL_ADC_AnalogWDGConfig:00000000 HAL_ADC_AnalogWDGConfig
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2983   .text.HAL_ADC_GetState:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:2989   .text.HAL_ADC_GetState:00000000 HAL_ADC_GetState
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s 			page 107
 
 
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:3007   .text.HAL_ADC_GetError:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\ccbxf67h.s:3013   .text.HAL_ADC_GetError:00000000 HAL_ADC_GetError
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:3007   .text.HAL_ADC_GetError:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvgUMvZ.s:3013   .text.HAL_ADC_GetError:00000000 HAL_ADC_GetError
 
 UNDEFINED SYMBOLS
 SystemCoreClock

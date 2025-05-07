@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
   27:Core/Src/stm32f4xx_hal_timebase_tim.c **** /* Private variables ---------------------------------------------------------*/
   28:Core/Src/stm32f4xx_hal_timebase_tim.c **** TIM_HandleTypeDef        htim6;
   29:Core/Src/stm32f4xx_hal_timebase_tim.c **** /* Private function prototypes -----------------------------------------------*/
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 2
 
 
   30:Core/Src/stm32f4xx_hal_timebase_tim.c **** /* Private functions ---------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
   61 0016 03F01003 		and	r3, r3, #16
   62 001a 0193     		str	r3, [sp, #4]
   63              		.loc 1 52 3 view .LVU11
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 3
 
 
   64 001c 019B     		ldr	r3, [sp, #4]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
   72:Core/Src/stm32f4xx_hal_timebase_tim.c ****   /* Initialize TIM6 */
   73:Core/Src/stm32f4xx_hal_timebase_tim.c ****   htim6.Instance = TIM6;
   99              		.loc 1 73 3 is_stmt 1 view .LVU26
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 4
 
 
  100              		.loc 1 73 18 is_stmt 0 view .LVU27
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
   95:Core/Src/stm32f4xx_hal_timebase_tim.c ****         HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);
   96:Core/Src/stm32f4xx_hal_timebase_tim.c ****       /* Configure the SysTick IRQ priority */
   97:Core/Src/stm32f4xx_hal_timebase_tim.c ****       if (TickPriority < (1UL << __NVIC_PRIO_BITS))
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 5
 
 
   98:Core/Src/stm32f4xx_hal_timebase_tim.c ****       {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
  164 0070 F2D1     		bne	.L4
   95:Core/Src/stm32f4xx_hal_timebase_tim.c ****       /* Configure the SysTick IRQ priority */
  165              		.loc 1 95 9 is_stmt 1 view .LVU53
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 6
 
 
  166 0072 3620     		movs	r0, #54
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
  114:Core/Src/stm32f4xx_hal_timebase_tim.c **** /**
  115:Core/Src/stm32f4xx_hal_timebase_tim.c ****   * @brief  Suspend Tick increment.
  116:Core/Src/stm32f4xx_hal_timebase_tim.c ****   * @note   Disable the tick increment by disabling TIM6 update interrupt.
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 7
 
 
  117:Core/Src/stm32f4xx_hal_timebase_tim.c ****   * @param  None
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
  250 0004 D368     		ldr	r3, [r2, #12]
  251 0006 43F00103 		orr	r3, r3, #1
  252 000a D360     		str	r3, [r2, #12]
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 8
 
 
  136:Core/Src/stm32f4xx_hal_timebase_tim.c **** }
@@ -450,22 +450,22 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 1
  277              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
  278              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
  279              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_timebase_tim.c
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:21     .text.HAL_InitTick:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:27     .text.HAL_InitTick:00000000 HAL_InitTick
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:196    .text.HAL_InitTick:00000090 $d
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:267    .bss.htim6:00000000 htim6
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:205    .text.HAL_SuspendTick:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:211    .text.HAL_SuspendTick:00000000 HAL_SuspendTick
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:229    .text.HAL_SuspendTick:00000010 $d
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:234    .text.HAL_ResumeTick:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:240    .text.HAL_ResumeTick:00000000 HAL_ResumeTick
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:258    .text.HAL_ResumeTick:00000010 $d
-C:\Users\Rick\AppData\Local\Temp\cc3tHjAs.s:264    .bss.htim6:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:21     .text.HAL_InitTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:27     .text.HAL_InitTick:00000000 HAL_InitTick
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:196    .text.HAL_InitTick:00000090 $d
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:267    .bss.htim6:00000000 htim6
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:205    .text.HAL_SuspendTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:211    .text.HAL_SuspendTick:00000000 HAL_SuspendTick
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:229    .text.HAL_SuspendTick:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:234    .text.HAL_ResumeTick:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:240    .text.HAL_ResumeTick:00000000 HAL_ResumeTick
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:258    .text.HAL_ResumeTick:00000010 $d
+C:\Users\Rick\AppData\Local\Temp\ccqNNt2e.s:264    .bss.htim6:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_RCC_GetClockConfig

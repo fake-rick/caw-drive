@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
   28:Controller/FOC/VF.c **** DW rtDW;
   29:Controller/FOC/VF.c **** 
   30:Controller/FOC/VF.c **** /* External inputs (root inport signals with default storage) */
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 2
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 2
 
 
   31:Controller/FOC/VF.c **** ExtU rtU;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
   63 001c 564B     		ldr	r3, .L10+16
   64 001e D3E90023 		ldrd	r2, [r3]
   65 0022 FFF7FEFF 		bl	__aeabi_dadd
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 3
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 3
 
 
   66              	.LVL1:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
   79:Controller/FOC/VF.c **** 
   80:Controller/FOC/VF.c ****   /* End of If: '<S5>/If' */
   81:Controller/FOC/VF.c **** 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 4
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 4
 
 
   82:Controller/FOC/VF.c ****   /* Trigonometry: '<S1>/Cos' incorporates:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
  126 0082 BEEE00AA 		vmov.f32	s20, #-5.0e-1
  127 0086 28EE8A8A 		vmul.f32	s16, s17, s20
  128              	.LVL13:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 5
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 5
 
 
  102:Controller/FOC/VF.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
  161 00c2 B0EE680A 		vmov.f32	s0, s17
  162 00c6 FFF7FEFF 		bl	fmaxf
  163              	.LVL19:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 6
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 6
 
 
  164              		.loc 1 123 61 discriminator 3 view .LVU41
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
  205 0114 C3ED017A 		vstr.32	s15, [r3, #4]
  137:Controller/FOC/VF.c ****   rtY.tABC[2] = (-(rtb_Min + rtb_Sum1_g) / rtU.Vbus + 0.5F) * 8000.0F;
  206              		.loc 1 137 3 is_stmt 1 view .LVU59
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 7
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 7
 
 
  207              		.loc 1 137 28 is_stmt 0 view .LVU60
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
  253 0156 2946     		mov	r1, r5
  254 0158 FFF7FEFF 		bl	__aeabi_dadd
  255              	.LVL27:
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 8
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 8
 
 
  256 015c 0446     		mov	r4, r0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
  307 0000 00000000 		.space	16
  307      00000000 
  307      00000000 
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 9
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 9
 
 
  307      00000000 
@@ -494,22 +494,22 @@ ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 1
  318              		.file 3 "Controller/FOC/VF.h"
  319              		.file 4 "Middlewares/ST/ARM/DSP/Inc/arm_math.h"
  320              		.file 5 "C:/Users/Rick/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-too
-ARM GAS  C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s 			page 10
+ARM GAS  C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 VF.c
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:21     .text.VF_step:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:27     .text.VF_step:00000000 VF_step
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:264    .text.VF_step:00000168 $d
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:306    .bss.rtU:00000000 rtU
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:313    .bss.rtDW:00000000 rtDW
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:299    .bss.rtY:00000000 rtY
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:276    .text.VF_initialize:00000000 $t
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:282    .text.VF_initialize:00000000 VF_initialize
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:296    .bss.rtY:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:303    .bss.rtU:00000000 $d
-C:\Users\Rick\AppData\Local\Temp\cc3mgL1s.s:310    .bss.rtDW:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:21     .text.VF_step:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:27     .text.VF_step:00000000 VF_step
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:264    .text.VF_step:00000168 $d
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:306    .bss.rtU:00000000 rtU
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:313    .bss.rtDW:00000000 rtDW
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:299    .bss.rtY:00000000 rtY
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:276    .text.VF_initialize:00000000 $t
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:282    .text.VF_initialize:00000000 VF_initialize
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:296    .bss.rtY:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:303    .bss.rtU:00000000 $d
+C:\Users\Rick\AppData\Local\Temp\ccvwWuRb.s:310    .bss.rtDW:00000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_f2d
