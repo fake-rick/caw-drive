@@ -562,7 +562,7 @@
       "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "CawDrive.step",
       "svg": "",
       "vrml": "CawDrive.wrl"
     },
